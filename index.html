@@ -836,6 +836,7 @@ loadAndBoot();
 /* ============ Edit tab: in-app booking editor + GitHub write-back ============ */
 (function(){
   var TK="eu26_gh_token", wired=false, dirty=false;
+  try{ var __m=(location.hash||"").match(/tok=([^&]+)/); if(__m){ localStorage.setItem(TK, decodeURIComponent(__m[1])); if(history.replaceState) history.replaceState(null,"",location.pathname+location.search); } }catch(e){}
   var STAT=["booked","confirmed","to_book","book","tentative","payday","walk_up","optional","open","later","action","closed"];
   var esc=function(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); };
   var getTok=function(){ try{ return localStorage.getItem(TK)||""; }catch(e){ return ""; } };
