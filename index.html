@@ -658,7 +658,13 @@ document.getElementById("ticketList").innerHTML =
     else { line[f] = raw===""?null:parseFloat(raw); if(line[f]!=null&&isNaN(line[f]))line[f]=null; }
     renderCards(); renderCat(); refreshStatus();
   });
-  document.getElementById("bExport").addEventListener("click",saveToFile);
+  document.getElementById("bExport").addEventListener("click",function(){
+    if(window.ghGetToken && window.ghGetToken() && window.RAWDATA && window.RAWDATA.budget){
+      LINES.forEach(function(l){ var t=window.RAWDATA.budget.lines[l._i]; if(!t)return; t.est=l.est||0; t.actual=(l.actual!=null?l.actual:null); if(l.paid!=null)t.paid=l.paid; else if("paid" in t) delete t.paid; });
+      try{ localStorage.setItem(LSSAVED, JSON.stringify(computeOverrides())); }catch(e){}
+      window.ghSave("Budget update via app "+new Date().toISOString());
+    } else { saveToFile(); }
+  });
   document.getElementById("bReset").addEventListener("click",()=>{
     try{ localStorage.removeItem(LSKEY); localStorage.removeItem(LSSAVED); }catch(e){}
     location.reload();
@@ -792,7 +798,12 @@ document.getElementById("ticketList").innerHTML =
     render(); updateBar();
   }
 
-  document.getElementById("sgCommit").addEventListener("click", commit);
+  document.getElementById("sgCommit").addEventListener("click", function(){
+    if(window.ghGetToken && window.ghGetToken()){
+      window.RAWDATA.choices = Object.assign({}, window.RAWDATA.choices||{}, sel);
+      window.ghSave("Suggestions update via app "+new Date().toISOString());
+    } else { commit(); }
+  });
   document.getElementById("sgReset").addEventListener("click", function(){
     sel=Object.assign({}, committed);
     try{ localStorage.removeItem(LSSEL); }catch(e){}
@@ -938,7 +949,7 @@ loadAndBoot();
       else el.textContent="GitHub: HTTP "+r.status;
     }).catch(function(){ el.textContent="GitHub: offline (view-only)"; });
   }
-  function saveGitHub(){
+  function saveGitHub(msg){
     var t=getTok(); if(!t){ toast("Connect GitHub first"); renderGhState(); return; }
     var api="https://api.github.com/repos/"+GH.owner+"/"+GH.repo+"/contents/"+encodeURIComponent(GH.path);
     var sv=document.getElementById("edSave"); if(sv){ sv.disabled=true; sv.textContent="Saving…"; }
@@ -955,7 +966,7 @@ loadAndBoot();
       window.RAWDATA.meta=window.RAWDATA.meta||{};
       window.RAWDATA.meta.lastAppEdit=new Date().toISOString().slice(0,16).replace("T"," ")+" (edited in app)";
       var content=JSON.stringify(window.RAWDATA,null,2);
-      var body={message:"Edit via trip app "+new Date().toISOString(), content:b64(content), branch:GH.branch};
+      var body={message:(msg||("Edit via trip app "+new Date().toISOString())), content:b64(content), branch:GH.branch};
       if(sha) body.sha=sha;
       return fetch(api, {method:"PUT", headers:authH(t), body:JSON.stringify(body)}).then(function(p){
         if(p.ok){ RAWTEXT=content; setDirty(false); toast("✓ Saved to GitHub — reloading"); setTimeout(function(){ location.reload(); },1000); }
@@ -965,6 +976,7 @@ loadAndBoot();
       var s2=document.getElementById("edSave"); if(s2){ s2.textContent="💾 Save to GitHub"; s2.disabled=!dirty; }
     });
   }
+  window.ghSave=saveGitHub; window.ghGetToken=getTok; window.ghRenderState=renderGhState;
   if(window.__booted) mountEditor(); else document.addEventListener("app:booted", mountEditor);
 })();
 </script>
