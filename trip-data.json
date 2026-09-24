@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-09-24 (Per-day route maps added on the Itinerary tab: numbered stops matching the itinerary items, click to expand full-screen. All days geocoded.) · 2026-09-24 (Wife's list applied: Castle Hill → 11/10 sunset; Marc Chagall → 11/12 2:30pm; Doge's Palace → 11/16 9am (book); Caffè Florian → 11/15 5pm; Nice synagogue → arrange; Basel Jewish Museum → 11/22 + Great Synagogue tour to arrange; Milan Binario 21 → 11/17 10am (book). Menton Plan A/B decision added. OPEN: Menton A vs B; synagogue tour bookings; Doge's + Binario 21 ticket purchases.) · 2026-09-23 (Le Plongeoir lunch MOVED 11/10→11/12 — this anchors 11/12 in Nice, so Menton/Mirazur day-trip no longer fits; 11/10 noon now open. Earlier same day — FULL SWEEP: Bernina = SKIP (keep direct Milan→Basel); hotels decision closed (all 7 booked). Venice 11/15 dinner SWAPPED Antiche Carampane→Al Covo (Castello, open Sun; Antiche Carampane closed Sundays) — book by phone, backup Trattoria alla Madonna. Last Supper 11/14 = book NOW at cenacolovinciano.vivaticket.it (Nov batch on sale). Train legs annotated with booking sites: Milan↔Venice trenitalia/italo, Milan→Basel EC via sbb.ch (compulsory reservation). Nice anniversary 11/9 La Rossettisserie = RECOMMEND keep+book. Nice 11/12 day-trip: Antibes recommended, Mirazur viable Thu if you want the 3★. OPEN FOR MAX: cancel redundant Milan 3n booking; physically book Last Supper, trains, Al Covo, La Rossettisserie, Ratanà; pick Michelin appetite.) · 2026-08-19 (MILAN MICHELIN set: Joia (1★ veg) Sat 11/14 7:45pm booked; Ratanà 11/16 8pm to place. Venice 11/15 Antiche Carampane closed Sun — swap. La Rossettisserie 11/9 open Mon.) · 2026-07-30 (Paganini + Adagio CANCELLED. Milan had 2 overlapping bookings — review + cancel redundant. Ivy Kensington breakfast booked. Venice booked (Ca' dei Conti). Marseille hardened.)",
+    "lastUpdated": "2026-09-24 (Maps now bookend each day with your hotel as start/end point; city-filtered itinerary back to horizontal scroll.) · 2026-09-24 (Per-day route maps added on the Itinerary tab: numbered stops matching the itinerary items, click to expand full-screen. All days geocoded.) · 2026-09-24 (Wife's list applied: Castle Hill → 11/10 sunset; Marc Chagall → 11/12 2:30pm; Doge's Palace → 11/16 9am (book); Caffè Florian → 11/15 5pm; Nice synagogue → arrange; Basel Jewish Museum → 11/22 + Great Synagogue tour to arrange; Milan Binario 21 → 11/17 10am (book). Menton Plan A/B decision added. OPEN: Menton A vs B; synagogue tour bookings; Doge's + Binario 21 ticket purchases.) · 2026-09-23 (Le Plongeoir lunch MOVED 11/10→11/12 — this anchors 11/12 in Nice, so Menton/Mirazur day-trip no longer fits; 11/10 noon now open. Earlier same day — FULL SWEEP: Bernina = SKIP (keep direct Milan→Basel); hotels decision closed (all 7 booked). Venice 11/15 dinner SWAPPED Antiche Carampane→Al Covo (Castello, open Sun; Antiche Carampane closed Sundays) — book by phone, backup Trattoria alla Madonna. Last Supper 11/14 = book NOW at cenacolovinciano.vivaticket.it (Nov batch on sale). Train legs annotated with booking sites: Milan↔Venice trenitalia/italo, Milan→Basel EC via sbb.ch (compulsory reservation). Nice anniversary 11/9 La Rossettisserie = RECOMMEND keep+book. Nice 11/12 day-trip: Antibes recommended, Mirazur viable Thu if you want the 3★. OPEN FOR MAX: cancel redundant Milan 3n booking; physically book Last Supper, trains, Al Covo, La Rossettisserie, Ratanà; pick Michelin appetite.) · 2026-08-19 (MILAN MICHELIN set: Joia (1★ veg) Sat 11/14 7:45pm booked; Ratanà 11/16 8pm to place. Venice 11/15 Antiche Carampane closed Sun — swap. La Rossettisserie 11/9 open Mon.) · 2026-07-30 (Paganini + Adagio CANCELLED. Milan had 2 overlapping bookings — review + cancel redundant. Ivy Kensington breakfast booked. Venice booked (Ca' dei Conti). Marseille hardened.)",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -134,7 +134,9 @@
       "conf": "ZO-AX1071-41187",
       "address": "4 Rue Coutellerie, Marseille 13002",
       "price": "$186.57 total (2n · $176.66 paid, $5.91 due at property)",
-      "notes": "Vieux-Port, walkable to the Old Port. 1 double bed, 2 adults. Check-in 11/7 3pm · check-out 11/9 11am. Booked via Amex Travel (Amex Gold, 6X pts). Replaced Adagio Saint-Charles hold (ZO-AX1066-73060)."
+      "notes": "Vieux-Port, walkable to the Old Port. 1 double bed, 2 adults. Check-in 11/7 3pm · check-out 11/9 11am. Booked via Amex Travel (Amex Gold, 6X pts). Replaced Adagio Saint-Charles hold (ZO-AX1066-73060).",
+      "lat": 43.2968676,
+      "lng": 5.3728146
     },
     {
       "city": "Nice",
@@ -145,7 +147,9 @@
       "conf": "ZO-AX1071-25157",
       "address": "18 Rue d'Alsace-Lorraine, Nice 06000 · ☎ +33 3-349-355-7726",
       "price": "€246.24 total (4n · due at property)",
-      "notes": "Riviera base; walkable to Vieux Nice. Hotel conf 9102912480675. Booked via Amex Travel. Replaced Hotel Paganini (ZO-AX1034-32563)."
+      "notes": "Riviera base; walkable to Vieux Nice. Hotel conf 9102912480675. Booked via Amex Travel. Replaced Hotel Paganini (ZO-AX1034-32563).",
+      "lat": 43.7039269,
+      "lng": 7.2631683
     },
     {
       "city": "Milan",
@@ -156,7 +160,9 @@
       "conf": "ZO-AX1042-86594",
       "address": "Via Fabio Filzi 43, Milan 20124 · ☎ +39 02 2217 9900",
       "price": "€726.99 total (5n · due at property)",
-      "notes": "⚠️ REVIEW MILAN IN TOTAL — Amex shows a 2nd overlapping Milan booking (11/13–16, 3n). One is redundant; decide which to keep and cancel the other. This 5n stay holds the 11/15 Venice night for the big bags. Hotel conf 10848. Booked via Amex Travel."
+      "notes": "⚠️ REVIEW MILAN IN TOTAL — Amex shows a 2nd overlapping Milan booking (11/13–16, 3n). One is redundant; decide which to keep and cancel the other. This 5n stay holds the 11/15 Venice night for the big bags. Hotel conf 10848. Booked via Amex Travel.",
+      "lat": 45.4878692,
+      "lng": 9.2028501
     },
     {
       "city": "Venice",
@@ -167,7 +173,9 @@
       "conf": "ZO-AX1071-43979",
       "address": "Castello 4429, Venice 30122",
       "price": "$113.57 total (1n · $0 paid, $113.57 due at property)",
-      "notes": "4★ canalside in Castello near the Bridge of Sighs; central for dawn canals. 1 double bed, 2 adults. Check-in 11/15 2pm · check-out 11/16 12pm. Avg nightly $93.86 + $9.38 tax; $10.32 mandatory city fee due at property. Booked via Amex Travel. (Milan room still held this night for the big bags.)"
+      "notes": "4★ canalside in Castello near the Bridge of Sighs; central for dawn canals. 1 double bed, 2 adults. Check-in 11/15 2pm · check-out 11/16 12pm. Avg nightly $93.86 + $9.38 tax; $10.32 mandatory city fee due at property. Booked via Amex Travel. (Milan room still held this night for the big bags.)",
+      "lat": 45.436069,
+      "lng": 12.3411926
     },
     {
       "city": "Basel",
@@ -178,7 +186,9 @@
       "conf": "ZO-AX1042-89052",
       "address": "Steinengraben 69, Basel 4051 · ☎ +41 61 272 5353",
       "price": "CHF 768.75 total (5n · due at property)",
-      "notes": "Near Basel SBB for four day-trips. Hotel conf 2438082966. Booked via Amex Travel."
+      "notes": "Near Basel SBB for four day-trips. Hotel conf 2438082966. Booked via Amex Travel.",
+      "lat": 47.5525211,
+      "lng": 7.5858061
     },
     {
       "city": "Zurich",
@@ -189,7 +199,9 @@
       "conf": "ZO-AX1042-89404",
       "address": "Limmatquai 142, Zürich 8001 · ☎ +41 44 267 6040",
       "price": "$607.54 total ($26.80 due at property)",
-      "notes": "Old Town, on the Limmat by the HB. Hotel conf 02F69des18610f6e. Booked via Amex Travel."
+      "notes": "Old Town, on the Limmat by the HB. Hotel conf 02F69des18610f6e. Booked via Amex Travel.",
+      "lat": 47.3764444,
+      "lng": 8.544161
     },
     {
       "city": "Dublin",
@@ -200,7 +212,9 @@
       "conf": "ZO-AX1065-55561",
       "address": "23 Upper O'Connell Street, Dublin 1 · ☎ +353 1 874 6881",
       "price": "€150.81 total (1n · due at property)",
-      "notes": "City centre (O'Connell St). Hotel conf 42983308. Booked via Amex Travel."
+      "notes": "City centre (O'Connell St). Hotel conf 42983308. Booked via Amex Travel.",
+      "lat": 53.3516104,
+      "lng": -6.2602645
     }
   ],
   "trains": [
@@ -343,7 +357,8 @@
           "lng": 5.3728146,
           "place": "Residhotel Vieux Port"
         }
-      ]
+      ],
+      "sleepCity": "Marseille"
     },
     {
       "date": "2026-11-08",
@@ -410,7 +425,8 @@
           "lng": 5.3559,
           "place": "Chez Fonfon (Vallon des Auffes)"
         }
-      ]
+      ],
+      "sleepCity": "Marseille"
     },
     {
       "date": "2026-11-09",
@@ -451,7 +467,8 @@
           "lng": 7.2764159,
           "place": "La Rossettisserie"
         }
-      ]
+      ],
+      "sleepCity": "Nice"
     },
     {
       "date": "2026-11-10",
@@ -502,7 +519,8 @@
           "lng": 7.2743,
           "place": "Le Sens"
         }
-      ]
+      ],
+      "sleepCity": "Nice"
     },
     {
       "date": "2026-11-11",
@@ -568,7 +586,8 @@
           "text": "Dinner after casino (place TBD)",
           "status": "tentative"
         }
-      ]
+      ],
+      "sleepCity": "Nice"
     },
     {
       "date": "2026-11-12",
@@ -600,7 +619,8 @@
           "lng": 7.27611,
           "place": "Marc Chagall Museum"
         }
-      ]
+      ],
+      "sleepCity": "Nice"
     },
     {
       "date": "2026-11-13",
@@ -633,7 +653,8 @@
           "lng": 9.1890786,
           "place": "Domò Sushi"
         }
-      ]
+      ],
+      "sleepCity": "Milan"
     },
     {
       "date": "2026-11-14",
@@ -676,7 +697,8 @@
           "lng": 9.2018693,
           "place": "Joia (1★)"
         }
-      ]
+      ],
+      "sleepCity": "Milan"
     },
     {
       "date": "2026-11-15",
@@ -722,7 +744,8 @@
           "lng": 12.3475727,
           "place": "Al Covo"
         }
-      ]
+      ],
+      "sleepCity": "Venice"
     },
     {
       "date": "2026-11-16",
@@ -771,7 +794,8 @@
           "lng": 9.192789,
           "place": "Ratanà"
         }
-      ]
+      ],
+      "sleepCity": "Milan"
     },
     {
       "date": "2026-11-17",
@@ -811,7 +835,8 @@
           "lng": 9.254,
           "place": "Ristorante Silvio"
         }
-      ]
+      ],
+      "sleepCity": "Milan"
     },
     {
       "date": "2026-11-18",
@@ -844,7 +869,8 @@
           "lng": 7.586852,
           "place": "Dinner (Gifthüttli)"
         }
-      ]
+      ],
+      "sleepCity": "Basel"
     },
     {
       "date": "2026-11-19",
@@ -892,7 +918,8 @@
           "lng": 7.5916791,
           "place": "Dinner in Basel"
         }
-      ]
+      ],
+      "sleepCity": "Basel"
     },
     {
       "date": "2026-11-20",
@@ -937,7 +964,8 @@
           "lng": 7.5936202,
           "place": "Dinner in Basel"
         }
-      ]
+      ],
+      "sleepCity": "Basel"
     },
     {
       "date": "2026-11-21",
@@ -988,7 +1016,8 @@
           "lng": 7.5876903,
           "place": "Dinner (Cheval Blanc, Basel)"
         }
-      ]
+      ],
+      "sleepCity": "Basel"
     },
     {
       "date": "2026-11-22",
@@ -1023,7 +1052,8 @@
           "lng": 7.6020008,
           "place": "Dinner (Zum Goldenen Sternen)"
         }
-      ]
+      ],
+      "sleepCity": "Basel"
     },
     {
       "date": "2026-11-23",
@@ -1064,7 +1094,8 @@
           "lng": 8.5399233,
           "place": "Zeughauskeller"
         }
-      ]
+      ],
+      "sleepCity": "Zurich"
     },
     {
       "date": "2026-11-24",
@@ -1091,7 +1122,8 @@
           "lng": 8.5401756,
           "place": "Lindenhof / Old Town"
         }
-      ]
+      ],
+      "sleepCity": "Zurich"
     },
     {
       "date": "2026-11-25",
@@ -1123,7 +1155,8 @@
           "text": "Optional: Appenzell or more Zurich",
           "status": "tentative"
         }
-      ]
+      ],
+      "sleepCity": "Zurich"
     },
     {
       "date": "2026-11-26",
@@ -1161,7 +1194,8 @@
           "lng": -6.2636766,
           "place": "The Winding Stair"
         }
-      ]
+      ],
+      "sleepCity": "Dublin"
     },
     {
       "date": "2026-11-27",
