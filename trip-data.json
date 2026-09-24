@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-09-24 (Wife's list applied: Castle Hill → 11/10 sunset; Marc Chagall → 11/12 2:30pm; Doge's Palace → 11/16 9am (book); Caffè Florian → 11/15 5pm; Nice synagogue → arrange; Basel Jewish Museum → 11/22 + Great Synagogue tour to arrange; Milan Binario 21 → 11/17 10am (book). Menton Plan A/B decision added. OPEN: Menton A vs B; synagogue tour bookings; Doge's + Binario 21 ticket purchases.) · 2026-09-23 (Le Plongeoir lunch MOVED 11/10→11/12 — this anchors 11/12 in Nice, so Menton/Mirazur day-trip no longer fits; 11/10 noon now open. Earlier same day — FULL SWEEP: Bernina = SKIP (keep direct Milan→Basel); hotels decision closed (all 7 booked). Venice 11/15 dinner SWAPPED Antiche Carampane→Al Covo (Castello, open Sun; Antiche Carampane closed Sundays) — book by phone, backup Trattoria alla Madonna. Last Supper 11/14 = book NOW at cenacolovinciano.vivaticket.it (Nov batch on sale). Train legs annotated with booking sites: Milan↔Venice trenitalia/italo, Milan→Basel EC via sbb.ch (compulsory reservation). Nice anniversary 11/9 La Rossettisserie = RECOMMEND keep+book. Nice 11/12 day-trip: Antibes recommended, Mirazur viable Thu if you want the 3★. OPEN FOR MAX: cancel redundant Milan 3n booking; physically book Last Supper, trains, Al Covo, La Rossettisserie, Ratanà; pick Michelin appetite.) · 2026-08-19 (MILAN MICHELIN set: Joia (1★ veg) Sat 11/14 7:45pm booked; Ratanà 11/16 8pm to place. Venice 11/15 Antiche Carampane closed Sun — swap. La Rossettisserie 11/9 open Mon.) · 2026-07-30 (Paganini + Adagio CANCELLED. Milan had 2 overlapping bookings — review + cancel redundant. Ivy Kensington breakfast booked. Venice booked (Ca' dei Conti). Marseille hardened.)",
+    "lastUpdated": "2026-09-24 (Per-day route maps added on the Itinerary tab: numbered stops matching the itinerary items, click to expand full-screen. All days geocoded.) · 2026-09-24 (Wife's list applied: Castle Hill → 11/10 sunset; Marc Chagall → 11/12 2:30pm; Doge's Palace → 11/16 9am (book); Caffè Florian → 11/15 5pm; Nice synagogue → arrange; Basel Jewish Museum → 11/22 + Great Synagogue tour to arrange; Milan Binario 21 → 11/17 10am (book). Menton Plan A/B decision added. OPEN: Menton A vs B; synagogue tour bookings; Doge's + Binario 21 ticket purchases.) · 2026-09-23 (Le Plongeoir lunch MOVED 11/10→11/12 — this anchors 11/12 in Nice, so Menton/Mirazur day-trip no longer fits; 11/10 noon now open. Earlier same day — FULL SWEEP: Bernina = SKIP (keep direct Milan→Basel); hotels decision closed (all 7 booked). Venice 11/15 dinner SWAPPED Antiche Carampane→Al Covo (Castello, open Sun; Antiche Carampane closed Sundays) — book by phone, backup Trattoria alla Madonna. Last Supper 11/14 = book NOW at cenacolovinciano.vivaticket.it (Nov batch on sale). Train legs annotated with booking sites: Milan↔Venice trenitalia/italo, Milan→Basel EC via sbb.ch (compulsory reservation). Nice anniversary 11/9 La Rossettisserie = RECOMMEND keep+book. Nice 11/12 day-trip: Antibes recommended, Mirazur viable Thu if you want the 3★. OPEN FOR MAX: cancel redundant Milan 3n booking; physically book Last Supper, trains, Al Covo, La Rossettisserie, Ratanà; pick Michelin appetite.) · 2026-08-19 (MILAN MICHELIN set: Joia (1★ veg) Sat 11/14 7:45pm booked; Ratanà 11/16 8pm to place. Venice 11/15 Antiche Carampane closed Sun — swap. La Rossettisserie 11/9 open Mon.) · 2026-07-30 (Paganini + Adagio CANCELLED. Milan had 2 overlapping bookings — review + cancel redundant. Ivy Kensington breakfast booked. Venice booked (Ca' dei Conti). Marseille hardened.)",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -317,12 +317,18 @@
         {
           "time": "8:30a",
           "text": "Breakfast: The Ivy Kensington Brasserie — RESERVATION CONFIRMED, 2 (veggie full English for Nicole + full English for Max, pot of tea)",
-          "status": "booked"
+          "status": "booked",
+          "lat": 51.50099,
+          "lng": -0.19248,
+          "place": "The Ivy Kensington Brasserie"
         },
         {
           "time": "10:00a",
           "text": "London layover: M&S + Harrods (opens ~10am Sat). Backup: M&S + Harrods shops inside Heathrow",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 51.4992104,
+          "lng": -0.1629893,
+          "place": "Harrods / M&S (London)"
         },
         {
           "time": "2:40p",
@@ -332,7 +338,10 @@
         {
           "time": "7:30p",
           "text": "Check in Residhotel Vieux Port (4 Rue Coutellerie — 5 min walk to the port)",
-          "status": "booked"
+          "status": "booked",
+          "lat": 43.2968676,
+          "lng": 5.3728146,
+          "place": "Residhotel Vieux Port"
         }
       ]
     },
@@ -416,7 +425,10 @@
         {
           "time": "11:30a",
           "text": "🛍 Checkout (11a) → quick browse Rue Saint-Ferréol pedestrian shops (open Mon ~10a — the retail that's shut on Sun) en route to Gare St-Charles",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.2947867,
+          "lng": 5.3775943,
+          "place": "Rue Saint-Ferréol shops"
         },
         {
           "time": "1:04p",
@@ -426,12 +438,18 @@
         {
           "time": "3:30p",
           "text": "Check in Hôtel Du Midi; Vieux Nice evening",
-          "status": "booked"
+          "status": "booked",
+          "lat": 43.7039269,
+          "lng": 7.2631683,
+          "place": "Hôtel Du Midi"
         },
         {
           "time": "8:00p",
           "text": "★ Anniversary dinner — La Rossettisserie (Old Town wood-fire rotisserie; confirmed open Mon). Land Nice 3:38p → check-in → 8pm is comfortable, travel-day risk is minimal. RECOMMEND keep + book by phone.",
-          "status": "to_book"
+          "status": "to_book",
+          "lat": 43.6975249,
+          "lng": 7.2764159,
+          "place": "La Rossettisserie"
         }
       ]
     },
@@ -447,27 +465,42 @@
         {
           "time": "10:00a",
           "text": "Cours Saleya market + Promenade des Anglais (Castle Hill moved to sunset ↓)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 43.6956096,
+          "lng": 7.2751036,
+          "place": "Cours Saleya + Promenade"
         },
         {
           "time": "11:30a",
           "text": "Synagogue de Nice — visit the Grande Synagogue (7 Rue Gustave Deloye). ARRANGE ahead: photo ID + security, not a walk-in",
-          "status": "to_book"
+          "status": "to_book",
+          "lat": 43.6998151,
+          "lng": 7.2694074,
+          "place": "Grande Synagogue de Nice"
         },
         {
           "time": "12:00p",
           "text": "Lunch in Vieux Nice — open (socca at Chez Thérésa / René Socca, or a Cours Saleya terrace). Le Plongeoir moved to 11/12.",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 43.6971832,
+          "lng": 7.2762796,
+          "place": "Vieux Nice lunch"
         },
         {
           "time": "4:30p",
           "text": "★ Castle Hill (Colline du Château) for SUNSET (~5:10p) — free hilltop park (open to 6pm), panorama over the Bay of Angels; back down in time for Le Sens 8pm",
-          "status": ""
+          "status": "",
+          "lat": 43.6963424,
+          "lng": 7.2806251,
+          "place": "Castle Hill (sunset)"
         },
         {
           "time": "8:00p",
           "text": "Le Sens — fine-dining night",
-          "status": "booked"
+          "status": "booked",
+          "lat": 43.6954,
+          "lng": 7.2743,
+          "place": "Le Sens"
         }
       ]
     },
@@ -488,22 +521,34 @@
         {
           "time": "9:30a",
           "text": "Èze cliff-top medieval village (morning)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.7302391,
+          "lng": 7.3613607,
+          "place": "Èze village"
         },
         {
           "time": "12:00p",
           "text": "Lunch/coffee: Café de Paris Monte-Carlo — on the F1 circuit, Casino Square (you'll spot it on the broadcast)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.7395874,
+          "lng": 7.4278595,
+          "place": "Café de Paris Monte-Carlo"
         },
         {
           "time": "1:00p",
           "text": "★ Walk the F1 circuit: Casino Square, Fairmont Hairpin, the Tunnel, harbour straight",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.7393645,
+          "lng": 7.4276258,
+          "place": "F1 circuit / Casino Square"
         },
         {
           "time": "2:00p",
           "text": "Casino de Monte-Carlo — go afternoon (~2pm): relaxed dress window, glamorous, no evening door-drama. Nicole: long dress + white sweater + ballet flats (closed-toe). Bring PASSPORTS (18+), small fee",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.7391605,
+          "lng": 7.428023,
+          "place": "Casino de Monte-Carlo"
         },
         {
           "time": "3:00p",
@@ -513,7 +558,10 @@
         {
           "time": "2:30p",
           "text": "Optional: Prince's Palace / Oceanographic Museum",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 43.7306805,
+          "lng": 7.4255127,
+          "place": "Oceanographic Museum"
         },
         {
           "time": "7:30p",
@@ -539,12 +587,18 @@
         {
           "time": "12:00p",
           "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests. Scenic seaside on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
-          "status": "booked"
+          "status": "booked",
+          "lat": 43.6919112,
+          "lng": 7.2908183,
+          "place": "Le Plongeoir"
         },
         {
           "time": "2:30p",
           "text": "★ Musée Marc Chagall (Cimiez) — right after Le Plongeoir lunch. Nov hours 14:30–17:00 (closed Tuesdays, so this is the only clean slot); ~10–12€ at the door, ~15 min from Le Plongeoir",
-          "status": ""
+          "status": "",
+          "lat": 43.71222,
+          "lng": 7.27611,
+          "place": "Marc Chagall Museum"
         }
       ]
     },
@@ -566,12 +620,18 @@
         {
           "time": "3:30p",
           "text": "Check in 43 Station Hotel",
-          "status": "booked"
+          "status": "booked",
+          "lat": 45.4878692,
+          "lng": 9.2028501,
+          "place": "43 Station Hotel"
         },
         {
           "time": "7:45p",
           "text": "Dinner: Domò Sushi (AYCE, Via San Marco 40) — BOOKED, 2 pax",
-          "status": "booked"
+          "status": "booked",
+          "lat": 45.4782394,
+          "lng": 9.1890786,
+          "place": "Domò Sushi"
         }
       ]
     },
@@ -587,22 +647,34 @@
         {
           "time": "9:30a",
           "text": "Duomo + rooftop, Galleria Vittorio Emanuele II",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.4641669,
+          "lng": 9.1916121,
+          "place": "Duomo + Galleria"
         },
         {
           "time": "12:00p",
           "text": "The Last Supper — timed ticket (must pre-book, sells out)",
-          "status": "book"
+          "status": "book",
+          "lat": 45.4667149,
+          "lng": 9.1696197,
+          "place": "The Last Supper"
         },
         {
           "time": "3:00p",
           "text": "Sforza Castle / Brera",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.4703009,
+          "lng": 9.1780912,
+          "place": "Sforza Castle / Brera"
         },
         {
           "time": "7:45p",
           "text": "★ MICHELIN dinner: Joia — Pietro Leemann's 1★ (+ Green Star) haute vegetarian, Via Panfilo Castaldi 18. ✅ RESERVED Sat 11/14, 7:45 PM, 2 pers (confirmation email received). Sat = dinner-only single seating; dress up. Ideal for Nicole, creative for both. Tasting €85–120pp",
-          "status": "booked"
+          "status": "booked",
+          "lat": 45.4771424,
+          "lng": 9.2018693,
+          "place": "Joia (1★)"
         }
       ]
     },
@@ -629,17 +701,26 @@
         {
           "time": "3:00p",
           "text": "Evening in Venice",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.4342571,
+          "lng": 12.3386717,
+          "place": "St. Mark's Square"
         },
         {
           "time": "5:00p",
           "text": "Caffè Florian, Piazza San Marco — Venice's oldest café (est. 1720), aperitivo. Note the famous orchestra/table surcharge",
-          "status": ""
+          "status": "",
+          "lat": 45.4336006,
+          "lng": 12.3382833,
+          "place": "Caffè Florian"
         },
         {
           "time": "8:00p",
           "text": "Dinner: Al Covo (Castello, ~5 min from hotel) — SWAP from Antiche Carampane (CLOSED Sundays; 11/15 is a Sunday). Al Covo normally open Sun (closed Wed/Thu). Book by PHONE — old website is defunct. Backup: Trattoria alla Madonna ☎ +39 041 522 3824 (open Sun, near Rialto). ⚠️ reconfirm the Sunday date",
-          "status": "to_book"
+          "status": "to_book",
+          "lat": 45.4341254,
+          "lng": 12.3475727,
+          "place": "Al Covo"
         }
       ]
     },
@@ -656,17 +737,26 @@
         {
           "time": "7:30a",
           "text": "Dawn canals, St. Mark's, Rialto",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.4380688,
+          "lng": 12.3356548,
+          "place": "Dawn: St Mark's + Rialto"
         },
         {
           "time": "9:00a",
           "text": "★ Doge's Palace (Palazzo Ducale) — BOOK a timed ticket. Open daily 9:00–18:00 (last entry ~17:00): Golden Staircase, doge's apartments, Bridge of Sighs",
-          "status": "to_book"
+          "status": "to_book",
+          "lat": 45.4342108,
+          "lng": 12.340592,
+          "place": "Doge's Palace"
         },
         {
           "time": "10:00a",
           "text": "Cicchetti at All'Arco",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.4388686,
+          "lng": 12.334052,
+          "place": "All'Arco cicchetti"
         },
         {
           "time": "2:00p",
@@ -676,7 +766,10 @@
         {
           "time": "8:00p",
           "text": "Dinner: Ratanà — modern Lombard (risotto al salto), Via Gaetano de Castillia 28, ~10 min walk from hotel. Low-key after the Venice return. ☎ +39 02 87128855",
-          "status": "book"
+          "status": "book",
+          "lat": 45.4857844,
+          "lng": 9.192789,
+          "place": "Ratanà"
         }
       ]
     },
@@ -692,7 +785,10 @@
         {
           "time": "10:00a",
           "text": "★ Memoriale della Shoah 'Binario 21' — at Milano Centrale, next to the hotel. ~1 hr, €10; open Mon–Sun except Fri, 10:00–16:00 (last entry 15:30). Book ahead (wknd advised)",
-          "status": "to_book"
+          "status": "to_book",
+          "lat": 45.48816,
+          "lng": 9.20821,
+          "place": "Binario 21"
         },
         {
           "time": "11:15a",
@@ -702,12 +798,18 @@
         {
           "time": "12:15p",
           "text": "Varenna, Bellagio (reduced Nov ferries)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.9872549,
+          "lng": 9.2613001,
+          "place": "Varenna / Bellagio"
         },
         {
           "time": "1:00p",
           "text": "Lunch: Ristorante Silvio, Bellagio",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 45.976,
+          "lng": 9.254,
+          "place": "Ristorante Silvio"
         }
       ]
     },
@@ -729,12 +831,18 @@
         {
           "time": "3:00p",
           "text": "Check in Steinenschanze — clean repositioning day",
-          "status": "booked"
+          "status": "booked",
+          "lat": 47.5525211,
+          "lng": 7.5858061,
+          "place": "Steinenschanze"
         },
         {
           "time": "7:30p",
           "text": "Dinner (easygoing 1st night) — OPTIONS: Gifthüttli (1913 institution, 12 cordon bleus, open daily) · Löwenzorn (cozy Basel tavern, fondue/rösti) · Fischerstube/Ueli Bier (Kleinbasel brewpub, own beer)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5581578,
+          "lng": 7.586852,
+          "place": "Dinner (Gifthüttli)"
         }
       ]
     },
@@ -755,22 +863,34 @@
         {
           "time": "11:00a",
           "text": "Strasbourg: Grande Île, cathedral, Petite France",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 48.5818885,
+          "lng": 7.7510521,
+          "place": "Strasbourg (Grande Île)"
         },
         {
           "time": "1:00p",
           "text": "Lunch: Chez Yvonne winstub (Alsatian)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 48.5827666,
+          "lng": 7.7494911,
+          "place": "Chez Yvonne"
         },
         {
           "time": "3:30p",
           "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — 'Little Venice' canals",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 48.0777517,
+          "lng": 7.3579641,
+          "place": "Colmar (optional)"
         },
         {
           "time": "8:00p",
           "text": "Dinner (back in Basel) — OPTIONS: Zum Schmale Wurf (Kleinbasel, Rhine-side, fish) · Restaurant Kunsthalle (buzzy arty brasserie) · Consum (wine bar + small plates)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5602748,
+          "lng": 7.5916791,
+          "place": "Dinner in Basel"
         }
       ]
     },
@@ -791,7 +911,10 @@
         {
           "time": "11:00a",
           "text": "Freiburg Altstadt: Münster cathedral + Münstermarkt (open Fri), the Bächle canals, Schwabentor",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 47.9955486,
+          "lng": 7.8529213,
+          "place": "Freiburg Altstadt"
         },
         {
           "time": "1:00p",
@@ -801,12 +924,18 @@
         {
           "time": "3:00p",
           "text": "Optional: Schlossberg funicular for Black Forest views, or extend to Titisee lake",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.9971412,
+          "lng": 7.8574612,
+          "place": "Schlossberg (optional)"
         },
         {
           "time": "8:00p",
           "text": "Dinner (back in Basel) — OPTIONS: Volkshaus Basel (H&deM brasserie — oysters + fruits de mer for Max, strong fish/veg for Nicole, lively bar) · Safran Zunft (historic guildhall) · Da Gianni or another Basel Italian (change of cuisine)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5610858,
+          "lng": 7.5936202,
+          "place": "Dinner in Basel"
         }
       ]
     },
@@ -822,27 +951,42 @@
         {
           "time": "9:00a",
           "text": "Train Basel → Lucerne (~1h, regional — pay on day); Chapel Bridge, lake, Old Town",
-          "status": "payday"
+          "status": "payday",
+          "lat": 47.0518334,
+          "lng": 8.307713,
+          "place": "Lucerne Old Town"
         },
         {
           "time": "11:00a",
           "text": "WATCH SHOPPING: Schwanenplatz (Bucherer, Gübelin, Embassy)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 47.0533514,
+          "lng": 8.3086325,
+          "place": "Schwanenplatz watches"
         },
         {
           "time": "1:00p",
           "text": "Lunch: Wirtshaus Galliker",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 47.0498,
+          "lng": 8.301,
+          "place": "Wirtshaus Galliker"
         },
         {
           "time": "2:30p",
           "text": "Optional peak: Rigi or Pilatus (verify winter cable-car ops + weather)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 46.9789,
+          "lng": 8.2525,
+          "place": "Rigi / Pilatus (optional)"
         },
         {
           "time": "8:00p",
           "text": "Dinner (Sat 'special' night — book ahead) — OPTIONS: Cheval Blanc by Peter Knogl (3★, Les Trois Rois, Mediterranean) · Stucki – Tanja Grandits (2★, spice/veg-forward — superb for Nicole) · Brasserie Les Trois Rois (grand setting, no tasting-menu commitment)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5603897,
+          "lng": 7.5876903,
+          "place": "Dinner (Cheval Blanc, Basel)"
         }
       ]
     },
@@ -858,17 +1002,26 @@
         {
           "time": "10:00a",
           "text": "Fondation Beyeler, Kunstmuseum, Rhine, old town (Sun = shops closed)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5539294,
+          "lng": 7.5944513,
+          "place": "Kunstmuseum / Beyeler / Old Town"
         },
         {
           "time": "2:00p",
           "text": "★ Jewish Museum of Switzerland (Vesalgasse 5) — open daily 11:00–17:00, CHF 15. Oldest Jewish museum in the German-speaking world; Basel = city of the First Zionist Congress (1897)",
-          "status": ""
+          "status": "",
+          "lat": 47.5576405,
+          "lng": 7.583168,
+          "place": "Jewish Museum of Switzerland"
         },
         {
           "time": "8:00p",
           "text": "Dinner (Sun — many places closed; these open): OPTIONS: Zum Goldenen Sternen (oldest inn 1412, Rhine fish, romantic) · Löwenzorn (traditional, open Sun) · Brasserie Les Trois Rois (grand hotel, open Sun)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.5548054,
+          "lng": 7.6020008,
+          "place": "Dinner (Zum Goldenen Sternen)"
         }
       ]
     },
@@ -890,17 +1043,26 @@
         {
           "time": "12:30p",
           "text": "Check in Hotel Limmathof",
-          "status": "booked"
+          "status": "booked",
+          "lat": 47.3764444,
+          "lng": 8.544161,
+          "place": "Hotel Limmathof"
         },
         {
           "time": "2:00p",
           "text": "Old Town / Lake evening",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.3701214,
+          "lng": 8.5439115,
+          "place": "Old Town / Lake"
         },
         {
           "time": "8:00p",
           "text": "Dinner: Zeughauskeller (open Mon)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.3703727,
+          "lng": 8.5399233,
+          "place": "Zeughauskeller"
         }
       ]
     },
@@ -916,12 +1078,18 @@
         {
           "time": "10:00a",
           "text": "Bahnhofstrasse WATCH SHOPPING (Beyer + museum, Bucherer, Gübelin, Les Ambassadeurs)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.3757655,
+          "lng": 8.5391706,
+          "place": "Bahnhofstrasse watches"
         },
         {
           "time": "2:00p",
           "text": "Old Town, Lindenhof, Lake Zurich",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.3729161,
+          "lng": 8.5401756,
+          "place": "Lindenhof / Old Town"
         }
       ]
     },
@@ -937,12 +1105,18 @@
         {
           "time": "9:00a",
           "text": "Schaffhausen (~40m); Rhine Falls — Europe's largest waterfall (half-day)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.6783615,
+          "lng": 8.6148706,
+          "place": "Rhine Falls"
         },
         {
           "time": "11:30a",
           "text": "⌚ IWC Schaffhausen — watch museum at the manufacture HQ (Baumgartenstrasse 15); full manufacture tour by advance arrangement (limited — enquire ahead)",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 47.6942,
+          "lng": 8.6364,
+          "place": "IWC museum"
         },
         {
           "time": "2:00p",
@@ -974,12 +1148,18 @@
         {
           "time": "2:00p",
           "text": "Temple Bar, Trinity College, a pint of Guinness",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 53.3453299,
+          "lng": -6.2582726,
+          "place": "Temple Bar / Trinity"
         },
         {
           "time": "8:00p",
           "text": "Dinner: The Winding Stair",
-          "status": "tentative"
+          "status": "tentative",
+          "lat": 53.346644,
+          "lng": -6.2636766,
+          "place": "The Winding Stair"
         }
       ]
     },
