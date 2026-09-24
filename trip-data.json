@@ -348,37 +348,58 @@
         {
           "time": "9:30a",
           "text": "Slow jet-lag morning — coffee & pastry on the Vieux Port",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.29509,
+          "lng": 5.37439,
+          "place": "Vieux Port"
         },
         {
           "time": "10:00a",
           "text": "Vieux Port stroll: daily fish market on Quai des Belges + Foster's mirror-canopy Ombrière; then La Maison du Pastis (Quai du Port) — Max tastes & buys a proper Marseille pastis",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.29642,
+          "lng": 5.37,
+          "place": "La Maison du Pastis"
         },
         {
           "time": "10:45a",
           "text": "🛍 Le Panier — Marseille's oldest quarter: savon-de-Marseille soap shops, artisan & ceramic boutiques (open Sun afternoon), street art, Place des Moulins, La Vieille Charité courtyard",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.29972,
+          "lng": 5.36722,
+          "place": "Le Panier / La Vieille Charité"
         },
         {
           "time": "3:00p",
           "text": "Fort Saint-Jean gardens & footbridge, Cathédrale de la Major (striped Byzantine), and the shops/terraces under Les Voûtes de la Major",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.29861,
+          "lng": 5.36167,
+          "place": "La Major & Fort Saint-Jean"
         },
         {
           "time": "4:30p",
           "text": "Notre-Dame de la Garde ('La Bonne Mère') for the sunset panorama over the whole city & sea — bus 60 or petit-train up, walk down (sunset ~5:15p)",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.28414,
+          "lng": 5.37142,
+          "place": "Notre-Dame de la Garde"
         },
         {
           "time": "6:45p",
           "text": "Apéritif: pastis + a plate of panisses (fried chickpea sticks) on a Vieux Port terrace — the Marseille ritual before dinner",
-          "status": "confirmed"
+          "status": "confirmed",
+          "lat": 43.2947,
+          "lng": 5.3726,
+          "place": "Vieux Port apéritif"
         },
         {
           "time": "8:00p",
           "text": "Dinner: Chez Fonfon — bouillabaisse at the Vallon des Auffes cove ✅ RESERVED (2 pers, 8:00 PM)",
-          "status": "booked"
+          "status": "booked",
+          "lat": 43.2856,
+          "lng": 5.3559,
+          "place": "Chez Fonfon (Vallon des Auffes)"
         }
       ]
     },
