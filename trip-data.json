@@ -620,6 +620,11 @@
           "status": "tentative"
         },
         {
+          "time": "~10:30a",
+          "text": "If you take the relaxed Nice morning: graze through <b>Cours Saleya</b> (Thu = flower + produce market) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière — no need to sit down.",
+          "status": "tentative"
+        },
+        {
           "time": "12:00p",
           "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests. Scenic seaside on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
           "status": "booked",
@@ -634,9 +639,44 @@
           "lat": 43.71222,
           "lng": 7.27611,
           "place": "Marc Chagall Museum"
+        },
+        {
+          "time": "evening",
+          "text": "Dinner in Vieux Nice — leaning Niçois specialties (daube niçoise, petits farcis, stockfish). Pick your spot below; if peckish earlier, catch socca at a Cours Saleya / Chez Pipo stand.",
+          "status": "tentative"
         }
       ],
-      "sleepCity": "Nice"
+      "sleepCity": "Nice",
+      "picks": [
+        {
+          "id": "nov12-dinner",
+          "label": "Vieux Nice dinner — pick one (all phone-only / walk-in, verify before relying)",
+          "selected": null,
+          "options": [
+            {
+              "id": "antoine",
+              "name": "Bistrot d'Antoine",
+              "booked": false,
+              "booking": "☎ +33 4 93 85 29 57 — call 2–4 days ahead (no online booking). ⚠️ Verify number/hours.",
+              "detail": "Bustling Vieux Nice bistrot (27 Rue de la Préfecture). Blackboard Niçois classics — daube, petits farcis, grilled catch of the day. Great value, always packed; book ahead or go early."
+            },
+            {
+              "id": "palmyre",
+              "name": "Chez Palmyre",
+              "booked": false,
+              "booking": "☎ +33 4 93 85 72 32 — books ~a week out, cash only. ⚠️ Verify number/hours.",
+              "detail": "Tiny historic institution (5 Rue Droite) with a fixed ~€20 home-style Niçois menu. Intimate, cash only, reserve early — the classic 'ate like a local' pick."
+            },
+            {
+              "id": "merenda",
+              "name": "La Merenda",
+              "booked": false,
+              "booking": "Walk-in only — NO phone, cash only, arrive right at opening. ⚠️ Verify hours.",
+              "detail": "Cult micro-spot (4 Rue Raoul Bosio) from an ex-Michelin chef — stockfish, tripes, pissaladière, farcis. No reservations, no cards, ~a dozen seats."
+            }
+          ]
+        }
+      ]
     },
     {
       "date": "2026-11-13",
