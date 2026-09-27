@@ -816,7 +816,7 @@
     {
       "date": "2026-11-17",
       "dow": "Tue",
-      "city": "Milan — Lake Como",
+      "city": "Milan — Monza & Como",
       "travel": false,
       "cities": [
         "Milan"
@@ -824,7 +824,7 @@
       "items": [
         {
           "time": "10:00a",
-          "text": "★ Memoriale della Shoah 'Binario 21' — at Milano Centrale, next to the hotel. ~1 hr, €10; open Mon–Sun except Fri, 10:00–16:00 (last entry 15:30). Book ahead (wknd advised)",
+          "text": "★ Memoriale della Shoah 'Binario 21' — at Milano Centrale, next to the hotel (today's launch point). ~1 hr, €10; open Mon–Sun except Fri, 10:00–16:00 (last entry 15:30). Book ahead.",
           "status": "to_book",
           "lat": 45.48816,
           "lng": 9.20821,
@@ -832,24 +832,58 @@
         },
         {
           "time": "11:15a",
-          "text": "Regionale to Varenna / Como (40m–1h, walk-up) — half-day after Binario 21",
+          "text": "Regionale Milano Centrale → Monza (~15 min, frequent, walk-up).",
           "status": "tentative"
         },
         {
-          "time": "12:15p",
-          "text": "Varenna, Bellagio (reduced Nov ferries)",
+          "time": "11:45a",
+          "text": "Monza — OPTIONAL: brief Autodromo gawk (Parco di Monza, ~4 km from the station — quick taxi; fully skippable day-of). Free grandstand view; guided walking pit/track tour only if a slot + price line up — book close to the date.",
           "status": "tentative",
-          "lat": 45.9872549,
-          "lng": 9.2613001,
-          "place": "Varenna / Bellagio"
+          "lat": 45.6156,
+          "lng": 9.2811,
+          "place": "Autodromo Monza"
         },
         {
           "time": "1:00p",
-          "text": "Lunch: Ristorante Silvio, Bellagio",
+          "text": "Lunch in Monza: Osteria da Mariuccia (~€25–35, in-town near the station) — DEFAULT. Alts: Derby Grill @ Hotel de la Ville (~€45–60, splurge) or Saint Georges Premier (in-park, ~€35–50).",
           "status": "tentative",
-          "lat": 45.976,
-          "lng": 9.254,
-          "place": "Ristorante Silvio"
+          "lat": 45.5845,
+          "lng": 9.2744,
+          "place": "Osteria da Mariuccia"
+        },
+        {
+          "time": "2:15p",
+          "text": "Train Monza → Como San Giovanni (~35–45 min, direct on the Chiasso line, walk-up).",
+          "status": "tentative"
+        },
+        {
+          "time": "3:00p",
+          "text": "Como lakefront: Piazza Cavour, the Duomo, lungolago stroll; funicular up to Brunate for the view (optional).",
+          "status": "tentative",
+          "lat": 45.8081,
+          "lng": 9.0852,
+          "place": "Como"
+        },
+        {
+          "time": "5:00p",
+          "text": "Light snack / aperitivo on the lungolago — Piazza Cavour cafés or Pasticceria Monti.",
+          "status": "tentative",
+          "lat": 45.8103,
+          "lng": 9.0838,
+          "place": "Pasticceria Monti"
+        },
+        {
+          "time": "7:30p",
+          "text": "Dinner in Como: Ristorante Sociale (~€35–50, central near the Duomo, reliably open off-season) — DEFAULT. Alts: Feel Como (modern, ~€55–70) or Pesa Vegia in Bellagio (seafood for Nicole). NOTE: prior pick Osteria dell'Angolo del Silenzio is CLOSED. Reserve a few days out (Nov off-season hours).",
+          "status": "book",
+          "lat": 45.8118,
+          "lng": 9.082,
+          "place": "Ristorante Sociale"
+        },
+        {
+          "time": "9:30p",
+          "text": "Evening train Como San Giovanni → Milano Centrale (~37 min; last trains ~10–11 pm). Monza is fully skippable day-of if you'd rather head straight to Como.",
+          "status": "tentative"
         }
       ],
       "sleepCity": "Milan"
