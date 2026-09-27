@@ -1667,6 +1667,166 @@
       "when": "opt",
       "booking": "book now",
       "status": "optional"
+    },
+    {
+      "city": "Marseille",
+      "name": "Four des Navettes",
+      "tier": "NAVETTES",
+      "why": "<b>Navettes</b> — orange-blossom boat biscuits baked here since 1781 at Marseille's oldest bakery (136 Rue Sainte, by Abbaye St-Victor). Grab a bag of the city's signature souvenir sweet. ⚠️ Verify 2026 hours.",
+      "price": "€6–10",
+      "when": "11/8 stroll",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Nice",
+      "name": "Chez Pipo",
+      "tier": "SOCCA",
+      "why": "<b>Socca</b> — the port institution (since 1923) for Nice's chickpea pancake, thin and crisp from the wood oven (13 Rue Bavastro). Casual, cash-friendly, no-frills. ⚠️ Verify 2026 hours (often closed Mon).",
+      "price": "€8–15/2",
+      "when": "11/11",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Nice",
+      "name": "Lou Pilha Leva",
+      "tier": "PAN-BAGNAT",
+      "why": "<b>Pan-bagnat & Niçois small plates</b> — stand-up Old Town counter (10 Rue du Collet) for socca, farcis, beignets and the tuna-and-olive-oil pan-bagnat sandwich. Cheap, fast, local. ⚠️ Verify 2026 hours.",
+      "price": "€10–18/2",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Nice",
+      "name": "Fenocchio",
+      "tier": "GELATO",
+      "why": "<b>Gelato</b> — legendary Old Town glacier (since 1966, Place Rossetti) with 90+ flavors incl. local olive-oil, fig and tourte-de-blettes. The classic Vieux-Nice sweet stop. ⚠️ Verify 2026 hours.",
+      "price": "€4–8",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Monaco",
+      "name": "Marché de la Condamine",
+      "tier": "BARBAGIUAN",
+      "why": "<b>Barbagiuan & socca</b> — Monaco's covered market food court (Place d'Armes). The principality's signature fried chard-and-cheese pastry plus socca and Monégasque plates at the stalls — the one genuinely casual, affordable eat in Monaco. ⚠️ Verify 2026 hours (mornings into lunch).",
+      "price": "€10–20/2",
+      "when": "11/11 lunch",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Monaco",
+      "name": "U Cavagnëtu",
+      "tier": "MONÉGASQUE",
+      "why": "<b>Barbagiuan & stocafi</b> — cozy traditional Monégasque spot in old Monaco-Ville by the Palace (14 Rue Comte Félix Gastaldi) for barbagiuan, stocafi (stockfish stew) and fougasse. ⚠️ Verify 2026 hours.",
+      "price": "€25–40/2",
+      "when": "11/11 lunch",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Milan",
+      "name": "Pasticceria Marchesi 1824",
+      "tier": "PANETTONE",
+      "why": "<b>Panettone & pastries</b> — Milan's elegant 1824 pasticceria (Via Santa Maria alla Porta / Via Montenapoleone). November is fresh artisanal-panettone season; also espresso and jewel-box cakes. ⚠️ Verify 2026 hours.",
+      "price": "€8–20",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Milan",
+      "name": "Bar Basso",
+      "tier": "APERITIVO",
+      "why": "<b>Negroni Sbagliato</b> — the bar (Via Plinio 39) that invented the Sbagliato (Negroni with prosecco instead of gin). Order one in the giant glass; the quintessential Milanese aperitivo. ⚠️ Verify 2026 hours.",
+      "price": "€12–24/2",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Basel",
+      "name": "Läckerli Huus",
+      "tier": "LÄCKERLI",
+      "why": "<b>Basler Läckerli</b> — the spiced honey-almond biscuit that is Basel's signature sweet, from the classic maker in the Old Town (Gerbergasse). Buy a tin; try them fresh. ⚠️ Verify 2026 hours.",
+      "price": "CHF 8–15",
+      "when": "11/22",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Zurich",
+      "name": "Sternen Grill",
+      "tier": "BRATWURST",
+      "why": "<b>St. Galler Bratwurst</b> — Zurich's iconic walk-up grill at Bellevue (Theaterstrasse 22) since 1963: a fat veal bratwurst with a crusty Bürli roll and the famous mustard. Fast, cheap, standing. ⚠️ Verify 2026 hours (usually open late daily).",
+      "price": "CHF 15–25/2",
+      "when": "11/23",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Zurich",
+      "name": "Confiserie Sprüngli",
+      "tier": "LUXEMBURGERLI",
+      "why": "<b>Luxemburgerli</b> — the featherlight mini-macarons that are Zurich's signature treat, at the Paradeplatz flagship (since 1836). Also hot chocolate and a lunch counter upstairs. ⚠️ Verify 2026 hours (closed Sun).",
+      "price": "CHF 10–25",
+      "when": "11/23",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Lake Como",
+      "name": "Trattoria San Giacomo (Bellagio)",
+      "tier": "PIZZOCCHERI",
+      "why": "<b>Pizzoccheri & lake perch</b> — casual Bellagio trattoria on the stepped Salita Serbelloni for Valtellina pizzoccheri (buckwheat pasta with cabbage, potato, cheese) and lake-perch risotto. ⚠️ Verify 2026 hours (some Bellagio spots shut in Nov).",
+      "price": "€30–50/2",
+      "when": "11/17 lunch",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Lake Como",
+      "name": "Salumeria Luigi Gandola (Bellagio)",
+      "tier": "MISSOLTINO",
+      "why": "<b>Missoltino & local salumi</b> — historic Bellagio deli (Salita Carlo Grandi) for panini stuffed with Como-lake missoltino (sun-dried shad), Valtellina bresaola and local cheeses — a perfect casual lakeside lunch to-go. ⚠️ Verify 2026 hours.",
+      "price": "€8–15",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Venice",
+      "name": "Cantine Do Mori",
+      "tier": "CICCHETTI",
+      "why": "<b>Baccalà mantecato</b> — Venice's oldest bàcaro (since 1462, San Polo near Rialto): stand at the copper bar for whipped-cod cicchetti and francobolli mini-sandwiches with an ombra of wine. ⚠️ Verify 2026 hours (closed Sun).",
+      "price": "€12–20/2",
+      "when": "11/16 AM",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Venice",
+      "name": "Al Mercà",
+      "tier": "SPRITZ",
+      "why": "<b>Spritz & cicchetti</b> — tiny Rialto-market counter (Campo Bella Vienna) for a select spritz and €1–2 panini/polpette eaten standing on the campo. Classic Venetian ombra stop. ⚠️ Verify 2026 hours (closed Sun).",
+      "price": "€6–14/2",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Venice",
+      "name": "Osteria alla Vedova",
+      "tier": "POLPETTE",
+      "why": "<b>Polpette</b> — Cannaregio institution (Ca' d'Oro) famous for its fried meatballs (among the best in Venice) plus classic cicchetti; sit-down osteria too. Cash for the bar. ⚠️ Verify 2026 hours (closed Thu & Sun lunch).",
+      "price": "€20–40/2",
+      "when": "flex",
+      "booking": "walk-in",
+      "status": "walk_up"
     }
   ],
   "tickets": [
