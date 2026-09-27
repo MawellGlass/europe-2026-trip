@@ -608,25 +608,16 @@
     {
       "date": "2026-11-12",
       "dow": "Thu",
-      "city": "Nice — Antibes / local + Le Plongeoir",
+      "city": "Nice — local morning + Le Plongeoir",
       "travel": false,
       "cities": [
         "Nice"
       ],
       "items": [
         {
-          "time": "morning",
-          "text": "DECISION (reshaped): the noon Le Plongeoir booking now anchors 11/12 in Nice, so a far Menton/Mirazur day no longer fits. Options: (a) quick Antibes morning (Picasso + Marché Provençal, ~25 min each way) then back for lunch, or (b) relaxed Nice morning (MAMAC/Chéret, Old Town).",
-          "status": "tentative"
-        },
-        {
-          "time": "~10:30a",
-          "text": "If you take the relaxed Nice morning: graze through <b>Cours Saleya</b> (Thu = flower + produce market) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière — no need to sit down.",
-          "status": "tentative"
-        },
-        {
           "time": "12:00p",
-          "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests. Scenic seaside on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
+          "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests",
+          "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
           "status": "booked",
           "lat": 43.6919112,
           "lng": 7.2908183,
@@ -634,7 +625,8 @@
         },
         {
           "time": "2:30p",
-          "text": "★ Musée Marc Chagall (Cimiez) — right after Le Plongeoir lunch. Nov hours 14:30–17:00 (closed Tuesdays, so this is the only clean slot); ~10–12€ at the door, ~15 min from Le Plongeoir",
+          "text": "★ Musée Marc Chagall (Cimiez)",
+          "detail": "Right after Le Plongeoir lunch. Nov hours 14:30–17:00 (closed Tuesdays, so this is the only clean slot); ~10–12€ at the door, ~15 min from Le Plongeoir.",
           "status": "",
           "lat": 43.71222,
           "lng": 7.27611,
@@ -642,12 +634,34 @@
         },
         {
           "time": "evening",
-          "text": "Dinner in Vieux Nice — leaning Niçois specialties (daube niçoise, petits farcis, stockfish). Pick your spot below; if peckish earlier, catch socca at a Cours Saleya / Chez Pipo stand.",
+          "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
+          "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
           "status": "tentative"
         }
       ],
       "sleepCity": "Nice",
       "picks": [
+        {
+          "id": "nov12-morning",
+          "label": "Thu morning before Le Plongeoir — pick one (or decide day-of)",
+          "selected": null,
+          "options": [
+            {
+              "id": "antibes",
+              "name": "Antibes half-day",
+              "booked": false,
+              "booking": "~25 min each way by train (Nice-Ville → Antibes), ~2–3 trains/hr. No booking needed.",
+              "detail": "Early train to Antibes: <b>Musée Picasso</b> in the Château Grimaldi on the ramparts, then graze the <b>Marché Provençal</b> (covered market, Cours Masséna) — Provençal produce, cheeses, socca and a slice of pissaladière on the go. Back in Nice by ~11:30 for the noon Le Plongeoir booking."
+            },
+            {
+              "id": "relaxed",
+              "name": "Relaxed Nice / Villefranche",
+              "booked": false,
+              "booking": "No booking. Villefranche-sur-Mer is ~10 min by train if you want it — skip freely to just relax.",
+              "detail": "Slow start. Optionally hop to <b>Villefranche-sur-Mer</b> (~10 min by rail) for the pastel harbor and old town, or stay in Nice and graze <b>Cours Saleya</b> (Thu = flower + produce market) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière, no sit-down needed. Fully cancelable if you'd rather do nothing before lunch."
+            }
+          ]
+        },
         {
           "id": "nov12-dinner",
           "label": "Vieux Nice dinner — pick one (all phone-only / walk-in, verify before relying)",
