@@ -61,7 +61,7 @@
    "checkout": "2026-11-18",
    "nights": 5,
    "role": "Base city (+Venice loop)",
-   "blurb": "Venice overnight mid-block; Lake Como day trip. Hold room over Venice night."
+   "blurb": "Venice overnight mid-block; Lake Como day trip. Hold room over Venice night. Shopping: Quadrilatero della Moda (Montenapoleone), Galleria Vittorio Emanuele II, La Rinascente, Corso Buenos Aires; Como silk on the Monza/Como day."
   },
   {
    "city": "Venice",
@@ -91,7 +91,7 @@
    "checkout": "2026-11-26",
    "nights": 3,
    "role": "Final base",
-   "blurb": "Two full days: watches + Lindt, then your pick of Rhine Falls or a relaxed city day. 11/26 travel day."
+   "blurb": "Two full days: watches + Lindt, then your pick of Rhine Falls or a relaxed city day. 11/26 travel day. Shopping: Bahnhofstrasse (watches + Globus/Grieder), the Christmas markets, and the Freitag flagship in Zürich-West."
   },
   {
    "city": "Dublin",
@@ -302,13 +302,13 @@
    ],
    "items": [
     {
-     "time": "6:35p",
-     "text": "Depart PHL (BA)",
+     "time": "",
+     "text": "Overnight redeye to London",
      "status": "booked"
     },
     {
-     "time": "",
-     "text": "Overnight redeye to London",
+     "time": "6:35p",
+     "text": "Depart PHL (BA)",
      "status": "booked"
     }
    ]
@@ -456,7 +456,7 @@
    "items": [
     {
      "time": "11:30a",
-     "text": "🛍 Checkout (11a) → quick browse Rue Saint-Ferréol pedestrian shops (open Mon ~10a — the retail that's shut on Sun) en route to Gare St-Charles",
+     "text": "🛍 Checkout (11a) → browse Rue Saint-Ferréol pedestrian shops (open Mon ~10a — the retail that's shut Sun), swing by Maison Empereur (France's oldest household/hardware emporium, est. 1827) and the Marché des Capucins food market in Noailles, en route to Gare St-Charles",
      "status": "confirmed",
      "lat": 43.2947867,
      "lng": 5.3775943,
@@ -520,6 +520,14 @@
      "place": "Vieux Nice lunch"
     },
     {
+     "time": "2:00p",
+     "text": "🛍 Vieux Nice + new-town shopping — Alziari olive oil and Maison Auer / Confiserie Florian (candied fruits) in the old town, then Avenue Jean Médecin (Nice Étoile mall, Galeries Lafayette) and the pedestrian Rue Masséna",
+     "status": "optional",
+     "lat": 43.6969,
+     "lng": 7.2686,
+     "place": "Rue Masséna shopping"
+    },
+    {
      "time": "4:30p",
      "text": "★ Castle Hill (Colline du Château) for SUNSET (~5:10p) — free hilltop park (open to 6pm), panorama over the Bay of Angels; back down in time for Le Sens 8pm",
      "status": "",
@@ -554,7 +562,7 @@
     },
     {
      "time": "9:30a",
-     "text": "Èze cliff-top medieval village (morning)",
+     "text": "Èze cliff-top medieval village (morning) — stop at the Fragonard perfume factory (Usine Laboratoire) for a scent-shopping browse",
      "status": "confirmed",
      "lat": 43.7302391,
      "lng": 7.3613607,
@@ -585,17 +593,25 @@
      "place": "Casino de Monte-Carlo"
     },
     {
-     "time": "3:00p",
-     "text": "Casino Café de Paris (across the square) — slots + casual games, ~1hr gambling",
-     "status": "confirmed"
-    },
-    {
      "time": "2:30p",
      "text": "Optional: Prince's Palace / Oceanographic Museum",
      "status": "tentative",
      "lat": 43.7306805,
      "lng": 7.4255127,
      "place": "Oceanographic Museum"
+    },
+    {
+     "time": "3:00p",
+     "text": "Casino Café de Paris (across the square) — slots + casual games, ~1hr gambling",
+     "status": "confirmed"
+    },
+    {
+     "time": "4:00p",
+     "text": "🛍 Optional: Monaco's Carré d'Or luxury quarter + One Monte-Carlo boutiques (the Golden Circle by the Casino) for a pre-dinner window-shop",
+     "status": "optional",
+     "lat": 43.7398,
+     "lng": 7.4278,
+     "place": "Carré d'Or"
     },
     {
      "time": "7:30p",
@@ -615,6 +631,12 @@
    ],
    "items": [
     {
+     "time": "evening",
+     "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
+     "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
+     "status": "tentative"
+    },
+    {
      "time": "12:00p",
      "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests",
      "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
@@ -631,12 +653,6 @@
      "lat": 43.71222,
      "lng": 7.27611,
      "place": "Marc Chagall Museum"
-    },
-    {
-     "time": "evening",
-     "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
-     "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
-     "status": "tentative"
     }
    ],
    "sleepCity": "Nice",
@@ -725,6 +741,14 @@
      "status": "book"
     },
     {
+     "time": "10:15a",
+     "text": "🛍 Optional bridge — Ventimiglia FRIDAY market: one of the Riviera's biggest street markets sprawls by the station on Fridays (11/13 IS a Friday) — Italian leather, linens, food. If you build a longer layover into the Ventimiglia train change, browse before the onward train. ⚠️ Verify your Milan connection allows the extra time",
+     "status": "optional",
+     "lat": 43.7907,
+     "lng": 7.6087,
+     "place": "Ventimiglia Friday market"
+    },
+    {
      "time": "3:30p",
      "text": "Check in 43 Station Hotel",
      "status": "booked",
@@ -754,7 +778,7 @@
    "items": [
     {
      "time": "9:30a",
-     "text": "Duomo + rooftop, Galleria Vittorio Emanuele II",
+     "text": "Duomo + rooftop, Galleria Vittorio Emanuele II — this IS prime shopping: the Galleria Vittorio Emanuele II (Prada's original 1913 store, LV, Gucci) plus La Rinascente behind the Duomo (top-floor food hall + Duomo-view terrace)",
      "status": "tentative",
      "lat": 45.4641669,
      "lng": 9.1916121,
@@ -775,6 +799,14 @@
      "lat": 45.4703009,
      "lng": 9.1780912,
      "place": "Sforza Castle / Brera"
+    },
+    {
+     "time": "4:30p",
+     "text": "🛍 Quadrilatero della Moda — Milan's luxury grid: Via Montenapoleone, Via della Spiga, Via Sant'Andrea (steps from Brera). Mid-range: Corso Buenos Aires (one of Europe's longest shopping streets) or Via Torino; design lovers: 10 Corso Como",
+     "status": "optional",
+     "lat": 45.4686,
+     "lng": 9.1957,
+     "place": "Quadrilatero della Moda"
     },
     {
      "time": "7:45p",
@@ -809,11 +841,19 @@
     },
     {
      "time": "3:00p",
-     "text": "Evening in Venice",
+     "text": "Arrive Venezia Santa Lucia — glide in the scenic way: vaporetto Line 1 down the Grand Canal (Ferrovia → San Marco), the classic entrance past the palazzi. Drop bags, then evening in Venice",
      "status": "tentative",
      "lat": 45.4342571,
      "lng": 12.3386717,
      "place": "St. Mark's Square"
+    },
+    {
+     "time": "4:15p",
+     "text": "🚤 ★ Anniversary gondola ride — through the quiet back canals off San Marco (~30 min; sunset ~4:50p). Calm and seated — comfortable for Nicole. Agree price & route before you step in",
+     "status": "optional",
+     "lat": 45.434,
+     "lng": 12.339,
+     "place": "Gondola — San Marco back canals"
     },
     {
      "time": "5:00p",
@@ -846,7 +886,7 @@
    "items": [
     {
      "time": "7:30a",
-     "text": "Dawn canals, St. Mark's, Rialto",
+     "text": "OPTIONAL early-riser: dawn canals, St. Mark's & Rialto with the city to yourselves — or sleep in and start at Doge's (9a). Your call day-of",
      "status": "tentative",
      "lat": 45.4380688,
      "lng": 12.3356548,
@@ -867,6 +907,14 @@
      "lat": 45.4388686,
      "lng": 12.334052,
      "place": "All'Arco cicchetti"
+    },
+    {
+     "time": "11:00a",
+     "text": "🛍 Rialto browse — Murano glass showrooms, carnival masks, Il Papiro marbled paper, and T Fondaco dei Tedeschi (luxury dept store by the bridge with a FREE Grand-Canal rooftop — book the slot). Note: the Rialto Pescheria fish market is closed Mondays",
+     "status": "optional",
+     "lat": 45.438,
+     "lng": 12.3358,
+     "place": "Rialto / T Fondaco"
     },
     {
      "time": "2:00p",
@@ -934,6 +982,14 @@
      "lat": 45.8081,
      "lng": 9.0852,
      "place": "Como"
+    },
+    {
+     "time": "4:00p",
+     "text": "🛍 Como silk — Europe's silk capital: A. Picci and Mantero scarves/ties in the centro, or the La Tessitura (Ratti) outlet for mill-price silk. The perfect Milan-day souvenir",
+     "status": "optional",
+     "lat": 45.8103,
+     "lng": 9.0832,
+     "place": "Como silk shops"
     },
     {
      "time": "5:00p",
@@ -1009,7 +1065,7 @@
     },
     {
      "time": "11:00a",
-     "text": "Strasbourg: Grande Île, cathedral, Petite France",
+     "text": "Strasbourg: Grande Île, cathedral, Petite France — shop the Grande Île: Rue des Grandes Arcades and Place Kléber (Galeries Lafayette). ⚠️ The famous Christkindelsmärik Christmas market opens ~Nov 26, just after your visit — verify closer to the date in case it starts early",
      "status": "confirmed",
      "lat": 48.5818885,
      "lng": 7.7510521,
@@ -1058,7 +1114,7 @@
     },
     {
      "time": "11:00a",
-     "text": "Freiburg Altstadt: Münster cathedral + Münstermarkt (open Fri), the Bächle canals, Schwabentor",
+     "text": "Freiburg Altstadt: Münster cathedral + Münstermarkt (open Fri), the Bächle canals, Schwabentor — plus the Kaiser-Joseph-Strasse pedestrian shopping run. Freiburg's Weihnachtsmarkt (Christmas market) may just be opening around now (~Nov 20) — verify closer to the date",
      "status": "confirmed",
      "lat": 47.9955486,
      "lng": 7.8529213,
@@ -1107,7 +1163,7 @@
     },
     {
      "time": "11:00a",
-     "text": "WATCH SHOPPING: Schwanenplatz (Bucherer, Gübelin, Embassy)",
+     "text": "WATCH SHOPPING: Schwanenplatz (Bucherer, Gübelin, Embassy) — and the Old Town around Weinmarkt for Victorinox (Swiss Army knives), Casagrande souvenirs and chocolate",
      "status": "confirmed",
      "lat": 47.0533514,
      "lng": 8.3086325,
@@ -1237,7 +1293,7 @@
    "items": [
     {
      "time": "10:00a",
-     "text": "Bahnhofstrasse WATCH SHOPPING (Beyer + museum, Bucherer, Gübelin, Les Ambassadeurs)",
+     "text": "Bahnhofstrasse WATCH SHOPPING (Beyer + museum, Bucherer, Gübelin, Les Ambassadeurs) — plus Globus & Grieder department stores and Sprüngli / Luxemburgerli macarons at Paradeplatz (Jelmoli, the historic dept store, is winding down — verify it's still open)",
      "status": "tentative",
      "lat": 47.3757655,
      "lng": 8.5391706,
@@ -1260,6 +1316,14 @@
      "lat": 47.3186,
      "lng": 8.5546,
      "place": "Lindt Home of Chocolate"
+    },
+    {
+     "time": "5:00p",
+     "text": "🎄🛍 Zurich Christmas markets — the Wienachtsdorf at Sechseläutenplatz (lakeside), the Christkindlimarkt inside the Hauptbahnhof, and the Singing Christmas Tree at Werdmühleplatz. These typically open ~Nov 20–24, so you should catch the opening — verify closer to the date",
+     "status": "optional",
+     "lat": 47.3667,
+     "lng": 8.5456,
+     "place": "Zurich Christmas markets"
     }
    ],
    "sleepCity": "Zurich"
@@ -1306,7 +1370,7 @@
        "mapLabel": "Fraumünster / Old Town",
        "booked": false,
        "booking": "No booking needed. Fraumünster ~CHF 5 (Chagall windows). Markthalle im Viadukt open daily. A lake cruise runs a reduced winter timetable — verify on the day.",
-       "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — the covered market hall under the arches: cheeses & charcuterie for Max, fresh produce, fish and a bakery for Nicole. Afternoon (optional): a short <b>ZSG lake cruise</b> from Bürkliplatz, or the gentle train to <b>Rapperswil</b>, the 'town of roses' with its lakeside castle. Art + market + lake, all at an easy pace."
+       "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — the covered market hall under the arches: cheeses & charcuterie for Max, fresh produce, fish and a bakery for Nicole. Afternoon (optional): a short <b>ZSG lake cruise</b> from Bürkliplatz, or the gentle train to <b>Rapperswil</b>, the 'town of roses' with its lakeside castle. Art + market + lake, all at an easy pace. If you'd rather make this a <b>shopping day</b>, spend it on Bahnhofstrasse, the Christmas markets, and the <b>Freitag flagship</b> (the tower of stacked shipping containers in Zürich-West)."
       }
      ]
     }
@@ -1334,7 +1398,7 @@
     },
     {
      "time": "2:00p",
-     "text": "Temple Bar, Trinity College, a pint of Guinness",
+     "text": "Temple Bar, Trinity College, a pint of Guinness — with Grafton Street + Brown Thomas right by Trinity if you want a last shopping stroll",
      "status": "tentative",
      "lat": 53.3453299,
      "lng": -6.2582726,
@@ -1361,13 +1425,13 @@
    ],
    "items": [
     {
-     "time": "11:30a",
-     "text": "Fly DUB → PHL (arr 2:05p)",
+     "time": "",
+     "text": "US customs cleared in Dublin — arrive Philly as domestic",
      "status": "booked"
     },
     {
-     "time": "",
-     "text": "US customs cleared in Dublin — arrive Philly as domestic",
+     "time": "11:30a",
+     "text": "Fly DUB → PHL (arr 2:05p)",
      "status": "booked"
     }
    ]
