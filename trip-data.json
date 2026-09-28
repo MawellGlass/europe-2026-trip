@@ -91,7 +91,7 @@
    "checkout": "2026-11-26",
    "nights": 3,
    "role": "Final base",
-   "blurb": "Two full days; watches + Rhine Falls. 11/26 travel day."
+   "blurb": "Two full days: watches + Lindt, then your pick of Rhine Falls or a relaxed city day. 11/26 travel day."
   },
   {
    "city": "Dublin",
@@ -1227,12 +1227,22 @@
      "place": "Bahnhofstrasse watches"
     },
     {
-     "time": "2:00p",
-     "text": "Old Town, Lindenhof, Lake Zurich",
+     "time": "12:30p",
+     "text": "Old Town, Lindenhof, Lake Zurich + lunch",
+     "detail": "Wander the Niederdorf/Old Town lanes and the Lindenhof terrace over the river, with lunch in town — Zürcher Geschnetzeltes (veal, cream & rösti) for Max; veg/fish plates plus a Sprüngli or Läderach chocolate stop for Nicole.",
      "status": "tentative",
      "lat": 47.3729161,
      "lng": 8.5401756,
      "place": "Lindenhof / Old Town"
+    },
+    {
+     "time": "2:30p",
+     "text": "🍫 Lindt Home of Chocolate (Kilchberg)",
+     "detail": "World's largest chocolate fountain, self-guided museum, tasting & the flagship shop (Seestrasse 204, Kilchberg). ~12 min by S-Bahn (S8/S24) from Zurich HB, or a lake boat from Bürkliplatz in season. ⚠️ Timed-entry tickets can sell out — book ahead.",
+     "status": "book",
+     "lat": 47.3186,
+     "lng": 8.5546,
+     "place": "Lindt Home of Chocolate"
     }
    ],
    "sleepCity": "Zurich"
@@ -1240,35 +1250,43 @@
   {
    "date": "2026-11-25",
    "dow": "Wed",
-   "city": "Zurich — Rhine Falls",
+   "city": "Zurich — last full day (your pick)",
    "travel": false,
    "cities": [
     "Zurich"
    ],
    "items": [
     {
-     "time": "9:00a",
-     "text": "Schaffhausen (~40m); Rhine Falls — Europe's largest waterfall (half-day)",
-     "status": "tentative",
-     "lat": 47.6783615,
-     "lng": 8.6148706,
-     "place": "Rhine Falls"
-    },
-    {
-     "time": "11:30a",
-     "text": "⌚ IWC Schaffhausen — watch museum at the manufacture HQ (Baumgartenstrasse 15); full manufacture tour by advance arrangement (limited — enquire ahead)",
-     "status": "tentative",
-     "lat": 47.6942,
-     "lng": 8.6364,
-     "place": "IWC museum"
-    },
-    {
-     "time": "2:00p",
-     "text": "Optional: Appenzell or more Zurich",
+     "time": "morning",
+     "text": "Last full day in Zurich — choose your day below",
+     "detail": "Two shapes for the final full day: a Rhine Falls day trip, or a relaxed Zurich day (Chagall windows, market grazing, optional lake). Pick one now or decide day-of.",
      "status": "tentative"
     }
    ],
-   "sleepCity": "Zurich"
+   "sleepCity": "Zurich",
+   "picks": [
+    {
+     "id": "nov25-plan",
+     "label": "Nov 25 — pick your last full day (or decide day-of)",
+     "selected": null,
+     "options": [
+      {
+       "id": "rhinefalls",
+       "name": "Rhine Falls day trip",
+       "booked": false,
+       "booking": "Train Zurich HB → Schaffhausen ~40 min (pay-on-day, SBB). IWC museum is walk-in; a full manufacture tour needs advance arrangement.",
+       "detail": "~9:00 train to <b>Schaffhausen</b> for the <b>Rhine Falls</b> — Europe's largest waterfall, with a boat out to the central rock in season (half-day). ~11:30 <b>IWC Schaffhausen</b> watch museum at the manufacture HQ (Baumgartenstrasse 15). Afternoon: linger in Schaffhausen's Altstadt or head back for more Zurich. A big-nature finale — easy walking, fine at this stage."
+      },
+      {
+       "id": "relaxedzurich",
+       "name": "Relaxed Zurich day",
+       "booked": false,
+       "booking": "No booking needed. Fraumünster ~CHF 5 (Chagall windows). Markthalle im Viadukt open daily. A lake cruise runs a reduced winter timetable — verify on the day.",
+       "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — the covered market hall under the arches: cheeses & charcuterie for Max, fresh produce, fish and a bakery for Nicole. Afternoon (optional): a short <b>ZSG lake cruise</b> from Bürkliplatz, or the gentle train to <b>Rapperswil</b>, the 'town of roses' with its lakeside castle. Art + market + lake, all at an easy pace."
+      }
+     ]
+    }
+   ]
   },
   {
    "date": "2026-11-26",
@@ -1897,6 +1915,13 @@
    "provider": "fcb.ch / Ticketcorner",
    "status": "watch",
    "notes": "⏳ DON'T BUY YET. Exact date/kickoff (our Sun 16:30 vs Luzern is a placeholder) isn't officially locked this far out — Swiss Super League confirms fixtures ~5–6 wks before for TV. Single-match sale typically opens ~3–4 wks out. PLAN: mid-to-late Oct, confirm fixture on fcb.ch, then buy 2 SEATED tickets via Ticketcorner (fcb.ch → Tickets). Avoid the standing home end (Muttenzerkurve) — get main grandstand / neutral sector. FCB v Luzern rarely sells out, so waiting is low-risk."
+  },
+  {
+   "item": "🍫 Lindt Home of Chocolate — timed entry, Kilchberg",
+   "date": "11/24",
+   "provider": "lindt-home-of-chocolate.com",
+   "status": "to_book",
+   "notes": "Book a timed-entry slot online ahead (afternoon of 11/24). Popular weekends/holidays sell out; a weekday Tue is easier but still reserve. ~12 min S-Bahn (S8/S24) from Zurich HB to Kilchberg. Combined museum + tour tickets available; the shop & café are free to enter separately."
   }
  ],
  "budget": {
