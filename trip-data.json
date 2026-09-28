@@ -645,11 +645,14 @@
      "id": "nov12-morning",
      "label": "Thu morning before Le Plongeoir — pick one (or decide day-of)",
      "pos": -1,
-     "selected": null,
+     "selected": "antibes",
      "options": [
       {
        "id": "antibes",
        "name": "Antibes half-day",
+       "lat": 43.5808,
+       "lng": 7.1256,
+       "mapLabel": "Antibes (Musée Picasso)",
        "booked": false,
        "booking": "~25 min each way by train (Nice-Ville → Antibes), ~2–3 trains/hr. No booking needed.",
        "detail": "Early train to Antibes: <b>Musée Picasso</b> in the Château Grimaldi on the ramparts, then graze the <b>Marché Provençal</b> (covered market, Cours Masséna) — Provençal produce, cheeses, socca and a slice of pissaladière on the go. Back in Nice by ~11:30 for the noon Le Plongeoir booking."
@@ -657,6 +660,9 @@
       {
        "id": "relaxed",
        "name": "Relaxed Nice / Villefranche",
+       "lat": 43.7041,
+       "lng": 7.3116,
+       "mapLabel": "Villefranche-sur-Mer",
        "booked": false,
        "booking": "No booking. Villefranche-sur-Mer is ~10 min by train if you want it — skip freely to just relax.",
        "detail": "Slow start. Optionally hop to <b>Villefranche-sur-Mer</b> (~10 min by rail) for the pastel harbor and old town, or stay in Nice and graze <b>Cours Saleya</b> (Thu = flower + produce market) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière, no sit-down needed. Fully cancelable if you'd rather do nothing before lunch."
@@ -667,11 +673,14 @@
      "id": "nov12-dinner",
      "label": "Vieux Nice dinner — pick one (all phone-only / walk-in, verify before relying)",
      "pos": 2,
-     "selected": null,
+     "selected": "antoine",
      "options": [
       {
        "id": "antoine",
        "name": "Bistrot d'Antoine",
+       "lat": 43.6969,
+       "lng": 7.276,
+       "mapLabel": "Bistrot d'Antoine",
        "booked": false,
        "booking": "☎ +33 4 93 85 29 57 — call 2–4 days ahead (no online booking). ⚠️ Verify number/hours.",
        "detail": "Bustling Vieux Nice bistrot (27 Rue de la Préfecture). Blackboard Niçois classics — daube, petits farcis, grilled catch of the day. Great value, always packed; book ahead or go early."
@@ -679,6 +688,9 @@
       {
        "id": "palmyre",
        "name": "Chez Palmyre",
+       "lat": 43.6975,
+       "lng": 7.2782,
+       "mapLabel": "Chez Palmyre",
        "booked": false,
        "booking": "☎ +33 4 93 85 72 32 — books ~a week out, cash only. ⚠️ Verify number/hours.",
        "detail": "Tiny historic institution (5 Rue Droite) with a fixed ~€20 home-style Niçois menu. Intimate, cash only, reserve early — the classic 'ate like a local' pick."
@@ -686,6 +698,9 @@
       {
        "id": "merenda",
        "name": "La Merenda",
+       "lat": 43.6963,
+       "lng": 7.2743,
+       "mapLabel": "La Merenda",
        "booked": false,
        "booking": "Walk-in only — NO phone, cash only, arrive right at opening. ⚠️ Verify hours.",
        "detail": "Cult micro-spot (4 Rue Raoul Bosio) from an ex-Michelin chef — stockfish, tripes, pissaladière, farcis. No reservations, no cards, ~a dozen seats."
@@ -1271,11 +1286,14 @@
      "id": "nov25-plan",
      "label": "Nov 25 — pick your last full day (or decide day-of)",
      "pos": 0,
-     "selected": null,
+     "selected": "rhinefalls",
      "options": [
       {
        "id": "rhinefalls",
        "name": "Rhine Falls day trip",
+       "lat": 47.6779,
+       "lng": 8.6156,
+       "mapLabel": "Rhine Falls (Schaffhausen)",
        "booked": false,
        "booking": "Train Zurich HB → Schaffhausen ~40 min (pay-on-day, SBB). IWC museum is walk-in; a full manufacture tour needs advance arrangement.",
        "detail": "~9:00 train to <b>Schaffhausen</b> for the <b>Rhine Falls</b> — Europe's largest waterfall, with a boat out to the central rock in season (half-day). ~11:30 <b>IWC Schaffhausen</b> watch museum at the manufacture HQ (Baumgartenstrasse 15). Afternoon: linger in Schaffhausen's Altstadt or head back for more Zurich. A big-nature finale — easy walking, fine at this stage."
@@ -1283,6 +1301,9 @@
       {
        "id": "relaxedzurich",
        "name": "Relaxed Zurich day",
+       "lat": 47.3699,
+       "lng": 8.5413,
+       "mapLabel": "Fraumünster / Old Town",
        "booked": false,
        "booking": "No booking needed. Fraumünster ~CHF 5 (Chagall windows). Markthalle im Viadukt open daily. A lake cruise runs a reduced winter timetable — verify on the day.",
        "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — the covered market hall under the arches: cheeses & charcuterie for Max, fresh produce, fish and a bakery for Nicole. Afternoon (optional): a short <b>ZSG lake cruise</b> from Bürkliplatz, or the gentle train to <b>Rapperswil</b>, the 'town of roses' with its lakeside castle. Art + market + lake, all at an easy pace."
