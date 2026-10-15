@@ -51,7 +51,7 @@
    "checkout": "2026-11-11",
    "nights": 0,
    "role": "Day trip from Nice",
-   "blurb": "Tue 11/11 — ~25min train from Nice. Monaco: Casino, Prince's Palace, Oceanographic Museum; Èze cliff-top medieval village en route. Lunch: Bar & Bœuf."
+   "blurb": "Wed 11/11 — ~25min train from Nice. Èze cliff-top village in the morning, then Monaco built around the F1 circuit: Casino Square, Fairmont Hairpin, tunnel/harbor walk, and a scenic lunch reservation target with a track/broadcast memory angle."
   },
   {
    "city": "Milan",
@@ -61,7 +61,7 @@
    "checkout": "2026-11-18",
    "nights": 5,
    "role": "Base city (+Venice loop)",
-   "blurb": "Venice overnight mid-block; Lake Como day trip. Hold room over Venice night. Shopping: Quadrilatero della Moda (Montenapoleone), Galleria Vittorio Emanuele II, La Rinascente, Corso Buenos Aires; Como silk on the Monza/Como day."
+   "blurb": "Venice overnight mid-block; Monza + Como day trip. Hold room over Venice night. Duplicate Milan hold is canceled; 43 Station is the Milan base. Shopping: Quadrilatero della Moda (Montenapoleone), Galleria Vittorio Emanuele II, La Rinascente, Corso Buenos Aires; Como silk on the Monza/Como day."
   },
   {
    "city": "Venice",
@@ -81,7 +81,7 @@
    "checkout": "2026-11-23",
    "nights": 5,
    "role": "Tri-border hub",
-   "blurb": "Four day-trips: Strasbourg, Germany, Lucerne, Basel city."
+   "blurb": "Four overplanned, skippable days: Strasbourg/Colmar, Freiburg/Black Forest, Lucerne + weather-dependent mountain, and Basel city/Jewish history/football."
   },
   {
    "city": "Zurich",
@@ -91,7 +91,7 @@
    "checkout": "2026-11-26",
    "nights": 3,
    "role": "Final base",
-   "blurb": "Two full days: watches + Lindt, then your pick of Rhine Falls or a relaxed city day. 11/26 travel day. Shopping: Bahnhofstrasse (watches + Globus/Grieder), the Christmas markets, and the Freitag flagship in Zürich-West."
+   "blurb": "Two full days: watches + Lindt + Christmas markets on 11/24, then Rhine Falls or a relaxed Zurich/market day on 11/25. 11/26 travel day. Shopping: Bahnhofstrasse, Zurich HB/Sechseläutenplatz Christmas markets, and Freitag flagship in Zürich-West."
   },
   {
    "city": "Dublin",
@@ -155,12 +155,12 @@
    "city": "Milan",
    "dates": "11/13–11/18",
    "nights": 5,
-   "status": "action",
+   "status": "booked",
    "name": "43 Station Hotel",
    "conf": "ZO-AX1042-86594",
    "address": "Via Fabio Filzi 43, Milan 20124 · ☎ +39 02 2217 9900",
    "price": "€726.99 total (5n · due at property)",
-   "notes": "⚠️ REVIEW MILAN IN TOTAL — Amex shows a 2nd overlapping Milan booking (11/13–16, 3n). One is redundant; decide which to keep and cancel the other. This 5n stay holds the 11/15 Venice night for the big bags. Hotel conf 10848. Booked via Amex Travel.",
+   "notes": "Milan base confirmed; duplicate overlapping 11/13–16 Milan hold was canceled. This 5n stay intentionally holds the 11/15 Venice night for the big bags. Hotel conf 10848. Booked via Amex Travel.",
    "lat": 45.4878692,
    "lng": 9.2028501
   },
@@ -570,11 +570,11 @@
     },
     {
      "time": "12:00p",
-     "text": "Lunch/coffee: Café de Paris Monte-Carlo — on the F1 circuit, Casino Square (you'll spot it on the broadcast)",
-     "status": "confirmed",
+     "text": "Book scenic F1 lunch: target Fairmont Monte Carlo / hairpin-side terrace if open for lunch (the famous Fairmont Hairpin you see on TV); backup Café de Paris Monte-Carlo on Casino Square for the classic broadcast-memory setting. Ask for terrace/window if available.",
+     "status": "to_book",
      "lat": 43.7395874,
      "lng": 7.4278595,
-     "place": "Café de Paris Monte-Carlo"
+     "place": "Fairmont Hairpin / Café de Paris Monte-Carlo"
     },
     {
      "time": "1:00p",
@@ -647,9 +647,9 @@
     },
     {
      "time": "2:30p",
-     "text": "★ Musée Marc Chagall (Cimiez)",
-     "detail": "Right after Le Plongeoir lunch. Nov hours 14:30–17:00 (closed Tuesdays, so this is the only clean slot); ~10–12€ at the door, ~15 min from Le Plongeoir.",
-     "status": "",
+     "text": "★ Musée Marc Chagall (Cimiez) — book e-ticket if simple; otherwise buy at door",
+     "detail": "Right after Le Plongeoir lunch. This is a priority because it is one of Nicole's list items and fits cleanly after lunch. Action: check official ticketing; if a normal admission e-ticket is available, buy it now to remove friction. If timed tickets are not required, keep it as a firm plan and buy at door.",
+     "status": "to_book",
      "lat": 43.71222,
      "lng": 7.27611,
      "place": "Marc Chagall Museum"
@@ -786,15 +786,15 @@
     },
     {
      "time": "12:00p",
-     "text": "The Last Supper — timed ticket (must pre-book, sells out)",
-     "status": "book",
+     "text": "OPTIONAL: The Last Supper — only book if a convenient timed ticket appears; otherwise skip and make this a Milan walking/shopping/local-food day",
+     "status": "optional",
      "lat": 45.4667149,
      "lng": 9.1696197,
      "place": "The Last Supper"
     },
     {
      "time": "3:00p",
-     "text": "Sforza Castle / Brera",
+     "text": "Sforza Castle → Brera wander — historic Milan without appointment pressure: castle courtyards, Parco Sempione edge, Brera lanes/galleries, espresso or aperitivo stop",
      "status": "tentative",
      "lat": 45.4703009,
      "lng": 9.1780912,
@@ -802,7 +802,7 @@
     },
     {
      "time": "4:30p",
-     "text": "🛍 Quadrilatero della Moda — Milan's luxury grid: Via Montenapoleone, Via della Spiga, Via Sant'Andrea (steps from Brera). Mid-range: Corso Buenos Aires (one of Europe's longest shopping streets) or Via Torino; design lovers: 10 Corso Como",
+     "text": "🛍 Quadrilatero della Moda + snack crawl — Via Montenapoleone, Via della Spiga, Via Sant'Andrea; add Marchesi 1824, Peck, Luini panzerotti, Camparino in Galleria, or La Rinascente food hall/terrace depending on appetite",
      "status": "optional",
      "lat": 45.4686,
      "lng": 9.1957,
@@ -1065,7 +1065,7 @@
     },
     {
      "time": "11:00a",
-     "text": "Strasbourg: Grande Île, cathedral, Petite France — shop the Grande Île: Rue des Grandes Arcades and Place Kléber (Galeries Lafayette). ⚠️ The famous Christkindelsmärik Christmas market opens ~Nov 26, just after your visit — verify closer to the date in case it starts early",
+     "text": "Strasbourg overplan: Grande Île loop, Notre-Dame Cathedral exterior/interior, astronomical-clock window if timing works, Petite France canals, Barrage Vauban view, and shopping on Rue des Grandes Arcades / Place Kléber / Galeries Lafayette. Christmas market likely opens after this date — verify closer, but don't depend on it.",
      "status": "confirmed",
      "lat": 48.5818885,
      "lng": 7.7510521,
@@ -1081,7 +1081,7 @@
     },
     {
      "time": "3:30p",
-     "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — 'Little Venice' canals",
+     "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — Little Venice canals, half-timbered lanes, quick Alsatian-photo hit. Fully skippable if Strasbourg is enough.",
      "status": "tentative",
      "lat": 48.0777517,
      "lng": 7.3579641,
@@ -1114,7 +1114,7 @@
     },
     {
      "time": "11:00a",
-     "text": "Freiburg Altstadt: Münster cathedral + Münstermarkt (open Fri), the Bächle canals, Schwabentor — plus the Kaiser-Joseph-Strasse pedestrian shopping run. Freiburg's Weihnachtsmarkt (Christmas market) may just be opening around now (~Nov 20) — verify closer to the date",
+     "text": "Freiburg overplan: Münster cathedral + Münstermarkt (open Fri), Bächle canals, Historisches Kaufhaus, Schwabentor/Martinstor gates, Kaiser-Joseph-Strasse shopping, Markthalle grazing, and maybe the Weihnachtsmarkt if it has opened.",
      "status": "confirmed",
      "lat": 47.9955486,
      "lng": 7.8529213,
@@ -1122,12 +1122,12 @@
     },
     {
      "time": "1:00p",
-     "text": "Lunch: Badische Gasthaus + Baden wine",
+     "text": "Lunch: Badische Gasthaus / Hausbrauerei Feierling / Markthalle Freiburg — pick day-of based on weather and appetite; Baden wine or local beer.",
      "status": "confirmed"
     },
     {
      "time": "3:00p",
-     "text": "Optional: Schlossberg funicular for Black Forest views, or extend to Titisee lake",
+     "text": "Optional Black Forest layer: Schlossberg funicular/lookout for quick views; if weather is great and energy high, extend toward Titisee. If cold/rainy, stay in Freiburg cafes/shops.",
      "status": "tentative",
      "lat": 47.9971412,
      "lng": 7.8574612,
@@ -1179,7 +1179,7 @@
     },
     {
      "time": "2:30p",
-     "text": "Optional peak: Rigi or Pilatus (verify winter cable-car ops + weather)",
+     "text": "Weather call: Rigi default if clear (lake + mountain panorama, easier winter fallback); Pilatus only if operations line up. If clouds/rain, skip the peak and do Swiss Transport Museum or more Lucerne Old Town/watch browsing.",
      "status": "tentative",
      "lat": 46.9789,
      "lng": 8.2525,
@@ -1207,7 +1207,7 @@
    "items": [
     {
      "time": "10:00a",
-     "text": "Fondation Beyeler, Kunstmuseum, Rhine, old town (Sun = shops closed)",
+     "text": "Basel city overplan: pick one major art museum (Fondation Beyeler for the building/collection or Kunstmuseum for old masters/modern), then Old Town, Münster/Pfalz terrace, Rhine ferry, Rathaus/Marktplatz. Sun = shops closed, so make it museums/history.",
      "status": "tentative",
      "lat": 47.5539294,
      "lng": 7.5944513,
@@ -1215,7 +1215,7 @@
     },
     {
      "time": "2:00p",
-     "text": "★ Jewish Museum of Switzerland (Vesalgasse 5) — open daily 11:00–17:00, CHF 15. Oldest Jewish museum in the German-speaking world; Basel = city of the First Zionist Congress (1897)",
+     "text": "★ Jewish Museum of Switzerland (Vesalgasse 5) — priority stop; Basel = First Zionist Congress city. Also try to arrange a separate Great Synagogue interior visit ahead of time if weekday security/tour logistics work.",
      "status": "",
      "lat": 47.5576405,
      "lng": 7.583168,
@@ -1319,8 +1319,8 @@
     },
     {
      "time": "5:00p",
-     "text": "🎄🛍 Zurich Christmas markets — the Wienachtsdorf at Sechseläutenplatz (lakeside), the Christkindlimarkt inside the Hauptbahnhof, and the Singing Christmas Tree at Werdmühleplatz. These typically open ~Nov 20–24, so you should catch the opening — verify closer to the date",
-     "status": "optional",
+     "text": "🎄🛍 Zurich Christmas markets — PRIORITY evening: Wienachtsdorf at Sechseläutenplatz (lakeside), Christkindlimarkt inside the Hauptbahnhof, Werdmühleplatz/Singing Christmas Tree area, plus Bahnhofstrasse lights. Build the night around this if markets are open.",
+     "status": "confirmed",
      "lat": 47.3667,
      "lng": 8.5456,
      "place": "Zurich Christmas markets"
@@ -1340,7 +1340,7 @@
     {
      "time": "morning",
      "text": "Last full day in Zurich — choose your day below",
-     "detail": "Two shapes for the final full day: a Rhine Falls day trip, or a relaxed Zurich day (Chagall windows, market grazing, optional lake). Pick one now or decide day-of.",
+     "detail": "Two shapes for the final full day: Rhine Falls + Schaffhausen, or a relaxed Zurich day with Chagall windows, market grazing, Christmas-market redo, optional lake/Freitag. Pick now or decide day-of.",
      "status": "tentative"
     }
    ],
@@ -1370,7 +1370,7 @@
        "mapLabel": "Fraumünster / Old Town",
        "booked": false,
        "booking": "No booking needed. Fraumünster ~CHF 5 (Chagall windows). Markthalle im Viadukt open daily. A lake cruise runs a reduced winter timetable — verify on the day.",
-       "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — the covered market hall under the arches: cheeses & charcuterie for Max, fresh produce, fish and a bakery for Nicole. Afternoon (optional): a short <b>ZSG lake cruise</b> from Bürkliplatz, or the gentle train to <b>Rapperswil</b>, the 'town of roses' with its lakeside castle. Art + market + lake, all at an easy pace. If you'd rather make this a <b>shopping day</b>, spend it on Bahnhofstrasse, the Christmas markets, and the <b>Freitag flagship</b> (the tower of stacked shipping containers in Zürich-West)."
+       "detail": "Slow start, then <b>Fraumünster</b> for the <b>Chagall stained-glass windows</b> and <b>Grossmünster</b> just across the river. Lunch grazing at <b>Markthalle im Viadukt</b> — cheeses & charcuterie for Max, produce/fish/bakery for Nicole. Afternoon options: ZSG short lake cruise, Rapperswil, more Bahnhofstrasse, the <b>Freitag flagship</b>, and a second pass at Zurich Christmas markets/lights if the 24th was too short."
       }
      ]
     }
@@ -1994,8 +1994,43 @@
    "item": "The Last Supper — timed entry, Milan",
    "date": "11/14",
    "provider": "vivaticket",
+   "status": "optional",
+   "notes": "Reframed 10/15: only book if a convenient slot appears without warping the day. Otherwise skip and use 11/14 for Milan walking, historic sights, shopping, and snacks. Official channel remains cenacolovinciano.vivaticket.it if you decide to go."
+  },
+  {
+   "item": "Musée Marc Chagall — Nice",
+   "date": "11/12",
+   "provider": "musee-chagall.fr / official ticketing",
    "status": "to_book",
-   "notes": "🔴 BOOK NOW — official channel cenacolovinciano.vivaticket.it (sole online seller; max 5 tickets, reservation mandatory). Released in ~3-month batches, so Nov 2026 is almost certainly on sale now (late Sept). Sat 11/14 is open (closed Mondays only). Phone backup +39 02 92800360. Note: ticketing moved under Pinacoteca di Brera — page branding may differ."
+   "notes": "Priority Nicole-list item after Le Plongeoir. Buy an official e-ticket if normal admission tickets are available; if the site does not require timed booking, keep the 2:30pm plan and buy at the door."
+  },
+  {
+   "item": "Doge's Palace — Venice timed entry",
+   "date": "11/16",
+   "provider": "palazzoducale.visitmuve.it / official MUVE ticketing",
+   "status": "to_book",
+   "notes": "Book a morning timed-entry slot so Venice Monday is anchored before the 2pm train back to Milan. Keep dawn canals optional before it."
+  },
+  {
+   "item": "Binario 21 / Memoriale della Shoah — Milan",
+   "date": "11/17",
+   "provider": "memorialeshoah.it",
+   "status": "to_book",
+   "notes": "Book around 10:00am if available. It is next to Milano Centrale, so it launches the Monza/Como day without adding transit friction."
+  },
+  {
+   "item": "Monaco scenic F1 lunch",
+   "date": "11/11",
+   "provider": "Fairmont Monte Carlo / Café de Paris Monte-Carlo",
+   "status": "to_book",
+   "notes": "Target Fairmont Monte Carlo / hairpin-side terrace if open for lunch; backup Café de Paris on Casino Square. Request terrace/window. Goal is scenic lunch with an F1-broadcast memory, not generic fine dining."
+  },
+  {
+   "item": "Synagogue visit requests — Nice and Basel",
+   "date": "11/10 and Basel window",
+   "provider": "Grande Synagogue de Nice / Jewish Museum or Jewish Community of Basel",
+   "status": "arrange",
+   "notes": "Send requests now because ID/security/group-tour logistics may take time. Nice target is 11/10 late morning. Basel Great Synagogue is by arrangement; Jewish Museum on 11/22 is walk-in fallback/anchor."
   },
   {
    "item": "⚽ FC Basel vs FC Luzern — St. Jakob-Park",
@@ -2263,8 +2298,8 @@
   {
    "id": 3,
    "q": "Michelin appetite",
-   "options": "How many special nights; 3★ splurge vs 1★ bistro; lunch vs dinner",
-   "status": "open"
+   "options": "Reframed: no need to chase another 3★ unless a table falls into your lap. Joia is already the special Michelin/vegetarian night; the rest of the trip should emphasize local food, markets, scenic lunches, and classic taverns.",
+   "status": "closed"
   },
   {
    "id": 4,
@@ -2275,14 +2310,14 @@
   {
    "id": 5,
    "q": "Hotels",
-   "options": "✅ DONE: All 7 stays booked (Marseille, Nice, Milan, Venice, Basel, Zurich, Dublin) via Amex Travel. Only open item = cancel the redundant 2nd Milan booking.",
+   "options": "✅ DONE: All 7 stays booked (Marseille, Nice, Milan, Venice, Basel, Zurich, Dublin) via Amex Travel. Duplicate overlapping Milan booking has been canceled; 43 Station is the Milan base.",
    "status": "booked"
   },
   {
    "id": 6,
    "q": "Menton — Plan A (with) vs Plan B (without), Wed 11/11",
-   "options": "PLAN A (WITH Menton) — full Eastern-Riviera day: 9:00 train Nice→Èze cliff village; 11:00 onward to Menton (Old Town, Basilique St-Michel, Jean Cocteau museum, seafront) + lunch in Menton; ~2:00 back to Monaco (F1 circuit walk, Casino Square, afternoon Casino de Monte-Carlo + Café de Paris); 4:00 Oceanographic Museum / Prince's Palace; dinner in Monaco or Menton, or drift back to Nice whenever (trains run to ~midnight, so NO 5pm cutoff). Trade-off: busier day, earlier start; the one anchor is the ~2pm casino for the relaxed daytime dress code.  ||  PLAN B (WITHOUT Menton) — the current, calmer Monaco+Èze day: 9:00 Èze at leisure; 12:00 Café de Paris lunch; 1:00 walk the F1 circuit; 2:00 Casino de Monte-Carlo + slots; 2:30 optional Oceanographic/Prince's Palace; 7:30 dinner. Menton waits for a future trip.  ||  Note: Menton in November is quiet & charming (Lemon Festival is Feb, so nothing missed).",
-   "status": "open"
+   "options": "✅ DECIDED: skip Menton this trip. Keep the day focused on Èze + Monaco, with the booking energy going into a scenic F1 lunch and the track/casino walk. Menton/Mirazur becomes a future Riviera trip idea.",
+   "status": "closed"
   },
   {
    "id": 7,
@@ -2293,8 +2328,8 @@
   {
    "id": 8,
    "q": "Milan 11/17 — Monza (F1) vs Lake Como",
-   "options": "Football is off in Milan (international break), so here is the F1 alternative. OPTION A (F1 DAY): Binario 21 in the morning, then MONZA — Autodromo Nazionale Monza, the “Temple of Speed,” ~15-20 min by train from Milano Centrale. Guided track tour (grid, podium, old banked oval, pit lane; on foot or by car) + the adjacent Villa Reale di Monza royal villa & park. The F1 pilgrimage, closer to Milan than Como. Driving experiences exist but are season/weather-dependent — confirm nearer the time.  ||  OPTION B (KEEP LAKE COMO): the scenic day as planned — Varenna/Bellagio + Ristorante Silvio lunch; skip Monza. Both are day-trips north of Milan, so doing both well in one day is not realistic. Max leans Monza (big F1 fan); Como may suit a scenic/relaxed day better.",
-   "status": "open"
+   "options": "✅ DECIDED as an overplanned hybrid: Binario 21 → optional/skippable Monza F1 gawk/lunch → Como lakefront/silk/dinner → evening train back. If energy is low, skip Monza and go straight to Como; if weather is bad, keep Monza short.",
+   "status": "closed"
   }
  ],
  "choices": {
