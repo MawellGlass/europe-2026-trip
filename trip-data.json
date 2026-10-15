@@ -569,12 +569,12 @@
      "place": "Èze village"
     },
     {
-     "time": "12:00p",
-     "text": "Book scenic F1 lunch: target Fairmont Monte Carlo / hairpin-side terrace if open for lunch (the famous Fairmont Hairpin you see on TV); backup Café de Paris Monte-Carlo on Casino Square for the classic broadcast-memory setting. Ask for terrace/window if available.",
-     "status": "to_book",
+     "time": "12:30p",
+     "text": "Lunch: Café de Paris Monte-Carlo — BOOKED, 2 guests. Casino Square / F1-broadcast memory anchor before the track walk.",
+     "status": "booked",
      "lat": 43.7395874,
      "lng": 7.4278595,
-     "place": "Fairmont Hairpin / Café de Paris Monte-Carlo"
+     "place": "Café de Paris Monte-Carlo"
     },
     {
      "time": "1:00p",
@@ -1590,6 +1590,16 @@
   },
   {
    "city": "Monaco",
+   "name": "Café de Paris Monte-Carlo",
+   "tier": "BOOKED",
+   "why": "Casino Square brasserie and F1-broadcast memory anchor before walking the Monaco circuit.",
+   "price": "€100–180/2 before serious wine",
+   "when": "11/11 12:30pm",
+   "booking": "CONFIRMED",
+   "status": "booked"
+  },
+  {
+   "city": "Monaco",
    "name": "Bar & Bœuf",
    "tier": "1★",
    "why": "Sea bass + beef; port views",
@@ -2021,9 +2031,9 @@
   {
    "item": "Monaco scenic F1 lunch",
    "date": "11/11",
-   "provider": "Fairmont Monte Carlo / Café de Paris Monte-Carlo",
-   "status": "to_book",
-   "notes": "Target Fairmont Monte Carlo / hairpin-side terrace if open for lunch; backup Café de Paris on Casino Square. Request terrace/window. Goal is scenic lunch with an F1-broadcast memory, not generic fine dining."
+   "provider": "Café de Paris Monte-Carlo",
+   "status": "booked",
+   "notes": "Confirmed for 2 guests at 12:30pm. Booking reference intentionally omitted from the public repo; keep it in email/browser confirmation."
   },
   {
    "item": "Synagogue visit requests — Nice and Basel",
