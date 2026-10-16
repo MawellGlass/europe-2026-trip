@@ -1999,6 +1999,215 @@
    "status": "walk_up"
   }
  ],
+ "shopping": [
+  {
+   "city": "Marseille",
+   "target": "Savon de Marseille",
+   "place": "Savonnerie Marseillaise de la Licorne / Le Panier soap shops",
+   "when": "11/8 Le Panier",
+   "type": "good buy",
+   "priority": "medium",
+   "notes": "Look for real Marseille soap: vegetable-oil base, simple ingredients, cube/bar format. Good small gifts; avoid touristy perfumed novelty sets unless you love the scent."
+  },
+  {
+   "city": "Marseille",
+   "target": "Pastis",
+   "place": "La Maison du Pastis",
+   "when": "11/8 Vieux Port stroll",
+   "type": "good buy",
+   "priority": "high",
+   "notes": "Taste and buy a proper Marseille pastis. Choose one bottle you actually liked rather than generic airport-style brands."
+  },
+  {
+   "city": "Marseille",
+   "target": "Navettes",
+   "place": "Four des Navettes",
+   "when": "11/8 if near Abbaye St-Victor",
+   "type": "edible gift",
+   "priority": "low",
+   "notes": "Orange-blossom boat biscuits from Marseille's historic bakery. Nice if route/energy allows; do not detour hard."
+  },
+  {
+   "city": "Nice",
+   "target": "Olive oil / tapenade",
+   "place": "Alziari",
+   "when": "11/10 Vieux Nice shopping",
+   "type": "good buy",
+   "priority": "high",
+   "notes": "Classic Nice olive oil stop. Buy oil/tapenade if packaging works for travel."
+  },
+  {
+   "city": "Nice",
+   "target": "Candied fruit / chocolate",
+   "place": "Maison Auer",
+   "when": "11/10 Vieux Nice shopping",
+   "type": "good gift",
+   "priority": "medium",
+   "notes": "Historic confiserie. Good edible gift; candied fruit is the signature."
+  },
+  {
+   "city": "Èze",
+   "target": "Perfume",
+   "place": "Fragonard factory shop",
+   "when": "11/11 morning",
+   "type": "browse / buy if it lands",
+   "priority": "medium",
+   "notes": "Factory-shop browse. Worth buying only if a scent really lands for Nicole."
+  },
+  {
+   "city": "Milan",
+   "target": "18k Italian gold jewelry",
+   "place": "Eros Comin Jewels / small goldsmith-style shops",
+   "when": "11/14 Milan shopping day",
+   "type": "value-aware browse",
+   "priority": "high",
+   "notes": "Model: Shelly Gioielleria in Rome — new 18KT Made in Italy pieces, not estate/vintage, not luxury-house jewelry. Ask karat, exact gram weight, price, VAT refund, and calculate retail vs intrinsic value. 2x-3x intrinsic value can be acceptable for good craftsmanship; avoid 3x+ unless truly special."
+  },
+  {
+   "city": "Milan",
+   "target": "Spot-price benchmark",
+   "place": "Orovilla / Confinvest / Italpreziosi",
+   "when": "Before/while considering gold",
+   "type": "benchmark only",
+   "priority": "medium",
+   "notes": "Use investment-gold pricing to calibrate gold value; these are not the jewelry-shopping experience."
+  },
+  {
+   "city": "Milan",
+   "target": "Panettone / pastries",
+   "place": "Marchesi 1824",
+   "when": "11/14 snack crawl",
+   "type": "good buy",
+   "priority": "medium",
+   "notes": "November is panettone season. Good edible souvenir if packaging/travel timing works."
+  },
+  {
+   "city": "Milan",
+   "target": "Food gifts",
+   "place": "Peck",
+   "when": "11/14 snack crawl",
+   "type": "browse / buy",
+   "priority": "medium",
+   "notes": "High-quality Milan food hall; pricey but reliable for edible gifts or a browse."
+  },
+  {
+   "city": "Milan",
+   "target": "Design / fashion browse",
+   "place": "10 Corso Como",
+   "when": "11/14 or 11/16 if near Porta Nuova",
+   "type": "browse",
+   "priority": "low",
+   "notes": "More Milan design/editorial than luxury-logo shopping. Add only if nearby and energized."
+  },
+  {
+   "city": "Ventimiglia",
+   "target": "Friday market finds",
+   "place": "Ventimiglia Friday market",
+   "when": "11/13 train bridge",
+   "type": "optional browse",
+   "priority": "low",
+   "notes": "Italian leather, linens, food-market browse. Only if train timing supports a longer layover."
+  },
+  {
+   "city": "Venice",
+   "target": "Marbled paper / stationery",
+   "place": "Il Papiro",
+   "when": "11/16 Rialto browse",
+   "type": "good buy",
+   "priority": "medium",
+   "notes": "Good Venice paper/stationery target. Small, packable, easy gift."
+  },
+  {
+   "city": "Venice",
+   "target": "Murano glass",
+   "place": "Reputable glass showrooms only",
+   "when": "11/16 Rialto browse",
+   "type": "caution",
+   "priority": "medium",
+   "notes": "Buy only with clear provenance and no pressure. Skip cheap souvenir glass."
+  },
+  {
+   "city": "Como",
+   "target": "Silk scarf / tie",
+   "place": "A. Picci / Mantero-style silk shops",
+   "when": "11/17 Como silk stop",
+   "type": "strong buy target",
+   "priority": "high",
+   "notes": "Como is the best trip-specific buy moment. Look for silk scarf/tie with clear local provenance."
+  },
+  {
+   "city": "Strasbourg / Colmar",
+   "target": "Alsatian pottery / ornaments / pain d'épices",
+   "place": "Grande Île / Colmar lanes",
+   "when": "11/19",
+   "type": "browse / gift",
+   "priority": "medium",
+   "notes": "Good regional souvenir category. Colmar is especially postcard-y if you add the optional stop."
+  },
+  {
+   "city": "Freiburg",
+   "target": "Black Forest goods",
+   "place": "Münstermarkt / Old Town shops",
+   "when": "11/20",
+   "type": "browse / gift",
+   "priority": "medium",
+   "notes": "Look for small wood ornaments, local wine, market goods, not bulky cuckoo-clock purchases unless you really love one."
+  },
+  {
+   "city": "Basel",
+   "target": "Basler Läckerli",
+   "place": "Läckerli Huus",
+   "when": "11/22 Basel city",
+   "type": "good buy",
+   "priority": "high",
+   "notes": "Signature Basel sweet. Buy a tin; easy edible souvenir."
+  },
+  {
+   "city": "Lucerne",
+   "target": "Victorinox / watches / chocolate",
+   "place": "Old Town / Schwanenplatz",
+   "when": "11/21",
+   "type": "browse / buy",
+   "priority": "medium",
+   "notes": "Good place for Victorinox, watch browsing, and Swiss chocolate without waiting for Zurich."
+  },
+  {
+   "city": "Zurich",
+   "target": "Freitag bags",
+   "place": "Freitag flagship",
+   "when": "11/25 relaxed Zurich option",
+   "type": "Zurich-specific browse",
+   "priority": "medium",
+   "notes": "Very Zurich-specific design stop; add if choosing relaxed city day or if you want a non-watch, non-chocolate souvenir."
+  },
+  {
+   "city": "Zurich",
+   "target": "Luxemburgerli / chocolate",
+   "place": "Confiserie Sprüngli",
+   "when": "11/24 Bahnhofstrasse",
+   "type": "good buy",
+   "priority": "high",
+   "notes": "Classic Zurich edible gift. Best same-day or near end of trip."
+  },
+  {
+   "city": "Zurich",
+   "target": "Christmas market ornaments / gifts",
+   "place": "Wienachtsdorf / Christkindlimarkt / Werdmühleplatz",
+   "when": "11/24 evening",
+   "type": "good gift browse",
+   "priority": "high",
+   "notes": "Primary Zurich shopping moment if markets are open. Focus on ornaments and small packable gifts."
+  },
+  {
+   "city": "Dublin",
+   "target": "Irish wool / Aran knit",
+   "place": "Aran Sweater Market / Grafton Street-area wool shops",
+   "when": "11/26",
+   "type": "final souvenir",
+   "priority": "medium",
+   "notes": "Good final souvenir category: scarf, hat, sweater if sizing/packing works."
+  }
+ ],
  "tickets": [
   {
    "item": "The Last Supper — timed entry, Milan",
