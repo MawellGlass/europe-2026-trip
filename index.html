@@ -165,8 +165,15 @@ ul.evs{list-style:none;margin:8px 0 0;padding:0;}
 .ev.has-more .ev-head:hover{color:var(--cp-accent);}
 .ev-caret{display:inline-block;margin-left:6px;color:var(--cp-text-muted);font-size:.7rem;transition:transform .15s ease;}
 .ev.open .ev-caret{transform:rotate(90deg);}
+.ev-sub{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:2px;}
+.ev-sub li{margin:0;font-size:.78rem;line-height:1.35;color:var(--cp-text-soft);padding-left:12px;position:relative;}
+.ev-sub li:before{content:"•";position:absolute;left:1px;color:var(--cp-accent);font-weight:700;}
 .ev-more{display:none;margin-top:4px;font-size:.82rem;color:var(--cp-text-soft);line-height:1.5;cursor:text;}
 .ev.open .ev-more{display:block;}
+.day-taste{display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin:8px 0 2px;padding:7px 9px;border:1px solid var(--cp-border);border-radius:9px;background:var(--cp-surface-soft);}
+.day-taste b{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--cp-text-muted);margin-right:2px;}
+.taste-chip{font-size:.74rem;line-height:1.25;color:var(--cp-text);background:var(--cp-surface);border:1px solid var(--cp-border);border-radius:99px;padding:3px 8px;}
+.taste-chip span{color:var(--cp-text-soft);}
 /* taste as you go */
 .taste-city{margin:0 0 15px;}
 .taste-cityname{font-weight:800;font-size:.95rem;color:var(--cp-text);margin:0 0 6px;display:flex;align-items:center;gap:8px;}
@@ -496,6 +503,85 @@ document.getElementById("flightList").innerHTML =
     if(more.length<16 || head.length<6) return [t,""];
     return [head,more];
   }
+  function plainText(s){
+    return String(s||"")
+      .replace(/<[^>]+>/g," ")
+      .replace(/&nbsp;/g," ")
+      .replace(/&amp;/g,"&")
+      .replace(/\s+/g," ")
+      .trim();
+  }
+  function shortText(s,n){
+    s=plainText(s);
+    return s.length>n ? s.slice(0,n-1).trim()+"…" : s;
+  }
+  function titleCase(s){
+    return String(s||"").toLowerCase().replace(/\b\w/g,function(c){ return c.toUpperCase(); });
+  }
+  function foodLabel(d){
+    var why=String(d.why||"");
+    var m=why.match(/^\s*<b>(.*?)<\/b>/i);
+    if(m) return plainText(m[1]);
+    var p=plainText(why);
+    var found=p.match(/(bouillabaisse|pastis(?:\s*\+\s*panisses)?|panisses|navettes|socca|pissaladière|pan-bagnat|barbagiuan|stocafi|panettone|negroni sbagliato|basler läckerli|läckerli|bratwurst|luxemburgerli|pizzoccheri|missoltino|baccalà mantecato|cicchetti|spritz|polpette|choucroute|tarte flambée|lange rote|zürcher geschnetzeltes|veal geschnetzeltes|felchen)/i);
+    if(found) return titleCase(found[1]);
+    var tier=String(d.tier||"");
+    if(/^(PASTIS|NAVETTES|SOCCA|PAN-BAGNAT|GELATO|BARBAGIUAN|MONÉGASQUE|PANETTONE|APERITIVO|LÄCKERLI|BRATWURST|LUXEMBURGERLI|PIZZOCCHERI|MISSOLTINO|CICCHETTI|SPRITZ|POLPETTE)$/i.test(tier)) return titleCase(tier.replace(/-/g," "));
+    return null;
+  }
+  function visibleBullets(it,more){
+    if(it && Array.isArray(it.bullets)) return it.bullets.map(function(x){return shortText(x,82);}).filter(Boolean).slice(0,3);
+    var txt=plainText(more||"").replace(/\s*⚠️.*$/,"").trim();
+    if(!txt || txt.length<28) return [];
+    var chunks=txt
+      .replace(/\s+—\s+/g,"; ")
+      .replace(/\s+–\s+/g,"; ")
+      .replace(/\s+\|\s+/g,"; ")
+      .split(/;\s+|\.\s+|,\s+then\s+|\s+then\s+|\s+plus\s+/i)
+      .map(function(x){ return shortText(x,82); })
+      .filter(function(x){ return x.length>=12 && !/^backup:/i.test(x); });
+    var out=[];
+    chunks.forEach(function(x){
+      if(out.length<3 && out.indexOf(x)<0) out.push(x);
+    });
+    return out;
+  }
+  function dayCode(date){
+    var p=String(date||"").split("-");
+    return p.length===3 ? (parseInt(p[1],10)+"/"+parseInt(p[2],10)) : "";
+  }
+  function itemCorpus(d){
+    return plainText((d.items||[]).map(function(it){
+      return typeof it==="string" ? it : [it.text,it.detail,it.place].join(" ");
+    }).join(" "));
+  }
+  function dayTastes(d){
+    var md=dayCode(d.date), corpus=itemCorpus(d), cityLine=String(d.city||"");
+    var cities=(d.cities||[]).concat([cityLine]);
+    var out=[], seen={};
+    (DATA.dining||[]).forEach(function(x){
+      var cityHit=cities.some(function(c){ return String(c||"").indexOf(x.city)>=0; }) || cityLine.indexOf(x.city)>=0 || corpus.indexOf(x.name)>=0;
+      if(!cityHit) return;
+      var when=String(x.when||"");
+      var dateHit=md && when.indexOf(md)>=0;
+      var textHit=corpus.indexOf(x.name)>=0;
+      if(!dateHit && !textHit) return;
+      var dish=foodLabel(x);
+      if(!dish) return;
+      var key=dish+"|"+x.name;
+      if(seen[key]) return;
+      seen[key]=1;
+      out.push({dish:dish,place:x.name});
+    });
+    return out.slice(0,6);
+  }
+  function tasteHtml(d){
+    var tastes=dayTastes(d);
+    if(!tastes.length) return "";
+    return '<div class="day-taste"><b>Taste targets</b>'+tastes.map(function(t){
+      return '<span class="taste-chip">'+t.dish+' <span>· '+t.place+'</span></span>';
+    }).join("")+'</div>';
+  }
   function evLine(it,n){
     var badge=n?'<span class="evno">'+n+'</span>':'';
     if(typeof it==="string"){ return '<li class="ev'+(it.indexOf("★")===0?' star':'')+'"><span class="tm"></span><span class="tx"><span class="ev-head">'+badge+it+'</span></span></li>'; }
@@ -506,8 +592,10 @@ document.getElementById("flightList").innerHTML =
     else { var sp=splitEv(it.text); head=sp[0]; more=sp[1]; }
     var hasMore=!!more;
     var caret=hasMore?'<span class="ev-caret">▸</span>':'';
+    var bullets=visibleBullets(it,more);
+    var bulletHtml=bullets.length?'<ul class="ev-sub">'+bullets.map(function(b){return '<li>'+b+'</li>';}).join("")+'</ul>':'';
     var moreHtml=hasMore?'<span class="ev-more">'+more+'</span>':'';
-    return '<li class="ev '+st+(hasMore?' has-more':'')+'"><span class="tm">'+(it.time||"")+'</span><span class="tx"><span class="ev-head">'+badge+head+caret+'</span>'+moreHtml+'</span><span class="st">'+lbl+'</span></li>';
+    return '<li class="ev '+st+(hasMore?' has-more':'')+'"><span class="tm">'+(it.time||"")+'</span><span class="tx"><span class="ev-head">'+badge+head+caret+'</span>'+bulletHtml+moreHtml+'</span><span class="st">'+lbl+'</span></li>';
   }
   function mapLabel(it){ var t=(it.place!=null?it.place:(it.text||"")); t=t.replace(/^★s*/,""); t=t.split(" — ")[0].split(" – ")[0].split(" (")[0]; return t.slice(0,64); }
   function pickSel(slot){ try{ var m=JSON.parse(localStorage.getItem("eu26_picks")||"{}"); if(m[slot.id]!==undefined) return m[slot.id]; }catch(e){} return slot.selected!=null?slot.selected:null; }
@@ -528,7 +616,7 @@ document.getElementById("flightList").innerHTML =
     var picks=d.picks||[];
     var byPos={}, tail=[];
     picks.forEach(function(p){ if(typeof p.pos==="number"){ (byPos[p.pos]=byPos[p.pos]||[]).push(p); } else { tail.push(p); } });
-    var gi=0, out="", ulOpen=false;
+    var gi=0, out=tasteHtml(d), ulOpen=false;
     function openUl(){ if(!ulOpen){ out+='<ul class="evs">'; ulOpen=true; } }
     function closeUl(){ if(ulOpen){ out+='</ul>'; ulOpen=false; } }
     function emit(arr){ if(!arr||!arr.length) return; closeUl(); out+=arr.map(pickHtml).join(""); }
