@@ -1268,6 +1268,12 @@ async function loadAndBoot(){
       if(r2.ok){ const t2=await r2.text(); JSON.parse(t2); RAWTEXT=t2; RAWDATA=JSON.parse(t2); }
     }catch(e){}
   }
+  try{
+    const bakedData = JSON.parse(BAKED_RAW);
+    if((!Array.isArray(RAWDATA.shopping) || !RAWDATA.shopping.length) && Array.isArray(bakedData.shopping) && bakedData.shopping.length){
+      RAWDATA.shopping = bakedData.shopping;
+    }
+  }catch(e){}
   DATA = applyChoicesClient(__clone(RAWDATA));
   window.RAWDATA = RAWDATA;
   try{ boot(); }catch(e){ console.error("boot error", e); }
