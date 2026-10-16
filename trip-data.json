@@ -647,9 +647,9 @@
     },
     {
      "time": "2:30p",
-     "text": "★ Musée Marc Chagall (Cimiez) — book e-ticket if simple; otherwise buy at door",
-     "detail": "Right after Le Plongeoir lunch. This is a priority because it is one of Nicole's list items and fits cleanly after lunch. Action: check official ticketing; if a normal admission e-ticket is available, buy it now to remove friction. If timed tickets are not required, keep it as a firm plan and buy at door.",
-     "status": "to_book",
+     "text": "★ Musée Marc Chagall (Cimiez) — walk-in tickets",
+     "detail": "Right after Le Plongeoir lunch. This is a priority because it is one of Nicole's list items and fits cleanly after lunch. Current plan: buy tickets on arrival unless an obvious official e-ticket appears later.",
+     "status": "walk_up",
      "lat": 43.71222,
      "lng": 7.27611,
      "place": "Marc Chagall Museum"
@@ -1081,7 +1081,7 @@
     },
     {
      "time": "3:30p",
-     "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — Little Venice canals, half-timbered lanes, quick Alsatian-photo hit. Fully skippable if Strasbourg is enough.",
+     "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — Little Venice canals, half-timbered lanes, quick Alsatian-photo hit. Treat as bonus postcard stop, not required.",
      "status": "tentative",
      "lat": 48.0777517,
      "lng": 7.3579641,
@@ -1114,7 +1114,7 @@
     },
     {
      "time": "11:00a",
-     "text": "Freiburg overplan: Münster cathedral + Münstermarkt (open Fri), Bächle canals, Historisches Kaufhaus, Schwabentor/Martinstor gates, Kaiser-Joseph-Strasse shopping, Markthalle grazing, and maybe the Weihnachtsmarkt if it has opened.",
+     "text": "Freiburg overplan: Münster cathedral + Münstermarkt (open Fri), Lange Rote / market grazing, Bächle canals, Historisches Kaufhaus, Schwabentor/Martinstor gates, Kaiser-Joseph-Strasse shopping, Markthalle grazing, and maybe the Weihnachtsmarkt if it has opened.",
      "status": "confirmed",
      "lat": 47.9955486,
      "lng": 7.8529213,
@@ -1127,7 +1127,7 @@
     },
     {
      "time": "3:00p",
-     "text": "Optional Black Forest layer: Schlossberg funicular/lookout for quick views; if weather is great and energy high, extend toward Titisee. If cold/rainy, stay in Freiburg cafes/shops.",
+     "text": "Optional Black Forest layer: Schlossberg funicular/lookout is the default easy add-on; if weather is great and energy high, extend toward Titisee. If cold/rainy, stay in Freiburg cafes/shops.",
      "status": "tentative",
      "lat": 47.9971412,
      "lng": 7.8574612,
@@ -1179,7 +1179,7 @@
     },
     {
      "time": "2:30p",
-     "text": "Weather call: Rigi default if clear (lake + mountain panorama, easier winter fallback); Pilatus only if operations line up. If clouds/rain, skip the peak and do Swiss Transport Museum or more Lucerne Old Town/watch browsing.",
+     "text": "Weather call: Rigi default if clear (lake + mountain panorama, easier winter fallback); Pilatus only if operations line up. If clouds/rain, skip the peak and do the Swiss Museum of Transport (interactive trains/planes/cars/F1-style exhibits) or more Lucerne Old Town/watch browsing.",
      "status": "tentative",
      "lat": 46.9789,
      "lng": 8.2525,
@@ -1215,8 +1215,8 @@
     },
     {
      "time": "2:00p",
-     "text": "★ Jewish Museum of Switzerland (Vesalgasse 5) — priority stop; Basel = First Zionist Congress city. Also try to arrange a separate Great Synagogue interior visit ahead of time if weekday security/tour logistics work.",
-     "status": "",
+     "text": "★ Jewish Museum of Switzerland (Vesalgasse 5) — priority Jewish-history anchor; Basel = First Zionist Congress city. Private synagogue tour is expensive, so skip unless you strongly want it later.",
+     "status": "confirmed",
      "lat": 47.5576405,
      "lng": 7.583168,
      "place": "Jewish Museum of Switzerland"
@@ -2011,8 +2011,8 @@
    "item": "Musée Marc Chagall — Nice",
    "date": "11/12",
    "provider": "musee-chagall.fr / official ticketing",
-   "status": "to_book",
-   "notes": "Priority Nicole-list item after Le Plongeoir. Buy an official e-ticket if normal admission tickets are available; if the site does not require timed booking, keep the 2:30pm plan and buy at the door."
+   "status": "walk_up",
+   "notes": "Walk-in plan. Buy tickets on arrival after Le Plongeoir unless an obvious official e-ticket appears later."
   },
   {
    "item": "Doge's Palace — Venice timed entry",
@@ -2039,8 +2039,8 @@
    "item": "Synagogue visit requests — Nice and Basel",
    "date": "11/10 and Basel window",
    "provider": "Grande Synagogue de Nice / Jewish Museum or Jewish Community of Basel",
-   "status": "arrange",
-   "notes": "Send requests now because ID/security/group-tour logistics may take time. Nice target is 11/10 late morning. Basel Great Synagogue is by arrangement; Jewish Museum on 11/22 is walk-in fallback/anchor."
+   "status": "optional",
+   "notes": "Nice synagogue request can proceed by email; target 11/10 late morning if they approve. Basel synagogue private guided tour appears expensive, so deprioritize; Jewish Museum on 11/22 is the reliable anchor."
   },
   {
    "item": "⚽ FC Basel vs FC Luzern — St. Jakob-Park",
