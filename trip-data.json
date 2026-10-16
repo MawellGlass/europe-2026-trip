@@ -631,12 +631,6 @@
    ],
    "items": [
     {
-     "time": "evening",
-     "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
-     "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
-     "status": "tentative"
-    },
-    {
      "time": "12:00p",
      "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests",
      "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
@@ -653,6 +647,12 @@
      "lat": 43.71222,
      "lng": 7.27611,
      "place": "Marc Chagall Museum"
+    },
+    {
+     "time": "evening",
+     "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
+     "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
+     "status": "tentative"
     }
    ],
    "sleepCity": "Nice",
