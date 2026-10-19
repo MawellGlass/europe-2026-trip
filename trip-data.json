@@ -2635,6 +2635,12 @@
    "q": "Milan 11/17 — Monza (F1) vs Lake Como",
    "options": "✅ DECIDED as an overplanned hybrid: Binario 21 → optional/skippable Monza F1 gawk/lunch → Como lakefront/silk/dinner → evening train back. If energy is low, skip Monza and go straight to Como; if weather is bad, keep Monza short.",
    "status": "closed"
+  },
+  {
+   "id": 9,
+   "q": "Tax refund / VAT export plan",
+   "options": "EU purchases (France/Italy/Ireland): ask for tax-free/VAT refund paperwork at the store, keep goods unused and accessible, and validate the forms with EU customs at Dublin Airport before the final Dublin→Philadelphia departure. Switzerland purchases: separate process — ask the Swiss store for tax-free paperwork, meet any Swiss minimum purchase threshold, and validate/export at Zurich Airport when leaving Switzerland for Dublin. Do NOT pack refund goods in checked bags until after the relevant customs validation; photograph receipts/forms as backup. Worth doing mainly for watches/jewelry/luxury goods, not small souvenirs.",
+   "status": "guidance"
   }
  ],
  "choices": {
