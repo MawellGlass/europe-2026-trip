@@ -1223,8 +1223,8 @@
     },
     {
      "time": "4:30p",
-     "text": "⚽ FOOTBALL: FC Basel vs FC Luzern — Swiss Super League at St. Jakob-Park (~10 min by tram from center). First match back after the international break. Kickoff ~16:30. BOOK tickets at fcb.ch",
-     "status": "to_book",
+     "text": "⚽ FOOTBALL: FC Basel vs FC Luzern — Swiss Super League at St. Jakob-Park (~10 min by tram from center). Tickets booked: C2 Parkett, row 5, seats 201–202. QR screenshots saved in Confirmations/FC Basel vs FC Luzern 2026-11-22.",
+     "status": "booked",
      "lat": 47.54127,
      "lng": 7.62157,
      "place": "St. Jakob-Park (FC Basel)"
@@ -1310,16 +1310,16 @@
     },
     {
      "time": "2:30p",
-     "text": "🍫 Lindt Home of Chocolate (Kilchberg)",
-     "detail": "World's largest chocolate fountain, self-guided museum, tasting & the flagship shop (Seestrasse 204, Kilchberg). ~12 min by S-Bahn (S8/S24) from Zurich HB, or a lake boat from Bürkliplatz in season. ⚠️ Timed-entry tickets can sell out — book ahead.",
-     "status": "book",
+     "text": "🍫 Lindt Home of Chocolate (Kilchberg) — 2:30 PM ticket booked via GetYourGuide",
+     "detail": "World's largest chocolate fountain, self-guided museum, tasting & the flagship shop (Seestrasse 204, Kilchberg). Official hours: museum/shop 10am-7pm; last audio-guide tour slot 5:30pm. From central Zurich, allow ~20 min each way by public transport; a 2:30pm entry leaves comfortable time for the museum, shop/cafe, and a 5pm+ Christmas-market evening.",
+     "status": "booked",
      "lat": 47.3186,
      "lng": 8.5546,
      "place": "Lindt Home of Chocolate"
     },
     {
      "time": "5:00p",
-     "text": "🎄🛍 Zurich Christmas markets — PRIORITY evening: Wienachtsdorf at Sechseläutenplatz (lakeside), Christkindlimarkt inside the Hauptbahnhof, Werdmühleplatz/Singing Christmas Tree area, plus Bahnhofstrasse lights. Build the night around this if markets are open.",
+     "text": "🎄🛍 Zurich Christmas markets — PRIORITY evening after Lindt. Bellevue Noël at Sechseläutenplatz is the main outdoor market; Polarzauber in Zürich HB is the late/easy indoor fallback; add Werdmühleplatz/Singing Christmas Tree and Bahnhofstrasse lights if energy allows. On Tue 11/24, Bellevue Noël market runs to 22:00 (chalet/bar to 24:00); Polarzauber HB non-food to 21:00 and food/takeaway to 22:00.",
      "status": "confirmed",
      "lat": 47.3667,
      "lng": 8.5456,
@@ -2255,15 +2255,15 @@
    "item": "⚽ FC Basel vs FC Luzern — St. Jakob-Park",
    "date": "11/22",
    "provider": "fcb.ch / Ticketcorner",
-   "status": "watch",
-   "notes": "⏳ DON'T BUY YET. Exact date/kickoff (our Sun 16:30 vs Luzern is a placeholder) isn't officially locked this far out — Swiss Super League confirms fixtures ~5–6 wks before for TV. Single-match sale typically opens ~3–4 wks out. PLAN: mid-to-late Oct, confirm fixture on fcb.ch, then buy 2 SEATED tickets via Ticketcorner (fcb.ch → Tickets). Avoid the standing home end (Muttenzerkurve) — get main grandstand / neutral sector. FCB v Luzern rarely sells out, so waiting is low-risk."
+   "status": "booked",
+   "notes": "BOOKED 2026-10-19: 2 seated tickets, C2 Parkett, row 5, seats 201–202. QR screenshots and ticket summary saved in Confirmations/FC Basel vs FC Luzern 2026-11-22."
   },
   {
    "item": "🍫 Lindt Home of Chocolate — timed entry, Kilchberg",
    "date": "11/24",
-   "provider": "lindt-home-of-chocolate.com",
-   "status": "to_book",
-   "notes": "Book a timed-entry slot online ahead (afternoon of 11/24). Popular weekends/holidays sell out; a weekday Tue is easier but still reserve. ~12 min S-Bahn (S8/S24) from Zurich HB to Kilchberg. Combined museum + tour tickets available; the shop & café are free to enter separately."
+   "provider": "GetYourGuide / Lindt Home of Chocolate",
+   "status": "booked",
+   "notes": "BOOKED: Tue 11/24 at 2:30 PM via GetYourGuide. Timing works well: central Zurich to Kilchberg is ~20 min, museum/shop are open 10am-7pm, and the last audio-guide tour slot is 5:30pm. Plan to leave Zurich center around 1:45-2:00 PM; after the visit, return for Bellevue Noël/Zurich HB Christmas markets from ~5:00 PM onward."
   }
  ],
  "budget": {
