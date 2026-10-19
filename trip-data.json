@@ -225,16 +225,35 @@
    "service": "ZOU! regional TER",
    "time": "~2h34 (1:04p→3:38p)",
    "book": "PAY ON THE DAY — fixed fare, no reservation (~€84/2)",
+   "scheduleOptions": [
+    {
+     "label": "Target",
+     "time": "13:04→15:38",
+     "note": "Current planner anchor; buy day-of unless the schedule materially changes."
+    },
+    {
+     "label": "Backup",
+     "time": "midday/early-afternoon TER",
+     "note": "Check SNCF/ZOU the day before; regional pattern is the right lane, not advance high-speed."
+    }
+   ],
    "status": "payday"
   },
   {
    "n": 2,
    "date": "11/13",
-   "route": "Nice → Ventimiglia → Milano Centrale",
-   "service": "TER + Intercity (1 change)",
-   "time": "~5h30",
-   "book": "Nice→Ventimiglia TER = pay on day · Ventimiglia→Milan IC = BOOK AHEAD via trenitalia.com",
-   "status": "to_book"
+   "route": "Ventimiglia → Savona → Milano Centrale",
+   "service": "Regionale 12267 + Regionale Veloce 3021",
+   "time": "12:28 → 17:39 (Savona change 14:25→14:34)",
+   "book": "BOOKED 2026-10-19 via Trenitalia — ticket code 2987179016; confirmation saved in Confirmations/Rail/2026-11-13 Ventimiglia to Milan. Nice→Ventimiglia remains pay-on-day/local.",
+   "scheduleOptions": [
+    {
+     "label": "Booked",
+     "time": "12:28→17:39",
+     "note": "Ventimiglia→Savona→Milano Centrale; tight 9-minute Savona change."
+    }
+   ],
+   "status": "booked"
   },
   {
    "n": 3,
@@ -243,6 +262,18 @@
    "service": "Frecciarossa / Italo",
    "time": "~2h15",
    "book": "BOOK NOW — trenitalia.com or italotreno.com (sales open ~4mo out; cheapest Economy/Super-Economy sell first, fares rise like airfares)",
+   "scheduleOptions": [
+    {
+     "label": "Trenitalia pick",
+     "time": "11:45→14:14",
+     "note": "Frecciarossa 9723; Premium upgrade looked cheap and worthwhile."
+    },
+    {
+     "label": "Italo fallback",
+     "time": "11:35→14:05",
+     "note": "Direct Italo Smart; slightly pricier in the cart but also clean."
+    }
+   ],
    "status": "to_book"
   },
   {
@@ -252,6 +283,23 @@
    "service": "Frecciarossa / Italo",
    "time": "~2h15",
    "book": "BOOK NOW — trenitalia.com/italotreno.com; book as a round with 11/15",
+   "scheduleOptions": [
+    {
+     "label": "Nicole-comfort pick",
+     "time": "14:48→17:15",
+     "note": "Frecciarossa 9740; more Milan reset time before dinner."
+    },
+    {
+     "label": "Venice-time pick",
+     "time": "15:48→18:15",
+     "note": "Frecciarossa 9744; one extra Venice hour, still workable for an 8pm Milan dinner."
+    },
+    {
+     "label": "Cheap direct fallback",
+     "time": "15:18→17:55",
+     "note": "EuroCity 36; direct and cheap, but slower and less ideal than Frecciarossa."
+    }
+   ],
    "status": "to_book"
   },
   {
@@ -261,6 +309,18 @@
    "service": "Regionale",
    "time": "40m–1h",
    "book": "PAY ON THE DAY — Regionale, fixed fare",
+   "scheduleOptions": [
+    {
+     "label": "Planned flow",
+     "time": "11:15 Milan→Monza; 14:15 Monza→Como; 21:30 Como→Milan",
+     "note": "Use this if keeping Binario 21 + Monza + Como."
+    },
+    {
+     "label": "Simpler fallback",
+     "time": "late morning Milan→Como direct",
+     "note": "Skip Monza and take a direct/frequent train from Milano Centrale to Como S. Giovanni."
+    }
+   ],
    "status": "payday"
   },
   {
@@ -270,6 +330,18 @@
    "service": "EuroCity (direct, via Gotthard)",
    "time": "~4h05–4h30",
    "book": "BOOK AHEAD — sbb.ch (CHF, no booking fee) or trenitalia.com; seat reservation is COMPULSORY on IT⇄CH EuroCity",
+   "scheduleOptions": [
+    {
+     "label": "Target",
+     "time": "~10:00→~14:15",
+     "note": "Direct EuroCity to Basel SBB; best balance for a clean repositioning day."
+    },
+    {
+     "label": "Fallback",
+     "time": "late morning direct EC",
+     "note": "Still acceptable if the fare/seat map is better; avoid connections unless pricing is dramatically better."
+    }
+   ],
    "status": "to_book"
   },
   {
@@ -279,6 +351,13 @@
    "service": "SBB InterCity",
    "time": "~55m",
    "book": "PAY ON THE DAY — optional Supersaver ~30–60d out to save",
+   "scheduleOptions": [
+    {
+     "label": "Flexible target",
+     "time": "late morning / early afternoon",
+     "note": "Frequent direct SBB IC trains; buy day-of unless a Supersaver fare is compelling."
+    }
+   ],
    "status": "payday"
   },
   {
@@ -288,6 +367,13 @@
    "service": "S-Bahn / IC",
    "time": "~12m",
    "book": "PAY ON THE DAY — S-Bahn",
+   "scheduleOptions": [
+    {
+     "label": "Airport run",
+     "time": "depart Zurich HB about 2.5–3h before flight",
+     "note": "Very frequent S-Bahn/IC service; use the next train on the day."
+    }
+   ],
    "status": "payday"
   }
  ],
