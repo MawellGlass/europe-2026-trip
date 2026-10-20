@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-19T23:53:22.556Z",
+    "lastUpdated": "2026-10-20T01:40:17.520Z",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -965,8 +965,8 @@
         },
         {
           "time": "9:00a",
-          "text": "★ Doge's Palace (Palazzo Ducale) — BOOK a timed ticket. Open daily 9:00–18:00 (last entry ~17:00): Golden Staircase, doge's apartments, Bridge of Sighs",
-          "status": "to_book",
+          "text": "★ Doge's Palace (Palazzo Ducale) — BOOKED via GetYourGuide, 2 adults ($78.48). Tickets in the GetYourGuide app (check slot time there). Golden Staircase, doge's apartments, Bridge of Sighs",
+          "status": "booked",
           "lat": 45.4342108,
           "lng": 12.340592,
           "place": "Doge's Palace"
@@ -1359,8 +1359,8 @@
         },
         {
           "time": "8:00p",
-          "text": "Dinner: Zeughauskeller (open Mon)",
-          "status": "tentative",
+          "text": "Dinner: Zeughauskeller — table for 2 CONFIRMED (Mon 11/23, 8:00 PM; confirmation emailed)",
+          "status": "booked",
           "lat": 47.3703727,
           "lng": 8.5399233,
           "place": "Zeughauskeller"
@@ -1886,8 +1886,8 @@
       "why": "600-yr armory beer hall; superb Bratwurst (open Mon)",
       "price": "CHF 65–85/2",
       "when": "11/23",
-      "booking": "walk-in",
-      "status": "walk_up"
+      "booking": "Reserved — confirmed 8:00 PM, 2 people",
+      "status": "booked"
     },
     {
       "city": "Zurich",
@@ -2327,9 +2327,9 @@
     {
       "item": "Doge's Palace — Venice timed entry",
       "date": "11/16",
-      "provider": "palazzoducale.visitmuve.it / official MUVE ticketing",
-      "status": "to_book",
-      "notes": "Book a morning timed-entry slot so Venice Monday is anchored before the 3:57pm Italo back to Milan — with the later train, a 10–11am slot works too. Keep dawn canals optional before it."
+      "provider": "GetYourGuide (Venezia Unica / Vela Spa)",
+      "status": "booked",
+      "notes": "Booked 10/19: 2 adults, $78.48, reserved entry. Mobile tickets in GetYourGuide app (QR in private wallet if added)."
     },
     {
       "item": "Binario 21 / Memoriale della Shoah — Milan",
