@@ -312,22 +312,17 @@
       "n": 6,
       "date": "11/18",
       "route": "Milano Centrale → Basel SBB",
-      "service": "EuroCity (direct, via Gotthard)",
-      "time": "~4h05–4h30",
-      "book": "HOLD — time depends on Decisions #10 (Binario 21 on 11/17 vs 11/18 morning). If 11/17: EC 10:10→14:55 (from CHF 69 Supersaver). If 11/18 morning: later EC, e.g. 11:10→15:26 (from CHF 74). sbb.ch or trenitalia.com; seat reservation is COMPULSORY.",
+      "service": "EuroCity 150 (direct, via Gotthard) · Trenitalia Smart2, 2nd class",
+      "time": "11:10 → 15:26 (4h16)",
+      "book": "BOOKED 2026-10-23 via trenitalia.com — Coach 4, seats 16 (Max) & 15 (Nicole). Smart2 2nd class, €82 each (€164 total), paid via PayPal. Non-refundable; can be changed before departure by paying the difference up to the Standard fare. Show PNR to on-board staff (PNR + ticket PDFs: OneDrive › Europe-2026-Trip › Confirmations › Rail › 2026-11-18 Milan to Basel — kept private, not in this public repo). Doors close 2 min before departure.",
       "scheduleOptions": [
         {
-          "label": "Target",
-          "time": "~10:00→~14:15",
-          "note": "Direct EuroCity to Basel SBB; best balance for a clean repositioning day."
-        },
-        {
-          "label": "Fallback",
-          "time": "late morning direct EC",
-          "note": "Still acceptable if the fare/seat map is better; avoid connections unless pricing is dramatically better."
+          "label": "Booked",
+          "time": "11:10→15:26",
+          "note": "EC 150 Milano Centrale → Basel SBB (arr. platform 9 per SBB); coach 4, seats 15–16. Restaurant car on board."
         }
       ],
-      "status": "to_book"
+      "status": "booked"
     },
     {
       "n": 7,
@@ -1112,13 +1107,13 @@
       ],
       "items": [
         {
-          "time": "10:00a",
-          "text": "EuroCity direct Milan → Basel (~4h10) — TIME NOT FINAL: 10:10 EC if Binario 21 is on 11/17; if it moves to this morning, take a later EC (e.g. 11:10 → 15:26) instead. Decide first, then book (seat reservation compulsory).",
-          "status": "tentative"
+          "time": "11:10a",
+          "text": "🚆 EuroCity 150 Milano Centrale 11:10 → Basel SBB 15:26 — BOOKED (Trenitalia Smart2, 2nd class), coach 4, seats 16 (Max) & 15 (Nicole). Be at Centrale by ~10:45; tell the conductor your PNR (in the private confirmations folder).",
+          "status": "booked"
         },
         {
-          "time": "3:00p",
-          "text": "Check in Steinenschanze — clean repositioning day",
+          "time": "4:00p",
+          "text": "Check in Steinenschanze (~10 min walk from Basel SBB after 15:26 arrival) — clean repositioning day",
           "status": "booked",
           "lat": 47.5525211,
           "lng": 7.5858061,
@@ -2498,8 +2493,8 @@
         "date": "Nov 18",
         "cur": "EUR",
         "est": 140,
-        "actual": null,
-        "note": "Cross-border EC"
+        "actual": 164,
+        "note": "BOOKED 10/23 · Trenitalia Smart2 2nd class"
       },
       {
         "cat": "Trains",
@@ -2660,7 +2655,7 @@
     {
       "id": 10,
       "q": "Binario 21 (Memoriale della Shoah) — Tue 11/17 or morning of Wed 11/18?",
-      "options": "OPEN — to discuss with Nicole. Option A: Tue 11/17 10:00a as the launch of the Monza/Como day (current plan; adds a fixed 10am start). Option B: Wed 11/18 morning, then push the Milan→Basel EC later — the 10:10 EC would be missed; next direct options seen on SBB are EC 11:10 → Basel 15:26 (from CHF 74 pp; leaves ~1 hr after a 10:00 visit, tight) or later regional+change options arriving 16:55+. Binario 21 is open Mon–Sun except Fri, 10:00–16:00 (last entry 15:30), ~1 hr, €10, adjacent to Milano Centrale. If B, book the later EC (seat reservation compulsory) — do NOT book the 10:10 EC until decided.",
+      "options": "OPEN — to discuss with Nicole. Option A: Tue 11/17 10:00a as the launch of the Monza/Como day (current plan; adds a fixed 10am start). Option B: Wed 11/18 morning, then push the Milan→Basel EC later — the 10:10 EC would be missed; next direct options seen on SBB are EC 11:10 → Basel 15:26 (from CHF 74 pp; leaves ~1 hr after a 10:00 visit, tight) or later regional+change options arriving 16:55+. Binario 21 is open Mon–Sun except Fri, 10:00–16:00 (last entry 15:30), ~1 hr, €10, adjacent to Milano Centrale. UPDATE 10/23: Milan→Basel is now BOOKED on the 11:10 EC (arr. 15:26), so BOTH options work — A gives an easy 11/18 morning; B fits a 10:00 visit (~1 hr) right inside Milano Centrale before boarding.",
       "status": "open"
     }
   ],
