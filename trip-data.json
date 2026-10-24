@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-24T02:53:09.906Z",
+    "lastUpdated": "2026-10-24T03:02:37.392Z",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -245,12 +245,32 @@
       "route": "Ventimiglia → Savona → Milano Centrale",
       "service": "Regionale 12267 + Regionale Veloce 3021",
       "time": "12:28 → 17:39 (Savona change 14:25→14:34)",
-      "book": "BOOKED 2026-10-19 via Trenitalia — ticket code 2987179016; confirmation saved in Confirmations/Rail/2026-11-13 Ventimiglia to Milan. Nice→Ventimiglia remains pay-on-day/local.",
+      "book": "BOOKED 2026-10-19 via Trenitalia — ticket code 2987179016; confirmation saved in Confirmations/Rail/2026-11-13 Ventimiglia to Milan. Nice→Ventimiglia TER is pay-on-day (€10.60 pp) — see TER options; latest comfortable is 10:24→11:18.",
       "scheduleOptions": [
         {
           "label": "Booked",
           "time": "12:28→17:39",
           "note": "Ventimiglia→Savona→Milano Centrale; tight 9-minute Savona change."
+        },
+        {
+          "label": "TER — plan",
+          "time": "09:23→10:17 Nice→Ventimiglia",
+          "note": "~2h for the Friday market before the 12:28."
+        },
+        {
+          "label": "TER — more market",
+          "time": "08:54→09:48",
+          "note": "Earliest relaxed option."
+        },
+        {
+          "label": "TER — later, still easy",
+          "time": "09:54→10:48 or 10:24→11:18",
+          "note": "10:24 is the latest comfortable option (~1h buffer)."
+        },
+        {
+          "label": "TER — backup only",
+          "time": "10:53→11:52",
+          "note": "36-min buffer; use only if running late. 11:23→12:21 is NOT safe."
         }
       ],
       "status": "booked"
@@ -543,8 +563,8 @@
         },
         {
           "time": "8:00p",
-          "text": "★ Anniversary dinner — La Rossettisserie (Old Town wood-fire rotisserie; confirmed open Mon). Land Nice 3:38p → check-in → 8pm is comfortable, travel-day risk is minimal. RECOMMEND keep + book by phone.",
-          "status": "to_book",
+          "text": "★ Anniversary dinner — La Rossettisserie ✅ BOOKED, 8:00 PM (Old Town wood-fire rotisserie; confirmed open Mon). Land Nice 3:38p → check-in → 8pm is comfortable, travel-day risk is minimal. RECOMMEND keep + book by phone.",
+          "status": "booked",
           "lat": 43.6975249,
           "lng": 7.2764159,
           "place": "La Rossettisserie"
@@ -803,7 +823,7 @@
       "items": [
         {
           "time": "9:23a",
-          "text": "🚆 TER Nice Ville → Ventimiglia (~1h, arr ~10:15) — PAY ON THE DAY at the station (local regional, fixed fare). If you skip the market, any TER arriving by ~11:45 works.",
+          "text": "🚆 TER Nice Ville → Ventimiglia 9:23 → 10:17 — PAY ON THE DAY (local regional, €10.60 pp). TER options (SNCF timetable for Fri 11/13, €10.60 pp, buy at the station or SNCF Connect / ZOU! app): 08:54→09:48 · 09:23→10:17 (plan, ~2h market) · 09:54→10:48 · 10:24→11:18 (latest comfortable, ~1h buffer) · 10:53→11:52 (backup only, 36 min) · ❌ 11:23→12:21 is too tight. Re-check times the week before.",
           "status": "payday"
         },
         {
@@ -1635,9 +1655,9 @@
       "tier": "ANNIV",
       "why": "Intimate wood-fire rotisserie, Old Town; romantic non-Michelin",
       "price": "€65–90/2",
-      "when": "11/9",
-      "booking": "phone",
-      "status": "to_book"
+      "when": "11/9 8:00 PM",
+      "booking": "CONFIRMED (booked by Max & Nicole)",
+      "status": "booked"
     },
     {
       "city": "Nice",
