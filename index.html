@@ -46,6 +46,7 @@ h2.sec{font-size:1.15rem;margin:6px 0 12px;}
 .card .role{color:var(--cp-accent);font-size:.82rem;font-weight:600;}
 .card .dates{color:var(--cp-text-muted);font-size:.85rem;margin:4px 0;}
 .card .blurb{font-size:.86rem;color:var(--cp-text-soft);}
+.fx-status{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;color:var(--cp-text-muted);margin:-4px 0 12px;}.fx-dot{width:9px;height:9px;border-radius:50%;background:#9a9a9a;display:inline-block;}.fx-dot.live{background:#2e9d5b;box-shadow:0 0 0 3px rgba(46,157,91,.18);} .fx-dot.cache{background:#d29a22;} .fx-dot.off{background:#c0473b;}.fx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}.fx-card{background:var(--cp-surface);border:1px solid var(--cp-border);border-radius:12px;padding:14px 16px;}.fx-card .fx-cur{font-weight:700;font-size:.85rem;color:var(--cp-text-muted);letter-spacing:.04em;}.fx-card .fx-big{font-size:1.7rem;font-weight:800;margin:4px 0 2px;font-variant-numeric:tabular-nums;}.fx-card .fx-inv{font-size:.82rem;color:var(--cp-text-muted);font-variant-numeric:tabular-nums;}.fx-card .fx-tip{font-size:.8rem;margin-top:8px;padding-top:8px;border-top:1px dashed var(--cp-border);}.fx-cheat{margin-top:12px;} .fx-cheat td,.fx-cheat th{text-align:right;font-variant-numeric:tabular-nums;} .fx-cheat td:first-child,.fx-cheat th:first-child{text-align:left;}.fx-calc{background:var(--cp-surface);border:1px solid var(--cp-border);border-radius:12px;padding:16px;display:grid;gap:12px;max-width:640px;}.fx-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}.fx-calc input,.fx-calc select{font:inherit;font-size:1.15rem;padding:10px 12px;border-radius:10px;border:1px solid var(--cp-border-strong);background:var(--cp-bg-elevated);color:inherit;}.fx-calc input{flex:1 1 160px;min-width:0;font-variant-numeric:tabular-nums;}.fx-swap{font:inherit;font-size:1.1rem;border:1px solid var(--cp-border);background:var(--cp-bg-elevated);color:inherit;border-radius:10px;padding:8px 12px;cursor:pointer;}.fx-out{font-size:1.9rem;font-weight:800;font-variant-numeric:tabular-nums;}.fx-all{font-size:.88rem;color:var(--cp-text-muted);font-variant-numeric:tabular-nums;}.fx-chips{display:flex;gap:6px;flex-wrap:wrap;} .fx-chips button{font:inherit;font-size:.8rem;border:1px solid var(--cp-border);background:var(--cp-bg-elevated);color:inherit;border-radius:99px;padding:4px 10px;cursor:pointer;}
 .pill{display:inline-block;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:99px;letter-spacing:.02em;}
 .pill.booked{background:rgba(22,163,74,.14);color:var(--cp-success);}
 .pill.to_book{background:rgba(245,158,11,.16);color:var(--cp-warning);}
@@ -360,6 +361,19 @@ textarea.ed-in{resize:vertical;}
   <section class="panel" data-tab="shopping"><h2 class="sec">🛍 Shopping targets</h2>
     <div class="itin-meta"><span>Things to notice, browse, or buy if they feel right — not obligations. Tap ✓ when covered. Gold note: ask karat, exact gram weight, retail price, and VAT refund before deciding.</span></div>
     <div id="shopStrip"></div></section>
+  <section class="panel" data-tab="fx"><h2 class="sec">💱 Currency</h2>
+    <div class="fx-status"><span class="fx-dot" id="fxDot"></span><span id="fxStatus">Loading live rates…</span><button class="btn-mini alt" id="fxRefresh" type="button">↻ Refresh</button></div>
+    <div class="fx-grid" id="fxCards"></div>
+    <div id="fxCheat" class="fx-cheat"></div>
+    <h2 class="sec" style="margin-top:22px">Calculator</h2>
+    <div class="fx-calc">
+      <div class="fx-row"><input id="fxAmt" type="text" inputmode="decimal" value="100" aria-label="Amount"><select id="fxFrom" aria-label="From currency"></select></div>
+      <div class="fx-row"><button class="fx-swap" id="fxSwap" type="button" title="Swap">⇅ swap</button><span style="color:var(--cp-text-muted)">to</span><select id="fxTo" aria-label="To currency"></select></div>
+      <div class="fx-out" id="fxOut">—</div>
+      <div class="fx-all" id="fxAll"></div>
+      <div class="fx-chips" id="fxChips"></div>
+    </div>
+    <div class="foot" style="margin-top:10px;text-align:left">Mid-market reference rates, pulled live in your browser each time this tab opens (and every 30 min while open). Your card or ATM rate will typically be ~0–3% worse — always choose to pay in the <b>local currency</b>, never "in USD", when a terminal asks.</div></section>
   <section class="panel" data-tab="decisions"><h2 class="sec">Open decisions</h2><div id="decList"></div>
     <h2 class="sec" style="margin-top:20px">Timed tickets</h2><div id="ticketList"></div></section>
   <section class="panel" data-tab="budget"><h2 class="sec">Budget</h2>
@@ -439,7 +453,7 @@ function boot(){
 })();
 
 /* tabs */
-const TABS = [["overview","Overview"],["itinerary","Itinerary"],["suggest","Suggestions"],["hotels","Hotels"],["trains","Trains"],["dining","Dining"],["shopping","Shopping"],["budget","Budget"],["decisions","Decisions"],["edit","✎ Edit"]];
+const TABS = [["overview","Overview"],["itinerary","Itinerary"],["suggest","Suggestions"],["hotels","Hotels"],["trains","Trains"],["dining","Dining"],["shopping","Shopping"],["budget","Budget"],["fx","💱 Currency"],["decisions","Decisions"],["edit","✎ Edit"]];
 const nav = document.getElementById("tabs");
 nav.innerHTML = TABS.map(([id,l],i)=>'<button data-t="'+id+'"'+(i===0?' class="active"':'')+'>'+l+'</button>').join("");
 function activateTab(id){
@@ -1479,6 +1493,62 @@ loadAndBoot();
   }
   window.ghSave=saveGitHub; window.ghGetToken=getTok; window.ghRenderState=renderGhState;
   if(window.__booted) mountEditor(); else document.addEventListener("app:booted", mountEditor);
+})();
+</script>
+<script>
+(function(){
+  var CUR=["USD","EUR","GBP","CHF"], SYM={USD:"$",EUR:"€",GBP:"£",CHF:"CHF "}, NAME={USD:"US dollar",EUR:"Euro",GBP:"British pound",CHF:"Swiss franc"};
+  var WHERE={EUR:"France · Monaco · Italy · Ireland",GBP:"London layover",CHF:"Basel · Zurich"};
+  var KEY="eu26_fx_cache", rates=null, meta=null;
+  var FALLBACK={rates:{USD:1,EUR:0.893,GBP:0.748,CHF:0.824},date:"2026-10-23",src:"built-in fallback"};
+  function el(id){return document.getElementById(id);}
+  function fmt(v,c){ if(!isFinite(v)) return "—"; var d=Math.abs(v)>=1000?0:2; return (SYM[c]||"")+v.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d}); }
+  function usdPer(c){ return 1/rates[c]; }
+  function convert(a,from,to){ return a/rates[from]*rates[to]; }
+  function setStatus(kind,msg){ el("fxDot").className="fx-dot "+kind; el("fxStatus").textContent=msg; }
+  function ago(t){ var m=Math.round((Date.now()-t)/60000); if(m<1) return "just now"; if(m<60) return m+" min ago"; var h=Math.round(m/60); return h<48?h+" h ago":Math.round(h/24)+" days ago"; }
+  function tip(c){ var u=usdPer(c);
+    if(c==="EUR") return "Quick math: add ~"+Math.round((u-1)*100)+"% → €20 ≈ "+fmt(20*u,"USD")+", €50 ≈ "+fmt(50*u,"USD");
+    if(c==="GBP") return "Quick math: add ~"+Math.round((u-1)*100)+"% → £20 ≈ "+fmt(20*u,"USD")+", £50 ≈ "+fmt(50*u,"USD");
+    return "Quick math: add ~"+Math.round((u-1)*100)+"% → CHF 20 ≈ "+fmt(20*u,"USD")+", CHF 50 ≈ "+fmt(50*u,"USD"); }
+  function renderCards(){
+    el("fxCards").innerHTML=["EUR","GBP","CHF"].map(function(c){ var u=usdPer(c);
+      return '<div class="fx-card"><div class="fx-cur">'+c+' · '+NAME[c]+'</div><div class="fx-big">1 '+c+' = $'+u.toFixed(3)+'</div><div class="fx-inv">$1 = '+fmt(rates[c],c)+' · '+WHERE[c]+'</div><div class="fx-tip">'+tip(c)+'</div></div>'; }).join("");
+    var amts=[5,10,20,50,100,250,500];
+    el("fxCheat").innerHTML='<table><tr><th>Local amount</th><th>€ → USD</th><th>£ → USD</th><th>CHF → USD</th></tr>'+amts.map(function(a){ return '<tr><td><b>'+a+'</b></td><td>'+fmt(a*usdPer("EUR"),"USD")+'</td><td>'+fmt(a*usdPer("GBP"),"USD")+'</td><td>'+fmt(a*usdPer("CHF"),"USD")+'</td></tr>'; }).join("")+'</table>';
+  }
+  function parseAmt(){ var v=parseFloat(String(el("fxAmt").value).replace(/,/g,"")); return isFinite(v)?v:0; }
+  function calc(){ if(!rates) return; var a=parseAmt(), f=el("fxFrom").value, t=el("fxTo").value, out=convert(a,f,t);
+    el("fxOut").textContent=fmt(a,f)+" = "+fmt(out,t);
+    el("fxAll").textContent=CUR.filter(function(c){return c!==f&&c!==t;}).map(function(c){return fmt(convert(a,f,c),c);}).join("  ·  ");
+    try{ localStorage.setItem("eu26_fx_sel",JSON.stringify({f:f,t:t})); }catch(e){} }
+  function renderAll(){ renderCards(); calc(); }
+  function apply(r,date,src,fetchedAt,kind){ rates=r; meta={date:date,src:src,at:fetchedAt}; renderAll();
+    setStatus(kind,(kind==="live"?"Live":"Saved")+" · rates dated "+date+" · "+src+" · fetched "+ago(fetchedAt)); }
+  function fromFrankfurter(){ return fetch("https://api.frankfurter.app/latest?from=USD&to=EUR,GBP,CHF",{cache:"no-store"}).then(function(r){if(!r.ok) throw 0; return r.json();}).then(function(j){ return {rates:{USD:1,EUR:j.rates.EUR,GBP:j.rates.GBP,CHF:j.rates.CHF},date:j.date,src:"ECB via Frankfurter"}; }); }
+  function fromErApi(){ return fetch("https://open.er-api.com/v6/latest/USD",{cache:"no-store"}).then(function(r){if(!r.ok) throw 0; return r.json();}).then(function(j){ if(j.result!=="success") throw 0; return {rates:{USD:1,EUR:j.rates.EUR,GBP:j.rates.GBP,CHF:j.rates.CHF},date:(j.time_last_update_utc||"").slice(5,16),src:"ExchangeRate-API"}; }); }
+  function load(){ setStatus("", "Fetching live rates…");
+    fromErApi().catch(function(){ return fromFrankfurter(); }).then(function(x){ var now=Date.now(); try{ localStorage.setItem(KEY,JSON.stringify({rates:x.rates,date:x.date,src:x.src,at:now})); }catch(e){} apply(x.rates,x.date,x.src,now,"live"); })
+    .catch(function(){ var c=null; try{ c=JSON.parse(localStorage.getItem(KEY)||"null"); }catch(e){}
+      if(c&&c.rates){ apply(c.rates,c.date,c.src,c.at,"cache"); setStatus("cache","Offline — using last saved rates ("+c.date+", fetched "+ago(c.at)+")"); }
+      else { apply(FALLBACK.rates,FALLBACK.date,FALLBACK.src,Date.now(),"off"); setStatus("off","Offline — using built-in fallback rates from "+FALLBACK.date); } }); }
+  function init(){
+    var opts=CUR.map(function(c){return '<option value="'+c+'">'+c+' — '+NAME[c]+'</option>';}).join("");
+    el("fxFrom").innerHTML=opts; el("fxTo").innerHTML=opts;
+    var sel={f:"EUR",t:"USD"}; try{ var s2=JSON.parse(localStorage.getItem("eu26_fx_sel")||"null"); if(s2) sel=s2; }catch(e){}
+    el("fxFrom").value=sel.f; el("fxTo").value=sel.t;
+    el("fxChips").innerHTML=["EUR→USD","CHF→USD","GBP→USD","USD→EUR","USD→CHF","EUR→CHF"].map(function(p){return '<button type="button" data-p="'+p+'">'+p+'</button>';}).join("");
+    el("fxChips").addEventListener("click",function(e){ var b=e.target.closest("button"); if(!b) return; var p=b.getAttribute("data-p").split("→"); el("fxFrom").value=p[0]; el("fxTo").value=p[1]; calc(); });
+    ["fxAmt","fxFrom","fxTo"].forEach(function(id){ el(id).addEventListener("input",calc); el(id).addEventListener("change",calc); });
+    el("fxAmt").addEventListener("focus",function(){ this.select(); });
+    el("fxSwap").addEventListener("click",function(){ var f=el("fxFrom").value; el("fxFrom").value=el("fxTo").value; el("fxTo").value=f; calc(); });
+    el("fxRefresh").addEventListener("click",load);
+    var c=null; try{ c=JSON.parse(localStorage.getItem(KEY)||"null"); }catch(e){}
+    if(c&&c.rates) apply(c.rates,c.date,c.src,c.at,"cache"); else apply(FALLBACK.rates,FALLBACK.date,FALLBACK.src,Date.now(),"off");
+    load(); setInterval(load,30*60*1000);
+    document.addEventListener("visibilitychange",function(){ if(!document.hidden && meta && Date.now()-meta.at>30*60*1000) load(); });
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
 })();
 </script>
 </body>
