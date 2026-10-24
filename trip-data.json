@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-24T03:02:37.392Z",
+    "lastUpdated": "2026-10-24T03:26:49.228Z",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -221,26 +221,52 @@
     {
       "n": 1,
       "date": "11/9",
-      "route": "Marseille Blancarde/St-Charles → Nice Ville",
-      "service": "ZOU! regional TER",
-      "time": "~2h34 (1:04p→3:38p)",
-      "book": "PAY ON THE DAY — fixed fare, no reservation (~€84/2)",
+      "route": "Marseille BLANCARDE → Nice Ville",
+      "service": "ZOU! TER (direct)",
+      "time": "13:04 → 15:38 (2h34)",
+      "book": "PAY ON THE DAY — €41.90 pp (SNCF TER). ⚠️ The week of 11/9, trains to Nice leave from Marseille La Blancarde, NOT St-Charles (Chartreux bridge works). Tram T1 Noailles → Blancarde ~9 min.",
       "scheduleOptions": [
         {
           "label": "Target",
           "time": "13:04→15:38",
-          "note": "Current planner anchor; buy day-of unless the schedule materially changes."
+          "note": "Fits 11am checkout + Rue Saint-Ferréol browse."
         },
         {
-          "label": "Backup",
-          "time": "midday/early-afternoon TER",
-          "note": "Check SNCF/ZOU the day before; regional pattern is the right lane, not advance high-speed."
+          "label": "Earlier",
+          "time": "10:02→12:38",
+          "note": "Direct."
+        },
+        {
+          "label": "Later",
+          "time": "14:04→16:40 · 17:04→19:37",
+          "note": "Direct. (12:11→15:03 and 15:15→18:08 are slower.)"
         }
       ],
       "status": "payday"
     },
     {
-      "n": 2,
+      "status": "payday",
+      "date": "11/11",
+      "route": "Nice → Èze Village → Monaco → Nice",
+      "service": "Bus 82 + taxi (NO TRAINS until ~17:30)",
+      "time": "82: 08:30→08:55 Èze",
+      "book": "⚠️ SNCF works close Nice–Ventimiglia line 10 Nov all day + 11 Nov until ~17:30; bus 602 does not run on public holidays. Bus 82 (holiday timetable) from Nice Vauban; taxi/Uber Èze→Monaco; trains back from Monaco from 19:05.",
+      "scheduleOptions": [
+        {
+          "label": "Out",
+          "time": "Bus 82 Vauban 08:30→Èze 08:55 (or 09:45→10:10)",
+          "note": "Then taxi Èze→Monaco ~20 min, or Nietzsche Path + bus 600."
+        },
+        {
+          "label": "Back",
+          "time": "Monaco→Nice 19:05 · 19:17 · 19:31 · 20:05 · 20:16 · 20:33 · 20:46 · 21:06",
+          "note": "~25 min. Backup bus 600 every ~20 min, last ~21:09."
+        }
+      ],
+      "n": 2
+    },
+    {
+      "n": 3,
       "date": "11/13",
       "route": "Ventimiglia → Savona → Milano Centrale",
       "service": "Regionale 12267 + Regionale Veloce 3021",
@@ -276,7 +302,7 @@
       "status": "booked"
     },
     {
-      "n": 3,
+      "n": 4,
       "date": "11/15",
       "route": "Milano Centrale → Venezia S. Lucia",
       "service": "Italo 8981 · Smart (eXtra)",
@@ -292,7 +318,7 @@
       "status": "booked"
     },
     {
-      "n": 4,
+      "n": 5,
       "date": "11/16",
       "route": "Venezia S. Lucia → Milano Centrale",
       "service": "Italo 8988 · Smart (eXtra)",
@@ -308,7 +334,7 @@
       "status": "booked"
     },
     {
-      "n": 5,
+      "n": 6,
       "date": "11/17",
       "route": "Milano Centrale → Lake Como (day trip)",
       "service": "Regionale",
@@ -317,19 +343,24 @@
       "scheduleOptions": [
         {
           "label": "Planned flow",
-          "time": "11:15 Milan→Monza; 14:15 Monza→Como; 21:30 Como→Milan",
-          "note": "Use this if keeping Binario 21 + Monza + Como."
+          "time": "Milan→Monza 11:43→11:52 (or 11:20→11:31) · Monza→Como 13:53→14:23",
+          "note": "Hourly :43 from Milano Centrale; Monza→Como €4.10."
         },
         {
           "label": "Simpler fallback",
-          "time": "late morning Milan→Como direct",
-          "note": "Skip Monza and take a direct/frequent train from Milano Centrale to Como S. Giovanni."
+          "time": "Milano Centrale→Como S. Giovanni 10:43→11:23 / 11:43→12:23",
+          "note": "Direct RE every hour at :43 (40 min, €5.40); EC 11:10→11:49 (€16)."
+        },
+        {
+          "label": "Return",
+          "time": "Como→Milano C. 20:36 · 21:36 (RE) · 21:10 · 22:10 (EC, last direct)",
+          "note": "After 22:10 only slow connections (arr 23:07+)."
         }
       ],
       "status": "payday"
     },
     {
-      "n": 6,
+      "n": 7,
       "date": "11/18",
       "route": "Milano Centrale → Basel SBB",
       "service": "EuroCity 150 (direct, via Gotthard) · Trenitalia Smart2, 2nd class",
@@ -345,23 +376,122 @@
       "status": "booked"
     },
     {
-      "n": 7,
+      "status": "payday",
+      "date": "11/19",
+      "route": "Basel SBB ⇄ Strasbourg (day trip)",
+      "service": "TER (SNCF)",
+      "time": "1h18 direct",
+      "book": "PAY ON THE DAY — French platforms 30–35 at Basel SBB.",
+      "scheduleOptions": [
+        {
+          "label": "Out",
+          "time": "9:21→10:39 (or 8:51→10:09)",
+          "note": "Direct."
+        },
+        {
+          "label": "Back",
+          "time": "16:21→17:38 · 16:51→18:08 · 17:21→18:38 · 18:51→20:08",
+          "note": "Via Colmar: Colmar→Basel 17:23→18:08 · 17:53→18:38."
+        }
+      ],
+      "n": 8
+    },
+    {
+      "status": "payday",
+      "date": "11/20",
+      "route": "Basel ⇄ Freiburg im Breisgau (day trip)",
+      "service": "DB regional (RE7/RB27)",
+      "time": "~1h",
+      "book": "PAY ON THE DAY — DB regional fare; trains run from Basel Badischer Bahnhof (tram 2 from Basel SBB).",
+      "scheduleOptions": [
+        {
+          "label": "Out",
+          "time": "9:40 tram → Basel Bad. Bf RE7 9:58→10:40",
+          "note": "Or 9:06 S6 + RB27 → 10:18."
+        },
+        {
+          "label": "Back",
+          "time": "17:18→18:21 (RE7 direct to Basel SBB)",
+          "note": "Or 16:42→17:59 · 17:42→18:56."
+        }
+      ],
+      "n": 9
+    },
+    {
+      "status": "payday",
+      "date": "11/21",
+      "route": "Basel SBB ⇄ Luzern (+ Rigi)",
+      "service": "SBB IC/IR + Rigi cogwheel",
+      "time": "1h01 direct",
+      "book": "PAY ON THE DAY (or Supersaver). Pilatus Kriens cable car CLOSED 19 Oct–27 Nov; Alpnachstad cogwheel only.",
+      "scheduleOptions": [
+        {
+          "label": "Out",
+          "time": "9:04→10:05 (IC21) · 8:04→9:05 (IR26)",
+          "note": "Direct."
+        },
+        {
+          "label": "Rigi",
+          "time": "Luzern 13:18→Rigi Kulm 14:34 · Rigi Kulm 15:48→Basel 18:26",
+          "note": "Via Arth-Goldau."
+        },
+        {
+          "label": "Back (no peak)",
+          "time": "16:54→17:55 · 17:30→18:44 · 17:54→18:55",
+          "note": "17:54 is the last comfortable train for the 8pm Sternen dinner."
+        }
+      ],
+      "n": 10
+    },
+    {
+      "n": 11,
       "date": "11/23",
       "route": "Basel SBB → Zürich HB",
       "service": "SBB InterCity",
-      "time": "~55m",
+      "time": "11:07 → 12:00 (53m)",
       "book": "PAY ON THE DAY — optional Supersaver ~30–60d out to save",
       "scheduleOptions": [
         {
-          "label": "Flexible target",
-          "time": "late morning / early afternoon",
-          "note": "Frequent direct SBB IC trains; buy day-of unless a Supersaver fare is compelling."
+          "label": "Target",
+          "time": "11:07→12:00",
+          "note": "EC 151 direct; hotel check-in 12:30."
+        },
+        {
+          "label": "Earlier",
+          "time": "10:07→11:00 (ICE) · 10:33→11:26 (TGV)",
+          "note": "Direct; SBB ticket valid."
+        },
+        {
+          "label": "Later",
+          "time": "11:33→12:26 (IC3)",
+          "note": "Half-hourly direct service all day."
         }
       ],
       "status": "payday"
     },
     {
-      "n": 8,
+      "status": "payday",
+      "date": "11/24",
+      "route": "Zürich HB ⇄ Kilchberg ZH (Lindt)",
+      "service": "S-Bahn S8/S24",
+      "time": "~11–13m",
+      "book": "PAY ON THE DAY — zone ticket; ~10 min walk from Kilchberg station to Lindt Home.",
+      "scheduleOptions": [
+        {
+          "label": "Out",
+          "time": "S24 13:51→14:03 · S8 14:07→14:18",
+          "note": "For the 2:30 PM slot."
+        },
+        {
+          "label": "Back",
+          "time": "16:40 · 16:55 · 17:10 · 17:25",
+          "note": "Every ~15 min."
+        }
+      ],
+      "n": 12
+    },
+    {
+      "n": 13,
       "date": "11/26",
       "route": "Zürich HB → Zürich Flughafen",
       "service": "S-Bahn / IC",
@@ -370,11 +500,43 @@
       "scheduleOptions": [
         {
           "label": "Airport run",
-          "time": "depart Zurich HB about 2.5–3h before flight",
-          "note": "Very frequent S-Bahn/IC service; use the next train on the day."
+          "time": "IC5 8:02→8:11 · IC8 8:04→8:14 · S2 8:14→8:24",
+          "note": "Every few minutes; flight 11:00."
         }
       ],
       "status": "payday"
+    },
+    {
+      "status": "payday",
+      "date": "11/26",
+      "route": "Dublin Airport → O'Connell St (Riu Plaza The Gresham)",
+      "service": "Aircoach 700 / 700X",
+      "time": "~30–40m",
+      "book": "PAY ON THE DAY (or Aircoach app) — stops right outside the Gresham (\"O'Connell Street, RIU Gresham Hotel\"); every ~15 min. Taxi ~€30–35 alternative.",
+      "scheduleOptions": [
+        {
+          "label": "Target",
+          "time": "~1:15–1:30p after bags",
+          "note": "Land 12:25."
+        }
+      ],
+      "n": 14
+    },
+    {
+      "status": "payday",
+      "date": "11/27",
+      "route": "O'Connell St (Gresham) → Dublin Airport",
+      "service": "Aircoach 700 / 700X",
+      "time": "~30–40m",
+      "book": "PAY ON THE DAY — board outside the Gresham. US preclearance in Dublin: plan to be at the airport ~3h before the 11:30 flight.",
+      "scheduleOptions": [
+        {
+          "label": "Target",
+          "time": "Leave ~7:45a → airport ~8:30a",
+          "note": "Aircoach every ~15 min; taxi ~25 min as backup."
+        }
+      ],
+      "n": 15
     }
   ],
   "days": [
@@ -550,7 +712,7 @@
         },
         {
           "time": "1:04p",
-          "text": "ZOU! regional train Marseille → Nice (1:04p→3:38p, ~2h34) — pay on the day at the station, fixed fare",
+          "text": "🚆 ZOU! TER Marseille BLANCARDE 13:04 → Nice Ville 15:38 (direct, 2h34) — ⚠️ departs La Blancarde, NOT St-Charles, the week of 11/9 (Av. des Chartreux rail-bridge works). Get there by tram T1 from Noailles (~9 min; Noailles is ~8 min walk from the hotel) or a short taxi. Pay on the day, €41.90 pp. Other direct trains: 10:02→12:38 · 14:04→16:40 · 17:04→19:37 (12:11 and 15:15 are slower, ~2h55). (timetables checked 10/23 — re-check the day before)",
           "status": "payday"
         },
         {
@@ -642,17 +804,22 @@
       ],
       "items": [
         {
-          "time": "9:00a",
-          "text": "Train Nice → Monaco (~25min)",
-          "status": "confirmed"
+          "time": "8:30a",
+          "text": "🚌 ⚠️ NO TRAINS Nice ↔ Monaco/Èze until ~17:30 today (SNCF track works 10–11 Nov), and bus 602 does not run on public holidays (11/11 = Armistice Day). Instead: Lignes d'Azur bus 82 from Nice Vauban 08:30 → Èze Village 08:55 (holiday timetable; next 09:45 → 10:10). Tram T1 to Vauban first. Standard Lignes d'Azur bus ticket (buy on board / app).",
+          "status": "payday"
         },
         {
-          "time": "9:30a",
+          "time": "9:00a",
           "text": "Èze cliff-top medieval village (morning) — stop at the Fragonard perfume factory (Usine Laboratoire) for a scent-shopping browse",
           "status": "confirmed",
           "lat": 43.7302391,
           "lng": 7.3613607,
           "place": "Èze village"
+        },
+        {
+          "time": "11:15a",
+          "status": "tentative",
+          "text": "🚕 Èze Village → Monaco (Casino): taxi/Uber ~20 min (est. €35–50) — simplest on a holiday with no 602 bus. Budget alternative: walk the Nietzsche Path down to Èze-sur-Mer (~45–60 min, steep/uneven), then ZOU! bus 600 to Monaco (every ~20 min on holidays, ~20 min)."
         },
         {
           "time": "12:30p",
@@ -703,6 +870,11 @@
           "time": "7:30p",
           "text": "Dinner after casino (place TBD)",
           "status": "tentative"
+        },
+        {
+          "time": "9:00p",
+          "status": "payday",
+          "text": "🚆 Back to Nice — trains resume this evening: Monaco → Nice Ville 19:05 · 19:17 · 19:31 · 20:05 · 20:16 · 20:33 · 20:46 · 21:06 (~25 min, pay on day). Backup: ZOU! bus 600 Monaco (Place des Moulins) → Nice every ~20 min, last ~21:09. (timetables checked 10/23 — re-check the day before)"
         }
       ],
       "sleepCity": "Nice"
@@ -1056,8 +1228,8 @@
           "place": "Binario 21"
         },
         {
-          "time": "11:15a",
-          "text": "Regionale Milano Centrale → Monza (~15 min, frequent, walk-up).",
+          "time": "11:43a",
+          "text": "🚆 Milano Centrale → Monza: 11:43 → 11:52 (RE, 9 min) — or 11:20 → 11:31. Hourly pattern :20/:43; walk-up regional ticket (validate before boarding). If Binario 21 runs long, 12:20 / 12:43 work too.",
           "status": "tentative"
         },
         {
@@ -1077,8 +1249,8 @@
           "place": "Osteria da Mariuccia"
         },
         {
-          "time": "2:15p",
-          "text": "Train Monza → Como San Giovanni (~35–45 min, direct on the Chiasso line, walk-up).",
+          "time": "1:53p",
+          "text": "🚆 Monza → Como S. Giovanni: 13:53 → 14:23 (RE, 30 min, €4.10) — next 14:53 → 15:23 (or slower 14:27 → 15:10). Walk-up.",
           "status": "tentative"
         },
         {
@@ -1114,8 +1286,8 @@
           "place": "Ristorante Sociale"
         },
         {
-          "time": "9:30p",
-          "text": "Evening train Como San Giovanni → Milano Centrale (~37 min; last trains ~10–11 pm). Monza is fully skippable day-of if you'd rather head straight to Como.",
+          "time": "9:36p",
+          "text": "🚆 Como S. Giovanni → Milano Centrale: 20:36 → 21:17 · 21:36 → 22:17 (direct RE, €5.40) · EC 21:10 → 21:50 / 22:10 → 22:50 (€16, faster). 22:10 EC is the LAST direct train — after that only slow connections arriving 23:07+. Monza is fully skippable day-of.",
           "status": "tentative"
         }
       ],
@@ -1165,8 +1337,8 @@
       ],
       "items": [
         {
-          "time": "9:30a",
-          "text": "Train Basel → Strasbourg (~1h15, regional — pay on day)",
+          "time": "9:21a",
+          "text": "🚆 TER Basel SBB → Strasbourg 9:21 → 10:39 (direct, 1h18) — or 8:51 → 10:09. Leaves from the French platforms (30–35) at Basel SBB. Pay on the day (SNCF).",
           "status": "payday"
         },
         {
@@ -1194,6 +1366,11 @@
           "place": "Colmar (optional)"
         },
         {
+          "time": "4:51p",
+          "status": "payday",
+          "text": "🚆 Back to Basel: Strasbourg → Basel SBB direct 16:21→17:38 · 16:51→18:08 · 17:21→18:38 · 18:51→20:08. If stopping in Colmar: Colmar → Basel 17:23→18:08 · 17:53→18:38 · 19:23→20:08. (timetables checked 10/23 — re-check the day before)"
+        },
+        {
           "time": "8:00p",
           "text": "Dinner (back in Basel) — OPTIONS: Zum Schmale Wurf (Kleinbasel, Rhine-side, fish) · Restaurant Kunsthalle (buzzy arty brasserie) · Consum (wine bar + small plates)",
           "status": "tentative",
@@ -1214,8 +1391,8 @@
       ],
       "items": [
         {
-          "time": "9:30a",
-          "text": "Train Basel → Freiburg (~45min–1h, regional — pay on day)",
+          "time": "9:40a",
+          "text": "🚆 Basel → Freiburg Hbf: 9:40 tram 2 to Basel Badischer Bahnhof, then RE7 9:58 → 10:40 (1h total) — or 9:06 S6 + RB27 → 10:18. German DB regional fare (buy in DB app/machine at Basel Bad. Bf).",
           "status": "payday"
         },
         {
@@ -1240,6 +1417,11 @@
           "place": "Schlossberg (optional)"
         },
         {
+          "time": "5:18p",
+          "status": "payday",
+          "text": "🚆 Back to Basel: Freiburg → Basel SBB 17:18 → 18:21 (RE7 direct) · or 16:42 → 17:59 / 17:42 → 18:56 (via Basel Bad. Bf + tram). (timetables checked 10/23 — re-check the day before)"
+        },
+        {
           "time": "8:00p",
           "text": "Dinner (back in Basel) — OPTIONS: Volkshaus Basel (H&deM brasserie — oysters + fruits de mer for Max, strong fish/veg for Nicole, lively bar) · Safran Zunft (historic guildhall) · Da Gianni or another Basel Italian (change of cuisine)",
           "status": "tentative",
@@ -1260,8 +1442,8 @@
       ],
       "items": [
         {
-          "time": "9:00a",
-          "text": "Train Basel → Lucerne (~1h, regional — pay on day); Chapel Bridge, lake, Old Town",
+          "time": "9:04a",
+          "text": "🚆 Basel SBB → Luzern 9:04 → 10:05 (IC21 direct, 1h01) — or 8:04 → 9:05 (IR26). Then Chapel Bridge, lake, Old Town.",
           "status": "payday",
           "lat": 47.0518334,
           "lng": 8.307713,
@@ -1285,11 +1467,16 @@
         },
         {
           "time": "2:30p",
-          "text": "Weather call: Rigi default if clear (lake + mountain panorama, easier winter fallback); Pilatus only if operations line up. If clouds/rain, skip the peak and do the Swiss Museum of Transport (interactive trains/planes/cars/F1-style exhibits) or more Lucerne Old Town/watch browsing.",
+          "text": "⛰️ Weather call — RIGI (default if clear): Luzern 13:18 → Rigi Kulm 14:34 (train to Arth-Goldau + cogwheel); down Rigi Kulm 15:48 → Basel SBB 18:26 (via Arth-Goldau, no need to return to Lucerne). PILATUS: the Kriens gondola/cable car is CLOSED 19 Oct–27 Nov 2026 (overhaul) — only the Alpnachstad cogwheel (S5 12:42 → Pilatus Kulm 13:52); check pilatus.ch the day before. If clouds/rain, skip the peak.",
           "status": "tentative",
           "lat": 46.9789,
           "lng": 8.2525,
           "place": "Rigi / Pilatus (optional)"
+        },
+        {
+          "time": "5:54p",
+          "status": "payday",
+          "text": "🚆 Lucerne → Basel SBB for the 8pm dinner: 16:54 → 17:55 (IR26) · 17:30 → 18:44 (IR27) · 17:54 → 18:55 (IC21 — last comfortable option). (timetables checked 10/23 — re-check the day before)"
         },
         {
           "time": "8:00p",
@@ -1328,6 +1515,11 @@
           "place": "Jewish Museum of Switzerland"
         },
         {
+          "time": "3:35p",
+          "status": "payday",
+          "text": "🚋 To St. Jakob-Park: tram 14 (~15 min) or tram 10/11 + bus; extra match-day trams and special trains run. Leave by ~3:35 for the 4:30 kickoff. Your Basel hotel should give you a free BaselCard / Mobility Ticket covering trams — ask at check-in."
+        },
+        {
           "time": "4:30p",
           "text": "⚽ FOOTBALL: FC Basel vs FC Luzern — Swiss Super League at St. Jakob-Park (~10 min by tram from center). Tickets booked: C2 Parkett, row 5, seats 201–202. QR screenshots saved in Confirmations/FC Basel vs FC Luzern 2026-11-22.",
           "status": "booked",
@@ -1357,8 +1549,8 @@
       ],
       "items": [
         {
-          "time": "11:00a",
-          "text": "SBB Basel → Zurich (~55m) — pay on the day (optional Supersaver ~30–60d out to save)",
+          "time": "11:07a",
+          "text": "🚆 Basel SBB → Zürich HB 11:07 → 12:00 (EC 151, direct, 53 min) — or 10:33 → 11:26 (TGV) · 11:33 → 12:26 (IC3). Any direct train is fine on an SBB ticket; pay on the day or grab a Supersaver in the SBB app.",
           "status": "payday"
         },
         {
@@ -1413,6 +1605,11 @@
           "lat": 47.3729161,
           "lng": 8.5401756,
           "place": "Lindenhof / Old Town"
+        },
+        {
+          "time": "1:51p",
+          "status": "payday",
+          "text": "🚆 Zürich HB → Kilchberg ZH: S24 13:51 → 14:03 (buffer) or S8 14:07 → 14:18, then ~10 min walk to Lindt Home. Back: S8/S24 from Kilchberg 16:40 · 16:55 · 17:10 · 17:25 (~13 min)."
         },
         {
           "time": "2:30p",
@@ -1499,7 +1696,7 @@
       "items": [
         {
           "time": "8:20a",
-          "text": "Leave hotel",
+          "text": "Leave hotel (Limmathof is ~5 min walk to Zürich HB) → train to Zürich Flughafen every few min: IC5 8:02 → 8:11 · IC8 8:04 → 8:14 · S2 8:14 → 8:24.",
           "status": "confirmed"
         },
         {
@@ -2490,9 +2687,9 @@
         "label": "Marseille→Nice ZOU!/TER regional (2 pax)",
         "date": "Nov 9",
         "cur": "EUR",
-        "est": 80,
+        "est": 83.8,
         "actual": null,
-        "note": "Pay on the day at the station (fixed fare)"
+        "note": "Pay on the day at the station — €41.90 pp (departs Marseille Blancarde)"
       },
       {
         "cat": "Trains",
