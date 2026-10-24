@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-20T01:40:17.520Z",
+    "lastUpdated": "2026-10-24T02:53:09.906Z",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -803,20 +803,25 @@
       "items": [
         {
           "time": "9:23a",
-          "text": "Train Nice → Milan via Ventimiglia (~5h30, scenic coast): Nice→Ventimiglia TER = pay on day · Ventimiglia→Milan IC = book ahead",
-          "status": "book"
+          "text": "🚆 TER Nice Ville → Ventimiglia (~1h, arr ~10:15) — PAY ON THE DAY at the station (local regional, fixed fare). If you skip the market, any TER arriving by ~11:45 works.",
+          "status": "payday"
         },
         {
           "time": "10:15a",
-          "text": "🛍 Optional bridge — Ventimiglia FRIDAY market: one of the Riviera's biggest street markets sprawls by the station on Fridays (11/13 IS a Friday) — Italian leather, linens, food. If you build a longer layover into the Ventimiglia train change, browse before the onward train. ⚠️ Verify your Milan connection allows the extra time",
+          "text": "🛍 Optional bridge — Ventimiglia FRIDAY market: one of the Riviera's biggest street markets sprawls by the station on Fridays (11/13 IS a Friday) — Italian leather, linens, food. — ~2-hour window between the TER arrival and the booked 12:28 train; be back at the station by ~12:10.",
           "status": "optional",
           "lat": 43.7907,
           "lng": 7.6087,
           "place": "Ventimiglia Friday market"
         },
         {
-          "time": "3:30p",
-          "text": "Check in 43 Station Hotel",
+          "time": "12:28p",
+          "status": "booked",
+          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder."
+        },
+        {
+          "time": "6:00p",
+          "text": "Check in 43 Station Hotel (~5–10 min walk from Milano Centrale after the 17:39 arrival)",
           "status": "booked",
           "lat": 45.4878692,
           "lng": 9.2028501,
@@ -2462,21 +2467,21 @@
       },
       {
         "cat": "Trains",
-        "label": "Marseille→Nice TGV (2 pax)",
+        "label": "Marseille→Nice ZOU!/TER regional (2 pax)",
         "date": "Nov 9",
         "cur": "EUR",
         "est": 80,
         "actual": null,
-        "note": "Advance fare — book now"
+        "note": "Pay on the day at the station (fixed fare)"
       },
       {
         "cat": "Trains",
-        "label": "Nice→Milan IC+TER (2 pax)",
+        "label": "Nice→Ventimiglia TER + Ventimiglia→Milan Regionale (2 pax)",
         "date": "Nov 13",
         "cur": "EUR",
-        "est": 100,
-        "actual": null,
-        "note": "Cross-border"
+        "est": 45,
+        "actual": 25.7,
+        "note": "Ventimiglia→Milan BOOKED 10/19 €25.70 · Nice→Ventimiglia TER pay on day (~€20 for 2)"
       },
       {
         "cat": "Trains",
@@ -2540,6 +2545,33 @@
         "est": 500,
         "actual": null,
         "note": "Le Sens booked; add for any Michelin picks"
+      },
+      {
+        "cat": "Activities",
+        "label": "Doge's Palace timed entry (2 pax)",
+        "date": "Nov 16",
+        "cur": "USD",
+        "est": 78.48,
+        "actual": 78.48,
+        "note": "BOOKED 10/19 via GetYourGuide"
+      },
+      {
+        "cat": "Activities",
+        "label": "FC Basel vs FC Luzern — C2 Parkett row 5 (2 pax)",
+        "date": "Nov 22",
+        "cur": "CHF",
+        "est": 80,
+        "actual": null,
+        "note": "BOOKED 10/19 — enter actual price"
+      },
+      {
+        "cat": "Activities",
+        "label": "Lindt Home of Chocolate 2:30 PM (2 pax)",
+        "date": "Nov 24",
+        "cur": "CHF",
+        "est": 60,
+        "actual": null,
+        "note": "BOOKED via GetYourGuide — enter actual price"
       },
       {
         "cat": "Activities",
