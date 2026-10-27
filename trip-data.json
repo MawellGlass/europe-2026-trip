@@ -1056,6 +1056,14 @@
           "place": "The Last Supper"
         },
         {
+          "time": "12:30p",
+          "status": "tentative",
+          "text": "🥪 Pencilled in: All'Antico Vinaio — Via Orefici 5 (2 min from the Duomo). Famous Florentine schiacciata sandwiches; open daily 10:00–22:00. Backup lunch if you skip the Last Supper (or go after it). Expect a line at peak lunch.",
+          "lat": 45.4651,
+          "lng": 9.1876,
+          "place": "All'Antico Vinaio (Orefici)"
+        },
+        {
           "time": "3:00p",
           "text": "Sforza Castle → Brera wander — historic Milan without appointment pressure: castle courtyards, Parco Sempione edge, Brera lanes/galleries, espresso or aperitivo stop",
           "status": "tentative",
@@ -1096,6 +1104,14 @@
           "time": "9:00a",
           "text": "⚠️ PACK TO THE SIZE LIMIT — Italo Smart bags must each be under 75 × 53 × 30 cm (soft daypack / small bag only; measure it packed). Big bags stay in the held Milan room. Packed and out the door with time to spare — boarding closes 2 min before departure.",
           "status": "confirmed"
+        },
+        {
+          "time": "10:15a",
+          "status": "tentative",
+          "text": "🥪 Pencilled in: All'Antico Vinaio — Milano Centrale shop (inside the station, open daily 10:00–22:00). Grab 2 schiacciate to eat on the 11:35 Italo to Venice, plus one for later. Opens at 10, so arrive early to beat the line; still at the platform by ~11:05.",
+          "lat": 45.4862,
+          "lng": 9.2047,
+          "place": "All'Antico Vinaio (Centrale)"
         },
         {
           "time": "11:35a",
@@ -2315,6 +2331,16 @@
       "when": "11/25 7:00 PM",
       "booking": "CONFIRMED",
       "status": "booked"
+    },
+    {
+      "city": "Milan",
+      "name": "All'Antico Vinaio",
+      "tier": "PENCILLED IN",
+      "why": "Cult Florentine schiacciata sandwich shop. Two slots pencilled in: <b>Sun 11/15 ~10:15 at the Milano Centrale shop</b> (take-away for the 11:35 Italo) and <b>Sat 11/14 lunch at Via Orefici 5</b> by the Duomo. All Milan shops open daily 10:00–22:00. <a href=\"https://www.allanticovinaio.com/milano-stazione-centrale/\" target=\"_blank\">allanticovinaio.com ↗</a>",
+      "price": "€10–15 pp",
+      "when": "11/15 10:15 · 11/14 12:30",
+      "booking": "Walk-in, no booking",
+      "status": "walk_up"
     }
   ],
   "shopping": [
