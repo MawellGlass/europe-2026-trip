@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-24T03:26:49.228Z",
+    "lastUpdated": "2026-10-27",
     "lastAppEdit": "2026-09-23 18:53 (edited in app)"
   },
   "segments": [
@@ -112,7 +112,13 @@
       "carrier": "BA",
       "detail": "Depart PHL 6:35pm; land LHR 6:35am; LHR 2:40pm → MRS 5:45pm",
       "status": "booked",
-      "conf": ""
+      "conf": "",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid",
+        "note": "BA PHL→LHR→MRS. Missing a leg can cancel the rest of the ticket.",
+        "sort": "2026-11-06"
+      }
     },
     {
       "leg": "ZRH → DUB → PHL",
@@ -121,7 +127,13 @@
       "carrier": "Aer Lingus / AA",
       "detail": "ZRH 11:00am → DUB 12:25pm; DUB 11:30am → PHL 2:05pm (US pre-clearance in Dublin)",
       "status": "booked",
-      "conf": ""
+      "conf": "",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid",
+        "note": "Aer Lingus/AA. ZRH→DUB on 11/26 and DUB→PHL on 11/27; US preclearance in Dublin.",
+        "sort": "2026-11-26"
+      }
     }
   ],
   "hotels": [
@@ -136,7 +148,13 @@
       "price": "$186.57 total (2n · $176.66 paid, $5.91 due at property)",
       "notes": "Vieux-Port, walkable to the Old Port. 1 double bed, 2 adults. Check-in 11/7 3pm · check-out 11/9 11am. Booked via Amex Travel (Amex Gold, 6X pts). Replaced Adagio Saint-Charles hold (ZO-AX1066-73060).",
       "lat": 43.2968676,
-      "lng": 5.3728146
+      "lng": 5.3728146,
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Prepaid $176.66",
+        "note": "Paid via Amex Travel; refundability not confirmed. $5.91 due at property.",
+        "sort": "2026-11-07"
+      }
     },
     {
       "city": "Nice",
@@ -149,7 +167,13 @@
       "price": "€246.24 total (4n · due at property)",
       "notes": "Riviera base; walkable to Vieux Nice. Hotel conf 9102912480675. Booked via Amex Travel. Replaced Hotel Paganini (ZO-AX1034-32563).",
       "lat": 43.7039269,
-      "lng": 7.2631683
+      "lng": 7.2631683,
+      "missCost": {
+        "risk": "unknown",
+        "label": "Card on file: check cancel deadline",
+        "note": "€246.24 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline (no-shows are usually charged at least 1 night).",
+        "sort": "2026-11-09"
+      }
     },
     {
       "city": "Milan",
@@ -162,7 +186,13 @@
       "price": "€726.99 total (5n · due at property)",
       "notes": "Milan base confirmed; duplicate overlapping 11/13–16 Milan hold was canceled. This 5n stay intentionally holds the 11/15 Venice night for the big bags. Hotel conf 10848. Booked via Amex Travel.",
       "lat": 45.4878692,
-      "lng": 9.2028501
+      "lng": 9.2028501,
+      "missCost": {
+        "risk": "unknown",
+        "label": "Card on file: check cancel deadline",
+        "note": "€726.99 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline.",
+        "sort": "2026-11-13"
+      }
     },
     {
       "city": "Venice",
@@ -175,7 +205,13 @@
       "price": "$113.57 total (1n · $0 paid, $113.57 due at property)",
       "notes": "4★ canalside in Castello near the Bridge of Sighs; central for dawn canals. 1 double bed, 2 adults. Check-in 11/15 2pm · check-out 11/16 12pm. Avg nightly $93.86 + $9.38 tax; $10.32 mandatory city fee due at property. Booked via Amex Travel. (Milan room still held this night for the big bags.)",
       "lat": 45.436069,
-      "lng": 12.3411926
+      "lng": 12.3411926,
+      "missCost": {
+        "risk": "unknown",
+        "label": "Card on file: check cancel deadline",
+        "note": "$113.57 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline.",
+        "sort": "2026-11-15"
+      }
     },
     {
       "city": "Basel",
@@ -188,7 +224,13 @@
       "price": "CHF 768.75 total (5n · due at property)",
       "notes": "Near Basel SBB for four day-trips. Hotel conf 2438082966. Booked via Amex Travel.",
       "lat": 47.5525211,
-      "lng": 7.5858061
+      "lng": 7.5858061,
+      "missCost": {
+        "risk": "unknown",
+        "label": "Card on file: check cancel deadline",
+        "note": "CHF 768.75 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline.",
+        "sort": "2026-11-18"
+      }
     },
     {
       "city": "Zurich",
@@ -201,7 +243,13 @@
       "price": "$607.54 total ($26.80 due at property)",
       "notes": "Old Town, on the Limmat by the HB. Hotel conf 02F69des18610f6e. Booked via Amex Travel.",
       "lat": 47.3764444,
-      "lng": 8.544161
+      "lng": 8.544161,
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Prepaid ~$580",
+        "note": "$607.54 total, $26.80 due at property; the rest was paid via Amex Travel. Refundability not confirmed.",
+        "sort": "2026-11-23"
+      }
     },
     {
       "city": "Dublin",
@@ -214,7 +262,13 @@
       "price": "€150.81 total (1n · due at property)",
       "notes": "City centre (O'Connell St). Hotel conf 42983308. Booked via Amex Travel.",
       "lat": 53.3516104,
-      "lng": -6.2602645
+      "lng": -6.2602645,
+      "missCost": {
+        "risk": "unknown",
+        "label": "Card on file: check cancel deadline",
+        "note": "€150.81 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline.",
+        "sort": "2026-11-26"
+      }
     }
   ],
   "trains": [
@@ -299,7 +353,13 @@
           "note": "36-min buffer; use only if running late. 11:23→12:21 is NOT safe."
         }
       ],
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid €25.70",
+        "note": "Trenitalia regional, ticket code 2987179016. The Nice→Ventimiglia TER is pay-on-day.",
+        "sort": "2026-11-13"
+      }
     },
     {
       "n": 4,
@@ -315,7 +375,13 @@
           "note": "Italo 8981, Milano Centrale → Venezia S. Lucia; coach 6, seats 33–34."
         }
       ],
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid (€59.60 round trip)",
+        "note": "Italo 8981 + 8988. Boarding closes 2 min before departure.",
+        "sort": "2026-11-15"
+      }
     },
     {
       "n": 5,
@@ -331,7 +397,13 @@
           "note": "Italo 8988, Venezia S. Lucia → Milano Centrale; coach 6, seats 29–30. ~1.5h before Ratanà 8pm."
         }
       ],
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid (same Italo booking)",
+        "note": "Boarding closes 2 min before departure; be at Santa Lucia by ~15:30.",
+        "sort": "2026-11-16"
+      }
     },
     {
       "n": 6,
@@ -373,7 +445,13 @@
           "note": "EC 150 Milano Centrale → Basel SBB (arr. platform 9 per SBB); coach 4, seats 15–16. Restaurant car on board."
         }
       ],
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid €164, non-refundable",
+        "note": "Changeable before departure by paying the difference up to the Standard fare.",
+        "sort": "2026-11-18"
+      }
     },
     {
       "status": "payday",
@@ -557,7 +635,13 @@
         {
           "time": "6:35p",
           "text": "Depart PHL (BA)",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid",
+            "note": "BA PHL→LHR→MRS. Missing a leg can cancel the rest of the ticket.",
+            "sort": "2026-11-06"
+          }
         }
       ]
     },
@@ -687,7 +771,13 @@
           "status": "booked",
           "lat": 43.2856,
           "lng": 5.3559,
-          "place": "Chez Fonfon (Vallon des Auffes)"
+          "place": "Chez Fonfon (Vallon des Auffes)",
+          "missCost": {
+            "risk": "fee",
+            "label": "Card guarantee held",
+            "note": "Bank-guarantee authorization on file. Fee amount not stated, so cancel well ahead if plans change.",
+            "sort": "2026-11-08"
+          }
         }
       ],
       "sleepCity": "Marseille"
@@ -827,7 +917,13 @@
           "status": "booked",
           "lat": 43.7395874,
           "lng": 7.4278595,
-          "place": "Café de Paris Monte-Carlo"
+          "place": "Café de Paris Monte-Carlo",
+          "missCost": {
+            "risk": "fee",
+            "label": "€50 pp (€100) if cancel <24h / no-show",
+            "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com).",
+            "sort": "2026-11-11"
+          }
         },
         {
           "time": "1:00p",
@@ -895,7 +991,13 @@
           "status": "booked",
           "lat": 43.6919112,
           "lng": 7.2908183,
-          "place": "Le Plongeoir"
+          "place": "Le Plongeoir",
+          "missCost": {
+            "risk": "fee",
+            "label": "Card held: free change/cancel until Nov 7",
+            "note": "Card on file. Changes and cancellations are free until Nov 7; after that, expect a charge.",
+            "sort": "2026-11-12"
+          }
         },
         {
           "time": "2:30p",
@@ -1009,7 +1111,13 @@
         {
           "time": "12:28p",
           "status": "booked",
-          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder."
+          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder.",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid €25.70",
+            "note": "Trenitalia regional, ticket code 2987179016. The Nice→Ventimiglia TER is pay-on-day.",
+            "sort": "2026-11-13"
+          }
         },
         {
           "time": "6:00p",
@@ -1085,7 +1193,13 @@
           "status": "booked",
           "lat": 45.4771424,
           "lng": 9.2018693,
-          "place": "Joia (1★)"
+          "place": "Joia (1★)",
+          "missCost": {
+            "risk": "fee",
+            "label": "€70 if cancel <24h / no-show",
+            "note": "TheFork card imprint, not charged now. €70 fee, possibly per person (€140). Free cancel until 24h before.",
+            "sort": "2026-11-14"
+          }
         }
       ],
       "sleepCity": "Milan"
@@ -1116,7 +1230,13 @@
         {
           "time": "11:35a",
           "text": "🚆 Italo 8981 Milano Centrale → Venezia S. Lucia (arr 14:05) — coach 6, seats 33 & 34. Be at Centrale by ~11:05. QR in Tickets-Wallet.html",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid (€59.60 round trip)",
+            "note": "Italo 8981 + 8988. Boarding closes 2 min before departure.",
+            "sort": "2026-11-15"
+          }
         },
         {
           "time": "2:05p",
@@ -1177,7 +1297,13 @@
           "status": "booked",
           "lat": 45.4342108,
           "lng": 12.340592,
-          "place": "Doge's Palace"
+          "place": "Doge's Palace",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid $78.48",
+            "note": "GetYourGuide. Check the app for the free-cancel cutoff (often 24h) and the slot time.",
+            "sort": "2026-11-16"
+          }
         },
         {
           "time": "10:00a",
@@ -1213,7 +1339,13 @@
         {
           "time": "3:57p",
           "text": "🚆 Italo 8988 Venezia S. Lucia → Milano Centrale (arr 18:25) — coach 6, seats 29 & 30. QR in Tickets-Wallet.html",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid (same Italo booking)",
+            "note": "Boarding closes 2 min before departure; be at Santa Lucia by ~15:30.",
+            "sort": "2026-11-16"
+          }
         },
         {
           "time": "8:00p",
@@ -1322,7 +1454,13 @@
         {
           "time": "11:10a",
           "text": "🚆 EuroCity 150 Milano Centrale 11:10 → Basel SBB 15:26 — BOOKED (Trenitalia Smart2, 2nd class), coach 4, seats 16 (Max) & 15 (Nicole). Be at Centrale by ~10:45; tell the conductor your PNR (in the private confirmations folder).",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid €164, non-refundable",
+            "note": "Changeable before departure by paying the difference up to the Standard fare.",
+            "sort": "2026-11-18"
+          }
         },
         {
           "time": "4:00p",
@@ -1541,7 +1679,13 @@
           "status": "booked",
           "lat": 47.54127,
           "lng": 7.62157,
-          "place": "St. Jakob-Park (FC Basel)"
+          "place": "St. Jakob-Park (FC Basel)",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid, non-refundable",
+            "note": "2 seats C2 Parkett row 5. QR codes in Confirmations.",
+            "sort": "2026-11-22"
+          }
         },
         {
           "time": "8:00p",
@@ -1634,7 +1778,13 @@
           "status": "booked",
           "lat": 47.3186,
           "lng": 8.5546,
-          "place": "Lindt Home of Chocolate"
+          "place": "Lindt Home of Chocolate",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid: timed 2:30 PM entry",
+            "note": "GetYourGuide. Check the app for the cancel cutoff.",
+            "sort": "2026-11-24"
+          }
         },
         {
           "time": "5:00p",
@@ -1665,7 +1815,13 @@
         {
           "time": "7:00p",
           "text": "🧀 Dinner: RACLETTE at Swiss Chuchi (Hotel Adler, Niederdorf) — 2 seats, confirmed. Inside table, 2-hr slot, held 15 min. Cancel online by 7pm 11/24 if plans change. Last night in Switzerland — flight to Dublin is 11:00 AM on 11/26, so keep it relaxed.",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "fee",
+            "label": "CHF 50 no-show (no card taken)",
+            "note": "Free online cancel until 24h before (7pm 11/24). Table released 15 min after booking time.",
+            "sort": "2026-11-25"
+          }
         }
       ],
       "sleepCity": "Zurich",
@@ -1718,7 +1874,13 @@
         {
           "time": "11:00a",
           "text": "Fly ZRH → DUB (arr 12:25p)",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid",
+            "note": "Aer Lingus/AA. ZRH→DUB on 11/26 and DUB→PHL on 11/27; US preclearance in Dublin.",
+            "sort": "2026-11-26"
+          }
         },
         {
           "time": "2:00p",
@@ -1734,7 +1896,13 @@
           "status": "tentative",
           "lat": 53.346644,
           "lng": -6.2636766,
-          "place": "The Winding Stair"
+          "place": "The Winding Stair",
+          "missCost": {
+            "risk": "fee",
+            "label": "€30 pp (€60) if cancel <24h / no-show",
+            "note": "OpenTable card guarantee, not a prepaid deposit. Only 7:45pm showed for 2. Not booked yet.",
+            "sort": "2026-11-26"
+          }
         }
       ],
       "sleepCity": "Dublin"
@@ -1756,7 +1924,13 @@
         {
           "time": "11:30a",
           "text": "Fly DUB → PHL (arr 2:05p)",
-          "status": "booked"
+          "status": "booked",
+          "missCost": {
+            "risk": "prepaid",
+            "label": "Paid",
+            "note": "Aer Lingus/AA. ZRH→DUB on 11/26 and DUB→PHL on 11/27; US preclearance in Dublin.",
+            "sort": "2026-11-26"
+          }
         }
       ]
     }
@@ -1780,7 +1954,13 @@
       "price": "€90–120/2",
       "when": "11/8 8:00 PM",
       "booking": "CONFIRMED",
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "fee",
+        "label": "Card guarantee held",
+        "note": "Bank-guarantee authorization on file. Fee amount not stated, so cancel well ahead if plans change.",
+        "sort": "2026-11-08"
+      }
     },
     {
       "city": "Marseille",
@@ -1860,7 +2040,13 @@
       "price": "€90–130/2",
       "when": "11/12 12:00 PM",
       "booking": "CONFIRMED (card held)",
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "fee",
+        "label": "Card held: free change/cancel until Nov 7",
+        "note": "Card on file. Changes and cancellations are free until Nov 7; after that, expect a charge.",
+        "sort": "2026-11-12"
+      }
     },
     {
       "city": "Nice",
@@ -1920,7 +2106,13 @@
       "price": "€100–180/2 before serious wine",
       "when": "11/11 12:30pm",
       "booking": "CONFIRMED",
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "fee",
+        "label": "€50 pp (€100) if cancel <24h / no-show",
+        "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com).",
+        "sort": "2026-11-11"
+      }
     },
     {
       "city": "Monaco",
@@ -1970,7 +2162,13 @@
       "price": "€85–120pp",
       "when": "11/14 7:45 PM",
       "booking": "CONFIRMED",
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "fee",
+        "label": "€70 if cancel <24h / no-show",
+        "note": "TheFork card imprint, not charged now. €70 fee, possibly per person (€140). Free cancel until 24h before.",
+        "sort": "2026-11-14"
+      }
     },
     {
       "city": "Milan",
@@ -2150,7 +2348,13 @@
       "price": "€70–90/2",
       "when": "11/26",
       "booking": "site",
-      "status": "to_book"
+      "status": "to_book",
+      "missCost": {
+        "risk": "fee",
+        "label": "€30 pp (€60) if cancel <24h / no-show",
+        "note": "OpenTable card guarantee, not a prepaid deposit. Only 7:45pm showed for 2. Not booked yet.",
+        "sort": "2026-11-26"
+      }
     },
     {
       "city": "Dublin",
@@ -2330,7 +2534,13 @@
       "price": "CHF 50–80 pp",
       "when": "11/25 7:00 PM",
       "booking": "CONFIRMED",
-      "status": "booked"
+      "status": "booked",
+      "missCost": {
+        "risk": "fee",
+        "label": "CHF 50 no-show (no card taken)",
+        "note": "Free online cancel until 24h before (7pm 11/24). Table released 15 min after booking time.",
+        "sort": "2026-11-25"
+      }
     },
     {
       "city": "Milan",
@@ -2572,7 +2782,13 @@
       "date": "11/16",
       "provider": "GetYourGuide (Venezia Unica / Vela Spa)",
       "status": "booked",
-      "notes": "Booked 10/19: 2 adults, $78.48, reserved entry. Mobile tickets in GetYourGuide app (QR in private wallet if added)."
+      "notes": "Booked 10/19: 2 adults, $78.48, reserved entry. Mobile tickets in GetYourGuide app (QR in private wallet if added).",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid $78.48",
+        "note": "GetYourGuide. Check the app for the free-cancel cutoff (often 24h) and the slot time.",
+        "sort": "2026-11-16"
+      }
     },
     {
       "item": "Binario 21 / Memoriale della Shoah — Milan",
@@ -2600,14 +2816,26 @@
       "date": "11/22",
       "provider": "fcb.ch / Ticketcorner",
       "status": "booked",
-      "notes": "BOOKED 2026-10-19: 2 seated tickets, C2 Parkett, row 5, seats 201–202. QR screenshots and ticket summary saved in Confirmations/FC Basel vs FC Luzern 2026-11-22."
+      "notes": "BOOKED 2026-10-19: 2 seated tickets, C2 Parkett, row 5, seats 201–202. QR screenshots and ticket summary saved in Confirmations/FC Basel vs FC Luzern 2026-11-22.",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid, non-refundable",
+        "note": "2 seats C2 Parkett row 5. QR codes in Confirmations.",
+        "sort": "2026-11-22"
+      }
     },
     {
       "item": "🍫 Lindt Home of Chocolate — timed entry, Kilchberg",
       "date": "11/24",
       "provider": "GetYourGuide / Lindt Home of Chocolate",
       "status": "booked",
-      "notes": "BOOKED: Tue 11/24 at 2:30 PM via GetYourGuide. Timing works well: central Zurich to Kilchberg is ~20 min, museum/shop are open 10am-7pm, and the last audio-guide tour slot is 5:30pm. Plan to leave Zurich center around 1:45-2:00 PM; after the visit, return for Bellevue Noël/Zurich HB Christmas markets from ~5:00 PM onward."
+      "notes": "BOOKED: Tue 11/24 at 2:30 PM via GetYourGuide. Timing works well: central Zurich to Kilchberg is ~20 min, museum/shop are open 10am-7pm, and the last audio-guide tour slot is 5:30pm. Plan to leave Zurich center around 1:45-2:00 PM; after the visit, return for Bellevue Noël/Zurich HB Christmas markets from ~5:00 PM onward.",
+      "missCost": {
+        "risk": "prepaid",
+        "label": "Paid: timed 2:30 PM entry",
+        "note": "GetYourGuide. Check the app for the cancel cutoff.",
+        "sort": "2026-11-24"
+      }
     }
   ],
   "budget": {
