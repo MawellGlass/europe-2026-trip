@@ -1861,7 +1861,7 @@
     {
       "date": "2026-11-26",
       "dow": "Thu",
-      "city": "Zurich → Dublin",
+      "city": "Zurich → Dublin — sweater, ice cream & pub night",
       "travel": true,
       "cities": [
         "Zurich",
@@ -1885,26 +1885,49 @@
           }
         },
         {
-          "time": "2:00p",
-          "text": "Temple Bar, Trinity College, a pint of Guinness — with Grafton Street + Brown Thomas right by Trinity if you want a last shopping stroll",
-          "status": "tentative",
-          "lat": 53.3453299,
-          "lng": -6.2582726,
-          "place": "Temple Bar / Trinity"
+          "time": "12:45p",
+          "status": "payday",
+          "text": "🚌 Aircoach 700 Dublin Airport → O'Connell St — stops right outside the Gresham (\"O'Connell Street, RIU Gresham Hotel\"), every ~15 min. Pay on board or in the Aircoach app. Check in / drop bags ~1:45."
         },
         {
-          "time": "8:00p",
-          "text": "Dinner: The Winding Stair",
+          "time": "2:00p",
+          "status": "confirmed",
+          "text": "🧶 Nicole's Irish sweater hunt — Kildare St / Nassau St by Trinity (~12 min walk from the hotel). Go in this order: Cleo first (closes 5:30), then The Sweater Shop (6:00), then Kilkenny Design (7:00); Brown Thomas on Grafton St is the late backup (9:00).",
+          "detail": "<b>Cleo</b>, 18 Kildare St — family shop since 1936; hand-knits from individual makers + Inis Meáin (knitted on the Aran Islands) and Fisherman Out of Ireland (Donegal). ~€165–300. <b>The Sweater Shop</b>, 30 Nassau St — Irish family firm since 1986, hand-knit Aran range ~$180–260. <b>Kilkenny Design</b>, 6 Nassau St — buy only pieces labelled \"Made in Ireland\" (its own Heritage line isn't). <b>Brown Thomas</b>, 88–95 Grafton St — stocks Inis Meáin. Tell-tales: label says <b>Made in Ireland / hand-knit</b> (\"Designed in Ireland\" ≠ made there); real hand-knits run €185+; check for 100% wool. <b>VAT refund</b>: on €75+ ask for the tax-free form and get it stamped at Dublin Airport departures on 11/27.",
+          "lat": 53.3404,
+          "lng": -6.2557,
+          "place": "Cleo, Kildare St"
+        },
+        {
+          "time": "3:45p",
+          "status": "walk_up",
+          "text": "🍦 Murphy's Ice Cream — 27 Wicklow St (2 min from the sweater shops). Handmade in Dingle since 2000 — they even make their own sea salt. Free tastes of any flavour; try Dingle Sea Salt and Brown Bread. Seats + a swing in the back.",
+          "detail": "Hours aren't posted on their site — check Google Maps on the day.",
+          "lat": 53.3427,
+          "lng": -6.2616,
+          "place": "Murphy's Ice Cream"
+        },
+        {
+          "time": "4:30p",
           "status": "tentative",
-          "lat": 53.346644,
-          "lng": -6.2636766,
-          "place": "The Winding Stair",
-          "missCost": {
-            "risk": "fee",
-            "label": "€30 pp (€60) if cancel <24h / no-show",
-            "note": "OpenTable card guarantee, not a prepaid deposit. Only 7:45pm showed for 2. Not booked yet.",
-            "sort": "2026-11-26"
-          }
+          "text": "Golden-hour stroll (sunset ~4:20): Grafton St lights → Trinity College front square → Temple Bar → along the Liffey quays (Ha'penny Bridge).",
+          "lat": 53.3453299,
+          "lng": -6.2582726,
+          "place": "Trinity / Temple Bar"
+        },
+        {
+          "time": "6:30p",
+          "status": "walk_up",
+          "text": "🍺 Dinner (walk-in): The Brazen Head — Dublin's oldest pub, 20 Lower Bridge St (~15 min along the quays from Temple Bar). No reservations under 8 people; food until 9pm on Thursdays; live music every night from 9pm — stay for a set.",
+          "detail": "Backup walk-in: <b>O'Neill's Pub &amp; Kitchen</b>, 2 Suffolk St (by Trinity) — open until 11:30pm Thursdays, live music nightly. No booking fees anywhere tonight.",
+          "lat": 53.3446,
+          "lng": -6.2763,
+          "place": "The Brazen Head"
+        },
+        {
+          "time": "9:45p",
+          "status": "tentative",
+          "text": "Back to the Gresham (~20 min walk or a short taxi) — early start tomorrow."
         }
       ],
       "sleepCity": "Dublin"
@@ -1918,6 +1941,16 @@
         "Dublin"
       ],
       "items": [
+        {
+          "time": "7:45a",
+          "status": "payday",
+          "text": "🚌 Aircoach 700 from outside the Gresham → Dublin Airport (~30–40 min). Aim to be at the airport ~8:30 for the 11:30 flight."
+        },
+        {
+          "time": "8:30a",
+          "status": "confirmed",
+          "text": "🧾 If you bought the sweater tax-free (€75+): get the refund form stamped / drop it in the Customs box in Departures BEFORE security & US preclearance. High-value items may need to be shown to a Customs officer."
+        },
         {
           "time": "",
           "text": "US customs cleared in Dublin — arrive Philly as domestic",
@@ -2346,17 +2379,11 @@
       "city": "Dublin",
       "name": "The Winding Stair",
       "tier": "LOCAL",
-      "why": "Modern Irish over the Liffey (book a window)",
+      "why": "Modern Irish over the Liffey. Dropped 10/27 in favour of a walk-in pub night (€30 pp late-cancel fee).",
       "price": "€70–90/2",
       "when": "11/26",
-      "booking": "site",
-      "status": "to_book",
-      "missCost": {
-        "risk": "fee",
-        "label": "€30 pp (€60) if cancel <24h / no-show",
-        "note": "OpenTable card guarantee, not a prepaid deposit. Only 7:45pm showed for 2. Not booked yet.",
-        "sort": "2026-11-26"
-      }
+      "booking": "skipped — walk-in night instead",
+      "status": "optional"
     },
     {
       "city": "Dublin",
@@ -2552,6 +2579,36 @@
       "price": "€10–15 pp",
       "when": "11/15 10:15 · 11/14 12:30",
       "booking": "Walk-in, no booking",
+      "status": "walk_up"
+    },
+    {
+      "city": "Dublin",
+      "name": "The Brazen Head",
+      "tier": "WALK-IN",
+      "why": "Dublin's oldest pub (20 Lower Bridge St). Pub food until 9pm Thu, live music nightly from 9pm. No reservations for groups under 8.",
+      "price": "€50–70/2",
+      "when": "11/26 ~6:30pm",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Dublin",
+      "name": "O'Neill's Pub & Kitchen",
+      "tier": "WALK-IN backup",
+      "why": "2 Suffolk St by Trinity — pub & kitchen open until 11:30pm Thu, live music nightly.",
+      "price": "€45–65/2",
+      "when": "11/26 backup",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Dublin",
+      "name": "Murphy's Ice Cream",
+      "tier": "SWEET",
+      "why": "<b>Dingle Sea Salt & Brown Bread</b> — handmade in Dingle since 2000, Dublin shop at 27 Wicklow St. Free tastes.",
+      "price": "€5–8 pp",
+      "when": "11/26 ~3:45pm",
+      "booking": "walk-in",
       "status": "walk_up"
     }
   ],
@@ -2756,12 +2813,12 @@
     },
     {
       "city": "Dublin",
-      "target": "Irish wool / Aran knit",
-      "place": "Aran Sweater Market / Grafton Street-area wool shops",
-      "when": "11/26",
-      "type": "final souvenir",
-      "priority": "medium",
-      "notes": "Good final souvenir category: scarf, hat, sweater if sizing/packing works."
+      "target": "Irish-made sweater for Nicole (hand-knit Aran / Inis Meáin)",
+      "place": "Cleo (18 Kildare St) → The Sweater Shop (30 Nassau St) → Kilkenny Design (6 Nassau St); Brown Thomas backup",
+      "when": "11/26 2:00pm (Cleo closes 5:30)",
+      "type": "priority buy",
+      "priority": "high",
+      "notes": "Label must say Made in Ireland / hand-knit — \"Designed in Ireland\" isn't the same. Hand-knits ~€185–300. Ask for the VAT-refund form on €75+ and stamp it at Dublin Airport."
     }
   ],
   "tickets": [
@@ -3250,17 +3307,6 @@
       },
       {
         "cat": "Activities",
-        "label": "Dublin — Guinness Storehouse + Jameson Bow St (2 pax)",
-        "date": "Nov 26",
-        "cur": "EUR",
-        "est": 110,
-        "actual": null,
-        "status": "todo",
-        "due": "2026-11-26",
-        "note": "Not booked yet — Guinness is non-refundable but changeable to 24h before; Jameson from €26 pp"
-      },
-      {
-        "cat": "Activities",
         "label": "Museums (Beyeler, Picasso, Rhine Falls boat, etc.)",
         "date": "Various",
         "cur": "EUR",
@@ -3280,6 +3326,17 @@
         "status": "planned",
         "bucket": true,
         "note": "Bucherer/Gübelin/Beyer — enter your target"
+      },
+      {
+        "cat": "Shopping",
+        "label": "Irish-made sweater for Nicole (Dublin)",
+        "date": "Nov 26",
+        "cur": "EUR",
+        "est": 220,
+        "actual": null,
+        "status": "planned",
+        "due": "2026-11-26",
+        "note": "Hand-knit ~€185–300; claim the VAT refund at Dublin Airport"
       },
       {
         "cat": "Misc",
