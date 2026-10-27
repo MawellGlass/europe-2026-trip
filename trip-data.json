@@ -1861,7 +1861,7 @@
     {
       "date": "2026-11-26",
       "dow": "Thu",
-      "city": "Zurich → Dublin — sweater, ice cream & pub night",
+      "city": "Zurich → Dublin — sweater, a 99 by the sea & pub night",
       "travel": true,
       "cities": [
         "Zurich",
@@ -1899,35 +1899,49 @@
           "place": "Cleo, Kildare St"
         },
         {
-          "time": "3:45p",
-          "status": "walk_up",
-          "text": "🍦 Murphy's Ice Cream — 27 Wicklow St (2 min from the sweater shops). Handmade in Dingle since 2000 — they even make their own sea salt. Free tastes of any flavour; try Dingle Sea Salt and Brown Bread. Seats + a swing in the back.",
-          "detail": "Hours aren't posted on their site — check Google Maps on the day.",
-          "lat": 53.3427,
-          "lng": -6.2616,
-          "place": "Murphy's Ice Cream"
+          "time": "3:30p",
+          "status": "payday",
+          "text": "🚆 DART from Pearse Station (Westland Row, ~5 min from Nassau St) → Dún Laoghaire, ~20 min, trains every ~10–15 min. Tap a contactless card / phone at the gates or buy a ticket.",
+          "lat": 53.3433,
+          "lng": -6.2489,
+          "place": "Pearse Station (DART)"
         },
         {
-          "time": "4:30p",
-          "status": "tentative",
-          "text": "Stroll as the lights come on (sunset ~4:20): Grafton St lights → Trinity College front square → Temple Bar → along the Liffey quays (Ha'penny Bridge).",
-          "lat": 53.3453299,
-          "lng": -6.2582726,
-          "place": "Trinity / Temple Bar"
+          "time": "4:00p",
+          "status": "walk_up",
+          "text": "🍦 Teddy's — \"the home of the 99\" since 1950, 1a Windsor Terrace on the Dún Laoghaire seafront. Max: the classic 99 (soft serve + Cadbury Flake). Then walk the East Pier as the sun sets (~4:20).",
+          "detail": "Teddy's only has this one shop. Google Maps showed a 6pm close in late October — check the winter hours the day before.",
+          "lat": 53.2905,
+          "lng": -6.1275,
+          "place": "Teddy's, Dún Laoghaire"
+        },
+        {
+          "time": "5:15p",
+          "status": "payday",
+          "text": "🚆 DART back to Tara Street (~20 min), then ~15 min walk along the quays to dinner."
         },
         {
           "time": "6:30p",
           "status": "walk_up",
           "text": "🍺 Dinner (walk-in): The Brazen Head — Dublin's oldest pub, 20 Lower Bridge St (~15 min along the quays from Temple Bar). No reservations under 8 people; food until 9pm on Thursdays; live music every night from 9pm — stay for a set.",
-          "detail": "Backup walk-in: <b>O'Neill's Pub &amp; Kitchen</b>, 2 Suffolk St (by Trinity) — open until 11:30pm Thursdays, live music nightly. No booking fees anywhere tonight.",
+          "detail": "Backup walk-in: <b>O'Neill's Pub &amp; Kitchen</b>, 2 Suffolk St (by Trinity) — open until 11:30pm Thursdays, live music nightly. No booking fees anywhere tonight. Live music starts at 9 — either stay for it, or head to Murphy's for dessert and catch the music at O'Neill's (next to Murphy's).",
           "lat": 53.3446,
           "lng": -6.2763,
           "place": "The Brazen Head"
         },
         {
-          "time": "9:45p",
+          "time": "8:30p",
+          "status": "walk_up",
+          "text": "🍦 Murphy's Ice Cream for Nicole — 27 Wicklow St (~15 min walk from The Brazen Head; open until ~11pm per Google Maps). Hard ice cream handmade in Dingle — try Dingle Sea Salt and Brown Bread; free tastes.",
+          "detail": "Live music right next door at O'Neill's (2 Suffolk St) if you want one more pint.",
+          "lat": 53.3427,
+          "lng": -6.2616,
+          "place": "Murphy's Ice Cream"
+        },
+        {
+          "time": "9:30p",
           "status": "tentative",
-          "text": "Back to the Gresham (~20 min walk or a short taxi) — early start tomorrow."
+          "text": "Back to the Gresham (~10 min walk from Wicklow St) — early start tomorrow."
         }
       ],
       "sleepCity": "Dublin"
@@ -2605,9 +2619,19 @@
       "city": "Dublin",
       "name": "Murphy's Ice Cream",
       "tier": "SWEET",
-      "why": "<b>Dingle Sea Salt & Brown Bread</b> — handmade in Dingle since 2000, Dublin shop at 27 Wicklow St. Free tastes.",
+      "why": "<b>Dingle Sea Salt & Brown Bread</b> — hard ice cream handmade in Dingle since 2000; Dublin shop at 27 Wicklow St, open late. Free tastes. Nicole's pick.",
       "price": "€5–8 pp",
-      "when": "11/26 ~3:45pm",
+      "when": "11/26 ~8:30pm (after dinner)",
+      "booking": "walk-in",
+      "status": "walk_up"
+    },
+    {
+      "city": "Dublin",
+      "name": "Teddy's (Dún Laoghaire)",
+      "tier": "SWEET",
+      "why": "<b>The 99</b> — Ireland's classic soft-serve cone with a Cadbury Flake, at \"the home of the 99\" since 1950 (1a Windsor Terrace, Dún Laoghaire; DART ~20 min). Max's pick, with an East Pier sunset walk.",
+      "price": "€3–5 pp",
+      "when": "11/26 ~4:00pm",
       "booking": "walk-in",
       "status": "walk_up"
     }
