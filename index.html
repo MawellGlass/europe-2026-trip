@@ -158,6 +158,18 @@ th.sortable:hover{color:var(--cp-accent);}
 .lg-tag{font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:6px;}
 .lg-tag.ok{background:rgba(22,163,74,.14);color:var(--cp-success);} .lg-tag.meat{background:rgba(220,38,38,.12);color:#b91c1c;} .lg-tag.ask{background:rgba(245,158,11,.16);color:#a16207;} .lg-tag.info{background:var(--cp-surface-soft);color:var(--cp-text-muted);}
 .lg-name{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid var(--cp-border-strong);background:var(--cp-bg-elevated);color:inherit;width:140px;}
+.lc-box{background:var(--cp-surface);border:1px solid var(--cp-border);border-radius:14px;padding:14px;max-width:760px;display:grid;gap:10px;}
+.lc-box textarea{font:inherit;font-size:1.05rem;min-height:84px;padding:10px 12px;border-radius:10px;border:1px solid var(--cp-border-strong);background:var(--cp-bg-elevated);color:inherit;resize:vertical;}
+.lc-box select,.lc-box input[type=text]{font:inherit;padding:8px 10px;border-radius:8px;border:1px solid var(--cp-border-strong);background:var(--cp-bg-elevated);color:inherit;}
+.lc-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.lc-row .lbl{font-size:.8rem;color:var(--cp-text-muted);margin-right:4px;}
+.lc-chip{font:inherit;font-size:.8rem;border:1px solid var(--cp-border);background:var(--cp-bg-elevated);color:inherit;border-radius:99px;padding:5px 11px;cursor:pointer;}
+.lc-chip.on{background:var(--cp-accent);color:#fff;border-color:var(--cp-accent);}
+.lc-go{font:inherit;font-weight:700;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--cp-accent);color:#fff;}
+.lc-alt{font:inherit;border:1px solid var(--cp-border);border-radius:10px;padding:10px 14px;cursor:pointer;background:var(--cp-bg-elevated);color:inherit;}
+.lc-note{font-size:.8rem;color:var(--cp-text-muted);}
+.lc-save{border-top:1px dashed var(--cp-border);padding-top:10px;display:grid;gap:6px;}
+.lg-del{font:inherit;font-size:.75rem;border:0;background:none;color:var(--cp-text-muted);cursor:pointer;padding:0;margin-top:4px;}
 .lg-flash{background:var(--cp-surface);border:1px solid var(--cp-border);border-radius:14px;padding:22px 18px;text-align:center;max-width:560px;}
 .lg-flash .q{font-size:1.15rem;font-weight:700;} .lg-flash .a{font-size:1.4rem;font-weight:800;margin-top:14px;} .lg-flash .p{color:var(--cp-accent);font-style:italic;margin-top:4px;}
 .lg-flash .row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px;}
@@ -417,7 +429,7 @@ textarea.ed-in{resize:vertical;}
     <div class="lg-today" id="lgToday"></div>
     <div class="lg-bar" id="lgBar"></div>
     <div class="lg-where" id="lgWhere"></div>
-    <div class="filterbar" id="lgMode"><button data-m="phrases" class="active">Phrasebook</button><button data-m="resv">My reservation scripts</button><button data-m="menu">Menu decoder</button><button data-m="practice">Practice</button><button data-m="tips">Etiquette &amp; tools</button></div>
+    <div class="filterbar" id="lgMode"><button data-m="phrases" class="active">Phrasebook</button><button data-m="local">✨ Say it like a local</button><button data-m="resv">My reservation scripts</button><button data-m="menu">Menu decoder</button><button data-m="practice">Practice</button><button data-m="tips">Etiquette &amp; tools</button></div>
     <div id="lgBody"></div>
     <div class="foot" style="margin-top:12px;text-align:left">🔊 plays the phrase with your phone's built-in voice (🐢 = slow). ⤢ shows it full-screen to hand to a waiter or ticket agent. Pronunciations are simplified English spellings, with the stressed part in CAPS.</div></section>
   <section class="panel" data-tab="decisions"><h2 class="sec">Open decisions</h2><div id="decList"></div>
@@ -1678,7 +1690,9 @@ loadAndBoot();
     document.querySelectorAll("#lgMode button").forEach(function(b){ b.classList.toggle("active",b.getAttribute("data-m")===mode); });
   }
   function phrasesHtml(){
-    return L.cats.map(function(c){
+    var mine=(myPhr()[cur]||[]), top="";
+    if(mine.length){ top='<div class="lg-cat">⭐ My phrases</div><div class="lg-list">'+mine.map(function(m,k){ return card(m.t,"",m.en,cur,'<button class="lg-del" data-act="delmy" data-k="'+k+'">remove</button>'); }).join("")+'</div>'; }
+    return top+L.cats.map(function(c){
       var rows=L.phrases.filter(function(p){ return p.cat===c[0]; });
       return '<div class="lg-cat">'+esc(c[1])+'</div><div class="lg-list">'+rows.map(function(p){
         var m=main(p,cur), extra="";
@@ -1745,6 +1759,55 @@ loadAndBoot();
       '<div class="row">'+(revealed?'<button data-act="say" data-i="'+i+'">🔊 Hear it</button><button data-act="slow" data-i="'+i+'">🐢 Slow</button><button data-act="again">↻ Again</button><button class="pri" data-act="got" data-id="'+id+'">✓ Got it</button>':'<button class="pri" data-act="reveal">Say it out loud, then reveal</button>')+'</div>'+
       '<div class="row"><button data-act="resetk" style="font-size:.78rem">Reset progress</button></div></div>';
   }
+  var MY_KEY="eu26_myphr", lc={dir:"say", sit:0, city:null, text:"", saveT:"", saveE:""};
+  var LC_CITIES={fr:["Nice","Marseille","Monaco","Èze","Antibes","Strasbourg"],it:["Milan","Venice","Como","Monza","Ventimiglia"],ch:["Zurich","Basel","Lucerne"],de:["Freiburg"]};
+  var LC_SITS=[["🍽 Restaurant / waiter","a waiter at a sit-down restaurant"],["☕ Café or bar","the person behind the counter at a café or bar"],["🛍 Shop / market","a shopkeeper or market vendor"],["🚆 Train, bus, station","station staff, a ticket agent or a bus driver"],["🏨 Hotel desk","hotel front-desk staff"],["🧭 Asking for help","a stranger on the street"],["💬 Small talk","a friendly local I'm chatting with"]];
+  function myPhr(){ try{ return JSON.parse(ls(MY_KEY)||"{}"); }catch(e){ return {}; } }
+  function lcCity(){
+    var list=LC_CITIES[cur]||[]; if(lc.city&&list.indexOf(lc.city)>=0) return lc.city;
+    var t=todayInfo(); if(t&&t.day){ var txt=t.day.city||""; var hit=list.find(function(c){ return txt.indexOf(c)>=0; }); if(hit) return hit; }
+    return list[0]||"";
+  }
+  function lcPrompt(){
+    var NL=String.fromCharCode(10), Q=String.fromCharCode(34);
+    var city=lcCity(), sit=LC_SITS[lc.sit], txt=(lc.text||"").trim();
+    var lang={fr:"French",it:"Italian",de:"German",ch:"German"}[cur];
+    var level=cur==="fr"?"I speak decent conversational French, so don't over-simplify":"I'm a beginner in "+lang+", so keep it short and easy to pronounce";
+    var region = cur==="ch" ? "People in "+city+" speak Swiss German dialect but everyone understands Standard German. Give me the Standard German line to actually say, plus the Swiss German words locals use for the small stuff (greeting, thanks, bye) so I can sprinkle them in." :
+      "Use the everyday "+lang+" people in "+city+" actually speak — not stiff textbook phrasing, and not heavy slang or local dialect that would sound odd from a tourist.";
+    var intro="You're my friend who grew up in "+city+". I'm an American tourist there in November with my wife ("+level+"). I'm talking to "+sit[1];
+    if(lc.dir==="heard"){
+      return intro+" and they just said this to me in "+lang+" (typed from memory or dictation, so spelling may be off):"+NL+NL+Q+txt+Q+NL+NL+
+        "Reply briefly:"+NL+"1. What it means in plain English, and the tone"+NL+
+        "2. What I should say back — natural local phrasing, plus pronunciation in simple English letters with the stressed syllable in CAPS"+NL+
+        "3. Anything else I should know";
+    }
+    return intro+". "+region+NL+NL+"What I want to say: "+Q+txt+Q+NL+NL+
+      "Reply briefly:"+NL+"1. What to say — natural and polite-casual, the way a local would put it — plus pronunciation in simple English letters with the stressed syllable in CAPS"+NL+
+      "2. A shorter or more casual version, if there is one"+NL+
+      "3. What they'll probably say back, with a translation"+NL+
+      "4. One local tip (a regional word, etiquette, or something to avoid)";
+  }
+  function localHtml(){
+    var city=lcCity(), list=LC_CITIES[cur]||[];
+    return '<div class="lc-box">'+
+      '<div class="lc-row"><span class="lbl">I want to…</span><button class="lc-chip'+(lc.dir==="say"?" on":"")+'" data-act="lcdir" data-v="say">💬 Say something</button><button class="lc-chip'+(lc.dir==="heard"?" on":"")+'" data-act="lcdir" data-v="heard">👂 Understand what they said</button></div>'+
+      '<textarea id="lcText" placeholder="'+(lc.dir==="say"?"In English — e.g. Could we get a table by the window? We don't have a booking.":"What they said, as best you can (tap the mic on your keyboard to dictate)")+'">'+esc(lc.text)+'</textarea>'+
+      '<div class="lc-row"><span class="lbl">Where</span><select id="lcCity">'+list.map(function(c){ return '<option'+(c===city?" selected":"")+'>'+esc(c)+'</option>'; }).join("")+'</select><span class="lbl" style="margin-left:6px">'+L.langs[cur].flag+' '+L.langs[cur].name+' — switch language above</span></div>'+
+      '<div class="lc-row"><span class="lbl">Talking to</span>'+LC_SITS.map(function(s,i){ return '<button class="lc-chip'+(i===lc.sit?" on":"")+'" data-act="lcsit" data-v="'+i+'">'+s[0]+'</button>'; }).join("")+'</div>'+
+      '<div class="lc-row"><button class="lc-go" data-act="lcgpt">Ask ChatGPT ↗</button><button class="lc-alt" data-act="lccopy">📋 Copy for Copilot / another app</button></div>'+
+      '<div class="lc-note">Opens ChatGPT with a ready-made prompt that asks for how a friend from '+esc(city)+' would really say it, plus pronunciation, a casual version, the likely reply and a local tip. It works in the ChatGPT app or browser, even logged out. Copilot doesn’t accept pre-filled links, so use Copy and paste it there.</div>'+
+      '<div class="lc-save"><b style="font-size:.88rem">⭐ Liked the answer? Save it to your phrasebook</b>'+
+        '<input type="text" id="lcSaveT" placeholder="The '+L.langs[cur].name+' phrase" value="'+esc(lc.saveT)+'">'+
+        '<input type="text" id="lcSaveE" placeholder="What it means in English" value="'+esc(lc.saveE)+'">'+
+        '<div class="lc-row"><button class="lc-alt" data-act="lcsave">Save to ⭐ My phrases</button><span class="lc-note">Saved on this phone; shows at the top of the Phrasebook with 🔊 and ⤢.</span></div></div>'+
+    '</div>';
+  }
+  function copyText(t){
+    if(navigator.clipboard&&navigator.clipboard.writeText){ return navigator.clipboard.writeText(t); }
+    var ta=document.createElement("textarea"); ta.value=t; document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} ta.remove(); return Promise.resolve();
+  }
+  function toast(msg){ var t=document.createElement("div"); t.textContent=msg; t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:10px;z-index:9999;font-size:.9rem;"; document.body.appendChild(t); setTimeout(function(){ t.remove(); },2600); }
   function tipsHtml(){
     var t=L.tips[cur]||[];
     return '<div class="lg-cat">'+L.langs[cur].flag+' Etiquette that helps</div><ul class="lg-tips">'+t.map(function(x){ return '<li>'+x+'</li>'; }).join("")+'</ul>'+
@@ -1754,7 +1817,7 @@ loadAndBoot();
     if(!el("lgBody")) return;
     if(!cur){ var t=todayInfo(); cur=ls(SEL_KEY)||(t&&t.langs[0])||"fr"; }
     ITEMS=[]; renderToday(); renderBar();
-    el("lgBody").innerHTML = mode==="resv"?resvHtml():mode==="menu"?menuHtml():mode==="practice"?practiceHtml():mode==="tips"?tipsHtml():phrasesHtml();
+    el("lgBody").innerHTML = mode==="local"?localHtml():mode==="resv"?resvHtml():mode==="menu"?menuHtml():mode==="practice"?practiceHtml():mode==="tips"?tipsHtml():phrasesHtml();
   }
   function onClick(e){
     var b=e.target.closest("[data-act]"); if(!b) return; e.preventDefault();
@@ -1766,13 +1829,28 @@ loadAndBoot();
     else if(a==="again"){ di++; revealed=false; render(); }
     else if(a==="got"){ var k=known(); k[cur]=k[cur]||[]; var id=b.getAttribute("data-id"); if(k[cur].indexOf(id)<0) k[cur].push(id); ls(KNOWN_KEY,JSON.stringify(k)); deck.splice(di%deck.length,1); if(!deck.length){ buildDeck(); deck.lang=cur; } revealed=false; render(); }
     else if(a==="resetk"){ var k2=known(); delete k2[cur]; ls(KNOWN_KEY,JSON.stringify(k2)); deck=null; revealed=false; render(); }
+    else if(a==="lcdir"){ lc.dir=b.getAttribute("data-v"); render(); }
+    else if(a==="lcsit"){ lc.sit=+b.getAttribute("data-v"); render(); }
+    else if(a==="lcgpt"||a==="lccopy"){
+      if(!(lc.text||"").trim()){ toast("Type what you want to say first"); var ta=el("lcText"); if(ta) ta.focus(); return; }
+      var pr=lcPrompt();
+      if(a==="lcgpt"){ window.open("https://chatgpt.com/?q="+encodeURIComponent(pr),"_blank"); }
+      else { copyText(pr).then(function(){ toast("Copied — paste it into Copilot or any AI app"); }); }
+    }
+    else if(a==="lcsave"){
+      var tt=(lc.saveT||"").trim(), ee=(lc.saveE||"").trim(); if(!tt){ toast("Paste the phrase first"); return; }
+      var mp=myPhr(); mp[cur]=mp[cur]||[]; mp[cur].unshift({t:tt,en:ee||"(saved phrase)"}); ls(MY_KEY,JSON.stringify(mp));
+      lc.saveT=""; lc.saveE=""; toast("Saved to ⭐ My phrases ("+L.langs[cur].name+")"); render();
+    }
+    else if(a==="delmy"){ var mp2=myPhr(); (mp2[cur]||[]).splice(+b.getAttribute("data-k"),1); ls(MY_KEY,JSON.stringify(mp2)); render(); }
   }
   function init(){
     if(!el("lgBody")) return;
     el("lgBar").addEventListener("click",function(e){ var b=e.target.closest("button[data-lg]"); if(!b) return; cur=b.getAttribute("data-lg"); ls(SEL_KEY,cur); deck=null; render(); });
     el("lgMode").addEventListener("click",function(e){ var b=e.target.closest("button[data-m]"); if(!b) return; mode=b.getAttribute("data-m"); render(); });
     el("lgBody").addEventListener("click",onClick); el("lgToday").addEventListener("click",onClick);
-    el("lgBody").addEventListener("change",function(e){ if(e.target.id==="lgName"){ ls(NAME_KEY,e.target.value.trim()||"Glass"); render(); } });
+    el("lgBody").addEventListener("change",function(e){ if(e.target.id==="lgName"){ ls(NAME_KEY,e.target.value.trim()||"Glass"); render(); } else if(e.target.id==="lcCity"){ lc.city=e.target.value; } });
+    el("lgBody").addEventListener("input",function(e){ var id=e.target.id; if(id==="lcText") lc.text=e.target.value; else if(id==="lcSaveT") lc.saveT=e.target.value; else if(id==="lcSaveE") lc.saveE=e.target.value; });
     if("speechSynthesis" in window){ speechSynthesis.getVoices(); }
   }
   window.__langRender=render;
