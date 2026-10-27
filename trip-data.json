@@ -41,17 +41,17 @@
       "checkout": "2026-11-13",
       "nights": 4,
       "role": "Riviera base",
-      "blurb": "Anniversary 11/9. Le Sens 11/10. Two day-trip days."
+      "blurb": "Anniversary 11/9. Le Sens 11/10. Le Plongeoir + Chagall 11/11 (holiday). Monaco + Èze 11/12."
     },
     {
       "city": "Monaco + Èze",
       "country": "Monaco / France",
       "flag": "🇲🇨",
-      "checkin": "2026-11-11",
-      "checkout": "2026-11-11",
+      "checkin": "2026-11-12",
+      "checkout": "2026-11-12",
       "nights": 0,
       "role": "Day trip from Nice",
-      "blurb": "Wed 11/11 — ~25min train from Nice. Èze cliff-top village in the morning, then Monaco built around the F1 circuit: Casino Square, Fairmont Hairpin, tunnel/harbor walk, and a scenic lunch reservation target with a track/broadcast memory angle."
+      "blurb": "Thu 11/12 — ~20 min train from Nice (moved from Wed 11/11: no trains + holiday buses that day). Monaco-Ville + F1 circuit walk into a Café de Paris lunch, casino, then bus 602 up to Èze for late-afternoon light and back to Nice."
     },
     {
       "city": "Milan",
@@ -300,21 +300,26 @@
     },
     {
       "status": "payday",
-      "date": "11/11",
-      "route": "Nice → Èze Village → Monaco → Nice",
-      "service": "Bus 82 + taxi (NO TRAINS until ~17:30)",
-      "time": "82: 08:30→08:55 Èze",
-      "book": "⚠️ SNCF works close Nice–Ventimiglia line 10 Nov all day + 11 Nov until ~17:30; bus 602 does not run on public holidays. Bus 82 (holiday timetable) from Nice Vauban; taxi/Uber Èze→Monaco; trains back from Monaco from 19:05.",
+      "date": "11/12",
+      "route": "Nice → Monaco → Èze Village → Nice",
+      "service": "TER + ZOU! bus 602 (pay on the day)",
+      "time": "TER ~9:45 · 602 15:15→15:40 · 602 17:55→18:30",
+      "book": "Pay on the day. Moved from 11/11 (SNCF works closed Nice–Monaco trains until ~17:30 that day). 602 runs Mon–Sat only (official ZOU! timetable valid from 28 Sep 2026).",
       "scheduleOptions": [
         {
           "label": "Out",
-          "time": "Bus 82 Vauban 08:30→Èze 08:55 (or 09:45→10:10)",
-          "note": "Then taxi Èze→Monaco ~20 min, or Nietzsche Path + bus 600."
+          "time": "TER Nice Ville → Monaco-Monte-Carlo, ~every 15–30 min, ~20 min",
+          "note": "Aim for ~9:45."
         },
         {
-          "label": "Back",
-          "time": "Monaco→Nice 19:05 · 19:17 · 19:31 · 20:05 · 20:16 · 20:33 · 20:46 · 21:06",
-          "note": "~25 min. Backup bus 600 every ~20 min, last ~21:09."
+          "label": "Monaco → Èze",
+          "time": "602: 12:40→13:00 · 15:15→15:40 (plan) · 17:30→17:55",
+          "note": "From Monaco Office de Tourisme (Bd des Moulins)."
+        },
+        {
+          "label": "Èze → Nice",
+          "time": "602: 15:40→16:15 · 17:55→18:30 (plan) · 20:10→20:40 (last)",
+          "note": "To Nice Vauban; tram T1 onward."
         }
       ],
       "n": 2
@@ -851,7 +856,7 @@
         },
         {
           "time": "12:00p",
-          "text": "Lunch in Vieux Nice — open (socca at Chez Thérésa / René Socca, or a Cours Saleya terrace). Le Plongeoir moved to 11/12.",
+          "text": "Lunch in Vieux Nice — open (socca at Chez Thérésa / René Socca, or a Cours Saleya terrace). Le Plongeoir is Wed 11/11.",
           "status": "tentative",
           "lat": 43.6971832,
           "lng": 7.2762796,
@@ -887,122 +892,41 @@
     {
       "date": "2026-11-11",
       "dow": "Wed",
-      "city": "Nice — Monaco + Èze",
+      "city": "Nice — Le Plongeoir + Chagall (holiday)",
       "travel": false,
       "cities": [
         "Nice"
       ],
       "items": [
         {
-          "time": "8:30a",
-          "text": "🚌 ⚠️ NO TRAINS Nice ↔ Monaco/Èze until ~17:30 today (SNCF track works 10–11 Nov), and bus 602 does not run on public holidays (11/11 = Armistice Day). Instead: Lignes d'Azur bus 82 from Nice Vauban 08:30 → Èze Village 08:55 (holiday timetable; next 09:45 → 10:10). Tram T1 to Vauban first. Standard Lignes d'Azur bus ticket (buy on board / app).",
-          "status": "payday"
-        },
-        {
-          "time": "9:00a",
-          "text": "Èze cliff-top medieval village (morning) — stop at the Fragonard perfume factory (Usine Laboratoire) for a scent-shopping browse",
+          "time": "",
           "status": "confirmed",
-          "lat": 43.7302391,
-          "lng": 7.3613607,
-          "place": "Èze village"
+          "text": "ℹ️ 11/11 = Armistice Day (French public holiday) and SNCF works stop Nice ↔ Monaco trains until ~17:30. Neither affects today: everything is inside Nice (tram/walk/taxi). Monaco + Èze moved to Thu 11/12."
         },
         {
-          "time": "11:15a",
-          "status": "tentative",
-          "text": "🚕 Èze Village → Monaco (Casino): taxi/Uber ~20 min (est. €35–50) — simplest on a holiday with no 602 bus. Budget alternative: walk the Nietzsche Path down to Èze-sur-Mer (~45–60 min, steep/uneven), then ZOU! bus 600 to Monaco (every ~20 min on holidays, ~20 min)."
-        },
-        {
-          "time": "12:30p",
-          "text": "Lunch: Café de Paris Monte-Carlo — BOOKED, 2 guests. Casino Square / F1-broadcast memory anchor before the track walk.",
-          "status": "booked",
-          "lat": 43.7395874,
-          "lng": 7.4278595,
-          "place": "Café de Paris Monte-Carlo",
-          "missCost": {
-            "risk": "fee",
-            "label": "€50 pp (€100) if cancel <24h / no-show",
-            "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com).",
-            "sort": "2026-11-11"
-          }
-        },
-        {
-          "time": "1:00p",
-          "text": "★ Walk the F1 circuit: Casino Square, Fairmont Hairpin, the Tunnel, harbour straight",
+          "time": "11:30a",
           "status": "confirmed",
-          "lat": 43.7393645,
-          "lng": 7.4276258,
-          "place": "F1 circuit / Casino Square"
+          "text": "🚋 To Le Plongeoir: tram L2 (Alsace-Lorraine / Jean Médecin) → Port Lympia, then ~10–15 min walk around the port to 60 Bd Franck Pilatte. Allow ~30 min door to door; taxi ~10 min. L2 runs normally on 11/11 (Lignes d'Azur evening maintenance skips this date)."
         },
-        {
-          "time": "2:00p",
-          "text": "Casino de Monte-Carlo — go afternoon (~2pm): relaxed dress window, glamorous, no evening door-drama. Nicole: long dress + white sweater + ballet flats (closed-toe). Bring PASSPORTS (18+), small fee",
-          "status": "confirmed",
-          "lat": 43.7391605,
-          "lng": 7.428023,
-          "place": "Casino de Monte-Carlo"
-        },
-        {
-          "time": "2:30p",
-          "text": "Optional: Prince's Palace / Oceanographic Museum",
-          "status": "tentative",
-          "lat": 43.7306805,
-          "lng": 7.4255127,
-          "place": "Oceanographic Museum"
-        },
-        {
-          "time": "3:00p",
-          "text": "Casino Café de Paris (across the square) — slots + casual games, ~1hr gambling",
-          "status": "confirmed"
-        },
-        {
-          "time": "4:00p",
-          "text": "🛍 Optional: Monaco's Carré d'Or luxury quarter + One Monte-Carlo boutiques (the Golden Circle by the Casino) for a pre-dinner window-shop",
-          "status": "optional",
-          "lat": 43.7398,
-          "lng": 7.4278,
-          "place": "Carré d'Or"
-        },
-        {
-          "time": "7:30p",
-          "text": "Dinner after casino (place TBD)",
-          "status": "tentative"
-        },
-        {
-          "time": "9:00p",
-          "status": "payday",
-          "text": "🚆 Back to Nice — trains resume this evening: Monaco → Nice Ville 19:05 · 19:17 · 19:31 · 20:05 · 20:16 · 20:33 · 20:46 · 21:06 (~25 min, pay on day). Backup: ZOU! bus 600 Monaco (Place des Moulins) → Nice every ~20 min, last ~21:09. (timetables checked 10/23 — re-check the day before)"
-        }
-      ],
-      "sleepCity": "Nice"
-    },
-    {
-      "date": "2026-11-12",
-      "dow": "Thu",
-      "city": "Nice — local morning + Le Plongeoir",
-      "travel": false,
-      "cities": [
-        "Nice"
-      ],
-      "items": [
         {
           "time": "12:00p",
-          "text": "Lunch: Le Plongeoir — BOOKED (moved from 11/10), 2 guests",
-          "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte.",
+          "text": "Lunch: Le Plongeoir — BOOKED, 2 guests (moved from 11/10 by the restaurant on 10/27; they're closed 11/10). Same time as the original booking.",
+          "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte. Le Plongeoir's online booking showed 12:00 open on 11/11 (checked 10/26).",
           "status": "booked",
           "lat": 43.6919112,
           "lng": 7.2908183,
           "place": "Le Plongeoir",
           "missCost": {
             "risk": "fee",
-            "label": "Card held: free change/cancel until Nov 7",
-            "note": "Card on file. Changes and cancellations are free until Nov 7; after that, expect a charge.",
-            "sort": "2026-11-12"
+            "label": "Card held: cancel early if plans change",
+            "note": "Card on file. Restaurant moved the booking from 11/10 (closed that day) to 11/11 by email on 10/27. Earlier note said changes are free until Nov 7.",
+            "sort": "2026-11-11"
           }
         },
         {
           "time": "2:30p",
-          "text": "★ Musée Marc Chagall (Cimiez) — walk-in tickets",
-          "detail": "Right after Le Plongeoir lunch. This is a priority because it is one of Nicole's list items and fits cleanly after lunch. Current plan: buy tickets on arrival unless an obvious official e-ticket appears later.",
+          "text": "★ Musée Marc Chagall (Cimiez) — walk-in tickets. OPEN on the 11/11 holiday (closed only Tuesdays, Jan 1, May 1, Dec 25).",
+          "detail": "Nov hours 10:00–17:00 with a 13:00–14:30 closure, so 2:30 = reopening. Last tickets 16:30; galleries clear 16:45. Getting there from Le Plongeoir: taxi ~12 min (€15–20), or tram L2 → Jean Médecin, L1 → Gare Thiers, then ~15 min uphill walk. ~€10–12 pp.",
           "status": "walk_up",
           "lat": 43.71222,
           "lng": 7.27611,
@@ -1010,16 +934,16 @@
         },
         {
           "time": "evening",
-          "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below)",
-          "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya / Chez Pipo stand.",
-          "status": "tentative"
+          "status": "tentative",
+          "text": "Dinner in Vieux Nice — Niçois specialties (pick your spot below). Holiday: call ahead to confirm they're open on 11/11.",
+          "detail": "Leaning daube niçoise, petits farcis, stockfish. If peckish earlier, grab socca at a Cours Saleya stand or Chez Pipo by the port (right near Le Plongeoir)."
         }
       ],
       "sleepCity": "Nice",
       "picks": [
         {
-          "id": "nov12-morning",
-          "label": "Thu morning before Le Plongeoir — pick one (or decide day-of)",
+          "id": "nov11-morning",
+          "label": "Wed morning before Le Plongeoir — pick one (or decide day-of)",
           "pos": -1,
           "selected": "antibes",
           "options": [
@@ -1030,8 +954,8 @@
               "lng": 7.1256,
               "mapLabel": "Antibes (Musée Picasso)",
               "booked": false,
-              "booking": "~25 min each way by train (Nice-Ville → Antibes), ~2–3 trains/hr. No booking needed.",
-              "detail": "Early train to Antibes: <b>Musée Picasso</b> in the Château Grimaldi on the ramparts, then graze the <b>Marché Provençal</b> (covered market, Cours Masséna) — Provençal produce, cheeses, socca and a slice of pissaladière on the go. Back in Nice by ~11:30 for the noon Le Plongeoir booking."
+              "booking": "~25 min each way by TER (Nice-Ville → Antibes). Trains WEST of Nice are not affected by the works, but it's a holiday timetable (fewer trains) — check SNCF Connect the day before. No booking needed.",
+              "detail": "Early train to Antibes: <b>Musée Picasso</b> in the Château Grimaldi on the ramparts, then graze the <b>Marché Provençal</b> (covered market, Cours Masséna) — Provençal produce, cheeses, socca and a slice of pissaladière on the go. Back in Nice by ~11:15 for the noon Le Plongeoir booking. Holiday: confirm Musée Picasso + market hours for 11/11 before going."
             },
             {
               "id": "relaxed",
@@ -1040,15 +964,15 @@
               "lng": 7.3116,
               "mapLabel": "Villefranche-sur-Mer",
               "booked": false,
-              "booking": "No booking. Villefranche-sur-Mer is ~10 min by train if you want it — skip freely to just relax.",
-              "detail": "Slow start. Optionally hop to <b>Villefranche-sur-Mer</b> (~10 min by rail) for the pastel harbor and old town, or stay in Nice and graze <b>Cours Saleya</b> (Thu = flower + produce market) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière, no sit-down needed. Fully cancelable if you'd rather do nothing before lunch."
+              "booking": "No booking. Villefranche-sur-Mer is east of Nice (no trains before ~17:30 today) — bus 100 or skip; Cours Saleya / Old Town is the easy pick.",
+              "detail": "Slow start. Stay in Nice and graze <b>Cours Saleya</b> (flower + produce market most mornings) and <b>Rue Pairolière</b> — socca, pan-bagnat, pissaladière, no sit-down needed. Fully cancelable if you'd rather do nothing before lunch."
             }
           ]
         },
         {
-          "id": "nov12-dinner",
-          "label": "Vieux Nice dinner — pick one (all phone-only / walk-in, verify before relying)",
-          "pos": 2,
+          "id": "nov11-dinner",
+          "label": "Vieux Nice dinner — pick one (holiday: phone ahead to confirm open 11/11)",
+          "pos": 4,
           "selected": "antoine",
           "options": [
             {
@@ -1084,6 +1008,84 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "dow": "Thu",
+      "city": "Nice — Monaco + Èze",
+      "travel": false,
+      "cities": [
+        "Nice"
+      ],
+      "items": [
+        {
+          "time": "9:45a",
+          "status": "payday",
+          "text": "🚆 TER Nice Ville → Monaco-Monte-Carlo (~20 min, pay on the day, ~€4–5 pp; trains every ~15–30 min). Normal service — the SNCF works end the evening of 11/11. Re-check times the week before."
+        },
+        {
+          "time": "10:15a",
+          "text": "Monaco-Ville (the Rock): Prince's Palace square + views; optional Oceanographic Museum. Snack: barbagiuan at U Cavagnëtu or the Marché de la Condamine below.",
+          "status": "tentative",
+          "lat": 43.7306805,
+          "lng": 7.4255127,
+          "place": "Oceanographic Museum"
+        },
+        {
+          "time": "11:30a",
+          "text": "★ Walk the F1 circuit into lunch: Port Hercule harbour straight → Sainte-Dévote → climb Beau Rivage → Casino Square; Fairmont Hairpin + tunnel entrance are 5 min below the casino.",
+          "status": "confirmed",
+          "lat": 43.7393645,
+          "lng": 7.4276258,
+          "place": "F1 circuit / Casino Square"
+        },
+        {
+          "time": "12:30p",
+          "text": "Lunch: Café de Paris Monte-Carlo — BOOKED Thu 11/12, 12:30–14:00, 2 guests (moved from 11/11 on 10/27; confirmation sent to Max's Gmail). Casino Square / F1-broadcast memory anchor.",
+          "status": "booked",
+          "lat": 43.7395874,
+          "lng": 7.4278595,
+          "place": "Café de Paris Monte-Carlo",
+          "missCost": {
+            "risk": "fee",
+            "label": "€50 pp (€100) if cancel <24h / no-show",
+            "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com). Moved to Thu 11/12 on 10/27.",
+            "sort": "2026-11-12"
+          }
+        },
+        {
+          "time": "2:00p",
+          "text": "Casino de Monte-Carlo — afternoon visit (relaxed dress window). Nicole: long dress + white sweater + ballet flats (closed-toe). Bring PASSPORTS (18+), small fee. Optional quick slots at Casino Café de Paris across the square if time.",
+          "status": "confirmed",
+          "lat": 43.7391605,
+          "lng": 7.428023,
+          "place": "Casino de Monte-Carlo"
+        },
+        {
+          "time": "3:15p",
+          "status": "payday",
+          "text": "🚌 ZOU! bus 602 Monaco (Office de Tourisme, Bd des Moulins — ~3 min from Casino Square) 15:15 → Èze Village 15:40. Mon–Sat only; next 17:30. Pay on board (Lignes d'Azur/ZOU! ticket). Official timetable valid from 28 Sep 2026."
+        },
+        {
+          "time": "3:45p",
+          "text": "Èze cliff-top medieval village in the late-afternoon light — Fragonard perfume factory shop, lanes up to the Jardin Exotique (check closing time); sunset ~5:05.",
+          "status": "confirmed",
+          "lat": 43.7302391,
+          "lng": 7.3613607,
+          "place": "Èze village"
+        },
+        {
+          "time": "5:55p",
+          "status": "payday",
+          "text": "🚌 ZOU! 602 Èze Village 17:55 → Nice Vauban 18:30 (backup: 20:10 → 20:40, the LAST bus). Tram T1 from Vauban back to the hotel area."
+        },
+        {
+          "time": "7:00p",
+          "status": "tentative",
+          "text": "Dinner back in Nice — easy/open. Chez Pipo socca is right by Vauban/the port; or a Vieux Nice spot from Wednesday's shortlist."
+        }
+      ],
+      "sleepCity": "Nice"
     },
     {
       "date": "2026-11-13",
@@ -2036,16 +2038,16 @@
       "city": "Nice",
       "name": "Le Plongeoir",
       "tier": "BOOKED",
-      "why": "Iconic seaside lunch perched on the old diving platform over the Baie des Anges (Cap de Nice). MOVED to Thu 11/12 12:00 PM, 2 guests (was 11/10). ⚠️ Card on file — free cancel/change until Nov 7. 60 Bd Franck Pilatte, 06300 Nice.",
+      "why": "Iconic seaside lunch perched on the old diving platform over the Baie des Anges (Cap de Nice). Wed 11/11 12:00 PM, 2 guests — the restaurant had the booking on 11/10 (closed that day) and moved it to 11/11 by email on 10/27. ⚠️ Card on file. 60 Bd Franck Pilatte, 06300 Nice. Tram L2 → Port Lympia.",
       "price": "€90–130/2",
-      "when": "11/12 12:00 PM",
-      "booking": "CONFIRMED (card held)",
+      "when": "11/11 12:00 PM",
+      "booking": "CONFIRMED (card held) — moved to 11/11 by email 10/27",
       "status": "booked",
       "missCost": {
         "risk": "fee",
-        "label": "Card held: free change/cancel until Nov 7",
-        "note": "Card on file. Changes and cancellations are free until Nov 7; after that, expect a charge.",
-        "sort": "2026-11-12"
+        "label": "Card held: cancel early if plans change",
+        "note": "Card on file. Restaurant moved the booking from 11/10 (closed that day) to 11/11 by email on 10/27. Earlier note said changes are free until Nov 7.",
+        "sort": "2026-11-11"
       }
     },
     {
@@ -2104,14 +2106,14 @@
       "tier": "BOOKED",
       "why": "Casino Square brasserie and F1-broadcast memory anchor before walking the Monaco circuit.",
       "price": "€100–180/2 before serious wine",
-      "when": "11/11 12:30pm",
-      "booking": "CONFIRMED",
+      "when": "11/12 12:30pm",
+      "booking": "CONFIRMED — moved to Thu 11/12 on 10/27 (card guarantee)",
       "status": "booked",
       "missCost": {
         "risk": "fee",
         "label": "€50 pp (€100) if cancel <24h / no-show",
-        "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com).",
-        "sort": "2026-11-11"
+        "note": "Card guarantee, nothing charged now. Free cancel until 24h before (montecarlosbm.com). Moved to Thu 11/12 on 10/27.",
+        "sort": "2026-11-12"
       }
     },
     {
@@ -2120,7 +2122,7 @@
       "tier": "1★",
       "why": "Sea bass + beef; port views",
       "price": "€100–150pp",
-      "when": "11/11 lunch",
+      "when": "11/12 lunch",
       "booking": "TheFork",
       "status": "optional"
     },
@@ -2138,7 +2140,7 @@
       "city": "Menton",
       "name": "Mirazur",
       "tier": "3★",
-      "why": "If going 11/12 — verify Nov open",
+      "why": "Off this trip (Menton day skipped). Verify Nov opening if revisited.",
       "price": "high",
       "when": "11/12 lunch",
       "booking": "CoverManager",
@@ -2382,7 +2384,7 @@
       "tier": "SOCCA",
       "why": "<b>Socca</b> — the port institution (since 1923) for Nice's chickpea pancake, thin and crisp from the wood oven (13 Rue Bavastro). Casual, cash-friendly, no-frills. ⚠️ Verify 2026 hours (often closed Mon).",
       "price": "€8–15/2",
-      "when": "11/11",
+      "when": "11/11 or 11/12",
       "booking": "walk-in",
       "status": "walk_up"
     },
@@ -2412,7 +2414,7 @@
       "tier": "BARBAGIUAN",
       "why": "<b>Barbagiuan & socca</b> — Monaco's covered market food court (Place d'Armes). The principality's signature fried chard-and-cheese pastry plus socca and Monégasque plates at the stalls — the one genuinely casual, affordable eat in Monaco. ⚠️ Verify 2026 hours (mornings into lunch).",
       "price": "€10–20/2",
-      "when": "11/11 lunch",
+      "when": "11/12 snack",
       "booking": "walk-in",
       "status": "walk_up"
     },
@@ -2422,7 +2424,7 @@
       "tier": "MONÉGASQUE",
       "why": "<b>Barbagiuan & stocafi</b> — cozy traditional Monégasque spot in old Monaco-Ville by the Palace (14 Rue Comte Félix Gastaldi) for barbagiuan, stocafi (stockfish stew) and fougasse. ⚠️ Verify 2026 hours.",
       "price": "€25–40/2",
-      "when": "11/11 lunch",
+      "when": "11/12 snack",
       "booking": "walk-in",
       "status": "walk_up"
     },
@@ -2603,7 +2605,7 @@
       "city": "Èze",
       "target": "Perfume",
       "place": "Fragonard factory shop",
-      "when": "11/11 morning",
+      "when": "11/12 afternoon",
       "type": "browse / buy if it lands",
       "priority": "medium",
       "notes": "Factory-shop browse. Worth buying only if a scent really lands for Nicole."
@@ -2772,10 +2774,10 @@
     },
     {
       "item": "Musée Marc Chagall — Nice",
-      "date": "11/12",
+      "date": "11/11",
       "provider": "musee-chagall.fr / official ticketing",
       "status": "walk_up",
-      "notes": "Walk-in plan. Buy tickets on arrival after Le Plongeoir unless an obvious official e-ticket appears later."
+      "notes": "Walk-in after Le Plongeoir. Open on the 11/11 holiday (closed Tuesdays only); Nov 10:00–17:00, closed 13:00–14:30, last tickets 16:30."
     },
     {
       "item": "Doge's Palace — Venice timed entry",
@@ -2799,10 +2801,10 @@
     },
     {
       "item": "Monaco scenic F1 lunch",
-      "date": "11/11",
+      "date": "11/12",
       "provider": "Café de Paris Monte-Carlo",
       "status": "booked",
-      "notes": "Confirmed for 2 guests at 12:30pm. Booking reference intentionally omitted from the public repo; keep it in email/browser confirmation."
+      "notes": "Confirmed for 2 guests, Thu 11/12 12:30–14:00 (moved from 11/11 on 10/27). Card guarantee: €50 pp if cancelled <24h or no-show. Booking reference intentionally omitted from the public repo; keep it in email."
     },
     {
       "item": "Synagogue visit requests — Nice and Basel",
@@ -3056,7 +3058,7 @@
       {
         "cat": "Activities",
         "label": "Monaco Oceanographic + sights (2 pax)",
-        "date": "Nov 11",
+        "date": "Nov 12",
         "cur": "EUR",
         "est": 50,
         "actual": null,
@@ -3103,8 +3105,8 @@
   "decisions": [
     {
       "id": 1,
-      "q": "Nice 2nd day-trip (Thu 11/12)",
-      "options": "UPDATED: Le Plongeoir lunch is now booked for noon 11/12 in Nice, which anchors the day locally — a far Menton/Mirazur day-trip no longer fits (Mirazur would need a different day, and there isn't a clean one). RECOMMEND: either a quick Antibes morning (Picasso + Marché Provençal, ~25 min) and back for the Le Plongeoir lunch, or a relaxed Nice morning (MAMAC/Chéret + Old Town). Menton/Mirazur = effectively off unless you move Le Plongeoir again. · UPDATE: Marc Chagall Museum is now set for 2:30–5pm this day (right after Le Plongeoir), so the afternoon is decided — only the MORNING is open: quick Antibes (Picasso + market) vs a relaxed Nice morning (MAMAC/Chéret + Old Town).",
+      "q": "Nice morning before Le Plongeoir (Wed 11/11)",
+      "options": "UPDATED 10/27: Monaco + Èze moved to Thu 11/12 (trains run normally); Le Plongeoir is now Wed 11/11 at noon, then Chagall at 2:30. Only the Wednesday MORNING is open: quick Antibes (Picasso + Marché Provençal — holiday timetable, confirm hours) vs a relaxed Nice morning (Cours Saleya / Old Town / MAMAC).",
       "status": "open"
     },
     {
@@ -3133,8 +3135,8 @@
     },
     {
       "id": 6,
-      "q": "Menton — Plan A (with) vs Plan B (without), Wed 11/11",
-      "options": "✅ DECIDED: skip Menton this trip. Keep the day focused on Èze + Monaco, with the booking energy going into a scenic F1 lunch and the track/casino walk. Menton/Mirazur becomes a future Riviera trip idea.",
+      "q": "Menton — Plan A (with) vs Plan B (without)",
+      "options": "✅ DECIDED: skip Menton this trip. Keep the Monaco day (now Thu 11/12) focused on Monaco + Èze, with the booking energy going into a scenic F1 lunch and the track/casino walk. Menton/Mirazur becomes a future Riviera trip idea.",
       "status": "closed"
     },
     {
@@ -3395,27 +3397,19 @@
     },
     {
       "id": "monaco-wed11-dinner",
-      "date": "2026-11-11",
-      "time": "7:30p",
+      "date": "2026-11-12",
+      "time": "7:00p",
       "city": "Nice",
-      "slot": "Dinner after the casino",
+      "slot": "Dinner back in Nice (after Èze)",
       "kind": "dining",
       "commitStatus": "book",
       "options": [
-        {
-          "id": "beefbar",
-          "label": "Beefbar Monte-Carlo",
-          "tier": "MEAT",
-          "price": "€120–180/2",
-          "desc": "Sleek Monaco steak temple on the water — great for Max's meat night before the train back to Nice.",
-          "link": ""
-        },
         {
           "id": "bistrotantoine",
           "label": "Le Bistrot d'Antoine (Nice)",
           "tier": "LOCAL",
           "price": "€70–90/2",
-          "desc": "Train back to Nice and eat at the benchmark modern-Niçoise bistro in Vieux Nice.",
+          "desc": "Eat at the benchmark modern-Niçoise bistro in Vieux Nice.",
           "link": ""
         },
         {
@@ -3500,10 +3494,10 @@
     },
     {
       "id": "nice-wed-museum",
-      "date": "2026-11-12",
-      "time": "3:00p",
+      "date": "2026-11-11",
+      "time": "10:00a",
       "city": "Nice",
-      "slot": "Nice art — Wed (city center)",
+      "slot": "Nice art — Wed morning alternative",
       "kind": "museum",
       "commitStatus": "confirmed",
       "options": [
@@ -3522,20 +3516,12 @@
           "price": "Free",
           "desc": "Monet, Renoir, Rodin, Carpeaux + Picasso ceramics in an 1878 princess's villa. Open Wed ✅ (closed Mon).",
           "link": ""
-        },
-        {
-          "id": "cimiez-wed",
-          "label": "Matisse + Chagall (if skipped Mon)",
-          "tier": "COMBO",
-          "price": "~€8.50",
-          "desc": "Both also open Wednesday — do Cimiez today instead if Monday fills up.",
-          "link": ""
         }
       ]
     },
     {
       "id": "monaco-museum",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "time": "11:00a",
       "city": "Monaco",
       "slot": "Monaco art (bonus, if time)",
@@ -3548,7 +3534,7 @@
           "label": "Nouveau Musée National de Monaco",
           "tier": "OPTIONAL",
           "price": "~€6",
-          "desc": "Two Belle-Époque villas, rotating modern/contemporary shows. Open Tue ✅. Only if the casino day leaves a gap.",
+          "desc": "Two Belle-Époque villas, rotating modern/contemporary shows. Only if the Monaco morning leaves a gap.",
           "link": ""
         },
         {
@@ -3556,7 +3542,7 @@
           "label": "Skip — casino day is full",
           "tier": "—",
           "price": "—",
-          "desc": "Keep Nov 11 for Èze + F1 walk + casinos.",
+          "desc": "Keep Nov 12 for the Rock + F1 walk + casino + Èze.",
           "link": ""
         }
       ]
