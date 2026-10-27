@@ -2844,10 +2844,11 @@
     "baseCurrency": "USD",
     "rates": {
       "USD": 1,
-      "EUR": 1.08,
-      "CHF": 1.12
+      "EUR": 1.12,
+      "GBP": 1.34,
+      "CHF": 1.21
     },
-    "note": "FX rates are approximate — edit in trip-data.json. Estimate = your planning guess; Final cost = confirmed price once booked; Paid = amount actually charged so far (many stays are 'due at property', so Paid stays 0 until check-out). Non-hotel lines are planning estimates for two travelers; adjust freely.",
+    "note": "Final cost = the real price once known (falls back to the estimate). Paid = money already charged. Exchange rates come live from the Currency tab when online; the rates saved here are a fallback. Estimates are for two travelers.",
     "lines": [
       {
         "cat": "Flights",
@@ -2857,6 +2858,7 @@
         "est": 1400,
         "actual": 686.2,
         "paid": 686.2,
+        "status": "paid",
         "note": "Booked — enter actual from Amex/BA"
       },
       {
@@ -2866,7 +2868,8 @@
         "cur": "USD",
         "est": 1300,
         "actual": null,
-        "note": "Booked — enter actual"
+        "status": "paid",
+        "note": "Booked & paid — enter the actual price from Aer Lingus/AA or Amex"
       },
       {
         "cat": "Hotels",
@@ -2876,7 +2879,9 @@
         "est": 186.57,
         "actual": 186.57,
         "paid": 176.66,
-        "note": "Booked (replaced Adagio hold)"
+        "status": "partial",
+        "due": "2026-11-09",
+        "note": "$176.66 prepaid via Amex Travel; $5.91 due at check-out"
       },
       {
         "cat": "Hotels",
@@ -2886,7 +2891,9 @@
         "est": 246.24,
         "actual": 246.24,
         "paid": 0,
-        "note": "Booked (replaced Hotel Paganini)"
+        "status": "property",
+        "due": "2026-11-13",
+        "note": "Due at the hotel (Amex Travel guarantee)"
       },
       {
         "cat": "Hotels",
@@ -2896,17 +2903,21 @@
         "est": 726.99,
         "actual": 726.99,
         "paid": 0,
-        "note": "Booked"
+        "status": "property",
+        "due": "2026-11-18",
+        "note": "Due at the hotel; holds the Venice night for the big bags"
       },
       {
         "cat": "Hotels",
         "label": "Venice — Hotel Ca' dei Conti (1n)",
         "date": "Nov 15–16",
         "cur": "USD",
-        "est": 180,
+        "est": 113.57,
         "actual": 113.57,
         "paid": 0,
-        "note": "Booked via Amex Travel (due at property)"
+        "status": "property",
+        "due": "2026-11-16",
+        "note": "Due at the hotel; includes $10.32 city fee"
       },
       {
         "cat": "Hotels",
@@ -2916,7 +2927,9 @@
         "est": 768.75,
         "actual": 768.75,
         "paid": 0,
-        "note": "Booked"
+        "status": "property",
+        "due": "2026-11-23",
+        "note": "Due at the hotel"
       },
       {
         "cat": "Hotels",
@@ -2926,7 +2939,9 @@
         "est": 607.54,
         "actual": 607.54,
         "paid": 580.74,
-        "note": "Booked"
+        "status": "partial",
+        "due": "2026-11-26",
+        "note": "$580.74 prepaid via Amex Travel; $26.80 due at the hotel"
       },
       {
         "cat": "Hotels",
@@ -2936,7 +2951,9 @@
         "est": 150.81,
         "actual": 150.81,
         "paid": 0,
-        "note": "Booked"
+        "status": "property",
+        "due": "2026-11-27",
+        "note": "Due at the hotel"
       },
       {
         "cat": "Trains",
@@ -2945,16 +2962,31 @@
         "cur": "EUR",
         "est": 83.8,
         "actual": null,
+        "status": "payday",
+        "due": "2026-11-09",
         "note": "Pay on the day at the station — €41.90 pp (departs Marseille Blancarde)"
       },
       {
         "cat": "Trains",
-        "label": "Nice→Ventimiglia TER + Ventimiglia→Milan Regionale (2 pax)",
+        "label": "Nice→Ventimiglia TER local (2 pax)",
         "date": "Nov 13",
         "cur": "EUR",
-        "est": 45,
+        "est": 21.2,
+        "actual": null,
+        "status": "payday",
+        "due": "2026-11-13",
+        "note": "Pay on the day — €10.60 pp at the station or SNCF Connect"
+      },
+      {
+        "cat": "Trains",
+        "label": "Ventimiglia→Savona→Milan Regionale (2 pax)",
+        "date": "Nov 13",
+        "cur": "EUR",
+        "est": 25.7,
         "actual": 25.7,
-        "note": "Ventimiglia→Milan BOOKED 10/19 €25.70 · Nice→Ventimiglia TER pay on day (~€20 for 2)"
+        "paid": 25.7,
+        "status": "paid",
+        "note": "BOOKED 10/19 · Trenitalia ticket code 2987179016"
       },
       {
         "cat": "Trains",
@@ -2963,7 +2995,9 @@
         "cur": "EUR",
         "est": 120,
         "actual": 59.6,
-        "note": "BOOKED 10/19 · Italo Smart eXtra"
+        "paid": 59.6,
+        "status": "paid",
+        "note": "BOOKED 10/19 · Italo 8981 + 8988 round trip"
       },
       {
         "cat": "Trains",
@@ -2972,7 +3006,9 @@
         "cur": "EUR",
         "est": 140,
         "actual": 164,
-        "note": "BOOKED 10/23 · Trenitalia Smart2 2nd class"
+        "paid": 164,
+        "status": "paid",
+        "note": "BOOKED 10/23 · Trenitalia Smart2, paid via PayPal (non-refundable)"
       },
       {
         "cat": "Trains",
@@ -2981,16 +3017,19 @@
         "cur": "CHF",
         "est": 70,
         "actual": null,
-        "note": "Supersaver ~60d out"
+        "status": "payday",
+        "due": "2026-11-23",
+        "note": "Pay on the day (or a Supersaver in the SBB app to save)"
       },
       {
         "cat": "Trains",
-        "label": "Regional day-trips (Monaco/Menton/Como/Strasbourg/Freiburg/Lucerne, 2 pax)",
+        "label": "Regional day-trips — Monaco/Èze, Como, Strasbourg, Freiburg, Lucerne, Kilchberg (2 pax)",
         "date": "Various",
         "cur": "EUR",
         "est": 280,
         "actual": null,
-        "note": "Walk-up estimate"
+        "status": "payday",
+        "note": "Walk-up fares, paid on each day — log them as you go"
       },
       {
         "cat": "Trains",
@@ -2999,25 +3038,152 @@
         "cur": "CHF",
         "est": 14,
         "actual": null,
+        "status": "payday",
+        "due": "2026-11-26",
         "note": "Walk-up"
       },
       {
-        "cat": "Dining",
-        "label": "Local meals — ~18 days, mostly hole-in-the-wall (2 pax)",
-        "date": "Trip-wide",
+        "cat": "Trains",
+        "label": "Dublin Aircoach 700 — airport ⇄ hotel, both ways (2 pax)",
+        "date": "Nov 26–27",
         "cur": "EUR",
-        "est": 1600,
+        "est": 40,
         "actual": null,
-        "note": "~€90/day avg for two"
+        "status": "payday",
+        "due": "2026-11-26",
+        "note": "Pay on the day or in the Aircoach app; stops outside the Gresham"
       },
       {
         "cat": "Dining",
-        "label": "Special nights — Le Sens + anniversary + optional Michelin",
-        "date": "Nov 9–10",
-        "cur": "EUR",
-        "est": 500,
+        "label": "The Ivy Kensington — breakfast",
+        "date": "Nov 7",
+        "cur": "GBP",
+        "est": 48,
         "actual": null,
-        "note": "Le Sens booked; add for any Michelin picks"
+        "status": "atmeal",
+        "due": "2026-11-07",
+        "note": "£40–55 for two"
+      },
+      {
+        "cat": "Dining",
+        "label": "Chez Fonfon — bouillabaisse",
+        "date": "Nov 8",
+        "cur": "EUR",
+        "est": 105,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-08",
+        "note": "€90–120 for two, before wine"
+      },
+      {
+        "cat": "Dining",
+        "label": "La Rossettisserie — anniversary dinner",
+        "date": "Nov 9",
+        "cur": "EUR",
+        "est": 78,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-09",
+        "note": "€65–90 for two"
+      },
+      {
+        "cat": "Dining",
+        "label": "Le Sens — fine-dining night",
+        "date": "Nov 10",
+        "cur": "EUR",
+        "est": 180,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-10",
+        "note": "Placeholder — no price on file; update once you see the menu"
+      },
+      {
+        "cat": "Dining",
+        "label": "Le Plongeoir — lunch",
+        "date": "Nov 11",
+        "cur": "EUR",
+        "est": 110,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-11",
+        "note": "€90–130 for two"
+      },
+      {
+        "cat": "Dining",
+        "label": "Café de Paris Monte-Carlo — lunch",
+        "date": "Nov 12",
+        "cur": "EUR",
+        "est": 140,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-12",
+        "note": "€100–180 for two before serious wine"
+      },
+      {
+        "cat": "Dining",
+        "label": "Domò Sushi — all-you-can-eat",
+        "date": "Nov 13",
+        "cur": "EUR",
+        "est": 70,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-13",
+        "note": "Estimate ~€35 pp AYCE"
+      },
+      {
+        "cat": "Dining",
+        "label": "Joia ★ — Michelin vegetarian tasting",
+        "date": "Nov 14",
+        "cur": "EUR",
+        "est": 205,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-14",
+        "note": "€85–120 pp tasting, before wine"
+      },
+      {
+        "cat": "Dining",
+        "label": "Zum Goldenen Sternen",
+        "date": "Nov 21",
+        "cur": "CHF",
+        "est": 63,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-21",
+        "note": "CHF 45–80 for two"
+      },
+      {
+        "cat": "Dining",
+        "label": "Zeughauskeller",
+        "date": "Nov 23",
+        "cur": "CHF",
+        "est": 75,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-23",
+        "note": "CHF 65–85 for two"
+      },
+      {
+        "cat": "Dining",
+        "label": "Swiss Chuchi — raclette night",
+        "date": "Nov 25",
+        "cur": "CHF",
+        "est": 130,
+        "actual": null,
+        "status": "atmeal",
+        "due": "2026-11-25",
+        "note": "CHF 50–80 pp"
+      },
+      {
+        "cat": "Dining",
+        "label": "Everything else — breakfasts, lunches, unbooked dinners, snacks (2 pax)",
+        "date": "Trip-wide",
+        "cur": "EUR",
+        "est": 1100,
+        "actual": null,
+        "status": "planned",
+        "bucket": true,
+        "note": "~€55/day for two on top of the itemised meals above; log spends as you go"
       },
       {
         "cat": "Activities",
@@ -3026,6 +3192,8 @@
         "cur": "USD",
         "est": 78.48,
         "actual": 78.48,
+        "paid": 78.48,
+        "status": "paid",
         "note": "BOOKED 10/19 via GetYourGuide"
       },
       {
@@ -3035,7 +3203,8 @@
         "cur": "CHF",
         "est": 80,
         "actual": null,
-        "note": "BOOKED 10/19 — enter actual price"
+        "status": "paid",
+        "note": "BOOKED 10/19 — enter the actual price"
       },
       {
         "cat": "Activities",
@@ -3044,7 +3213,8 @@
         "cur": "CHF",
         "est": 60,
         "actual": null,
-        "note": "BOOKED via GetYourGuide — enter actual price"
+        "status": "paid",
+        "note": "BOOKED via GetYourGuide — enter the actual price"
       },
       {
         "cat": "Activities",
@@ -3053,16 +3223,41 @@
         "cur": "EUR",
         "est": 30,
         "actual": null,
-        "note": "Timed ticket"
+        "status": "planned",
+        "note": "Optional — only if a convenient slot appears"
       },
       {
         "cat": "Activities",
-        "label": "Monaco Oceanographic + sights (2 pax)",
+        "label": "Monaco — casino entry + Oceanographic / sights (2 pax)",
         "date": "Nov 12",
         "cur": "EUR",
         "est": 50,
         "actual": null,
+        "status": "planned",
+        "due": "2026-11-12",
         "note": ""
+      },
+      {
+        "cat": "Activities",
+        "label": "Musée Marc Chagall (2 pax)",
+        "date": "Nov 11",
+        "cur": "EUR",
+        "est": 24,
+        "actual": null,
+        "status": "payday",
+        "due": "2026-11-11",
+        "note": "Walk-in, ~€10–12 pp"
+      },
+      {
+        "cat": "Activities",
+        "label": "Dublin — Guinness Storehouse + Jameson Bow St (2 pax)",
+        "date": "Nov 26",
+        "cur": "EUR",
+        "est": 110,
+        "actual": null,
+        "status": "todo",
+        "due": "2026-11-26",
+        "note": "Not booked yet — Guinness is non-refundable but changeable to 24h before; Jameson from €26 pp"
       },
       {
         "cat": "Activities",
@@ -3071,6 +3266,8 @@
         "cur": "EUR",
         "est": 180,
         "actual": null,
+        "status": "planned",
+        "bucket": true,
         "note": ""
       },
       {
@@ -3080,16 +3277,20 @@
         "cur": "CHF",
         "est": 1000,
         "actual": null,
+        "status": "planned",
+        "bucket": true,
         "note": "Bucherer/Gübelin/Beyer — enter your target"
       },
       {
         "cat": "Misc",
-        "label": "Metros, trams, taxis, Airlink airport bus (2 pax)",
+        "label": "Metros, trams, buses, taxis (2 pax)",
         "date": "Trip-wide",
         "cur": "EUR",
         "est": 200,
         "actual": null,
-        "note": ""
+        "status": "planned",
+        "bucket": true,
+        "note": "Local transport not itemised above — log as you go"
       },
       {
         "cat": "Misc",
@@ -3098,9 +3299,13 @@
         "cur": "USD",
         "est": 500,
         "actual": null,
+        "status": "planned",
+        "bucket": true,
         "note": "Cushion for overages"
       }
-    ]
+    ],
+    "ratesDate": "2026-10-27",
+    "spend": []
   },
   "decisions": [
     {
