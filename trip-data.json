@@ -1824,6 +1824,11 @@
             "note": "Free online cancel until 24h before (7pm 11/24). Table released 15 min after booking time.",
             "sort": "2026-11-25"
           }
+        },
+        {
+          "time": "evening",
+          "status": "confirmed",
+          "text": "📋 Check tomorrow: Teddy's (Dún Laoghaire) winter closing time on Google Maps. If it closes before ~4:30, do the DART + 99 first and the sweater shops after (Cleo still closes 5:30)."
         }
       ],
       "sleepCity": "Zurich",
@@ -1940,7 +1945,7 @@
         },
         {
           "time": "9:30p",
-          "status": "tentative",
+          "status": "confirmed",
           "text": "Back to the Gresham (~10 min walk from Wicklow St) — early start tomorrow."
         }
       ],
