@@ -133,6 +133,8 @@ select.bstat{font:inherit;font-size:.76rem;font-weight:600;padding:3px 4px;curso
 tr.b-need td{background:rgba(245,158,11,.07);}
 .b-mark{font-size:.72rem;padding:4px 8px;white-space:nowrap;}
 .b-scroll{overflow-x:auto;}
+.b-help{background:var(--cp-surface);border:1px solid var(--cp-warning);border-radius:12px;padding:12px 14px;margin:0 0 12px;font-size:.86rem;max-width:820px;}
+.b-help ol{margin:8px 0 10px;padding-left:20px;} .b-help li{margin:3px 0;}
 .sg-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;}
 .sg-toolbar .dirty{font-size:.78rem;color:var(--cp-text-muted);}
 .sg-toolbar .dirty.on{color:var(--cp-warning);font-weight:600;}
@@ -484,10 +486,18 @@ textarea.ed-in{resize:vertical;}
     <h2 class="sec" style="margin-top:20px">Line items</h2>
     <div class="filterbar" id="budgetFilter"></div>
     <div class="budget-toolbar">
-      <button id="bExport" class="btn-mini" type="button" title="Save edits + logged spends to the trip file (GitHub if connected in ✎ Edit)">💾 Save</button>
+      <button id="bExport" class="btn-mini" type="button" title="Sync your budget edits and logged spends to the live site">💾 Save to site</button>
       <button id="bReset" class="btn-mini alt" type="button" style="display:none">↺ Discard device changes</button>
       <span id="bDirty" class="dirty"></span>
       <span class="hint">Change a status from its dropdown · ✓ Paid locks Paid = Final cost · edits stay on this device until you Save</span>
+    </div>
+    <div id="bSaveHelp" class="b-help" hidden>
+      <b>This device isn't connected to the site yet.</b> Your edits are safe: they're kept on this device and keep showing here. To push them to the live site (so your other devices see them), connect once:
+      <ol><li>On GitHub: Settings → Developer settings → <b>Fine-grained tokens</b> → Generate new token.</li>
+      <li>Repository access: <b>Only select repositories → europe-2026-trip</b>. Permissions: <b>Contents → Read and write</b>. Pick an expiry after the trip (e.g. Dec 31).</li>
+      <li>Copy the token, then tap <b>Connect &amp; save</b> and paste it. It's stored only on this device.</li></ol>
+      <div class="lc-row"><button id="bConnect" class="btn-mini" type="button">🔗 Connect &amp; save</button><button id="bHelpClose" class="btn-mini alt" type="button">Not now</button>
+      <span class="b-sub">Or just tell Scout what changed and it'll update the site for you.</span></div>
     </div>
     <div id="budgetLines"></div>
     <div class="foot" id="budgetNote" style="margin-top:10px;text-align:left"></div></section>
@@ -1108,7 +1118,8 @@ document.getElementById("ticketList").innerHTML =
       actual:(o.actual!==undefined?o.actual:(l.actual!=null?l.actual:null)),
       paid:(o.paid!==undefined?o.paid:(l.paid!=null?l.paid:null)),
       status:(o.status||l.status||"planned")}); });
-  const SPEND=(B.spend||[]).map(s=>Object.assign({},s,{_saved:true})).concat(localSpend);
+  const sk=s=>[s.date,s.label,s.cur,s.amt,s.bucket].join("|"), savedKeys=new Set((B.spend||[]).map(sk));
+  const SPEND=(B.spend||[]).map(s=>Object.assign({},s,{_saved:true})).concat(localSpend.filter(s=>!savedKeys.has(sk(s))));
   let curCat="All", sortKey=null, sortDir=1;
 
   const spentOn=l=>SPEND.filter(s=>s.bucket===l.label).reduce((a,s)=>a+toB(s.cur,s.amt)/(R[l.cur]||1),0);
@@ -1223,13 +1234,6 @@ document.getElementById("ticketList").innerHTML =
     target.budget.lines=LINES.map(l=>{ const o={cat:l.cat,label:l.label,date:l.date||"",cur:l.cur,est:l.est||0,actual:(l.actual!=null?l.actual:null)}; if(l.paid!=null)o.paid=l.paid; o.status=l.status; if(l.due)o.due=l.due; if(l.bucket)o.bucket=true; o.note=l.note||""; return o; });
     target.budget.spend=SPEND.map(s=>({date:s.date,label:s.label,cur:s.cur,amt:s.amt,bucket:s.bucket}));
   }
-  async function saveToFile(){
-    const d=JSON.parse(typeof RAWTEXT==="string"?RAWTEXT:JSON.stringify(window.RAWDATA)); serialize(d); const text=JSON.stringify(d,null,2)+String.fromCharCode(10);
-    if(!window.showSaveFilePicker){ const a=document.createElement("a"); a.href="data:application/json;charset=utf-8,"+encodeURIComponent(text); a.download="trip-data.json"; a.click(); toast("Downloaded trip-data.json — replace the one in the trip folder"); return; }
-    try{ const h=await window.showSaveFilePicker({suggestedName:"trip-data.json",types:[{description:"Trip data",accept:{"application/json":[".json"]}}]}); const w=await h.createWritable(); await w.write(text); await w.close();
-      try{ localStorage.setItem(LSSAVED, localStorage.getItem(LSKEY)); }catch(e){} persist(); toast("✓ Saved to trip-data.json"); }
-    catch(e){ if(e&&e.name==="AbortError") toast("Save cancelled"); }
-  }
   document.getElementById("budgetFilter").addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b)return; curCat=b.getAttribute("data-c"); renderFilter(); renderLines(); });
   document.getElementById("budgetLines").addEventListener("click",e=>{
     const mk=e.target.closest("[data-mark]"); if(mk){ const l=LINES.find(x=>x._i===+mk.getAttribute("data-mark")); if(l){ l.paid=finalOf(l); l.status="paid"; if(l.actual==null) l.actual=l.est; renderAll(); toast("✓ Marked paid — "+l.label); } return; }
@@ -1247,9 +1251,16 @@ document.getElementById("ticketList").innerHTML =
     document.getElementById("lgAmt").value=""; document.getElementById("lgLabel").value=""; renderAll(); toast("Logged "+cm(document.getElementById("lgCur").value,amt));
   });
   document.getElementById("bSpendList").addEventListener("click",e=>{ const b=e.target.closest("[data-del]"); if(!b)return; SPEND.splice(+b.getAttribute("data-del"),1); renderAll(); });
+  function syncSave(){ serialize(window.RAWDATA); window.ghSave("Budget update via app "+new Date().toISOString()); }
   document.getElementById("bExport").addEventListener("click",function(){
-    if(window.ghGetToken&&window.ghGetToken()&&window.RAWDATA&&window.RAWDATA.budget){ serialize(window.RAWDATA); try{ localStorage.removeItem(LSKEY); }catch(e){} window.ghSave("Budget update via app "+new Date().toISOString()); }
-    else saveToFile(); });
+    const help=document.getElementById("bSaveHelp");
+    if(window.ghGetToken&&window.ghGetToken()&&window.RAWDATA&&window.RAWDATA.budget){ if(help) help.hidden=true; syncSave(); return; }
+    if(help){ help.hidden=false; help.scrollIntoView({behavior:"smooth",block:"nearest"}); }
+  });
+  document.getElementById("bSaveHelp").addEventListener("click",function(e){
+    if(e.target.closest("#bConnect")){ if(window.ghConnect&&window.ghConnect()){ this.hidden=true; syncSave(); } }
+    else if(e.target.closest("#bHelpClose")){ this.hidden=true; }
+  });
   document.getElementById("bReset").addEventListener("click",()=>{ if(!confirm("Discard the budget changes and logged spends kept on this device?")) return; try{ localStorage.removeItem(LSKEY); localStorage.removeItem(LSSAVED); }catch(e){} location.reload(); });
   const lc=document.getElementById("lgCur"); if(lc){ const t=new Date().toISOString().slice(0,10), day=(DATA.days||[]).find(x=>x.date===t), c=day?String(day.city):""; lc.value=/Basel|Zurich|Lucerne/.test(c)?"CHF":/London/.test(c)?"GBP":/Dublin|Philly/.test(c)&&!/Zurich/.test(c)?"EUR":"EUR"; }
   renderFilter(); renderAll();
@@ -1582,6 +1593,7 @@ loadAndBoot();
     });
   }
   window.ghSave=saveGitHub; window.ghGetToken=getTok; window.ghRenderState=renderGhState;
+  window.ghConnect=function(){ var t=prompt("One-time setup for this device — paste a GitHub fine-grained token with Contents: Read and write on the europe-2026-trip repo:"); if(t&&t.trim()){ setTok(t.trim()); renderGhState(); return true; } return false; };
   if(window.__booted) mountEditor(); else document.addEventListener("app:booted", mountEditor);
 })();
 </script>
