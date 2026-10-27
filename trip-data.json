@@ -910,7 +910,7 @@
         },
         {
           "time": "12:00p",
-          "text": "Lunch: Le Plongeoir — BOOKED, 2 guests (moved from 11/10 by the restaurant on 10/27; they're closed 11/10). Same time as the original booking.",
+          "text": "Lunch: Le Plongeoir — BOOKED, 2 guests (moved from 11/10 by the restaurant on 10/27; they're closed 11/10). 12:00 confirmed (same as the original booking).",
           "detail": "Scenic seaside dining on the old diving platform, Cap de Nice. 60 Bd Franck Pilatte. Le Plongeoir's online booking showed 12:00 open on 11/11 (checked 10/26).",
           "status": "booked",
           "lat": 43.6919112,
@@ -918,8 +918,8 @@
           "place": "Le Plongeoir",
           "missCost": {
             "risk": "fee",
-            "label": "Card held: cancel early if plans change",
-            "note": "Card on file. Restaurant moved the booking from 11/10 (closed that day) to 11/11 by email on 10/27. Earlier note said changes are free until Nov 7.",
+            "label": "Card held: free change/cancel until Nov 7",
+            "note": "Card on file. Free change/cancel until Nov 7; after that, expect a charge. Moved from 11/10 to 11/11 by the restaurant (10/27), terms unchanged.",
             "sort": "2026-11-11"
           }
         },
@@ -2038,15 +2038,15 @@
       "city": "Nice",
       "name": "Le Plongeoir",
       "tier": "BOOKED",
-      "why": "Iconic seaside lunch perched on the old diving platform over the Baie des Anges (Cap de Nice). Wed 11/11 12:00 PM, 2 guests — the restaurant had the booking on 11/10 (closed that day) and moved it to 11/11 by email on 10/27. ⚠️ Card on file. 60 Bd Franck Pilatte, 06300 Nice. Tram L2 → Port Lympia.",
+      "why": "Iconic seaside lunch perched on the old diving platform over the Baie des Anges (Cap de Nice). Wed 11/11 12:00 PM, 2 guests — the restaurant had the booking on 11/10 (closed that day) and moved it to 11/11 by email on 10/27. ⚠️ Card on file — free change/cancel until Nov 7. Time confirmed 12:00. 60 Bd Franck Pilatte, 06300 Nice. Tram L2 → Port Lympia.",
       "price": "€90–130/2",
       "when": "11/11 12:00 PM",
       "booking": "CONFIRMED (card held) — moved to 11/11 by email 10/27",
       "status": "booked",
       "missCost": {
         "risk": "fee",
-        "label": "Card held: cancel early if plans change",
-        "note": "Card on file. Restaurant moved the booking from 11/10 (closed that day) to 11/11 by email on 10/27. Earlier note said changes are free until Nov 7.",
+        "label": "Card held: free change/cancel until Nov 7",
+        "note": "Card on file. Free change/cancel until Nov 7; after that, expect a charge. Moved from 11/10 to 11/11 by the restaurant (10/27), terms unchanged.",
         "sort": "2026-11-11"
       }
     },
