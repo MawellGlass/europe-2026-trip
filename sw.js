@@ -1,5 +1,5 @@
 /* Offline support for the Europe 2026 trip site. Generated from sw-template.js by build-trip.js. */
-const VERSION = "20261028170012";
+const VERSION = "20261028173332";
 const SHELL = "eu26-shell-" + VERSION;
 const DATA_CACHE = "eu26-data";
 const SHELL_URLS = [
@@ -32,7 +32,8 @@ function keyFor(url) {
 }
 
 function networkFirst(req, cacheName, key) {
-  return fetch(req)
+  const sameOrigin = new URL(req.url).origin === self.location.origin;
+  return fetch(sameOrigin ? new Request(req.url, { cache: "no-cache", credentials: "same-origin" }) : req)
     .then((res) => {
       if (res && (res.ok || res.type === "opaque")) {
         const copy = res.clone();
