@@ -1462,6 +1462,7 @@ async function loadAndBoot(){
     if((!Array.isArray(RAWDATA.shopping) || !RAWDATA.shopping.length) && Array.isArray(bakedData.shopping) && bakedData.shopping.length){
       RAWDATA.shopping = bakedData.shopping;
     }
+    Object.keys(bakedData).forEach(function(k){ if(RAWDATA[k]==null) RAWDATA[k]=bakedData[k]; });
   }catch(e){}
   DATA = applyChoicesClient(__clone(RAWDATA));
   window.RAWDATA = RAWDATA;
