@@ -10,7 +10,7 @@
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
     "lastUpdated": "2026-10-27",
-    "lastAppEdit": "2026-10-28 15:32 (edited in app)"
+    "lastAppEdit": "2026-10-28 15:33 (edited in app)"
   },
   "segments": [
     {
@@ -4392,7 +4392,10 @@
             "t": "Type C (Europlug) adapters — fit France, Italy, Germany AND Switzerland",
             "who": "shared",
             "qty": 3,
-            "why": "Thick German Schuko plugs don't fit Swiss sockets"
+            "why": "Thick German Schuko plugs don't fit Swiss sockets",
+            "qtyBy": {
+              "s": 4
+            }
           },
           {
             "id": "tech-adG",
