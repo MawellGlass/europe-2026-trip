@@ -154,7 +154,9 @@
         "label": "Prepaid $176.66",
         "note": "Paid via Amex Travel; refundability not confirmed. $5.91 due at property.",
         "sort": "2026-11-07"
-      }
+      },
+      "checkin": "3:00 PM",
+      "checkout": "11:00 AM"
     },
     {
       "city": "Nice",
@@ -211,7 +213,9 @@
         "label": "Card on file: check cancel deadline",
         "note": "$113.57 due at property, guaranteed on Amex. Check the Amex Travel itinerary for the free-cancel deadline.",
         "sort": "2026-11-15"
-      }
+      },
+      "checkin": "2:00 PM",
+      "checkout": "12:00 PM"
     },
     {
       "city": "Basel",
@@ -456,6 +460,11 @@
         "label": "Paid €164, non-refundable",
         "note": "Changeable before departure by paying the difference up to the Standard fare.",
         "sort": "2026-11-18"
+      },
+      "live": {
+        "from": "Milano Centrale",
+        "to": "Basel SBB",
+        "time": "11:00"
       }
     },
     {
@@ -477,7 +486,12 @@
           "note": "Via Colmar: Colmar→Basel 17:23→18:08 · 17:53→18:38."
         }
       ],
-      "n": 8
+      "n": 8,
+      "live": {
+        "from": "Basel SBB",
+        "to": "Strasbourg",
+        "time": "09:00"
+      }
     },
     {
       "status": "payday",
@@ -498,7 +512,12 @@
           "note": "Or 16:42→17:59 · 17:42→18:56."
         }
       ],
-      "n": 9
+      "n": 9,
+      "live": {
+        "from": "Basel Bad Bf",
+        "to": "Freiburg (Breisgau) Hbf",
+        "time": "09:00"
+      }
     },
     {
       "status": "payday",
@@ -524,7 +543,12 @@
           "note": "17:54 is the last comfortable train for the 8pm Sternen dinner."
         }
       ],
-      "n": 10
+      "n": 10,
+      "live": {
+        "from": "Basel SBB",
+        "to": "Luzern",
+        "time": "08:30"
+      }
     },
     {
       "n": 11,
@@ -550,7 +574,12 @@
           "note": "Half-hourly direct service all day."
         }
       ],
-      "status": "payday"
+      "status": "payday",
+      "live": {
+        "from": "Basel SBB",
+        "to": "Zürich HB",
+        "time": "11:00"
+      }
     },
     {
       "status": "payday",
@@ -571,7 +600,12 @@
           "note": "Every ~15 min."
         }
       ],
-      "n": 12
+      "n": 12,
+      "live": {
+        "from": "Zürich HB",
+        "to": "Kilchberg ZH",
+        "time": "13:45"
+      }
     },
     {
       "n": 13,
@@ -587,7 +621,12 @@
           "note": "Every few minutes; flight 11:00."
         }
       ],
-      "status": "payday"
+      "status": "payday",
+      "live": {
+        "from": "Zürich HB",
+        "to": "Zürich Flughafen",
+        "time": "08:00"
+      }
     },
     {
       "status": "payday",
@@ -1296,15 +1335,36 @@
       "items": [
         {
           "time": "7:30a",
-          "text": "OPTIONAL early-riser: dawn canals, St. Mark's & Rialto with the city to yourselves — or sleep in and start at Doge's (9a). Your call day-of",
+          "text": "OPTIONAL early-riser: dawn canals, St. Mark's & Rialto with the city to yourselves — or sleep in. (Doge's is now at noon — the ticket only allows entry 12:00–19:00.)",
           "status": "tentative",
           "lat": 45.4380688,
           "lng": 12.3356548,
           "place": "Dawn: St Mark's + Rialto"
         },
         {
-          "time": "9:00a",
-          "text": "★ Doge's Palace (Palazzo Ducale) — BOOKED via GetYourGuide, 2 adults ($78.48). Tickets in the GetYourGuide app (check slot time there). Golden Staircase, doge's apartments, Bridge of Sighs",
+          "time": "9:30a",
+          "text": "🛍 Rialto browse — Murano glass showrooms, carnival masks, Il Papiro marbled paper, and T Fondaco dei Tedeschi (luxury dept store by the bridge with a FREE Grand-Canal rooftop — book the slot). Note: the Rialto Pescheria fish market is closed Mondays",
+          "status": "optional",
+          "lat": 45.438,
+          "lng": 12.3358,
+          "place": "Rialto / T Fondaco"
+        },
+        {
+          "time": "10:45a",
+          "text": "Cicchetti at All'Arco (by Rialto) — early bite before Doge's; the palace takes ~2 hrs",
+          "status": "tentative",
+          "lat": 45.4388686,
+          "lng": 12.334052,
+          "place": "All'Arco cicchetti"
+        },
+        {
+          "time": "11:30a",
+          "status": "confirmed",
+          "text": "Check out of Ca' dei Conti (noon checkout) and leave the bags at the desk — the hotel is ~5 min walk from the Doge's Palace."
+        },
+        {
+          "time": "12:00p",
+          "text": "★ Doge's Palace (Palazzo Ducale) — BOOKED, 2 adults. Entry window opens 12:00 (valid 12:00–19:00 on 11/16 only) — be at the 'Entrance prepaid tickets' line ~11:50. Allow ~1.5–2 hrs: Golden Staircase, Great Council hall, Bridge of Sighs + prisons.",
           "status": "booked",
           "lat": 45.4342108,
           "lng": 12.340592,
@@ -1314,38 +1374,20 @@
             "label": "Paid $78.48",
             "note": "GetYourGuide. Check the app for the free-cancel cutoff (often 24h) and the slot time.",
             "sort": "2026-11-16"
-          }
+          },
+          "detail": "Ticket valid ONLY Mon 11/16, entry between 12:00 and 19:00 (St. Mark's Square Museums FULL ticket). Use the 'Entrance prepaid tickets' fast-track entrance and scan the barcode on the voucher (have it on your phone and printed). The same ticket also covers Museo Correr, the Archaeological Museum and Biblioteca Marciana that day — no time for those before the train, so skip. Digital guide: download it before 11/16 at venipedia.it/codex with the code on the voucher."
         },
         {
-          "time": "10:00a",
-          "text": "Cicchetti at All'Arco",
+          "time": "2:00p",
           "status": "tentative",
-          "lat": 45.4388686,
-          "lng": 12.334052,
-          "place": "All'Arco cicchetti"
+          "text": "Quick late lunch near San Marco / Castello — cicchetti or a sandwich; keep it to ~40 min.",
+          "detail": "Tight window before the train. Simple options near San Zaccaria / Riva degli Schiavoni; or grab something at the station."
         },
         {
-          "time": "11:00a",
-          "text": "🛍 Rialto browse — Murano glass showrooms, carnival masks, Il Papiro marbled paper, and T Fondaco dei Tedeschi (luxury dept store by the bridge with a FREE Grand-Canal rooftop — book the slot). Note: the Rialto Pescheria fish market is closed Mondays",
-          "status": "optional",
-          "lat": 45.438,
-          "lng": 12.3358,
-          "place": "Rialto / T Fondaco"
-        },
-        {
-          "time": "12:00p",
-          "text": "Hotel checkout (noon) — ask Ca' dei Conti to hold your bags so you can wander light until the train.",
-          "status": "tentative"
-        },
-        {
-          "time": "12:30p",
-          "text": "Relaxed lunch + final Venice wander / last-minute shopping (extra ~2 hrs vs. the old 2pm train).",
-          "status": "tentative"
-        },
-        {
-          "time": "3:00p",
-          "text": "Collect bags and head to Venezia Santa Lucia — arrive by ~3:30p (boarding closes 2 min before departure).",
-          "status": "tentative"
+          "time": "2:45p",
+          "status": "confirmed",
+          "text": "Collect bags at Ca' dei Conti → vaporetto Line 2 from San Zaccaria to Ferrovia (~35 min), or walk ~40 min. Aim to be at Venezia Santa Lucia by ~3:35 (boarding closes 2 min before departure).",
+          "detail": "Buy the vaporetto ticket at the stop or in the AVM Venezia app (single ride, valid 75 min). Line 1 is slower (~45 min) — use Line 2."
         },
         {
           "time": "3:57p",
@@ -2307,7 +2349,7 @@
       "tier": "LOCAL",
       "why": "Best cicchetti bar — go before 11am Sat",
       "price": "€12–18/2",
-      "when": "11/16 AM",
+      "when": "11/16 ~10:45 AM",
       "booking": "walk-in",
       "status": "walk_up"
     },
@@ -2883,15 +2925,15 @@
       "notes": "Walk-in after Le Plongeoir. Open on the 11/11 holiday (closed Tuesdays only); Nov 10:00–17:00, closed 13:00–14:30, last tickets 16:30."
     },
     {
-      "item": "Doge's Palace — Venice timed entry",
+      "item": "Doge's Palace + St. Mark's Square Museums — Venice",
       "date": "11/16",
       "provider": "GetYourGuide (Venezia Unica / Vela Spa)",
       "status": "booked",
-      "notes": "Booked 10/19: 2 adults, $78.48, reserved entry. Mobile tickets in GetYourGuide app (QR in private wallet if added).",
+      "notes": "Booked 10/19 via GetYourGuide: 2 adults, $78.48. ENTRY ONLY Mon 11/16 between 12:00 and 19:00 — plan is 12:00. Fast-track 'Entrance prepaid tickets' line, scan the voucher barcode (phone + printed). Also covers Museo Correr / Archaeological Museum / Biblioteca Marciana that day. Digital guide: venipedia.it/codex (code on voucher).",
       "missCost": {
         "risk": "prepaid",
         "label": "Paid $78.48",
-        "note": "GetYourGuide. Check the app for the free-cancel cutoff (often 24h) and the slot time.",
+        "note": "Entry ONLY 11/16, 12:00–19:00 — a morning visit won't scan. Check GetYourGuide for the cancel cutoff.",
         "sort": "2026-11-16"
       }
     },
@@ -2971,9 +3013,9 @@
         "cur": "USD",
         "est": 1300,
         "actual": 150,
-        "paid": 150,
         "status": "paid",
-        "note": "Booked & paid — enter the actual price from Aer Lingus/AA or Amex"
+        "note": "Booked & paid — enter the actual price from Aer Lingus/AA or Amex",
+        "paid": 150
       },
       {
         "cat": "Hotels",
@@ -3291,14 +3333,14 @@
       },
       {
         "cat": "Activities",
-        "label": "Doge's Palace timed entry (2 pax)",
+        "label": "Doge's Palace + St. Mark's museums (2 pax)",
         "date": "Nov 16",
         "cur": "USD",
         "est": 78.48,
         "actual": 78.48,
         "paid": 78.48,
         "status": "paid",
-        "note": "BOOKED 10/19 via GetYourGuide"
+        "note": "BOOKED 10/19 via GetYourGuide — entry 11/16 12:00–19:00 only"
       },
       {
         "cat": "Activities",
@@ -3307,9 +3349,9 @@
         "cur": "CHF",
         "est": 80,
         "actual": 103,
-        "paid": 103,
         "status": "paid",
-        "note": "BOOKED 10/19 — enter the actual price"
+        "note": "BOOKED 10/19 — enter the actual price",
+        "paid": 103
       },
       {
         "cat": "Activities",
@@ -3490,8 +3532,8 @@
     "marseille-sun-lunch": "major",
     "marseille-museum": "mucem",
     "marseille-mon-brunch": "sthonore",
-    "milan-mon16-dinner": "masuelli",
-    "milan-tue17-dinner": "almatarel",
+    "milan-mon16-dinner": "skip",
+    "milan-tue17-dinner": "skip",
     "milan-michelin": "aimo",
     "milan-museum": "novecento",
     "milan-f1": "alfa"
@@ -4634,6 +4676,121 @@
           }
         ]
       }
+    ]
+  },
+  "help": {
+    "checked": "2026-10-28",
+    "state": "If you can't reach the embassy/consulate in an emergency, call State Department Overseas Citizens Services: +1-202-501-4444 (from abroad) · 1-888-407-4747 (from the US/Canada). Source: travel.state.gov",
+    "emergency": [
+      {
+        "country": "🇫🇷 France (Marseille, Nice, Èze, Strasbourg)",
+        "general": "112",
+        "police": "17",
+        "ambulance": "15",
+        "fire": "18",
+        "note": "114 for deaf/hard of hearing (text). Any SIM works."
+      },
+      {
+        "country": "🇲🇨 Monaco",
+        "general": "112",
+        "note": "Local numbers not confirmed — use 112."
+      },
+      {
+        "country": "🇮🇹 Italy (Milan, Venice, Como)",
+        "general": "112",
+        "note": "Single number for all emergencies, from any phone."
+      },
+      {
+        "country": "🇨🇭 Switzerland (Basel, Zurich, Lucerne)",
+        "general": "112",
+        "police": "117",
+        "ambulance": "144",
+        "fire": "118",
+        "note": "1414 air/mountain rescue (Rigi) · 145 poison"
+      },
+      {
+        "country": "🇩🇪 Germany (Freiburg)",
+        "general": "112",
+        "police": "110",
+        "ambulance": "112",
+        "fire": "112"
+      },
+      {
+        "country": "🇬🇧 UK (London layover)",
+        "general": "999",
+        "note": "112 also works — same service."
+      },
+      {
+        "country": "🇮🇪 Ireland (Dublin)",
+        "general": "112",
+        "note": "999 also works — ambulance, Gardaí (police), fire."
+      }
+    ],
+    "consulates": [
+      {
+        "name": "US Consulate General Marseille",
+        "covers": "Marseille, Nice, Èze, Monaco",
+        "address": "Place Varian Fry, 13006 Marseille",
+        "phone": "+33 1 43 12 22 22",
+        "after": "",
+        "url": "https://fr.usembassy.gov/u-s-consulate-general-marseille/",
+        "tip": "Ask for Marseille; 24/7 — ask for the duty officer after hours"
+      },
+      {
+        "name": "US Consulate General Strasbourg",
+        "covers": "Strasbourg day trip (11/19)",
+        "address": "15 avenue d'Alsace, 67082 Strasbourg",
+        "phone": "+33 1 43 12 22 22",
+        "after": "",
+        "url": "https://fr.usembassy.gov/u-s-consulate-general-strasbourg/"
+      },
+      {
+        "name": "US Consulate General Milan",
+        "covers": "Milan, Como, Venice (Venice consular agency temporarily closed)",
+        "address": "Via Principe Amedeo 2/10, 20121 Milano",
+        "phone": "+39 02 290351",
+        "after": "",
+        "url": "https://it.usembassy.gov/u-s-consulate-general-milan-2/",
+        "tip": "Emergency passports by appointment only"
+      },
+      {
+        "name": "US Embassy Bern",
+        "covers": "Basel, Zurich, Lucerne (only Swiss post issuing emergency passports)",
+        "address": "Sulgeneckstrasse 19, 3007 Bern",
+        "phone": "+41 31 357 70 11",
+        "after": "",
+        "url": "https://ch.usembassy.gov/u-s-embassy-bern-2/"
+      },
+      {
+        "name": "US Consulate General Frankfurt",
+        "covers": "Freiburg day trip (11/20)",
+        "address": "Gießener Str. 30, 60435 Frankfurt am Main",
+        "phone": "+49 69 7535-0",
+        "after": "",
+        "url": "https://de.usembassy.gov/contact/"
+      },
+      {
+        "name": "US Embassy Dublin",
+        "covers": "Dublin (11/26–27)",
+        "address": "42 Elgin Road, Ballsbridge, Dublin 4",
+        "phone": "+353 1 668 8777",
+        "after": "",
+        "url": "https://ie.usembassy.gov/contact/",
+        "tip": "After hours ask for the Duty Officer"
+      },
+      {
+        "name": "US Embassy London",
+        "covers": "London layover (11/7)",
+        "address": "33 Nine Elms Lane, London SW11 7US",
+        "phone": "+44 20 7499 9000",
+        "after": "",
+        "url": "https://uk.usembassy.gov/london/"
+      }
+    ],
+    "passport": [
+      "Report it right away with the State Department's online lost/stolen passport form — it's cancelled within 1 business day and can't be used after that. A local police report isn't required but helps.",
+      "Go in person to the nearest embassy/consulate above with: Form DS-11, one 2×2\" photo, any ID, proof of citizenship (a photo/copy of the lost passport helps) and your itinerary. Emergency passports (valid up to 1 year) are possible if you're travelling soon.",
+      "Describe the loss in detail on the DS-11 (or they may ask for Form DS-64). In Switzerland only Bern issues emergency passports; in Italy, Milan (by appointment)."
     ]
   }
 }
