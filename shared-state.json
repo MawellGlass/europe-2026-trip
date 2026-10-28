@@ -1,16 +1,1 @@
-{
- "v": 1,
- "updated": "2026-10-28T17:28:46.662Z",
- "keys": {
-  "eu26_pack3": {
-   "t": {
-    "docs-passport": {
-     "m": true
-    }
-   },
-   "q": {},
-   "buy": {},
-   "custom": []
-  }
- }
-}
+{"v":1,"updated":"2026-10-28T17:28:46.662Z","keys":{"eu26_pack3":{"t":{"docs-passport":{"m":true,"n":true}},"q":{},"buy":{},"custom":[]},"eu26_taste":{"test-nicole-socca":1},"eu26_taste_j":{"test-nicole-socca":{"r":5,"n":"so good"}}}}
