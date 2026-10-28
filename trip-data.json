@@ -1150,6 +1150,15 @@
       ],
       "items": [
         {
+          "time": "8:45a",
+          "status": "confirmed",
+          "text": "🧺 Drop off laundry — Lavanderia Stella d'Oro, Via Giovanni Schiaparelli 7 (~7 min walk from the hotel, by the station). Wash, dry & fold; ask for pickup Monday evening. Then M3 metro Centrale → Duomo (~10 min).",
+          "detail": "Hours: Mon–Fri 7:30–19:30 · Sat 7:30–17:00 · Sun closed (Google Maps, checked 10/28). 4.8★; a US reviewer got same-day wash-and-fold. Little English — say: <b>«Buongiorno! Lavaggio, asciugatura e piegatura, per favore. Possiamo ritirare lunedì sera, verso le sette meno venti?»</b> (Wash, dry and fold please — can we pick up Monday evening, around 6:40?) — it's in the 🗣 Language tab too. Keep the ticket/receipt.",
+          "lat": 45.4857,
+          "lng": 9.2079,
+          "place": "Lavanderia Stella d'Oro"
+        },
+        {
           "time": "9:30a",
           "text": "Duomo + rooftop, Galleria Vittorio Emanuele II — this IS prime shopping: the Galleria Vittorio Emanuele II (Prada's original 1913 store, LV, Gucci) plus La Rinascente behind the Duomo (top-floor food hall + Duomo-view terrace)",
           "status": "tentative",
@@ -1348,6 +1357,14 @@
             "note": "Boarding closes 2 min before departure; be at Santa Lucia by ~15:30.",
             "sort": "2026-11-16"
           }
+        },
+        {
+          "time": "6:35p",
+          "status": "confirmed",
+          "text": "🧺 Pick up laundry at Stella d'Oro (Via Schiaparelli 7, ~5 min from the Centrale platforms — closes 19:30), then drop everything at the hotel before dinner. If the train runs late: Tue 11/17 from 7:30am, before Binario 21 / Monza.",
+          "lat": 45.4857,
+          "lng": 9.2079,
+          "place": "Lavanderia Stella d'Oro"
         },
         {
           "time": "8:00p",
@@ -3369,6 +3386,17 @@
       },
       {
         "cat": "Misc",
+        "label": "Laundry — Milan wash & fold (Stella d'Oro)",
+        "date": "Nov 14–16",
+        "cur": "EUR",
+        "est": 40,
+        "actual": null,
+        "status": "payday",
+        "due": "2026-11-16",
+        "note": "Drop off Sat 11/14 morning, pay at pickup Mon 11/16 evening; price usually by load/kg"
+      },
+      {
+        "cat": "Misc",
         "label": "Metros, trams, buses, taxis (2 pax)",
         "date": "Trip-wide",
         "cur": "EUR",
@@ -4125,7 +4153,7 @@
     }
   ],
   "packing": {
-    "note": "Built from the itinerary: cold Alpine + Christmas-market evenings, two fancy dinners, a casino, a Venice overnight with a strict bag limit, and a lot of shopping. Checks are saved on each phone.",
+    "note": "Clothes: pack ~14 days → wear ~8 days to Milan → drop-off laundry Sat 11/14 (Stella d'Oro) → 14 clean days for the last 13.",
     "sections": [
       {
         "id": "docs",
@@ -4135,57 +4163,221 @@
         "items": [
           {
             "id": "docs-passport",
-            "t": "Passport (valid to at least late Feb 2027)",
+            "t": "Passport — valid to at least late Feb 2027",
             "who": "both",
-            "why": "Schengen rule: 3+ months past 11/26 exit"
-          },
-          {
-            "id": "docs-eta",
-            "t": "UK ETA (linked to passport — nothing to print)",
-            "who": "both",
-            "why": "Heathrow layover 11/7 ✅ done"
+            "qty": 1,
+            "why": "Schengen: 3+ months past 11/26"
           },
           {
             "id": "docs-ge",
-            "t": "Global Entry card / use Mobile Passport Control app",
+            "t": "Global Entry card / Mobile Passport Control app",
             "who": "both",
+            "qty": 1,
             "why": "US preclearance in Dublin 11/27"
           },
           {
             "id": "docs-license",
-            "t": "Driver's license (second photo ID)",
+            "t": "Driver's license (2nd photo ID)",
             "who": "both",
-            "why": "Synagogue visit 11/10 needs photo ID"
+            "qty": 1,
+            "why": "Nice synagogue 11/10"
           },
           {
             "id": "docs-cards",
-            "t": "2 credit cards with no foreign-transaction fee — keep one separate as a backup",
-            "who": "both",
-            "why": ""
+            "t": "Credit cards with no foreign-transaction fee (carry them separately)",
+            "who": "shared",
+            "qty": 2
           },
           {
             "id": "docs-debit",
             "t": "Debit card for ATM cash",
             "who": "shared",
-            "why": ""
+            "qty": 1
           },
           {
             "id": "docs-cash",
-            "t": "Small cash: ~€100 + CHF 50 (+ £20 for London)",
+            "t": "Cash: ~€100 + CHF 50 + £20",
             "who": "shared",
-            "why": "Markets, buses, coffee bars, toilets"
+            "why": "Markets, buses, cafés, toilets"
           },
           {
             "id": "docs-ins",
             "t": "Travel insurance policy # saved offline",
-            "who": "shared",
-            "why": ""
+            "who": "shared"
           },
           {
             "id": "docs-wallet",
-            "t": "Tickets wallet saved offline on both phones (Italo + Trenitalia QR, FC Basel QR, GetYourGuide)",
+            "t": "Tickets wallet saved offline on both phones",
             "who": "shared",
-            "why": "Confirmations/Tickets-Wallet.html"
+            "why": "Italo, Trenitalia, FC Basel, GetYourGuide QR codes"
+          }
+        ]
+      },
+      {
+        "id": "clothes",
+        "icon": "🧥",
+        "title": "Clothes — 14 days + Milan laundry",
+        "hint": "0–17 °C: Riviera mild, Milan/Venice damp, Basel/Zurich/Lucerne cold. Wear the coat + walking shoes on the plane.",
+        "items": [
+          {
+            "id": "clothes-under",
+            "t": "Underwear",
+            "who": "both",
+            "qty": 14
+          },
+          {
+            "id": "clothes-socks",
+            "t": "Socks (incl. 4 warm/wool pairs)",
+            "who": "both",
+            "qty": 14
+          },
+          {
+            "id": "clothes-tees",
+            "t": "T-shirts / base tops",
+            "who": "both",
+            "qty": 8
+          },
+          {
+            "id": "clothes-shirts",
+            "t": "Long-sleeve shirts / blouses",
+            "who": "both",
+            "qty": 6
+          },
+          {
+            "id": "clothes-sweater",
+            "t": "Sweaters / fleeces",
+            "who": "both",
+            "qty": 3
+          },
+          {
+            "id": "clothes-pants",
+            "t": "Pants / jeans",
+            "who": "both",
+            "qty": 4
+          },
+          {
+            "id": "clothes-sleep",
+            "t": "Sleepwear",
+            "who": "both",
+            "qty": 2
+          },
+          {
+            "id": "clothes-thermal",
+            "t": "Thermal base layer set (top + bottom)",
+            "who": "both",
+            "qty": 1,
+            "why": "Rigi mountain day 11/21"
+          },
+          {
+            "id": "clothes-coat",
+            "t": "Warm, water-resistant coat",
+            "who": "both",
+            "qty": 1,
+            "why": "Swiss evenings + Christmas markets"
+          },
+          {
+            "id": "clothes-rain",
+            "t": "Packable rain shell or compact umbrella",
+            "who": "both",
+            "qty": 1,
+            "why": "Venice + Dublin rain"
+          },
+          {
+            "id": "clothes-hat",
+            "t": "Warm hat + gloves + scarf",
+            "who": "both",
+            "qty": "1 set"
+          },
+          {
+            "id": "clothes-walk",
+            "t": "Waterproof, broken-in walking shoes",
+            "who": "both",
+            "qty": 1,
+            "why": "Cobbles + stairs: Èze, Venice, Monaco-Ville"
+          },
+          {
+            "id": "clothes-shoe2",
+            "t": "Second pair of everyday shoes",
+            "who": "both",
+            "qty": 1,
+            "why": "In case one pair gets soaked"
+          },
+          {
+            "id": "clothes-lbag",
+            "t": "Laundry bag for dirty clothes",
+            "who": "both",
+            "qty": 1,
+            "why": "Carry it to the Milan drop-off"
+          }
+        ]
+      },
+      {
+        "id": "dressy",
+        "icon": "✨",
+        "title": "Dressy nights",
+        "hint": "Le Sens 11/10 · anniversary 11/9 · casino 11/12 · Joia 11/14 · synagogue 11/10",
+        "items": [
+          {
+            "id": "dressy-nic-dress",
+            "t": "Long dress + white sweater",
+            "who": "nicole",
+            "qty": 1,
+            "why": "Casino de Monte-Carlo dress code"
+          },
+          {
+            "id": "dressy-nic-flats",
+            "t": "Closed-toe ballet flats",
+            "who": "nicole",
+            "qty": 1,
+            "why": "Casino: no sneakers or open sandals"
+          },
+          {
+            "id": "dressy-nic-outfits",
+            "t": "Dressy dinner outfits",
+            "who": "nicole",
+            "qty": 2,
+            "why": "Joia ★ (\"dress up\") + Le Sens / anniversary"
+          },
+          {
+            "id": "dressy-max-shirts",
+            "t": "Collared dress shirts",
+            "who": "max",
+            "qty": 2,
+            "why": "Casino + fancy dinners"
+          },
+          {
+            "id": "dressy-max-pants",
+            "t": "Smart trousers",
+            "who": "max",
+            "qty": 1
+          },
+          {
+            "id": "dressy-max-shoes",
+            "t": "Closed leather shoes",
+            "who": "max",
+            "qty": 1,
+            "why": "Casino: no sneakers"
+          },
+          {
+            "id": "dressy-max-blazer",
+            "t": "Blazer / smart jacket (optional)",
+            "who": "max",
+            "qty": 1,
+            "why": "Joia + Le Sens"
+          },
+          {
+            "id": "dressy-modest",
+            "t": "Modest outfit (covered shoulders/knees)",
+            "who": "both",
+            "qty": 1,
+            "why": "Synagogue + Duomo"
+          },
+          {
+            "id": "dressy-kippah",
+            "t": "Kippah",
+            "who": "max",
+            "qty": 1,
+            "why": "Synagogue visit"
           }
         ]
       },
@@ -4197,201 +4389,52 @@
         "items": [
           {
             "id": "tech-adC",
-            "t": "Type C (Europlug, 2 thin pins) adapters ×3 — works in France, Italy, Germany AND Switzerland",
+            "t": "Type C (Europlug) adapters — fit France, Italy, Germany AND Switzerland",
             "who": "shared",
-            "why": "German Schuko plugs do NOT fit Swiss sockets — Type C does"
+            "qty": 3,
+            "why": "Thick German Schuko plugs don't fit Swiss sockets"
           },
           {
             "id": "tech-adG",
-            "t": "Type G adapter ×1 (UK / Ireland)",
+            "t": "Type G adapter (UK / Ireland)",
             "who": "shared",
-            "why": "London layover + Dublin night"
+            "qty": 1,
+            "why": "London + Dublin"
           },
           {
             "id": "tech-chg",
-            "t": "Phone chargers + cables",
+            "t": "Phone charger + cable",
             "who": "both",
-            "why": ""
-          },
-          {
-            "id": "tech-pb",
-            "t": "Power bank (carry-on only)",
-            "who": "both",
-            "why": "Long train + walking days"
-          },
-          {
-            "id": "tech-esim",
-            "t": "International plan / eSIM set up and tested",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "tech-off",
-            "t": "Offline Google Maps for each city + FR/IT/DE translator packs downloaded",
-            "who": "both",
-            "why": "Language tab works offline too"
-          },
-          {
-            "id": "tech-ear",
-            "t": "Earbuds / noise-cancelling headphones",
-            "who": "both",
-            "why": "Overnight PHL→LHR"
+            "qty": 1
           },
           {
             "id": "tech-watch",
             "t": "Watch charger",
             "who": "both",
-            "why": ""
-          }
-        ]
-      },
-      {
-        "id": "clothes",
-        "icon": "🧥",
-        "title": "Clothes — layers for 0–17 °C",
-        "hint": "Riviera mild (~10–17 °C), Milan/Venice damp (~5–12 °C), Basel/Zurich/Lucerne cold (~0–7 °C, snow possible)",
-        "items": [
-          {
-            "id": "clothes-coat",
-            "t": "Warm, water-resistant coat",
-            "who": "both",
-            "why": "Swiss evenings + Christmas markets"
+            "qty": 1
           },
           {
-            "id": "clothes-rain",
-            "t": "Packable rain shell or compact umbrella",
+            "id": "tech-pb",
+            "t": "Power bank (carry-on only)",
             "who": "both",
-            "why": "November rain in Venice & Dublin"
+            "qty": 1
           },
           {
-            "id": "clothes-sweater",
-            "t": "2 warm sweaters / fleeces",
+            "id": "tech-ear",
+            "t": "Earbuds / noise-cancelling headphones",
             "who": "both",
-            "why": ""
+            "qty": 1,
+            "why": "Overnight flight"
           },
           {
-            "id": "clothes-base",
-            "t": "Thermal base layer (top + bottom)",
-            "who": "both",
-            "why": "Rigi / Pilatus mountain day 11/21"
+            "id": "tech-esim",
+            "t": "International plan / eSIM set up and tested",
+            "who": "both"
           },
           {
-            "id": "clothes-hat",
-            "t": "Warm hat, gloves, scarf",
-            "who": "both",
-            "why": "Mountain day + Zurich markets"
-          },
-          {
-            "id": "clothes-tops",
-            "t": "Tops / shirts for ~7 days (laundry mid-trip)",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "clothes-pants",
-            "t": "2–3 pants / jeans",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "clothes-sleep",
-            "t": "Sleepwear",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "clothes-socks",
-            "t": "Warm socks + underwear for ~7 days",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "clothes-walk",
-            "t": "Waterproof, broken-in walking shoes (lots of cobbles + stairs)",
-            "who": "both",
-            "why": "Èze, Venice, Monaco-Ville"
-          },
-          {
-            "id": "clothes-shoe2",
-            "t": "Second pair of shoes (in case one gets soaked)",
-            "who": "both",
-            "why": ""
-          }
-        ]
-      },
-      {
-        "id": "dressy",
-        "icon": "✨",
-        "title": "Dressy nights",
-        "hint": "",
-        "items": [
-          {
-            "id": "dressy-nic-dress",
-            "t": "Long dress + white sweater + closed-toe ballet flats",
-            "who": "nicole",
-            "why": "Casino de Monte-Carlo 11/12 — no sportswear, sneakers or flip-flops"
-          },
-          {
-            "id": "dressy-max-casino",
-            "t": "Collared shirt, smart trousers, closed leather shoes",
-            "who": "max",
-            "why": "Casino 11/12 — no shorts/sportswear"
-          },
-          {
-            "id": "dressy-joia",
-            "t": "One elevated outfit each",
-            "who": "both",
-            "why": "Joia ★ Michelin 11/14 (\"dress up\") + Le Sens 11/10"
-          },
-          {
-            "id": "dressy-anniv",
-            "t": "Anniversary outfit",
-            "who": "both",
-            "why": "La Rossettisserie 11/9 + gondola 11/15"
-          },
-          {
-            "id": "dressy-modest",
-            "t": "Modest outfit (covered shoulders/knees); Max: kippah if you have one",
-            "who": "both",
-            "why": "Nice synagogue 11/10 · churches & Duomo"
-          }
-        ]
-      },
-      {
-        "id": "venice",
-        "icon": "🛶",
-        "title": "Venice overnight bag (11/15–16)",
-        "hint": "Italo limit: each bag under 75 × 53 × 30 cm — measure it packed. Big bags stay in the held Milan room.",
-        "items": [
-          {
-            "id": "venice-vbag",
-            "t": "Soft duffel / daypack that fits 75 × 53 × 30 cm",
-            "who": "both",
-            "why": "Italo 8981 / 8988"
-          },
-          {
-            "id": "venice-v1",
-            "t": "1 night: change of clothes, sleepwear, toiletry kit",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "venice-v2",
-            "t": "Anniversary/gondola outfit + warm layer",
-            "who": "both",
-            "why": "Gondola 4:15pm, sunset ~4:50"
-          },
-          {
-            "id": "venice-v3",
-            "t": "Waterproof shoes (high tide / 'acqua alta' is possible in November)",
-            "who": "both",
-            "why": "Pop-up boot covers are sold locally if it floods"
-          },
-          {
-            "id": "venice-v4",
-            "t": "Chargers, meds, passports go WITH you",
-            "who": "both",
-            "why": ""
+            "id": "tech-off",
+            "t": "Offline maps + FR/IT/DE translator packs downloaded",
+            "who": "both"
           }
         ]
       },
@@ -4399,42 +4442,44 @@
         "id": "toil",
         "icon": "🧴",
         "title": "Toiletries & health",
-        "hint": "Carry-on liquids ≤100 ml each in one clear bag",
+        "hint": "Carry-on liquids ≤100 ml each, all in one clear bag",
         "items": [
           {
             "id": "toil-meds",
-            "t": "Prescription meds in original bottles + a spare few days (carry-on)",
-            "who": "both",
-            "why": ""
-          },
-          {
-            "id": "toil-otc",
-            "t": "Pain reliever, stomach meds, allergy, bandages, blister plasters",
-            "who": "shared",
-            "why": "Lots of walking"
-          },
-          {
-            "id": "toil-jet",
-            "t": "Jet-lag / sleep aid you already trust",
-            "who": "both",
-            "why": "Overnight flight 11/6"
+            "t": "Prescription meds in original bottles (+ a few spare days)",
+            "who": "both"
           },
           {
             "id": "toil-kit",
             "t": "Toiletry kit (travel-size)",
             "who": "both",
-            "why": ""
+            "qty": 1
+          },
+          {
+            "id": "toil-otc",
+            "t": "First aid: pain reliever, stomach meds, allergy, blister plasters",
+            "who": "shared",
+            "qty": "1 kit",
+            "why": "Lots of walking"
+          },
+          {
+            "id": "toil-jet",
+            "t": "Sleep / jet-lag aid you already trust",
+            "who": "both",
+            "why": "Overnight flight 11/6"
           },
           {
             "id": "toil-lip",
-            "t": "Lip balm + hand cream (cold, dry Alpine air)",
+            "t": "Lip balm + hand cream",
             "who": "both",
-            "why": ""
+            "qty": 1,
+            "why": "Cold, dry Alpine air"
           },
           {
             "id": "toil-sun",
-            "t": "Sunscreen + sunglasses",
+            "t": "Sunglasses + sunscreen",
             "who": "both",
+            "qty": 1,
             "why": "Riviera + snow glare on Rigi"
           }
         ]
@@ -4447,65 +4492,97 @@
         "items": [
           {
             "id": "day-xbody",
-            "t": "Crossbody / anti-theft day bag (zips toward you)",
+            "t": "Crossbody / anti-theft day bag",
             "who": "both",
+            "qty": 1,
             "why": "Pickpockets: Milano Centrale, Venice, Nice tram"
           },
           {
             "id": "day-bottle",
             "t": "Reusable water bottle",
             "who": "both",
-            "why": "Basel & Zurich public fountains are drinkable"
+            "qty": 1,
+            "why": "Basel & Zurich fountains are drinkable"
+          },
+          {
+            "id": "day-tote",
+            "t": "Foldable shopping tote",
+            "who": "both",
+            "qty": 1
           },
           {
             "id": "day-coins",
             "t": "Coins for public toilets (€0.50–1.50)",
-            "who": "shared",
-            "why": ""
+            "who": "shared"
+          }
+        ]
+      },
+      {
+        "id": "venice",
+        "icon": "🛶",
+        "title": "Venice overnight bag (11/15–16)",
+        "hint": "Italo limit: under 75 × 53 × 30 cm per bag. Big bags stay in the Milan room.",
+        "items": [
+          {
+            "id": "venice-vbag",
+            "t": "Soft duffel / daypack within 75 × 53 × 30 cm",
+            "who": "both",
+            "qty": 1
           },
           {
-            "id": "day-tote",
-            "t": "Foldable tote for shopping",
+            "id": "venice-v1",
+            "t": "1 night: clothes, sleepwear, toiletries",
             "who": "both",
-            "why": ""
+            "qty": "1 set"
+          },
+          {
+            "id": "venice-v2",
+            "t": "Anniversary / gondola outfit + warm layer",
+            "who": "both",
+            "qty": 1,
+            "why": "Gondola 4:15pm"
+          },
+          {
+            "id": "venice-v3",
+            "t": "Waterproof shoes (acqua alta possible)",
+            "who": "both",
+            "qty": 1
           }
         ]
       },
       {
         "id": "shop",
         "icon": "🛍",
-        "title": "Room for shopping (you're bringing a lot home)",
-        "hint": "Liquids over 100 ml (pastis, olive oil) must go in CHECKED bags",
+        "title": "Room for shopping",
+        "hint": "Liquids over 100 ml (pastis, olive oil) go in CHECKED bags",
         "items": [
           {
             "id": "shop-duffel",
-            "t": "Empty foldable duffel to check on the way home",
+            "t": "Empty foldable duffel to check home",
             "who": "shared",
-            "why": "Sweater, Läckerli, Lindt, soap, silk…"
+            "qty": 1,
+            "why": "Sweater, Läckerli, chocolate, soap, silk…"
           },
           {
             "id": "shop-wrap",
-            "t": "Bottle protectors / bubble wrap + zip bags",
+            "t": "Bottle protectors + zip bags",
             "who": "shared",
-            "why": "Pastis (Marseille) · Alziari olive oil (Nice)"
+            "qty": 3,
+            "why": "Pastis · olive oil"
           },
           {
             "id": "shop-scale",
-            "t": "Small luggage scale",
+            "t": "Luggage scale",
             "who": "shared",
-            "why": "Aer Lingus/AA bag weight limits on the way home"
+            "qty": 1,
+            "why": "Bag weight limits on the way home"
           },
           {
             "id": "shop-tax",
             "t": "Envelope for tax-free forms & receipts",
             "who": "shared",
-            "why": "Swiss forms → Zurich airport 11/26 · Irish forms → Dublin airport 11/27"
-          },
-          {
-            "id": "shop-watch",
-            "t": "Max: target budget for the watch decided",
-            "who": "max",
-            "why": "Bucherer / Gübelin / Beyer, 11/24"
+            "qty": 1,
+            "why": "Zurich airport 11/26 · Dublin airport 11/27"
           }
         ]
       },
@@ -4517,39 +4594,38 @@
         "items": [
           {
             "id": "home-checkin",
-            "t": "Online check-in for BA (opens 24 h before 6:35 pm 11/6)",
-            "who": "shared",
-            "why": ""
+            "t": "BA online check-in (opens 6:35 pm 11/5)",
+            "who": "shared"
           },
           {
             "id": "home-notify",
             "t": "Card travel notices (if your bank needs them)",
-            "who": "shared",
-            "why": ""
+            "who": "shared"
           },
           {
             "id": "home-oof",
-            "t": "Work out-of-office + calendar blocked",
-            "who": "both",
-            "why": ""
+            "t": "Out-of-office + calendar blocked",
+            "who": "both"
           },
           {
             "id": "home-mail",
-            "t": "Mail/packages held, thermostat set, plants handled",
-            "who": "shared",
-            "why": ""
+            "t": "Mail/packages held, thermostat, plants",
+            "who": "shared"
           },
           {
             "id": "home-copies",
-            "t": "Photos of passports + cards stored securely in the cloud",
-            "who": "shared",
-            "why": ""
+            "t": "Photos of passports + cards saved securely",
+            "who": "shared"
           },
           {
             "id": "home-share",
-            "t": "Share the itinerary site with family/emergency contact",
-            "who": "shared",
-            "why": ""
+            "t": "Itinerary site shared with an emergency contact",
+            "who": "shared"
+          },
+          {
+            "id": "home-watchbud",
+            "t": "Watch budget decided (Bucherer / Gübelin / Beyer, 11/24)",
+            "who": "max"
           }
         ]
       }
