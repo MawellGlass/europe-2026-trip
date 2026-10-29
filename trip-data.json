@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-27",
+    "lastUpdated": "2026-10-28",
     "lastAppEdit": "2026-10-28 15:35 (edited in app)"
   },
   "segments": [
@@ -1343,11 +1343,11 @@
         },
         {
           "time": "9:30a",
-          "text": "🛍 Rialto browse — Murano glass showrooms, carnival masks, Il Papiro marbled paper, and T Fondaco dei Tedeschi (luxury dept store by the bridge with a FREE Grand-Canal rooftop — book the slot). Note: the Rialto Pescheria fish market is closed Mondays",
+          "text": "🛍 Rialto browse — Murano glass showrooms, carnival masks, Il Papiro marbled paper. (T Fondaco dei Tedeschi + its rooftop are permanently closed — get the Grand Canal view from the top of the Rialto Bridge instead.) Note: the Rialto Pescheria fish market is closed Mondays",
           "status": "optional",
           "lat": 45.438,
           "lng": 12.3358,
-          "place": "Rialto / T Fondaco"
+          "place": "Rialto"
         },
         {
           "time": "10:45a",
@@ -1452,11 +1452,11 @@
         },
         {
           "time": "1:00p",
-          "text": "Lunch in Monza: Osteria da Mariuccia (~€25–35, in-town near the station) — DEFAULT. Alts: Derby Grill @ Hotel de la Ville (~€45–60, splurge) or Saint Georges Premier (in-park, ~€35–50).",
+          "text": "Lunch in Monza: Osteria Magenta 7 (Via Magenta 7, ~5 min walk from the station; 4.5★, ~€30–40; open Tue lunch 12:15–2:30) — DEFAULT. Alt: Trattoria della Patata (Via Campanella 8, near the station; 4.3★, ~€20–30). NOTE: prior pick 'Osteria da Mariuccia' doesn't exist in Monza; Derby Grill is a €100+ Michelin tasting room; Saint Georges Premier (in-park) is temporarily closed.",
           "status": "tentative",
-          "lat": 45.5845,
-          "lng": 9.2744,
-          "place": "Osteria da Mariuccia"
+          "lat": 45.5798,
+          "lng": 9.2697,
+          "place": "Osteria Magenta 7"
         },
         {
           "time": "1:53p",
@@ -1481,15 +1481,15 @@
         },
         {
           "time": "5:00p",
-          "text": "Light snack / aperitivo on the lungolago — Piazza Cavour cafés or Pasticceria Monti.",
+          "text": "Light snack / aperitivo on the lungolago — Piazza Cavour cafés (the historic Caffè/Pasticceria Monti there is now permanently closed).",
           "status": "tentative",
           "lat": 45.8103,
           "lng": 9.0838,
-          "place": "Pasticceria Monti"
+          "place": "Piazza Cavour, Como"
         },
         {
           "time": "7:30p",
-          "text": "Dinner in Como: Ristorante Sociale (~€35–50, central near the Duomo, reliably open off-season) — DEFAULT. Alts: Feel Como (modern, ~€55–70) or Pesa Vegia in Bellagio (seafood for Nicole). NOTE: prior pick Osteria dell'Angolo del Silenzio is CLOSED. Reserve a few days out (Nov off-season hours).",
+          "text": "Dinner in Como: Ristorante Sociale (~€35–50, central near the Duomo, reliably open off-season) — DEFAULT. Alts: Feel Como (6-table tasting room, €100+ pp — splurge only) or Pesa Vegia in Bellagio (seafood for Nicole). NOTE: prior pick Osteria dell'Angolo del Silenzio is CLOSED. Reserve a few days out (Nov off-season hours).",
           "status": "book",
           "lat": 45.8118,
           "lng": 9.082,
@@ -2098,19 +2098,19 @@
     },
     {
       "city": "Marseille",
-      "name": "Toinou Les Fruits de Mer",
+      "name": "Les Grandes Halles du Vieux-Port (oyster counter)",
       "tier": "OYSTERS",
-      "why": "The real Marseille oyster house at 3 Cours Saint-Louis (~8 min walk — NOT the Aix-en-Provence 'toinou.com' that looked far). Bright shellfish brasserie, open daily & late, walk-in. Arrival-night alt if you want oysters.",
-      "price": "€50–80/2",
+      "why": "Food hall at 30 Cours d'Estienne d'Orves (~8 min walk) with a shellfish/oyster counter (L'Écailler des Halles) plus Provençal stalls; open daily 9am–midnight+, walk-in. Arrival-night alt if you want oysters. (Replaces Toinou — permanently closed.)",
+      "price": "€40–70/2",
       "when": "11/7 alt",
       "booking": "walk-in",
       "status": "walk_up"
     },
     {
       "city": "Marseille",
-      "name": "Les Halles de la Major",
+      "name": "Les Grandes Halles du Vieux-Port",
       "tier": "FOOD HALL",
-      "why": "Waterfront food hall under the cathedral arches (Les Voûtes de la Major) — oyster bar + seafood, charcuterie & Provençal stalls. Open daily incl. Sun, casual, right on the Le Panier→MuCEM walk. Oysters for Max, seafood/veg for Nicole.",
+      "why": "Food hall on Cours d'Estienne d'Orves by the Vieux Port — oyster/seafood counter, charcuterie & Provençal stalls. Open daily incl. Sun (9am–midnight), casual, walk-in. Oysters for Max, seafood/veg for Nicole. ~10 min from Le Panier, then walk on to MuCEM. (Replaces Les Halles de la Major — permanently closed.)",
       "price": "€40–70/2",
       "when": "11/8 lunch",
       "booking": "walk-in",
@@ -2118,9 +2118,9 @@
     },
     {
       "city": "Marseille",
-      "name": "Maison Saint Honoré",
-      "tier": "BAKERY-CAFÉ",
-      "why": "One of Marseille's best bakeries (near Cours d'Estienne d'Orves) — superb viennoiserie, coffee & light breakfast. Casual & reliable Monday, on the way to the Rue St-Ferréol shops before the 1:04p train.",
+      "name": "Les Grandes Halles du Vieux-Port (brunch)",
+      "tier": "FOOD HALL",
+      "why": "Opens 9am Monday on Cours d'Estienne d'Orves — coffee, pastries & light plates from the stalls, a few minutes from Rue St-Ferréol and the hotel before the 1:04p train. (Replaces Maison Saint-Honoré — closed Mondays and ~25 min away in Endoume.)",
       "price": "€15–30/2",
       "when": "11/9 brunch",
       "booking": "walk-in",
@@ -2396,9 +2396,9 @@
     },
     {
       "city": "Basel",
-      "name": "Cheval Blanc 3★ / Stucki 2★",
+      "name": "Cheval Blanc 3★",
       "tier": "SPECIAL opt",
-      "why": "Optional Basel fine-dining (Wed–Sat)",
+      "why": "Optional Basel fine-dining (Wed–Sat). Stucki 2★ dropped — listed temporarily closed.",
       "price": "CHF 200–550pp",
       "when": "opt",
       "booking": "book now",
@@ -2436,12 +2436,12 @@
     },
     {
       "city": "Zurich",
-      "name": "Wirtshaus Neumarkt",
+      "name": "Oepfelchammer",
       "tier": "LOCAL",
-      "why": "Neighborhood Beiz; Züri Gschnätzlets (closed Mon)",
-      "price": "CHF 70–90/2",
+      "why": "Zurich's oldest wine tavern (since 1802, Rindermarkt 12, Old Town) — Zürcher Geschnetzeltes, names carved into the beams. 4.6★. Closed Sun & Mon. (Replaces Wirtshaus Neumarkt — now Trattoria Neumarkt, Japanese-Italian.)",
+      "price": "CHF 100–180/2",
       "when": "flex",
-      "booking": "phone",
+      "booking": "phone / online",
       "status": "to_book"
     },
     {
@@ -3541,9 +3541,9 @@
   ],
   "choices": {
     "marseille-sat-dinner": "marine",
-    "marseille-sun-lunch": "major",
+    "marseille-sun-lunch": "grandeshalles",
     "marseille-museum": "mucem",
-    "marseille-mon-brunch": "sthonore",
+    "marseille-mon-brunch": "grandeshalles",
     "milan-mon16-dinner": "skip",
     "milan-tue17-dinner": "skip",
     "milan-michelin": "aimo",
@@ -3577,11 +3577,11 @@
           "link": ""
         },
         {
-          "id": "toinou",
-          "label": "Toinou Les Fruits de Mer",
+          "id": "grandeshalles",
+          "label": "Les Grandes Halles du Vieux-Port (oyster counter)",
           "tier": "OYSTERS",
-          "price": "€50–80/2",
-          "desc": "The real Marseille one at 3 Cours Saint-Louis (~8 min walk — NOT the Aix-en-Provence branch on toinou.com). Bright shellfish brasserie, open daily & late, walk-in — if you'd rather do oysters night one.",
+          "price": "€40–70/2",
+          "desc": "Food hall on Cours d'Estienne d'Orves (~8 min walk) with an oyster/shellfish counter plus Provençal stalls — open daily till midnight+, walk-in. If you'd rather do oysters night one. (Replaces Toinou — permanently closed.)",
           "link": ""
         }
       ]
@@ -3596,11 +3596,11 @@
       "commitStatus": "confirmed",
       "options": [
         {
-          "id": "major",
-          "label": "Les Halles de la Major",
+          "id": "grandeshalles",
+          "label": "Les Grandes Halles du Vieux-Port",
           "tier": "FOOD HALL",
           "price": "€40–70/2",
-          "desc": "Waterfront food hall under the cathedral arches (Les Voûtes de la Major) — a proper oyster bar plus seafood, charcuterie & Provençal stalls. Open daily incl. Sun, buzzy and casual, right on the Le Panier→MuCEM walk. Oysters + wine for Max; seafood/veg spread for Nicole.",
+          "desc": "Vieux Port food hall (30 Cours d'Estienne d'Orves) — oyster/seafood counter plus charcuterie & Provençal stalls. Open daily incl. Sun 9am–midnight, buzzy and casual, ~10 min from Le Panier then on to MuCEM. Oysters + wine for Max; seafood/veg spread for Nicole. (Replaces Les Halles de la Major — permanently closed.)",
           "link": ""
         },
         {
@@ -3631,19 +3631,19 @@
       "commitStatus": "confirmed",
       "options": [
         {
-          "id": "sthonore",
-          "label": "Maison Saint Honoré",
-          "tier": "BAKERY-CAFÉ",
-          "price": "€15–30/2",
-          "desc": "One of Marseille's best bakeries (near Cours d'Estienne d'Orves) — superb viennoiserie, coffee & a light breakfast. Casual, reliable on a Monday, and on the way to the Rue St-Ferréol shops before the train.",
+          "id": "grandeshalles",
+          "label": "Les Grandes Halles du Vieux-Port",
+          "tier": "FOOD HALL",
+          "price": "€20–40/2",
+          "desc": "Opens 9am Monday (30 Cours d'Estienne d'Orves) — coffee, pastries & light plates from the stalls, a few minutes from Rue St-Ferréol and the hotel before the 1:04p train. (Replaces Maison Saint-Honoré — closed Mondays and ~25 min away in Endoume.)",
           "link": ""
         },
         {
-          "id": "abbaye",
-          "label": "Café de l'Abbaye (Saint-Victor)",
-          "tier": "VIEW TERRACE",
-          "price": "€25–45/2",
-          "desc": "Terrace with a postcard view across the Vieux Port to Notre-Dame — a relaxed final-morning sit-down. ~12 min south of the hotel; leave time to get back for the 1:04p train.",
+          "id": "nosh",
+          "label": "Maison Nosh (Vieux Port)",
+          "tier": "BRUNCH CAFÉ",
+          "price": "€40–60/2",
+          "desc": "Brunch café at 20 Place aux Huiles, right on the Vieux Port (4.8★) — eggs, pancakes, good coffee. ⚠️ Verify Monday hours. (Replaces Café de l'Abbaye — evenings only, opens 5pm.)",
           "link": ""
         },
         {
