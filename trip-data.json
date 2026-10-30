@@ -722,8 +722,9 @@
         },
         {
           "time": "2:40p",
-          "text": "LHR → MRS (land 5:45p)",
-          "status": "booked"
+          "text": "LHR → MRS (land 5:45p) · ⚠️ Marseille protest heads-up",
+          "status": "booked",
+          "detail": "Marseille has had Saturday downtown protest marches, with strikes/blockades planned for Fri 11/6 (gathering bans and an under-18 curfew are in force). Check BA flight status and local news that morning. If a march is near the Vieux Port tonight, taxi to the hotel and keep Bar de la Marine flexible. Auto-rechecked Wed 11/4."
         },
         {
           "time": "7:30p",
@@ -1170,11 +1171,12 @@
         },
         {
           "time": "7:45p",
-          "text": "Dinner: Domò Sushi (AYCE, Via San Marco 40) — BOOKED, 2 pax",
+          "text": "Dinner: Domò Sushi (AYCE, Via San Marco 40) — BOOKED, 2 pax · ⚠️ Milan ATM strike",
           "status": "booked",
           "lat": 45.4782394,
           "lng": 9.1890786,
-          "place": "Domò Sushi"
+          "place": "Domò Sushi",
+          "detail": "24-hour ATM strike Fri 11/13: metro, tram and bus may not run (guaranteed bands are usually start of service–8:45a and 3–6p). Trenitalia is unaffected and the hotel is a 5–10 min walk from Centrale. To reach Brera (~2.5 km), walk ~30 min or pre-book a taxi; strike nights get busy. Auto-rechecked Wed 11/4."
         }
       ],
       "sleepCity": "Milan"
