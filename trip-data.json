@@ -896,7 +896,7 @@
         },
         {
           "time": "12:00p",
-          "text": "Lunch in Vieux Nice — open (socca at Chez Thérésa / René Socca, or a Cours Saleya terrace). Le Plongeoir is Wed 11/11.",
+          "text": "Lunch in Vieux Nice — open (socca at Chez Thérésa / René Socca, or a Cours Saleya terrace). Le Plongeoir is Wed 11/11. · Or (pencilled in): Le Bistrot d'Antoine — Michelin Bib Gourmand bistro at 27 Rue de la Préfecture, 2 min from Cours Saleya; lunch 12:00–13:30 (arrive by ~12:15), phone only ☎ +33 4 93 85 29 57. Heads-up: Le Sens is dinner tonight, so keep it light.",
           "status": "tentative",
           "lat": 43.6971832,
           "lng": 7.2762796,
@@ -1122,7 +1122,7 @@
         {
           "time": "7:00p",
           "status": "tentative",
-          "text": "Dinner back in Nice — easy/open. Chez Pipo socca is right by Vauban/the port; or a Vieux Nice spot from Wednesday's shortlist."
+          "text": "Dinner back in Nice — easy/open. Chez Pipo socca is right by Vauban/the port; or a Vieux Nice spot from Wednesday's shortlist. · Or (pencilled in): Le Bistrot d'Antoine — Michelin Bib Gourmand, Vieux Nice (27 Rue de la Préfecture); dinner 19:00–21:30, aim ~7:45p after the 17:55 Èze bus; phone only ☎ +33 4 93 85 29 57."
         }
       ],
       "sleepCity": "Nice"
@@ -2198,10 +2198,10 @@
       "city": "Nice",
       "name": "Le Bistrot d'Antoine",
       "tier": "LOCAL",
-      "why": "Benchmark modern Niçoise (Tue–Thu)",
+      "why": "Michelin Bib Gourmand — convivial, packed Vieux Nice bistro (27 Rue de la Préfecture): old-fashioned pork casserole with polenta, knife-cut beef tartare, grilled veal kidney. Open Tue–Sat 12:00–13:30 & 19:00–21:30; closed Sun–Mon.",
       "price": "€70–90/2",
-      "when": "flex",
-      "booking": "Optional — no date assigned. Phone only (old website is dead). Nice dinners on 11/11 and 11/12 are left flexible if you want to try it.",
+      "when": "11/10 lunch or 11/12 dinner (pencilled)",
+      "booking": "Optional — pencilled in as an option for Tue 11/10 lunch and Thu 11/12 dinner. Phone only ☎ +33 4 93 85 29 57 (old website is dead). Busy, so call ahead if you want it.",
       "status": "optional"
     },
     {
@@ -3816,7 +3816,7 @@
           "label": "Le Bistrot d'Antoine (Nice)",
           "tier": "LOCAL",
           "price": "€70–90/2",
-          "desc": "Eat at the benchmark modern-Niçoise bistro in Vieux Nice.",
+          "desc": "Eat at the benchmark modern-Niçoise bistro in Vieux Nice (Michelin Bib Gourmand). Dinner 19:00–21:30 — aim ~7:45p after the Èze bus. Phone only ☎ +33 4 93 85 29 57.",
           "link": ""
         },
         {
@@ -3825,6 +3825,14 @@
           "tier": "LEGEND",
           "price": "€35–50/2",
           "desc": "Ex-Michelin chef's 20-seat cash-only legend; daube, stockfish. No bookings — arrive early.",
+          "link": ""
+        },
+        {
+          "id": "chezpipo",
+          "label": "Chez Pipo socca (Nice port)",
+          "tier": "CASUAL",
+          "price": "€15–25/2",
+          "desc": "Easy socca by Vauban/the port, right where the Èze bus drops you. Walk-in.",
           "link": ""
         }
       ]
@@ -3860,6 +3868,49 @@
           "tier": "ICONIC",
           "price": "~€11",
           "desc": "Ricciotti's lace-concrete landmark on the water; Mediterranean art/photography shows. Open Sun ✅ (closed Tue).",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": "nice-tue10-lunch",
+      "date": "2026-11-10",
+      "time": "12:00p",
+      "city": "Nice",
+      "slot": "Lunch in Vieux Nice (Tue)",
+      "kind": "dining",
+      "commitStatus": "tentative",
+      "options": [
+        {
+          "id": "theresa",
+          "label": "Chez Thérésa socca",
+          "tier": "STREET FOOD",
+          "price": "€10–20/2",
+          "desc": "Cours Saleya market socca — walk-in.",
+          "link": ""
+        },
+        {
+          "id": "renesocca",
+          "label": "René Socca",
+          "tier": "STREET FOOD",
+          "price": "€10–20/2",
+          "desc": "Classic Vieux Nice socca/pissaladière counter — walk-in.",
+          "link": ""
+        },
+        {
+          "id": "saleya",
+          "label": "Cours Saleya terrace",
+          "tier": "CASUAL",
+          "price": "€30–50/2",
+          "desc": "Any sunny terrace on the market square.",
+          "link": ""
+        },
+        {
+          "id": "bistrotantoine",
+          "label": "Le Bistrot d'Antoine",
+          "tier": "BIB GOURMAND",
+          "price": "€60–90/2",
+          "desc": "2 min from Cours Saleya; lunch 12:00–13:30. Phone only ☎ +33 4 93 85 29 57. Le Sens is dinner tonight — keep it light.",
           "link": ""
         }
       ]
