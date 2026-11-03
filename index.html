@@ -856,6 +856,85 @@ html[data-theme="dark"] .leaflet-tile-pane{filter:brightness(.85) contrast(1.05)
 .q-count{font-size:3.2rem;font-weight:900;text-align:center;font-variant-numeric:tabular-nums;line-height:1.1;}
 .q-secret{font-size:1.55rem;font-weight:800;text-align:center;padding:18px;border-radius:14px;background:var(--cp-accent-soft);color:var(--cp-accent);margin:10px 0;}
 .q-tally{font-size:.85rem;color:var(--cp-text-muted);text-align:center;}
+.gm-gh{font-size:.95rem;margin:16px 0 8px;color:var(--cp-text);}
+/* memory */
+.mm-g{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:380px;margin:10px auto;}
+.mm-c{aspect-ratio:1;font-size:2rem;border-radius:12px;border:1px solid var(--cp-border);background:var(--cp-surface);cursor:pointer;padding:0;touch-action:manipulation;color:var(--cp-text);}
+.mm-c.down{background:repeating-linear-gradient(45deg,var(--cp-accent) 0 8px,var(--cp-accent-hover,var(--cp-accent)) 8px 16px);border-color:transparent;opacity:.9;}
+.mm-c.up{background:var(--cp-surface);border-color:var(--cp-accent);box-shadow:0 0 0 2px var(--cp-accent-soft);}
+.mm-c.gone{opacity:.55;cursor:default;}
+.mm-c.gone.a{border:2px solid #e11d48;} .mm-c.gone.b{border:2px solid #d97706;}
+/* reversi */
+.rv-b{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;padding:4px;border-radius:10px;background:#14532d;max-width:380px;margin:10px auto;}
+.rv-c{aspect-ratio:1;background:#16a34a;border:0;border-radius:3px;padding:0;position:relative;cursor:pointer;touch-action:manipulation;}
+.rv-c:disabled{cursor:default;}
+.rv-c i{position:absolute;inset:9%;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.4);}
+.rv-c i.k{background:#111;} .rv-c i.w{background:#f8fafc;}
+.rv-c.ok::after{content:"";position:absolute;left:50%;top:50%;width:22%;height:22%;margin:-11% 0 0 -11%;border-radius:50%;background:rgba(0,0,0,.28);}
+.rv-c.last{box-shadow:inset 0 0 0 2px #facc15;}
+/* mancala */
+.mk-lab{font-size:.8rem;color:var(--cp-text-muted);margin:4px 2px;}
+.mk-lab.a{text-align:right;}
+.mk-board{display:flex;gap:6px;align-items:stretch;background:#92400e;padding:8px;border-radius:16px;max-width:460px;margin:0 auto;}
+.mk-store{flex:0 0 44px;border-radius:22px;background:#fde68a;color:#78350f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;}
+.mk-store b{font-size:1.35rem;} .mk-store span{font-size:.62rem;writing-mode:vertical-rl;transform:rotate(180deg);max-height:70px;overflow:hidden;}
+.mk-rows{flex:1;display:grid;gap:6px;}
+.mk-row{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;}
+.mk-pit{aspect-ratio:1;border-radius:50%;border:0;background:#fef3c7;color:#78350f;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;cursor:pointer;touch-action:manipulation;}
+.mk-pit b{font-size:1.05rem;line-height:1;} .mk-dots{font-size:.5rem;line-height:.7;max-width:80%;overflow:hidden;word-break:break-all;letter-spacing:-1px;opacity:.7;}
+.mk-pit:disabled{opacity:.6;cursor:default;}
+.mk-pit.a:not(:disabled){box-shadow:0 0 0 3px #e11d48;} .mk-pit.b:not(:disabled){box-shadow:0 0 0 3px #f59e0b;}
+.mk-pit.last{outline:3px solid #fff;outline-offset:-3px;}
+/* pig */
+.pg-bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:.9rem;}
+.pg-bar span{flex:0 0 70px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pg-track{flex:1;height:12px;border-radius:6px;background:var(--cp-surface-soft);overflow:hidden;}
+.pg-track i{display:block;height:100%;border-radius:6px;} .pg-track i.a{background:#e11d48;} .pg-track i.b{background:#d97706;}
+.pg-die{font-size:5.5rem;line-height:1;text-align:center;margin:6px 0;}
+.pg-die.bust{color:var(--cp-danger);}
+.pg-run{text-align:center;font-size:1rem;}
+.pg-run b{font-size:1.4rem;}
+/* battleship */
+.bs-cover{text-align:center;padding:30px 0;}
+.bs-eye{font-size:4rem;}
+.bs-lab{font-size:.85rem;font-weight:700;margin:12px 0 4px;color:var(--cp-text);}
+.bs-b{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;max-width:360px;margin:0 auto;}
+.bs-b.mini{max-width:200px;gap:2px;}
+.bs-c{aspect-ratio:1;border:0;border-radius:4px;background:#bfdbfe;color:#1e3a8a;font-weight:900;font-size:1rem;display:flex;align-items:center;justify-content:center;padding:0;cursor:pointer;touch-action:manipulation;}
+.bs-b.mini .bs-c{font-size:.65rem;border-radius:2px;}
+.bs-c:disabled{cursor:default;}
+.bs-c.ship{background:#64748b;color:#fff;}
+.bs-c.miss{background:#dbeafe;color:#3b82f6;}
+.bs-c.hit{background:#f97316;color:#fff;}
+.bs-c.sunk{background:#991b1b;color:#fff;}
+html[data-theme="dark"] .bs-c{background:#1e3a8a;color:#bfdbfe;}
+html[data-theme="dark"] .bs-c.miss{background:#1e293b;color:#93c5fd;}
+html[data-theme="dark"] .bs-c.ship{background:#94a3b8;color:#0f172a;}
+/* draw & guess */
+.dg-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;}
+.dg-clock{font-size:1.4rem;font-weight:800;font-variant-numeric:tabular-nums;}
+.dg-clock.low{color:var(--cp-danger);}
+.dg-tools{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:6px;}
+.dg-sw{width:34px;height:34px;border-radius:50%;border:2px solid var(--cp-border);cursor:pointer;padding:0;}
+.dg-sw.on{box-shadow:0 0 0 3px var(--cp-accent);}
+.dg-tool{min-width:40px;height:38px;border-radius:10px;border:1px solid var(--cp-border);background:var(--cp-surface);font-size:1.1rem;cursor:pointer;color:var(--cp-text);}
+.dg-tool.on{border-color:var(--cp-accent);background:var(--cp-accent-soft);}
+.dg-peek{text-align:center;font-weight:800;color:var(--cp-accent);margin:4px 0;}
+.dg-wrap{width:100%;border-radius:12px;overflow:hidden;border:1px solid var(--cp-border);background:#fff;}
+#dgCanvas{display:block;touch-action:none;cursor:crosshair;}
+/* wordle */
+.wd-g{display:grid;gap:5px;max-width:300px;margin:8px auto;}
+.wd-row{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;}
+.wd-t{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.6rem;border:2px solid var(--cp-border);border-radius:6px;text-transform:uppercase;color:var(--cp-text);}
+.wd-t.typed{border-color:var(--cp-text-muted);}
+.wd-t.g{background:#16a34a;border-color:#16a34a;color:#fff;}
+.wd-t.y{background:#ca8a04;border-color:#ca8a04;color:#fff;}
+.wd-t.x{background:#6b7280;border-color:#6b7280;color:#fff;}
+.wd-kb{display:grid;gap:6px;margin-top:10px;}
+.wd-kr{display:flex;gap:4px;justify-content:center;}
+.wd-k{flex:1 1 0;max-width:40px;min-height:50px;border-radius:7px;border:0;background:var(--cp-surface-soft);color:var(--cp-text);font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;padding:0;touch-action:manipulation;}
+.wd-k.wide{max-width:62px;flex:1.5 1 0;font-size:.75rem;}
+.wd-k.g{background:#16a34a;color:#fff;} .wd-k.y{background:#ca8a04;color:#fff;} .wd-k.x{background:#6b7280;color:#fff;}
 
 
 #scoutGate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--cp-bg);}
@@ -3430,15 +3509,23 @@ loadAndBoot();
   }
 
   var GAMES = [
-    {id:"hangman", ic:"🪢", t:"Hangman", d:"Guess a word from the trip, or set one for each other.", sc:1},
-    {id:"ttt", ic:"⭕", t:"Tic-Tac-Toe", d:"Classic 3×3. Play each other or the phone.", sc:1},
-    {id:"cats", ic:"🔤", t:"Categories", d:"One letter, a ticking clock, 8 categories.", sc:1},
-    {id:"c4", ic:"🔴", t:"Connect Four", d:"Drop discs and get four in a row.", sc:1},
-    {id:"dots", ic:"⬜", t:"Dots & Boxes", d:"Close a box and you go again.", sc:1},
-    {id:"trivia", ic:"🧠", t:"Trip Trivia", d:"Questions about the places on this trip.", sc:1},
-    {id:"wyr", ic:"💬", t:"Would You Rather & Talk Cards", d:"Prompts for trains and dinners.", sc:0},
-    {id:"q20", ic:"❓", t:"20 Questions", d:"One thinks of something from the trip, the other asks.", sc:1}
+    {id:"hangman", ic:"🪢", t:"Hangman", d:"Guess a word from the trip, or set one for each other.", sc:1, g:"w"},
+    {id:"wordle", ic:"🟩", t:"Trip Wordle", d:"Find the 5-letter trip word in 6 tries. Take turns.", sc:1, g:"w"},
+    {id:"draw", ic:"🎨", t:"Draw & Guess", d:"Draw it with your finger; the other one guesses.", sc:1, g:"w"},
+    {id:"cats", ic:"🔤", t:"Categories", d:"One letter, a ticking clock, 8 categories.", sc:1, g:"w"},
+    {id:"q20", ic:"❓", t:"20 Questions", d:"One thinks of something from the trip, the other asks.", sc:1, g:"w"},
+    {id:"battle", ic:"🚢", t:"Battleship", d:"Hide your fleet, then pass the phone and fire.", sc:1, g:"b"},
+    {id:"c4", ic:"🔴", t:"Connect Four", d:"Drop discs and get four in a row.", sc:1, g:"b"},
+    {id:"reversi", ic:"⚫", t:"Reversi", d:"Flip your partner's discs. Play each other or the phone.", sc:1, g:"b"},
+    {id:"mancala", ic:"🫘", t:"Mancala", d:"Sow seeds, steal, and fill your store.", sc:1, g:"b"},
+    {id:"dots", ic:"⬜", t:"Dots & Boxes", d:"Close a box and you go again.", sc:1, g:"b"},
+    {id:"ttt", ic:"⭕", t:"Tic-Tac-Toe", d:"Classic 3×3. Play each other or the phone.", sc:1, g:"b"},
+    {id:"memory", ic:"🃏", t:"Memory Match", d:"Flip two cards and find the trip pairs.", sc:1, g:"l"},
+    {id:"pig", ic:"🎲", t:"Pig", d:"Roll as long as you dare; a 1 wipes your turn.", sc:1, g:"l"},
+    {id:"trivia", ic:"🧠", t:"Trip Trivia", d:"Questions about the places on this trip.", sc:1, g:"t"},
+    {id:"wyr", ic:"💬", t:"Would You Rather & Talk Cards", d:"Prompts for trains and dinners.", sc:0, g:"t"}
   ];
+  var GROUPS = [["w","✏️ Word & guessing"],["b","♟️ Board games"],["l","🍀 Luck & memory"],["t","💬 Trivia & talk"]];
   function gById(id){ for(var i = 0; i < GAMES.length; i++) if(GAMES[i].id === id) return GAMES[i]; return null; }
 
   var root = null, cur = null, ticks = [], H = {};
@@ -3462,7 +3549,7 @@ loadAndBoot();
     root.innerHTML = '<p class="gm-intro">Pass-and-play on one phone. Everything works offline on trains and planes. Scores are saved on this phone.</p>' +
       '<div class="gm-names"><label>Player 1 <input id="gmNa" maxlength="14" autocomplete="off" value="' + esc(n.a) + '"></label><label>Player 2 <input id="gmNb" maxlength="14" autocomplete="off" value="' + esc(n.b) + '"></label></div>' +
       '<div class="gm-tot">Trip total: <b class="gm-a">' + esc(n.a) + ' ' + tot.a + '</b> · <b class="gm-b">' + esc(n.b) + ' ' + tot.b + '</b></div>' +
-      '<div class="gm-grid">' + GAMES.map(function(g){ return '<button type="button" class="gm-card" data-gact="open" data-g="' + g.id + '"><span class="gm-ic">' + g.ic + '</span><span class="gm-ct">' + esc(g.t) + '</span><span class="gm-cd">' + esc(g.d) + '</span></button>'; }).join("") + '</div>';
+      GROUPS.map(function(gr){ return '<h4 class="gm-gh">' + gr[1] + '</h4><div class="gm-grid">' + GAMES.filter(function(g){ return g.g === gr[0]; }).map(function(g){ return '<button type="button" class="gm-card" data-gact="open" data-g="' + g.id + '"><span class="gm-ic">' + g.ic + '</span><span class="gm-ct">' + esc(g.t) + '</span><span class="gm-cd">' + esc(g.d) + '</span></button>'; }).join("") + '</div>'; }).join("");
   }
   function open(id){ stopTicks(); cur = id; if(H[id] && H[id].start) H[id].start(); try{ window.scrollTo({top: 0}); }catch(e){} }
 
@@ -3893,6 +3980,321 @@ loadAndBoot();
     }
   };
 
+  /* ----------------------------------------------------------- MEMORY MATCH */
+  var MEM_EMO = ["🥐","🍕","🍝","🧀","🍫","🍷","☕","🍦","🥨","🚆","⛵","🏰","🗻","🎨","⛪","🚡","🛶","🎻","🍋","🦢","🌻","🎄","🍺","🥖","⌚","🎡"];
+  var MM = null;
+  function mmNew(){
+    var pairs = ld("mm_pairs", 10), st = ld("mm_start", "a"); sv("mm_start", other(st));
+    var em = shuffle(MEM_EMO).slice(0, pairs);
+    MM = { deck: shuffle(em.concat(em)), up: [], gone: {}, turn: st, cnt: {a:0, b:0}, lock: false, over: false };
+    mmDraw();
+  }
+  function mmDraw(){
+    var total = MM.deck.length / 2;
+    var status = MM.over ? (MM.cnt.a === MM.cnt.b ? '<div class="gm-msg">Tie, ' + MM.cnt.a + '–' + MM.cnt.b + ' 🤝</div>' : '<div class="gm-msg win">' + esc(names()[MM.cnt.a > MM.cnt.b ? "a" : "b"]) + ' wins ' + Math.max(MM.cnt.a, MM.cnt.b) + '–' + Math.min(MM.cnt.a, MM.cnt.b) + '!</div>') : '<div class="gm-turn">' + nm(MM.turn) + '\'s turn: flip two cards</div>';
+    var seg = '<div class="gm-seg">' + [[8,"16 cards"],[10,"20 cards"],[12,"24 cards"]].map(function(o){ return '<button type="button" data-gact="mm-size" data-n="' + o[0] + '" class="' + (total === o[0] ? "on" : "") + '">' + o[1] + '</button>'; }).join("") + '</div>';
+    body(seg + status + '<div class="gm-score" style="margin:0 0 6px"><span class="gm-pl a">' + esc(names().a) + ' <b>' + MM.cnt.a + '</b></span><span class="gm-vs">pairs</span><span class="gm-pl b">' + esc(names().b) + ' <b>' + MM.cnt.b + '</b></span></div>' +
+      '<div class="mm-g">' + MM.deck.map(function(e, i){ var g = MM.gone[i], up = MM.up.indexOf(i) >= 0; return '<button type="button" class="mm-c' + (g ? " gone " + g : up ? " up" : " down") + '" data-gact="mm" data-i="' + i + '"' + (g || up || MM.over ? " disabled" : "") + '>' + (g || up ? e : "") + '</button>'; }).join("") + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="mm-new">New game</button></div><p class="gm-note">Find a pair and you go again. Most pairs wins.</p>');
+  }
+  function mmFlip(i){
+    if(MM.lock || MM.over || MM.gone[i] || MM.up.indexOf(i) >= 0) return;
+    MM.up.push(i);
+    if(MM.up.length === 2){
+      var x = MM.up[0], y = MM.up[1];
+      if(MM.deck[x] === MM.deck[y]){
+        MM.gone[x] = MM.gone[y] = MM.turn; MM.cnt[MM.turn]++; MM.up = [];
+        if(Object.keys(MM.gone).length === MM.deck.length){ MM.over = true; if(MM.cnt.a !== MM.cnt.b){ addPt("memory", MM.cnt.a > MM.cnt.b ? "a" : "b"); refreshScore(); } }
+      } else {
+        MM.lock = true;
+        ticks.push(setTimeout(function(){ MM.up = []; MM.lock = false; MM.turn = other(MM.turn); mmDraw(); }, 1100));
+      }
+    }
+    mmDraw();
+  }
+  H.memory = { start: function(){ frame("memory", ""); mmNew(); }, act: function(a, b){ if(a === "mm") mmFlip(+b.getAttribute("data-i")); else if(a === "mm-new"){ stopTicks(); mmNew(); } else if(a === "mm-size"){ stopTicks(); sv("mm_pairs", +b.getAttribute("data-n")); mmNew(); } } };
+
+  /* ---------------------------------------------------------------- REVERSI */
+  var RV = null, RVD = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
+  function rvFlips(b, r, c, col){
+    if(b[r][c]) return [];
+    var opp = col === "k" ? "w" : "k", out = [];
+    RVD.forEach(function(d){ var rr = r + d[0], cc = c + d[1], run = []; while(rr >= 0 && rr < 8 && cc >= 0 && cc < 8 && b[rr][cc] === opp){ run.push([rr, cc]); rr += d[0]; cc += d[1]; } if(run.length && rr >= 0 && rr < 8 && cc >= 0 && cc < 8 && b[rr][cc] === col) out = out.concat(run); });
+    return out;
+  }
+  function rvMoves(col){ var m = []; for(var r = 0; r < 8; r++) for(var c = 0; c < 8; c++){ var f = rvFlips(RV.b, r, c, col); if(f.length) m.push({r: r, c: c, f: f}); } return m; }
+  function rvCount(){ var k = 0, w = 0; RV.b.forEach(function(row){ row.forEach(function(v){ if(v === "k") k++; else if(v === "w") w++; }); }); return {k: k, w: w}; }
+  function rvNew(){
+    var mode = ld("rv_mode", "2p"), st = ld("rv_start", "a"); sv("rv_start", other(st));
+    var b = range(8).map(function(){ return range(8).map(function(){ return ""; }); });
+    b[3][3] = b[4][4] = "w"; b[3][4] = b[4][3] = "k";
+    RV = { b: b, turn: "k", mode: mode, pl: {k: st, w: other(st)}, cpu: "w", over: false, last: null, note: "" };
+    rvDraw();
+  }
+  function rvWho(col){ if(RV.mode === "2p") return nm(RV.pl[col]); return col === RV.cpu ? "📱 Phone" : "You"; }
+  function rvDraw(){
+    var moves = RV.over ? [] : rvMoves(RV.turn), human = RV.mode === "2p" || RV.turn !== RV.cpu, cnt = rvCount(), cells = "";
+    for(var r = 0; r < 8; r++) for(var c = 0; c < 8; c++){
+      var v = RV.b[r][c], legal = human && moves.some(function(m){ return m.r === r && m.c === c; }), last = RV.last && RV.last[0] === r && RV.last[1] === c;
+      cells += '<button type="button" class="rv-c' + (legal ? " ok" : "") + (last ? " last" : "") + '" data-gact="rv" data-r="' + r + '" data-c="' + c + '"' + (legal ? "" : " disabled") + '>' + (v ? '<i class="' + v + '"></i>' : "") + '</button>';
+    }
+    var status;
+    if(RV.over){ status = cnt.k === cnt.w ? '<div class="gm-msg">Draw, ' + cnt.k + '–' + cnt.w + ' 🤝</div>' : '<div class="gm-msg win">' + rvWho(cnt.k > cnt.w ? "k" : "w") + ' wins ' + Math.max(cnt.k, cnt.w) + '–' + Math.min(cnt.k, cnt.w) + '!</div>'; }
+    else status = '<div class="gm-turn">' + (RV.turn === "k" ? "⚫ " : "⚪ ") + rvWho(RV.turn) + ' to move</div>';
+    var seg = '<div class="gm-seg">' + [["2p","2 players"],["cpu","vs phone"]].map(function(m){ return '<button type="button" data-gact="rv-mode" data-m="' + m[0] + '" class="' + (RV.mode === m[0] ? "on" : "") + '">' + m[1] + '</button>'; }).join("") + '</div>';
+    var rec = ld("rv_cpu", {w:0, l:0, d:0});
+    body(seg + status + (RV.note ? '<div class="gm-note">' + RV.note + '</div>' : '') + '<div class="gm-score" style="margin:0 0 6px"><span class="gm-pl">⚫ ' + rvWho("k") + ' <b>' + cnt.k + '</b></span><span class="gm-vs">vs</span><span class="gm-pl">⚪ ' + rvWho("w") + ' <b>' + cnt.w + '</b></span></div>' +
+      '<div class="rv-b">' + cells + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="rv-new">New game</button></div>' +
+      '<p class="gm-note">Place a disc so you sandwich the other color in a straight line; everything in between flips. Dots show legal moves. Black moves first.' + (RV.mode === "cpu" ? ' Your record vs the phone: ' + rec.w + ' W · ' + rec.l + ' L · ' + rec.d + ' D.' : '') + '</p>');
+  }
+  function rvEnd(){
+    RV.over = true; var cnt = rvCount();
+    if(RV.mode === "2p"){ if(cnt.k !== cnt.w){ addPt("reversi", RV.pl[cnt.k > cnt.w ? "k" : "w"]); refreshScore(); } }
+    else { var rec = ld("rv_cpu", {w:0, l:0, d:0}); if(cnt.k === cnt.w) rec.d++; else if((cnt.k > cnt.w ? "k" : "w") === RV.cpu) rec.l++; else rec.w++; sv("rv_cpu", rec); }
+  }
+  function rvPlay(r, c){
+    if(RV.over) return;
+    var f = rvFlips(RV.b, r, c, RV.turn); if(!f.length) return;
+    RV.b[r][c] = RV.turn; f.forEach(function(p){ RV.b[p[0]][p[1]] = RV.turn; }); RV.last = [r, c]; RV.note = "";
+    var nx = RV.turn === "k" ? "w" : "k";
+    if(rvMoves(nx).length) RV.turn = nx;
+    else if(rvMoves(RV.turn).length){ RV.note = rvWho(nx) + ' has no legal move, so ' + rvWho(RV.turn) + ' goes again.'; }
+    else rvEnd();
+    rvDraw();
+    if(!RV.over && RV.mode === "cpu" && RV.turn === RV.cpu) ticks.push(setTimeout(rvCpu, 600));
+  }
+  function rvCpu(){
+    var m = rvMoves(RV.cpu); if(!m.length) return;
+    var corners = {"0,0":1,"0,7":1,"7,0":1,"7,7":1}, xsq = {"1,1":1,"1,6":1,"6,1":1,"6,6":1};
+    var best = -1e9, picks = [];
+    m.forEach(function(mv){ var k = mv.r + "," + mv.c, s = mv.f.length + (corners[k] ? 25 : 0) - (xsq[k] ? 8 : 0) + ((mv.r === 0 || mv.r === 7 || mv.c === 0 || mv.c === 7) ? 3 : 0); if(s > best){ best = s; picks = [mv]; } else if(s === best) picks.push(mv); });
+    var p = rnd(picks); rvPlay(p.r, p.c);
+  }
+  H.reversi = { start: function(){ frame("reversi", ""); rvNew(); }, act: function(a, b){ if(a === "rv"){ if(RV.mode === "cpu" && RV.turn === RV.cpu) return; rvPlay(+b.getAttribute("data-r"), +b.getAttribute("data-c")); } else if(a === "rv-new"){ stopTicks(); rvNew(); } else if(a === "rv-mode"){ stopTicks(); sv("rv_mode", b.getAttribute("data-m")); rvNew(); } } };
+
+  /* ---------------------------------------------------------------- MANCALA */
+  var MC = null;
+  function mcNew(){ var st = ld("mc_start", "a"); sv("mc_start", other(st)); MC = { p: range(14).map(function(i){ return i === 6 || i === 13 ? 0 : 4; }), turn: st, over: false, note: "", last: null }; mcDraw(); }
+  function mcOwn(w, i){ return w === "a" ? (i >= 0 && i <= 5) : (i >= 7 && i <= 12); }
+  function mcPit(i, w){ var can = !MC.over && MC.turn === w && MC.p[i] > 0; return '<button type="button" class="mk-pit ' + w + (MC.last === i ? " last" : "") + '" data-gact="mc" data-i="' + i + '"' + (can ? "" : " disabled") + '><b>' + MC.p[i] + '</b><span class="mk-dots">' + "•".repeat(Math.min(MC.p[i], 12)) + '</span></button>'; }
+  function mcDraw(){
+    var top = [12,11,10,9,8,7].map(function(i){ return mcPit(i, "b"); }).join(""), bot = [0,1,2,3,4,5].map(function(i){ return mcPit(i, "a"); }).join("");
+    var status = MC.over ? (MC.p[6] === MC.p[13] ? '<div class="gm-msg">Tie, ' + MC.p[6] + '–' + MC.p[13] + ' 🤝</div>' : '<div class="gm-msg win">' + esc(names()[MC.p[6] > MC.p[13] ? "a" : "b"]) + ' wins ' + Math.max(MC.p[6], MC.p[13]) + '–' + Math.min(MC.p[6], MC.p[13]) + '!</div>') : '<div class="gm-turn">' + nm(MC.turn) + '\'s turn: tap one of your pits</div>';
+    body(status + (MC.note ? '<div class="gm-note">' + MC.note + '</div>' : '') +
+      '<div class="mk-lab b">◀ ' + esc(names().b) + '\'s side</div><div class="mk-board"><div class="mk-store b"><b>' + MC.p[13] + '</b><span>' + esc(names().b) + '</span></div><div class="mk-rows"><div class="mk-row">' + top + '</div><div class="mk-row">' + bot + '</div></div><div class="mk-store a"><b>' + MC.p[6] + '</b><span>' + esc(names().a) + '</span></div></div><div class="mk-lab a">' + esc(names().a) + '\'s side ▶</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="mc-new">New game</button></div><p class="gm-note">Pick up all seeds in one of your pits and drop them one by one counter-clockwise (skipping the other player\'s store). Last seed in your store = go again. Last seed in an empty pit on your side = capture it plus the seeds across. When one side runs out, the game ends.</p>');
+  }
+  function mcMove(i){
+    var w = MC.turn; if(MC.over || !mcOwn(w, i) || !MC.p[i]) return;
+    var mine = w === "a" ? 6 : 13, theirs = w === "a" ? 13 : 6, s = MC.p[i], j = i; MC.p[i] = 0; MC.note = "";
+    while(s > 0){ j = (j + 1) % 14; if(j === theirs) continue; MC.p[j]++; s--; }
+    MC.last = j;
+    var again = j === mine;
+    if(!again && mcOwn(w, j) && MC.p[j] === 1 && MC.p[12 - j] > 0){ var got = MC.p[12 - j] + 1; MC.p[mine] += got; MC.p[12 - j] = 0; MC.p[j] = 0; MC.note = '💰 ' + esc(names()[w]) + ' captured ' + got + ' seeds!'; }
+    if(again) MC.note = '✨ Last seed in the store: ' + esc(names()[w]) + ' goes again.';
+    var sa = 0, sb = 0; for(var k = 0; k < 6; k++){ sa += MC.p[k]; sb += MC.p[7 + k]; }
+    if(sa === 0 || sb === 0){
+      MC.p[6] += sa; MC.p[13] += sb; for(k = 0; k < 6; k++){ MC.p[k] = 0; MC.p[7 + k] = 0; }
+      MC.over = true; if(MC.p[6] !== MC.p[13]){ addPt("mancala", MC.p[6] > MC.p[13] ? "a" : "b"); refreshScore(); }
+    } else if(!again) MC.turn = other(w);
+    mcDraw();
+  }
+  H.mancala = { start: function(){ frame("mancala", ""); mcNew(); }, act: function(a, b){ if(a === "mc") mcMove(+b.getAttribute("data-i")); else if(a === "mc-new") mcNew(); } };
+
+  /* -------------------------------------------------------------------- PIG */
+  var DIE = ["⚀","⚁","⚂","⚃","⚄","⚅"], PG = null;
+  function pgNew(){ var st = ld("pg_start", "a"); sv("pg_start", other(st)); PG = { target: ld("pg_target", 50), tot: {a:0, b:0}, turn: st, run: 0, last: null, bust: false, over: false, rolling: false }; pgDraw(); }
+  function pgDraw(){
+    var t = PG.turn, seg = '<div class="gm-seg">' + [30,50,100].map(function(k){ return '<button type="button" data-gact="pg-target" data-n="' + k + '" class="' + (PG.target === k ? "on" : "") + '">First to ' + k + '</button>'; }).join("") + '</div>';
+    var bar = function(w){ var pct = Math.min(100, Math.round(PG.tot[w] / PG.target * 100)); return '<div class="pg-bar"><span class="gm-' + w + '">' + esc(names()[w]) + '</span><div class="pg-track"><i class="' + w + '" style="width:' + pct + '%"></i></div><b>' + PG.tot[w] + '</b></div>'; };
+    var mid;
+    if(PG.over) mid = '<div class="gm-msg win">🏆 ' + esc(names()[PG.over]) + ' reaches ' + PG.tot[PG.over] + ' and wins!</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pg-new">Play again</button></div>';
+    else if(PG.bust) mid = '<div class="pg-die bust">' + DIE[0] + '</div><div class="gm-msg lose">🐷 Rolled a 1! No points this turn.</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pg-pass">Pass to ' + esc(names()[other(t)]) + ' →</button></div>';
+    else mid = '<div class="gm-turn">' + nm(t) + '\'s turn</div><div class="pg-die" id="pgDie">' + (PG.last ? DIE[PG.last - 1] : "🎲") + '</div><div class="pg-run">This turn: <b>' + PG.run + '</b>' + (PG.run ? ' (would make ' + (PG.tot[t] + PG.run) + ')' : '') + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pg-roll"' + (PG.rolling ? " disabled" : "") + '>🎲 Roll</button><button type="button" class="gm-btn" data-gact="pg-hold"' + (PG.run && !PG.rolling ? "" : " disabled") + '>✋ Hold and bank ' + PG.run + '</button></div>';
+    body(seg + bar("a") + bar("b") + mid + '<p class="gm-note">Roll as many times as you like and add up the dice. Hold to bank your turn total. Roll a 1 and you lose everything from this turn.</p>');
+  }
+  function pgRoll(){
+    if(PG.rolling || PG.over || PG.bust) return;
+    PG.rolling = true; pgDraw();
+    var n = 0, el = document.getElementById("pgDie");
+    var iv = setInterval(function(){ n++; if(el) el.textContent = DIE[Math.floor(Math.random() * 6)]; if(n >= 7){ clearInterval(iv); var d = 1 + Math.floor(Math.random() * 6); PG.last = d; PG.rolling = false; if(d === 1){ PG.run = 0; PG.bust = true; try{ if(navigator.vibrate) navigator.vibrate(120); }catch(e){} } else PG.run += d; pgDraw(); } }, 70);
+    ticks.push(iv);
+  }
+  function pgHold(){
+    if(!PG.run || PG.rolling) return;
+    var t = PG.turn; PG.tot[t] += PG.run; PG.run = 0; PG.last = null;
+    if(PG.tot[t] >= PG.target){ PG.over = t; addPt("pig", t); refreshScore(); } else PG.turn = other(t);
+    pgDraw();
+  }
+  H.pig = { start: function(){ frame("pig", ""); pgNew(); }, act: function(a, b){ if(a === "pg-roll") pgRoll(); else if(a === "pg-hold") pgHold(); else if(a === "pg-pass"){ PG.bust = false; PG.last = null; PG.turn = other(PG.turn); pgDraw(); } else if(a === "pg-new"){ stopTicks(); pgNew(); } else if(a === "pg-target"){ stopTicks(); sv("pg_target", +b.getAttribute("data-n")); pgNew(); } } };
+
+  /* ------------------------------------------------------------- BATTLESHIP */
+  var FLEET = [["Cruise ship",4],["Ferry",3],["Yacht",3],["Vaporetto",2],["Gondola",2]], BN = 8, BS = null;
+  function bsGrid(v){ return range(BN).map(function(){ return range(BN).map(function(){ return v; }); }); }
+  function bsPlace(){
+    for(var tries = 0; tries < 500; tries++){
+      var occ = bsGrid(0), ships = [], ok = true;
+      for(var s = 0; s < FLEET.length && ok; s++){
+        var len = FLEET[s][1], placed = false;
+        for(var t = 0; t < 200 && !placed; t++){
+          var hz = Math.random() < 0.5, r = Math.floor(Math.random() * (hz ? BN : BN - len + 1)), c = Math.floor(Math.random() * (hz ? BN - len + 1 : BN)), cells = [];
+          for(var k = 0; k < len; k++) cells.push(hz ? [r, c + k] : [r + k, c]);
+          if(cells.every(function(p){ return !occ[p[0]][p[1]]; })){ cells.forEach(function(p){ occ[p[0]][p[1]] = 1; }); ships.push({n: FLEET[s][0], cells: cells, hits: 0}); placed = true; }
+        }
+        if(!placed) ok = false;
+      }
+      if(ok) return ships;
+    }
+    return [];
+  }
+  function bsShipAt(w, r, c){ var sh = BS.P[w].ships; for(var i = 0; i < sh.length; i++) for(var j = 0; j < sh[i].cells.length; j++) if(sh[i].cells[j][0] === r && sh[i].cells[j][1] === c) return sh[i]; return null; }
+  function bsAfloat(w){ return BS.P[w].ships.filter(function(s){ return s.hits < s.cells.length; }).length; }
+  function bsNew(){ var st = ld("bs_start", "a"); sv("bs_start", other(st)); BS = { first: st, turn: st, phase: "cover", next: "place", who: st, P: { a: {ships: bsPlace(), shots: bsGrid(0)}, b: {ships: bsPlace(), shots: bsGrid(0)} }, res: "" }; bsDraw(); }
+  function bsBoard(owner, mode){
+    var shooter = other(owner), shots = BS.P[shooter].shots, cells = "";
+    for(var r = 0; r < BN; r++) for(var c = 0; c < BN; c++){
+      var sh = bsShipAt(owner, r, c), s = shots[r][c], sunk = sh && sh.hits >= sh.cells.length, cls = "bs-c";
+      if(mode === "own"){ if(sh) cls += " ship"; if(s === 1) cls += " miss"; if(s === 2) cls += sunk ? " sunk" : " hit"; }
+      else { if(s === 1) cls += " miss"; if(s === 2) cls += sunk ? " sunk" : " hit"; }
+      var can = mode === "aim" && !s;
+      cells += mode === "aim" ? '<button type="button" class="' + cls + '" data-gact="bs" data-r="' + r + '" data-c="' + c + '"' + (can ? "" : " disabled") + '>' + (s === 2 ? "✕" : s === 1 ? "•" : "") + '</button>' : '<span class="' + cls + '">' + (s === 2 ? "✕" : s === 1 ? "•" : "") + '</span>';
+    }
+    return '<div class="bs-b' + (mode === "own" && BS.phase !== "place" ? " mini" : "") + '">' + cells + '</div>';
+  }
+  function bsDraw(){
+    var w = BS.who, n = names();
+    if(BS.phase === "cover"){
+      body('<div class="bs-cover"><div class="bs-eye">🙈</div><div class="gm-turn">Pass the phone to ' + nm(w) + '</div><p class="gm-note">' + esc(n[other(w)]) + ', no peeking!</p><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="bs-ready">I\'m ' + esc(n[w]) + ', show me</button></div></div>');
+    } else if(BS.phase === "place"){
+      body('<div class="gm-turn">' + nm(w) + ', here\'s your secret fleet</div>' + bsBoard(w, "own") + '<p class="gm-note">' + FLEET.map(function(f){ return f[0] + " (" + f[1] + ")"; }).join(" · ") + '</p>' +
+        '<div class="gm-row"><button type="button" class="gm-btn" data-gact="bs-shuffle">🔀 Shuffle ships</button><button type="button" class="gm-btn pri" data-gact="bs-placed">✅ Ready</button></div>');
+    } else if(BS.phase === "aim" || BS.phase === "result"){
+      var opp = other(w), fin = BS.phase === "result";
+      body((fin ? '<div class="gm-msg ' + (BS.resHit ? "win" : "") + '">' + BS.res + '</div>' : '<div class="gm-turn">' + nm(w) + ', fire at ' + esc(n[opp]) + '\'s waters</div>') +
+        '<div class="bs-lab">🎯 ' + esc(n[opp]) + '\'s waters · ' + bsAfloat(opp) + ' of ' + FLEET.length + ' ships afloat</div>' + bsBoard(opp, fin ? "view" : "aim") +
+        (fin ? (BS.over ? '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="bs-new">Play again</button></div>' : '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="bs-pass">Pass to ' + esc(n[opp]) + ' →</button></div>') : '') +
+        '<div class="bs-lab">🛟 Your fleet · ' + bsAfloat(w) + ' of ' + FLEET.length + ' afloat</div>' + bsBoard(w, "own"));
+    }
+  }
+  function bsFire(r, c){
+    var w = BS.who, opp = other(w), shots = BS.P[w].shots; if(BS.phase !== "aim" || shots[r][c]) return;
+    var sh = bsShipAt(opp, r, c);
+    if(sh){ shots[r][c] = 2; sh.hits++; BS.resHit = true; BS.res = sh.hits >= sh.cells.length ? '💥 You sank the ' + sh.n + '!' : '🔥 Hit!'; try{ if(navigator.vibrate) navigator.vibrate(80); }catch(e){} }
+    else { shots[r][c] = 1; BS.resHit = false; BS.res = '🌊 Miss.'; }
+    if(bsAfloat(opp) === 0){ BS.over = true; BS.res = '🏆 ' + esc(names()[w]) + ' sank the whole fleet!'; addPt("battle", w); refreshScore(); }
+    BS.phase = "result"; bsDraw();
+  }
+  H.battle = {
+    start: function(){ frame("battle", ""); bsNew(); },
+    act: function(a, b){
+      if(a === "bs-ready"){ BS.phase = BS.next; bsDraw(); }
+      else if(a === "bs-shuffle"){ BS.P[BS.who].ships = bsPlace(); bsDraw(); }
+      else if(a === "bs-placed"){ if(BS.who === BS.first){ BS.who = other(BS.first); BS.next = "place"; } else { BS.who = BS.first; BS.next = "aim"; } BS.phase = "cover"; bsDraw(); }
+      else if(a === "bs"){ bsFire(+b.getAttribute("data-r"), +b.getAttribute("data-c")); }
+      else if(a === "bs-pass"){ BS.who = other(BS.who); BS.next = "aim"; BS.phase = "cover"; bsDraw(); }
+      else if(a === "bs-new") bsNew();
+      try{ window.scrollTo({top: 0}); }catch(e){}
+    }
+  };
+
+  /* ----------------------------------------------------------- DRAW & GUESS */
+  var DRAW_WORDS = ["Gondola","Croissant","Pizza","Train","Mountain","Castle","Cheese","Bicycle","Suitcase","Passport","Airplane","Cable car","Snowman","Christmas tree","Ice cream cone","Wine glass","Coffee cup","Lighthouse","Sailboat","Bridge","Church","Clock tower","Umbrella","Sunglasses","Beach","Palm tree","Fish","Octopus","Swan","Cow","Goat","Lion","Spaghetti","Baguette","Pretzel","Chocolate bar","Hot-air balloon","Ferris wheel","Roller coaster","Map","Compass","Camera","Postcard","Ticket","Backpack","Bed","Taxi","Bus","Tram","Scooter","Race car","Trophy","Crown","Diamond ring","Watch","Handbag","High heels","Painting","Statue","Fountain","Moon","Sunset","Rainbow","Snowflake","Waterfall","Lake","Forest","Mushroom","Grapes","Lemon","Olive","Tomato","Cake","Cupcake","Candle","Guitar","Violin","Accordion","Dancing","Swimming","Skiing","Hiking","Sleeping","Kiss","Heart","Eiffel Tower","Windmill","Cuckoo clock","Fondue","Croquet","Bell","Key","Anchor","Shell","Crab","Dog","Cat","Pigeon","Seagull","Butterfly"];
+  var DG = null, DGCOL = ["#111111","#e11d48","#2563eb","#16a34a","#d97706","#7c3aed"];
+  function dgDrawer(){ return ld("dg_d", "a"); }
+  function dgSetup(){
+    var d = dgDrawer();
+    DG = { phase: "setup", word: "", secs: ld("dg_secs", 90), end: 0, strokes: [], color: DGCOL[0], erase: false, peek: false };
+    body('<div class="gm-turn">' + nm(d) + ' draws next</div><div class="gm-seg">' + [[60,"60s"],[90,"90s"],[0,"No timer"]].map(function(o){ return '<button type="button" data-gact="dg-secs" data-s="' + o[0] + '" class="' + (DG.secs === o[0] ? "on" : "") + '">' + o[1] + '</button>'; }).join("") + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="dg-word">🎲 Give ' + esc(names()[d]) + ' a word</button></div><p class="gm-note">' + esc(names()[d]) + ' draws (no letters or numbers!) and ' + esc(names()[other(d)]) + ' guesses out loud. A correct guess scores a point for the artist. Roles swap every round.</p>' +
+      '<div class="gm-row"><button type="button" class="gm-link" data-gact="dg-swap">Switch who draws</button></div>');
+  }
+  function dgCanvasSize(cv){ var w = cv.parentNode.clientWidth || 340, h = Math.round(w * 1.05), dpr = window.devicePixelRatio || 1; cv.style.width = w + "px"; cv.style.height = h + "px"; cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); return {w: w, h: h, dpr: dpr}; }
+  function dgRedraw(){
+    var cv = document.getElementById("dgCanvas"); if(!cv) return; var x = cv.getContext("2d"), W = cv.width, Hh = cv.height;
+    x.clearRect(0, 0, W, Hh); x.fillStyle = "#ffffff"; x.fillRect(0, 0, W, Hh); x.lineCap = "round"; x.lineJoin = "round";
+    DG.strokes.forEach(function(s){ x.strokeStyle = s.c; x.lineWidth = s.w * W; x.beginPath(); s.p.forEach(function(pt, i){ if(i === 0) x.moveTo(pt[0] * W, pt[1] * Hh); else x.lineTo(pt[0] * W, pt[1] * Hh); }); if(s.p.length === 1) x.lineTo(s.p[0][0] * W + 0.1, s.p[0][1] * Hh); x.stroke(); });
+  }
+  function dgPlayView(){
+    var d = dgDrawer(), timed = DG.secs > 0;
+    body('<div class="dg-top"><span class="gm-turn" style="margin:0">' + nm(d) + ' is drawing</span>' + (timed ? '<span class="dg-clock" id="dgClock"></span>' : '') + '</div>' +
+      '<div class="dg-tools">' + DGCOL.map(function(c){ return '<button type="button" class="dg-sw' + (!DG.erase && DG.color === c ? " on" : "") + '" style="background:' + c + '" data-gact="dg-col" data-c="' + c + '" aria-label="color"></button>'; }).join("") +
+      '<button type="button" class="dg-tool' + (DG.erase ? " on" : "") + '" data-gact="dg-erase">🧽</button><button type="button" class="dg-tool" data-gact="dg-undo">↶</button><button type="button" class="dg-tool" data-gact="dg-clear">🗑</button><button type="button" class="dg-tool" data-gact="dg-peek">' + (DG.peek ? "🙈" : "👁") + '</button></div>' +
+      (DG.peek ? '<div class="dg-peek">' + esc(DG.word) + '</div>' : '') +
+      '<div class="dg-wrap"><canvas id="dgCanvas"></canvas></div>' +
+      (DG.phase === "time" ? '<div class="gm-msg lose">⏰ Time\'s up! Last guess?</div>' : '') +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="dg-got">🎉 ' + esc(names()[other(d)]) + ' guessed it</button><button type="button" class="gm-btn" data-gact="dg-fail">Give up</button></div>');
+    var cv = document.getElementById("dgCanvas"); dgCanvasSize(cv); dgRedraw();
+    var cur2 = null;
+    function pt(e){ var r = cv.getBoundingClientRect(); return [Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)), Math.max(0, Math.min(1, (e.clientY - r.top) / r.height))]; }
+    cv.addEventListener("pointerdown", function(e){ e.preventDefault(); try{ cv.setPointerCapture(e.pointerId); }catch(x){} cur2 = {c: DG.erase ? "#ffffff" : DG.color, w: DG.erase ? 0.06 : 0.012, p: [pt(e)]}; DG.strokes.push(cur2); dgRedraw(); });
+    cv.addEventListener("pointermove", function(e){ if(!cur2) return; e.preventDefault(); cur2.p.push(pt(e)); dgRedraw(); });
+    var up = function(){ cur2 = null; }; cv.addEventListener("pointerup", up); cv.addEventListener("pointercancel", up); cv.addEventListener("pointerleave", up);
+    if(timed) dgTick();
+  }
+  function dgTick(){ var el = document.getElementById("dgClock"); if(!el || DG.phase === "time") { if(el) el.textContent = "0:00"; return; } var left = DG.end - Date.now(); el.textContent = caFmt(left); el.classList.toggle("low", left <= 10000); if(left <= 0){ stopTicks(); DG.phase = "time"; buzz(); dgPlayView(); } }
+  function dgEnd(got){
+    stopTicks(); var d = dgDrawer(); if(got){ addPt("draw", d); refreshScore(); } sv("dg_d", other(d));
+    body('<div class="gm-msg ' + (got ? "win" : "lose") + '">' + (got ? '🎉 Nice drawing, ' + esc(names()[d]) + '!' : 'Not this time!') + '</div><div class="q-secret">' + esc(DG.word) + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="dg-next">Next round →</button></div>');
+  }
+  H.draw = {
+    start: function(){ frame("draw", ""); dgSetup(); },
+    act: function(a, b){
+      if(a === "dg-secs"){ sv("dg_secs", +b.getAttribute("data-s")); dgSetup(); }
+      else if(a === "dg-swap"){ sv("dg_d", other(dgDrawer())); dgSetup(); }
+      else if(a === "dg-word"){ DG.word = rnd(DRAW_WORDS); body('<div class="gm-turn">Only ' + nm(dgDrawer()) + ' looks! 🤫</div><div class="q-secret">' + esc(DG.word) + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="dg-start">Start drawing</button><button type="button" class="gm-btn" data-gact="dg-word">Another word</button></div>'); }
+      else if(a === "dg-start"){ DG.phase = "draw"; DG.strokes = []; DG.peek = false; if(DG.secs > 0){ DG.end = Date.now() + DG.secs * 1000; stopTicks(); ticks.push(setInterval(dgTick, 250)); } dgPlayView(); }
+      else if(a === "dg-col"){ DG.color = b.getAttribute("data-c"); DG.erase = false; document.querySelectorAll(".dg-sw,.dg-tool[data-gact=dg-erase]").forEach(function(x){ x.classList.remove("on"); }); b.classList.add("on"); }
+      else if(a === "dg-erase"){ DG.erase = !DG.erase; document.querySelectorAll(".dg-sw").forEach(function(x){ x.classList.toggle("on", !DG.erase && x.getAttribute("data-c") === DG.color); }); b.classList.toggle("on", DG.erase); }
+      else if(a === "dg-undo"){ DG.strokes.pop(); dgRedraw(); }
+      else if(a === "dg-clear"){ if(DG.strokes.length && confirm("Clear the drawing?")){ DG.strokes = []; dgRedraw(); } }
+      else if(a === "dg-peek"){ DG.peek = !DG.peek; dgPlayView(); }
+      else if(a === "dg-got") dgEnd(true);
+      else if(a === "dg-fail") dgEnd(false);
+      else if(a === "dg-next") dgSetup();
+    }
+  };
+
+  /* ------------------------------------------------------------ TRIP WORDLE */
+  var WD_WORDS = ["PASTA","PIZZA","CREPE","TRAIN","COAST","BEACH","OCEAN","RIVER","CANAL","BOATS","FERRY","PLANE","HOTEL","OPERA","PIANO","TOWER","DUOMO","VILLA","LUNCH","FEAST","TOAST","GRAPE","OLIVE","LEMON","MELON","BERRY","SUGAR","CANDY","CREAM","SAUCE","SPICE","BASIL","THYME","HONEY","BAGEL","SCONE","FRIES","STEAK","SALAD","ROAST","CIDER","LAGER","STOUT","DRINK","GLASS","TABLE","CHAIR","CLOCK","WATCH","MONEY","FRANC","EUROS","COINS","LIGHT","NIGHT","STARS","SUNNY","RAINY","SNOWY","CLOUD","STORM","FROST","PEAKS","SLOPE","CLIMB","HIKER","SKIER","LODGE","CABIN","GUIDE","VISIT","ROUTE","PHOTO","SMILE","HAPPY","DANCE","MUSIC","VOICE","HEART","AMOUR","BELLA","MERCI","DANKE","ROSES","TULIP","DAISY","BENCH","FIELD","WOODS","GATES","WALLS","BRICK","STONE","PAINT","BRUSH","FRAME","CROWN","ROYAL","QUEEN","SHIPS","YACHT","SHORE","WAVES","SANDY","SHELL","PEARL","CORAL","SQUID","TROUT","MILAN","PARIS","BASEL","RHINE","SEATS","AISLE","PURSE","SCARF","BOOTS","GLOVE","SHIRT","DRESS","SHOES","GUSTO","LATTE","MOCHA","PESTO","PENNE","CHEFS","MENUS","ORDER","TASTE","SWEET","FRESH","CRISP","FLAKY","TORTE","WAFER","CACAO","TRUCK","METRO","TICKS","PLAZA","MARKT","ALPES","LOCAL","MAPLE","SWISS","FONDU"].filter(function(w){ return /^[A-Z]{5}$/.test(w) && w !== "MARKT" && w !== "ALPES" && w !== "FONDU" && w !== "TICKS"; });
+  var WD = null, KB_ROWS = ["QWERTYUIOP","ASDFGHJKL","⏎ZXCVBNM⌫"];
+  function wdTurn(){ return ld("wd_turn", "a"); }
+  function wdNew(){ WD = { ans: rnd(WD_WORDS), rows: [], cur: "", over: false, won: false, solver: wdTurn(), msg: "" }; wdDraw(); }
+  function wdScore(g, ans){
+    var res = ["x","x","x","x","x"], left = {}, i;
+    for(i = 0; i < 5; i++){ if(g[i] === ans[i]) res[i] = "g"; else left[ans[i]] = (left[ans[i]] || 0) + 1; }
+    for(i = 0; i < 5; i++){ if(res[i] !== "g" && left[g[i]]){ res[i] = "y"; left[g[i]]--; } }
+    return res;
+  }
+  function wdDraw(){
+    var keyState = {}, rank = {x:1, y:2, g:3};
+    WD.rows.forEach(function(r){ r.g.split("").forEach(function(ch, i){ var s = r.s[i]; if(!keyState[ch] || rank[s] > rank[keyState[ch]]) keyState[ch] = s; }); });
+    var grid = "";
+    for(var r = 0; r < 6; r++){
+      var row = WD.rows[r], txt = row ? row.g : (r === WD.rows.length && !WD.over ? WD.cur : "");
+      grid += '<div class="wd-row">';
+      for(var c = 0; c < 5; c++) grid += '<span class="wd-t' + (row ? " " + row.s[c] : (txt[c] ? " typed" : "")) + '">' + (txt[c] || "") + '</span>';
+      grid += '</div>';
+    }
+    var kb = KB_ROWS.map(function(rw){ return '<div class="wd-kr">' + rw.split("").map(function(k){ var wide = k === "⏎" || k === "⌫"; return '<button type="button" class="wd-k' + (wide ? " wide" : "") + (keyState[k] ? " " + keyState[k] : "") + '" data-gact="wd-k" data-k="' + k + '"' + (WD.over ? " disabled" : "") + '>' + (k === "⏎" ? "Enter" : k) + '</button>'; }).join("") + '</div>'; }).join("");
+    var status = WD.over ? (WD.won ? '<div class="gm-msg win">🎉 ' + esc(names()[WD.solver]) + ' got it in ' + WD.rows.length + '!</div>' : '<div class="gm-msg lose">The word was ' + WD.ans + '</div>') + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wd-next">Next puzzle →</button></div>' : '<div class="gm-turn">' + nm(WD.solver) + ' is solving</div>';
+    body(status + (WD.msg ? '<div class="gm-note">' + WD.msg + '</div>' : '') + '<div class="wd-g">' + grid + '</div>' + (WD.over ? '' : '<div class="wd-kb">' + kb + '</div>') +
+      '<p class="gm-note">🟩 right letter, right spot · 🟨 in the word, wrong spot · ⬜ not in the word. Any 5 letters count as a guess. Solve it for a point; turns alternate.</p>' + (WD.over ? '' : '<div class="gm-row"><button type="button" class="gm-link" data-gact="wd-swap">Switch who solves</button></div>'));
+  }
+  function wdKey(k){
+    if(!WD || WD.over) return;
+    WD.msg = "";
+    if(k === "⌫" || k === "BACKSPACE"){ WD.cur = WD.cur.slice(0, -1); }
+    else if(k === "⏎" || k === "ENTER"){
+      if(WD.cur.length < 5){ WD.msg = "Need 5 letters."; }
+      else { var s = wdScore(WD.cur, WD.ans); WD.rows.push({g: WD.cur, s: s}); var won = WD.cur === WD.ans; WD.cur = "";
+        if(won || WD.rows.length >= 6){ WD.over = true; WD.won = won; if(won){ addPt("wordle", WD.solver); refreshScore(); } sv("wd_turn", other(WD.solver)); } }
+    }
+    else if(/^[A-Z]$/.test(k) && WD.cur.length < 5) WD.cur += k;
+    wdDraw();
+  }
+  H.wordle = { start: function(){ frame("wordle", ""); wdNew(); }, act: function(a, b){ if(a === "wd-k") wdKey(b.getAttribute("data-k")); else if(a === "wd-next") wdNew(); else if(a === "wd-swap"){ sv("wd_turn", other(wdTurn())); WD.solver = wdTurn(); wdDraw(); } } };
+
   /* --------------------------------------------------------------- wiring */
   function onClick(e){
     var b = e.target.closest("[data-gact]"); if(!b || !root || !root.contains(b)) return;
@@ -3908,10 +4310,12 @@ loadAndBoot();
     var n = ld("names", {}); n[t.id === "gmNa" ? "a" : "b"] = t.value.trim(); sv("names", n);
   }
   function onKey(e){
-    if(cur !== "hangman" || !HM.st || HM.st.done) return;
     var tg = (e.target && e.target.tagName) || ""; if(/INPUT|TEXTAREA|SELECT/.test(tg)) return;
     if(!document.querySelector('section.panel.active[data-tab="games"]')) return;
-    var k = (e.key || "").toUpperCase(); if(k.length === 1 && k >= "A" && k <= "Z"){ e.preventDefault(); hmGuess(k); }
+    var k = (e.key || "").toUpperCase();
+    if(cur === "wordle" && WD && !WD.over){ if(k === "ENTER" || k === "BACKSPACE" || (k.length === 1 && k >= "A" && k <= "Z")){ e.preventDefault(); wdKey(k); } return; }
+    if(cur !== "hangman" || !HM.st || HM.st.done) return;
+    if(k.length === 1 && k >= "A" && k <= "Z"){ e.preventDefault(); hmGuess(k); }
   }
   function init(){
     root = document.getElementById("gamesRoot"); if(!root || root.__gm) return;
