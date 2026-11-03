@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-10-28",
+    "lastUpdated": "2026-11-03",
     "lastAppEdit": "2026-10-28 15:35 (edited in app)"
   },
   "segments": [
@@ -1536,11 +1536,11 @@
         },
         {
           "time": "7:30p",
-          "text": "Dinner (easygoing 1st night) — OPTIONS: Gifthüttli (1913 institution, 12 cordon bleus, open daily) · Löwenzorn (cozy Basel tavern, fondue/rösti) · Fischerstube/Ueli Bier (Kleinbasel brewpub, own beer)",
-          "status": "tentative",
+          "text": "Dinner: Gifthüttli — BOOKED, 2 ppl 7:30p (1913 institution, 12 kinds of cordon bleu; Schneidergasse 11, Old Town). Booked online 11/3, no card.",
+          "status": "booked",
           "lat": 47.5581578,
           "lng": 7.586852,
-          "place": "Dinner (Gifthüttli)"
+          "place": "Gifthüttli"
         }
       ],
       "sleepCity": "Basel"
@@ -1569,8 +1569,8 @@
         },
         {
           "time": "1:00p",
-          "text": "Lunch: Chez Yvonne winstub (Alsatian)",
-          "status": "confirmed",
+          "text": "Lunch: Chez Yvonne winstub (Alsatian) — BOOKED, 2 ppl 1:00p (10 Rue du Sanglier). Booked online 11/3 via Zenchef, no card.",
+          "status": "booked",
           "lat": 48.5827666,
           "lng": 7.7494911,
           "place": "Chez Yvonne"
@@ -1822,13 +1822,13 @@
           "place": "Bahnhofstrasse watches"
         },
         {
-          "time": "12:30p",
-          "text": "Old Town, Lindenhof, Lake Zurich + lunch",
+          "time": "12:00p",
+          "text": "Lunch: Oepfelchammer — BOOKED, 2 ppl 12:00 (Rindermarkt 12, Old Town; res #1445). Then Lindenhof terrace + Old Town lanes before leaving for Lindt ~1:45.",
           "detail": "Wander the Niederdorf/Old Town lanes and the Lindenhof terrace over the river, with lunch in town — Zürcher Geschnetzeltes (veal, cream & rösti) for Max; veg/fish plates plus a Sprüngli or Läderach chocolate stop for Nicole.",
-          "status": "tentative",
-          "lat": 47.3729161,
-          "lng": 8.5401756,
-          "place": "Lindenhof / Old Town"
+          "status": "booked",
+          "lat": 47.3727,
+          "lng": 8.5441,
+          "place": "Oepfelchammer"
         },
         {
           "time": "1:51p",
@@ -2293,7 +2293,7 @@
       "why": "Modern Lombard in the Fondazione Catella (early-1900s building) by Bosco Verticale/Gae Aulenti, Isola/Porta Nuova — walkable from hotel. Famous risotto al salto + seasonal Milanese. Chef Cesare Battisti. Via Gaetano de Castillia 28. <a href=\"https://www.ratana.it/\" target=\"_blank\">ratana.it ↗</a>",
       "price": "€80–110/2",
       "when": "11/16 8pm",
-      "booking": "TheFork / phone",
+      "booking": "Online (Restoo) shows NO tables for Mon 11/16 dinner (checked 11/3) — call +39 02 87128855 to ask about a waitlist/cancellation, or pick a walk-in alternative",
       "status": "to_book"
     },
     {
@@ -2372,9 +2372,9 @@
       "tier": "LOCAL",
       "why": "12 kinds of cordon bleu; 1913 institution (open daily)",
       "price": "CHF 75–100/2",
-      "when": "flex",
-      "booking": "phone",
-      "status": "to_book"
+      "when": "11/18 7:30 PM",
+      "booking": "BOOKED online 11/3 (aleno), 2 ppl, no card — confirmation to Gmail",
+      "status": "booked"
     },
     {
       "city": "Basel",
@@ -2412,9 +2412,9 @@
       "tier": "LOCAL",
       "why": "Iconic Alsatian winstub; choucroute, tarte flambée",
       "price": "€50–70/2",
-      "when": "11/19 lunch",
-      "booking": "phone",
-      "status": "to_book"
+      "when": "11/19 1:00 PM",
+      "booking": "BOOKED online 11/3 (Zenchef), 2 ppl, no card — confirmation to Gmail",
+      "status": "booked"
     },
     {
       "city": "Lucerne",
@@ -2442,9 +2442,9 @@
       "tier": "LOCAL",
       "why": "Zurich's oldest wine tavern (since 1802, Rindermarkt 12, Old Town) — Zürcher Geschnetzeltes, names carved into the beams. 4.6★. Closed Sun & Mon. (Replaces Wirtshaus Neumarkt — now Trattoria Neumarkt, Japanese-Italian.)",
       "price": "CHF 100–180/2",
-      "when": "flex",
-      "booking": "phone / online",
-      "status": "to_book"
+      "when": "11/24 12:00 PM",
+      "booking": "BOOKED online 11/3 (Foratable) — reservation #1445, 2 ppl, no card",
+      "status": "booked"
     },
     {
       "city": "Zurich",
