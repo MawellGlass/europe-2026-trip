@@ -1316,7 +1316,7 @@
         },
         {
           "time": "8:00p",
-          "text": "Dinner: Al Covo (Castello, ~5 min from hotel) — SWAP from Antiche Carampane (CLOSED Sundays; 11/15 is a Sunday). Al Covo normally open Sun (closed Wed/Thu). Book by PHONE — old website is defunct. Backup: Trattoria alla Madonna ☎ +39 041 522 3824 (open Sun, near Rialto). ⚠️ reconfirm the Sunday date",
+          "text": "Dinner: Al Covo (Castello, ~5 min from hotel) — SWAP from Antiche Carampane (CLOSED Sundays; 11/15 is a Sunday). Al Covo normally open Sun (closed Wed/Thu). Book by PHONE — old website is defunct. Backup: Trattoria alla Madonna ☎ +39 041 522 3824 (open Sun, near Rialto). ⚠️ reconfirm the Sunday date ✅ BACKUP BOOKED: Al Giardinetto da Severino (Ruga Giuffa, ~3 min from the hotel) 8:30p — keep unless Al Covo confirms by phone, then cancel one.",
           "status": "to_book",
           "lat": 45.4341254,
           "lng": 12.3475727,
@@ -1412,11 +1412,11 @@
         },
         {
           "time": "8:00p",
-          "text": "Dinner: Ratanà — modern Lombard (risotto al salto), Via Gaetano de Castillia 28, ~10 min walk from hotel. Low-key after the Venice return. ☎ +39 02 87128855",
-          "status": "book",
-          "lat": 45.4857844,
-          "lng": 9.192789,
-          "place": "Ratanà"
+          "text": "Dinner: Osteria del Treno — BOOKED 8:00p (Via San Gregorio 46, ~5 min from the hotel; Slow Food Milanese classics). Booked 11/3 as backup because Ratanà is full online — if a Ratanà call (☎ +39 02 87128855) gets a table, cancel one.",
+          "status": "booked",
+          "lat": 45.4829,
+          "lng": 9.2044,
+          "place": "Osteria del Treno"
         }
       ],
       "sleepCity": "Milan"
@@ -1677,7 +1677,7 @@
         },
         {
           "time": "1:00p",
-          "text": "Lunch: Wirtshaus Galliker",
+          "text": "Lunch: Wirtshaus Galliker (phone-only, ☎ 041 240 10 02 — call to book 1:00p). ✅ BACKUP BOOKED: Burgerstube at Hotel Wilden Mann 12:30p (res #3684) — keep unless Galliker confirms, then cancel one.",
           "status": "confirmed",
           "lat": 47.0498,
           "lng": 8.301,
@@ -2701,6 +2701,36 @@
       "when": "11/26 ~4:00pm",
       "booking": "walk-in",
       "status": "walk_up"
+    },
+    {
+      "city": "Venice",
+      "name": "Al Giardinetto da Severino (BACKUP)",
+      "tier": "BACKUP",
+      "why": "Safety-net booking for Sun 11/15 in case Al Covo (phone-only) can't be reached. Historic Castello trattoria (since 1949) with a garden, Ruga Giuffa 4928 — ~3 min from Ca' dei Conti. Venetian seafood. Closed Thu. ☎ +39 041 528 5332. If Al Covo confirms, cancel this one via the CoverManager email.",
+      "price": "€80–110/2",
+      "when": "11/15 8:30 PM",
+      "booking": "BOOKED online 11/3 (CoverManager), 2 ppl, no card — confirmation to Gmail",
+      "status": "booked"
+    },
+    {
+      "city": "Milan",
+      "name": "Osteria del Treno (BACKUP)",
+      "tier": "BACKUP",
+      "why": "Booked because Ratanà is full online for Mon 11/16. Slow Food osteria in a 1900s railway-workers' club, Via San Gregorio 46 — ~5 min walk from 43 Station Hotel. Classic Milanese (risotto, cotoletta, mondeghili). ☎ 02 670 0479. If Ratanà comes through by phone, cancel via the confirmation email.",
+      "price": "€60–90/2",
+      "when": "11/16 8:00 PM",
+      "booking": "BOOKED online 11/3 (Superb), 2 ppl, no card — confirmation to Gmail",
+      "status": "booked"
+    },
+    {
+      "city": "Lucerne",
+      "name": "Burgerstube, Hotel Wilden Mann (BACKUP)",
+      "tier": "BACKUP",
+      "why": "Safety-net lunch for Sat 11/21 in case Galliker (phone-only) can't be reached. Rustic Old Town Stube serving Swiss classics (Luzerner Chügelipastete, Geschnetzeltes, rösti). Bahnhofstrasse 30. Res #3684. If Galliker confirms, cancel via the Foratable link.",
+      "price": "CHF 70–110/2",
+      "when": "11/21 12:30 PM",
+      "booking": "BOOKED online 11/3 (Foratable) — reservation #3684, 2 ppl, no card",
+      "status": "booked"
     }
   ],
   "shopping": [
