@@ -2201,8 +2201,8 @@
       "why": "Benchmark modern Niçoise (Tue–Thu)",
       "price": "€70–90/2",
       "when": "flex",
-      "booking": "phone",
-      "status": "to_book"
+      "booking": "Optional — no date assigned. Phone only (old website is dead). Nice dinners on 11/11 and 11/12 are left flexible if you want to try it.",
+      "status": "optional"
     },
     {
       "city": "Nice",
@@ -2293,8 +2293,8 @@
       "why": "Modern Lombard in the Fondazione Catella (early-1900s building) by Bosco Verticale/Gae Aulenti, Isola/Porta Nuova — walkable from hotel. Famous risotto al salto + seasonal Milanese. Chef Cesare Battisti. Via Gaetano de Castillia 28. <a href=\"https://www.ratana.it/\" target=\"_blank\">ratana.it ↗</a>",
       "price": "€80–110/2",
       "when": "11/16 8pm",
-      "booking": "Online (Restoo) shows NO tables for Mon 11/16 dinner (checked 11/3) — call +39 02 87128855 to ask about a waitlist/cancellation, or pick a walk-in alternative",
-      "status": "to_book"
+      "booking": "Backup booked: Osteria del Treno, 8:00 PM. Ratanà was full online 11/3 — call ☎ +39 02 87128855 or re-check ratana.it for a cancellation; if it opens up, book it and cancel the backup.",
+      "status": "upgrade"
     },
     {
       "city": "Milan",
@@ -2313,8 +2313,8 @@
       "why": "1933 classic; ossobuco + risotto alla milanese",
       "price": "€55–70/2",
       "when": "flex",
-      "booking": "phone",
-      "status": "to_book"
+      "booking": "Optional — no open Milan dinner slot (11/13–11/17 all set). Phone only; website is dead.",
+      "status": "optional"
     },
     {
       "city": "Milan",
@@ -2343,8 +2343,8 @@
       "why": "Authentic Castello seafood ~5 min from Ca' dei Conti — the Sunday-open replacement for Antiche Carampane, which is CLOSED Sundays (11/15 is a Sunday). Al Covo closed Wed/Thu, normally open Sun. Book by PHONE — the old alcovo.com is defunct. Backup: Trattoria alla Madonna, San Polo, ☎ +39 041 522 3824, open Sun; or CoVino (Castello, tiny). Reconfirm the exact Sunday.",
       "price": "€80–110/2",
       "when": "11/15 8pm",
-      "booking": "phone — reconfirm Sun 11/15",
-      "status": "to_book"
+      "booking": "Backup booked: Al Giardinetto da Severino, 8:30 PM. Still worth a call (phone only) — if Al Covo has a table, book it and cancel the backup.",
+      "status": "upgrade"
     },
     {
       "city": "Venice",
@@ -2362,9 +2362,9 @@
       "tier": "LOCAL",
       "why": "Family fishes the lake; reliably open",
       "price": "€40–70/2",
-      "when": "11/17 lunch",
-      "booking": "phone",
-      "status": "to_book"
+      "when": "—",
+      "booking": "Dropped 11/3 — the 11/17 lunch slot is now Osteria Magenta in Monza.",
+      "status": "dropped"
     },
     {
       "city": "Basel",
@@ -2423,8 +2423,8 @@
       "why": "150-yr family; veal Geschnetzeltes, Felchen",
       "price": "CHF 55–75/2",
       "when": "11/21 lunch",
-      "booking": "phone",
-      "status": "to_book"
+      "booking": "Backup booked: Burgerstube at Hotel Wilden Mann, 12:30 PM (#3684). Galliker is phone only (☎ 041 240 10 02) — if they have a table, book it and cancel the backup.",
+      "status": "upgrade"
     },
     {
       "city": "Zurich",
