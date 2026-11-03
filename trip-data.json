@@ -131,7 +131,7 @@
       "missCost": {
         "risk": "prepaid",
         "label": "Paid",
-        "note": "Aer Lingus/AA. ZRH→DUB on 11/26 and DUB→PHL on 11/27; US preclearance in Dublin.",
+        "note": "Aer Lingus/AA. ZRH→DUB on 11/26 and DUB→PHL on 11/27; US preclearance in Dublin. Watch: Irish public-sector strikes (2nd one 11/12, more possible) — nothing announced for Dublin Airport/Aer Lingus as of 11/3.",
         "sort": "2026-11-26"
       }
     }
@@ -724,7 +724,7 @@
           "time": "2:40p",
           "text": "LHR → MRS (land 5:45p) · ⚠️ Marseille protest heads-up",
           "status": "booked",
-          "detail": "Marseille has had Saturday downtown protest marches, with strikes/blockades planned for Fri 11/6 (gathering bans and an under-18 curfew are in force). Check BA flight status and local news that morning. If a march is near the Vieux Port tonight, taxi to the hotel and keep Bar de la Marine flexible. Auto-rechecked Wed 11/4."
+          "detail": "Updated 11/3: France's national strike day is Thu 11/5 (you're still home). 'Gilets jaunes Acte IV' calls for blockades Fri 11/6 and marches across France Sat 11/7 — no Marseille route published yet. Last Saturday's (10/31) Marseille march started ~2pm at Les Réformés (top of La Canebière) with clashes and transit disruption. Check BA status + Marseille news that morning; if marches are near La Canebière/Vieux-Port in the evening, taxi straight to the hotel and keep Bar de la Marine flexible. Auto-rechecked Wed 11/4."
         },
         {
           "time": "7:30p",
@@ -839,7 +839,7 @@
       "items": [
         {
           "time": "11:30a",
-          "text": "🛍 Checkout (11a) → browse Rue Saint-Ferréol pedestrian shops (open Mon ~10a — the retail that's shut Sun), swing by Maison Empereur (France's oldest household/hardware emporium, est. 1827) and the Marché des Capucins food market in Noailles, en route to Gare St-Charles",
+          "text": "🛍 Checkout (11a) → browse Rue Saint-Ferréol pedestrian shops (open Mon ~10a — the retail that's shut Sun), swing by Maison Empereur (France's oldest household/hardware emporium, est. 1827) and the Marché des Capucins food market in Noailles, en route to the tram: T1 from Noailles → La Blancarde (~9 min) for the 13:04 train — NOT St-Charles this week (no trains St-Charles↔Blancarde 11/9–11/15 noon; Metro M1 also connects).",
           "status": "confirmed",
           "lat": 43.2947867,
           "lng": 5.3775943,
@@ -847,7 +847,7 @@
         },
         {
           "time": "1:04p",
-          "text": "🚆 ZOU! TER Marseille BLANCARDE 13:04 → Nice Ville 15:38 (direct, 2h34) — ⚠️ departs La Blancarde, NOT St-Charles, the week of 11/9 (Av. des Chartreux rail-bridge works). Get there by tram T1 from Noailles (~9 min; Noailles is ~8 min walk from the hotel) or a short taxi. Pay on the day, €41.90 pp. Other direct trains: 10:02→12:38 · 14:04→16:40 · 17:04→19:37 (12:11 and 15:15 are slower, ~2h55). (timetables checked 10/23 — re-check the day before)",
+          "text": "🚆 ZOU! TER Marseille BLANCARDE 13:04 → Nice Ville 15:38 (direct, 2h34) — ⚠️ departs La Blancarde, NOT St-Charles, the week of 11/9 (Av. des Chartreux rail-bridge works). Get there by tram T1 from Noailles (~9 min; Noailles is ~8 min walk from the hotel) or a short taxi. Pay on the day, €41.90 pp. Other direct trains: 10:02→12:38 · 14:04→16:40 · 17:04→19:37 (12:11 and 15:15 are slower, ~2h55). (timetables checked 10/23 — re-check the day before) ✅ Works reconfirmed 11/3 (La Provence): St-Charles↔Blancarde closed Mon 11/9 → Sun 11/15 noon; Nice/Toulon TERs start at Blancarde.",
           "status": "payday"
         },
         {
@@ -1153,7 +1153,7 @@
         {
           "time": "12:28p",
           "status": "booked",
-          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder.",
+          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder. ⚠️ Trenitalia has planned works on the Genova–Milano lines on some days 11/7–22 (regional changes/partial cancellations) — check the Trenitalia app with ticket code 2987179016 the day before.",
           "missCost": {
             "risk": "prepaid",
             "label": "Paid €25.70",
@@ -1171,7 +1171,7 @@
         },
         {
           "time": "7:45p",
-          "text": "Dinner: Domò Sushi (AYCE, Via San Marco 40) — BOOKED, 2 pax · ⚠️ Milan ATM strike",
+          "text": "Dinner: Domò Sushi (AYCE, Via San Marco 40) — BOOKED, 2 pax · ⚠️ Milan ATM strike — CONFIRMED 24h ATM strike (AL-COBAS): metro/tram/bus likely only start of service–8:45 and ~15:00–18:00 (official bands TBA). Trains unaffected; hotel is a walk from Centrale. For Brera: walk ~30 min or taxi (book ahead — strike nights are busy).",
           "status": "booked",
           "lat": 45.4782394,
           "lng": 9.1890786,
