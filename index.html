@@ -935,6 +935,103 @@ html[data-theme="dark"] .bs-c.ship{background:#94a3b8;color:#0f172a;}
 .wd-k{flex:1 1 0;max-width:40px;min-height:50px;border-radius:7px;border:0;background:var(--cp-surface-soft);color:var(--cp-text);font:inherit;font-weight:800;font-size:.95rem;cursor:pointer;padding:0;touch-action:manipulation;}
 .wd-k.wide{max-width:62px;flex:1.5 1 0;font-size:.75rem;}
 .wd-k.g{background:#16a34a;color:#fff;} .wd-k.y{background:#ca8a04;color:#fff;} .wd-k.x{background:#6b7280;color:#fff;}
+/* how to play */
+.gm-how{margin:0 0 12px;border:1px solid var(--cp-border);border-radius:12px;background:var(--cp-surface);}
+.gm-how summary{cursor:pointer;padding:10px 14px;font-weight:700;font-size:.92rem;list-style:none;color:var(--cp-link);}
+.gm-how summary::-webkit-details-marker{display:none;}
+.gm-how[open] summary{border-bottom:1px solid var(--cp-border);}
+.gm-how ol{margin:0;padding:10px 14px 12px 32px;font-size:.88rem;line-height:1.5;display:grid;gap:6px;}
+/* heads up */
+.hu-ov{position:fixed;inset:0;z-index:9999;background:var(--cp-bg);display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.hu-count{font-size:8rem;font-weight:900;color:var(--cp-accent);line-height:1;}
+.hu-hint{font-size:1.2rem;color:var(--cp-text-muted);margin-top:10px;}
+.hu-word{position:relative;z-index:1;pointer-events:none;font-size:clamp(2.2rem,11vw,6rem);font-weight:900;text-align:center;padding:0 6vw;line-height:1.1;color:var(--cp-text);}
+.hu-word.ok{animation:huok .35s;} .hu-word.pass{animation:hupass .35s;}
+@keyframes huok{from{color:#16a34a;transform:scale(1.08);}to{color:var(--cp-text);transform:none;}}
+@keyframes hupass{from{color:#dc2626;transform:translateX(-10px);}to{color:var(--cp-text);transform:none;}}
+.hu-zone{position:absolute;top:0;bottom:0;width:50%;border:0;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6vh;font:inherit;font-weight:800;font-size:1rem;letter-spacing:.06em;touch-action:manipulation;}
+.hu-zone.pass{left:0;background:rgba(220,38,38,.10);color:#dc2626;}
+.hu-zone.ok{right:0;background:rgba(22,163,74,.12);color:#16a34a;}
+.hu-zone:active{filter:brightness(.92);}
+.hu-clock{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:2;font-size:1.6rem;font-weight:900;font-variant-numeric:tabular-nums;pointer-events:none;}
+.hu-clock.low{color:var(--cp-danger);}
+.hu-x{position:absolute;top:10px;right:12px;z-index:3;width:44px;height:44px;border-radius:50%;border:1px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-text);font-size:1.1rem;cursor:pointer;}
+/* word grid */
+.wg-g{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:300px;margin:12px auto;}
+.wg-t{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--cp-surface);border:2px solid var(--cp-border);font-size:2rem;font-weight:900;color:var(--cp-text);box-shadow:var(--cp-shadow);}
+.wg-step{display:flex;align-items:center;gap:8px;justify-content:center;margin:8px 0;}
+.wg-step span{min-width:70px;font-weight:800;}
+.wg-step b{min-width:44px;text-align:center;font-size:1.4rem;}
+.wg-step .gm-btn{min-width:48px;padding:10px 12px;}
+/* city chain */
+.cc-in{display:flex;gap:8px;align-items:center;}
+.cc-in .gm-in{flex:1;}
+.cc-chain{font-size:.88rem;color:var(--cp-text-muted);text-align:center;margin:10px 0;line-height:1.6;}
+/* checkers */
+.ck-b{display:grid;grid-template-columns:repeat(8,1fr);max-width:380px;margin:10px auto;border:4px solid #78350f;border-radius:6px;overflow:hidden;}
+.ck-c{aspect-ratio:1;border:0;padding:0;background:#fde68a;position:relative;cursor:pointer;touch-action:manipulation;}
+.ck-c.dk{background:#92400e;}
+.ck-c:disabled{cursor:default;}
+.ck-c i{position:absolute;inset:12%;border-radius:50%;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:1.05rem;box-shadow:0 2px 0 rgba(0,0,0,.35);}
+.ck-c i.a{background:#e11d48;color:#fde68a;} .ck-c i.b{background:#111827;color:#fbbf24;}
+.ck-c.sel{box-shadow:inset 0 0 0 3px #facc15;}
+.ck-c.tg::after{content:"";position:absolute;left:50%;top:50%;width:30%;height:30%;margin:-15% 0 0 -15%;border-radius:50%;background:rgba(250,204,21,.85);}
+.ck-c.last{box-shadow:inset 0 0 0 2px rgba(255,255,255,.45);}
+.ck-dot{display:inline-block;width:.8em;height:.8em;border-radius:50%;margin-right:5px;vertical-align:-1px;}
+.ck-dot.a{background:#e11d48;} .ck-dot.b{background:#111827;}
+.ck-dot.gka{background:#111;} .ck-dot.gkb{background:#fff;border:1px solid #999;}
+/* gomoku */
+.gk-b{display:grid;max-width:390px;margin:10px auto;background:#e8c48a;border-radius:8px;padding:4px;}
+.gk-c{aspect-ratio:1;border:0;padding:0;position:relative;cursor:pointer;touch-action:manipulation;background:linear-gradient(#7c5a2a,#7c5a2a) center/1px 100% no-repeat,linear-gradient(#7c5a2a,#7c5a2a) center/100% 1px no-repeat;}
+.gk-c.t{background-size:1px 50%,100% 1px;background-position:center bottom,center;}
+.gk-c.bt{background-size:1px 50%,100% 1px;background-position:center top,center;}
+.gk-c.l{background-size:1px 100%,50% 1px;background-position:center,right center;}
+.gk-c.rt{background-size:1px 100%,50% 1px;background-position:center,left center;}
+.gk-c.t.l{background-size:1px 50%,50% 1px;background-position:center bottom,right center;}
+.gk-c.t.rt{background-size:1px 50%,50% 1px;background-position:center bottom,left center;}
+.gk-c.bt.l{background-size:1px 50%,50% 1px;background-position:center top,right center;}
+.gk-c.bt.rt{background-size:1px 50%,50% 1px;background-position:center top,left center;}
+.gk-c:disabled{cursor:default;}
+.gk-c i{position:absolute;inset:8%;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,.45);}
+.gk-c i.a{background:#111;} .gk-c i.b{background:#f8fafc;}
+.gk-c i.last{box-shadow:0 0 0 2px #e11d48;}
+.gk-c i.w{box-shadow:0 0 0 3px #16a34a;}
+/* yahtzee */
+.yz-dice{display:flex;gap:8px;justify-content:center;margin:6px 0;}
+.yz-d{width:56px;height:56px;font-size:2.6rem;line-height:1;border-radius:12px;border:2px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-text);cursor:pointer;padding:0;touch-action:manipulation;}
+.yz-d.held{border-color:var(--cp-accent);background:var(--cp-accent-soft);transform:translateY(-4px);}
+.yz-d:disabled{cursor:default;}
+.yz-t{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:8px;}
+.yz-t th,.yz-t td{padding:5px 8px;border-bottom:1px solid var(--cp-border);text-align:center;}
+.yz-t td:first-child,.yz-t th:first-child{text-align:left;}
+.yz-t .yz-v{font-weight:800;}
+.yz-p{font:inherit;min-width:46px;min-height:34px;border-radius:8px;border:1px dashed var(--cp-accent);background:var(--cp-accent-soft);color:var(--cp-text-muted);cursor:pointer;}
+.yz-sub td{color:var(--cp-text-muted);font-size:.82rem;}
+.yz-tot td{font-weight:900;font-size:1rem;border-bottom:0;}
+/* mastermind */
+.ms-board{display:grid;gap:6px;max-width:320px;margin:8px auto;}
+.ms-row{display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:10px;background:var(--cp-surface);border:1px solid var(--cp-border);}
+.ms-row.cur{border-color:var(--cp-accent);justify-content:flex-start;max-width:320px;margin:0 auto;}
+.ms-row.code{background:var(--cp-accent-soft);}
+.ms-slot{width:38px;height:38px;border-radius:50%;background:var(--cp-surface-soft);display:flex;align-items:center;justify-content:center;font-size:1.6rem;}
+.ms-fb{margin-left:auto;font-size:.85rem;letter-spacing:1px;color:var(--cp-text-muted);}
+.ms-pal{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0;}
+.ms-pc{width:48px;height:48px;border-radius:50%;border:1px solid var(--cp-border);background:var(--cp-surface);font-size:1.6rem;cursor:pointer;padding:0;touch-action:manipulation;}
+.ms-pc.del{font-size:1.1rem;color:var(--cp-text);}
+/* sudoku */
+.su-g{display:grid;grid-template-columns:repeat(9,1fr);max-width:380px;margin:8px auto;border:2px solid var(--cp-text);border-radius:4px;overflow:hidden;}
+.su-c{aspect-ratio:1;border:0;border-right:1px solid var(--cp-border);border-bottom:1px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-link);font:inherit;font-size:1.25rem;font-weight:700;padding:0;cursor:pointer;touch-action:manipulation;}
+.su-c.gv{color:var(--cp-text);font-weight:800;}
+.su-c.br{border-right:2px solid var(--cp-text);}
+.su-c.bb{border-bottom:2px solid var(--cp-text);}
+.su-c.rel{background:var(--cp-surface-soft);}
+.su-c.same{background:var(--cp-accent-soft);}
+.su-c.sel{background:var(--cp-accent-soft);box-shadow:inset 0 0 0 2px var(--cp-accent);}
+.su-c.bad{color:var(--cp-danger);background:rgba(220,38,38,.12);}
+.su-pad{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-width:380px;margin:10px auto;}
+.su-n{min-height:48px;border-radius:10px;border:1px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-text);font:inherit;font-weight:800;font-size:1.25rem;cursor:pointer;touch-action:manipulation;}
+.su-n.full{opacity:.35;}
+.su-tog{font-size:.88rem;color:var(--cp-text-muted);display:flex;gap:6px;align-items:center;}
 
 
 #scoutGate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--cp-bg);}
@@ -3523,10 +3620,48 @@ loadAndBoot();
     {id:"memory", ic:"🃏", t:"Memory Match", d:"Flip two cards and find the trip pairs.", sc:1, g:"l"},
     {id:"pig", ic:"🎲", t:"Pig", d:"Roll as long as you dare; a 1 wipes your turn.", sc:1, g:"l"},
     {id:"trivia", ic:"🧠", t:"Trip Trivia", d:"Questions about the places on this trip.", sc:1, g:"t"},
-    {id:"wyr", ic:"💬", t:"Would You Rather & Talk Cards", d:"Prompts for trains and dinners.", sc:0, g:"t"}
+    {id:"wyr", ic:"💬", t:"Would You Rather & Talk Cards", d:"Prompts for trains and dinners.", sc:0, g:"t"},
+    {id:"headsup", ic:"📱", t:"Heads Up", d:"Phone on your forehead; your partner gives clues or acts.", sc:1, g:"t"},
+    {id:"truths", ic:"🤥", t:"Two Truths & a Lie", d:"Spot the lie in each other's stories.", sc:1, g:"t"},
+    {id:"wordgrid", ic:"🔠", t:"Word Grid", d:"Boggle-style: find words in a 4×4 grid before time's up.", sc:1, g:"w"},
+    {id:"citychain", ic:"🌍", t:"City Chain", d:"Name a place starting with the last letter. Quick!", sc:1, g:"w"},
+    {id:"checkers", ic:"🏁", t:"Checkers", d:"Classic draughts with forced jumps and kings.", sc:1, g:"b"},
+    {id:"gomoku", ic:"⚪", t:"Gomoku", d:"Five in a row on a big board.", sc:1, g:"b"},
+    {id:"yahtzee", ic:"🎯", t:"Yahtzee", d:"Five dice, three rolls, 13 boxes to fill.", sc:1, g:"l"},
+    {id:"mastermind", ic:"🔐", t:"Mastermind", d:"Crack the secret color code in 10 tries.", sc:1, g:"l"},
+    {id:"sudoku", ic:"🧩", t:"Sudoku", d:"Solo or together; three difficulty levels.", sc:0, g:"l"}
   ];
-  var GROUPS = [["w","✏️ Word & guessing"],["b","♟️ Board games"],["l","🍀 Luck & memory"],["t","💬 Trivia & talk"]];
+  var GROUPS = [["w","✏️ Word & guessing"],["b","♟️ Board games"],["l","🎲 Dice, luck & puzzles"],["t","🎉 Party, trivia & talk"]];
   function gById(id){ for(var i = 0; i < GAMES.length; i++) if(GAMES[i].id === id) return GAMES[i]; return null; }
+
+  /* ----------------------------------------------------------- HOW TO PLAY */
+  var HOW = {
+    hangman: ["<b>Goal:</b> guess the hidden word before the drawing is complete (7 wrong guesses and you're out).","Tap <b>Pick a word for me</b> for a random trip word with a category hint, or let the other player <b>set a word</b> in secret and then hand you the phone.","Tap letters to guess (or type on a keyboard). Accents don't matter: E matches É, È and Ê.","<b>Points:</b> the guesser scores 1 for solving it. If a word you set isn't solved, you score 1. The guesser alternates every round."],
+    wordle: ["<b>Goal:</b> find the secret 5-letter word in 6 guesses.","Type any 5 letters and tap <b>Enter</b>.","🟩 = right letter, right spot · 🟨 = in the word but in a different spot · ⬜ = not in the word. The keyboard colors keep track for you.","Words are trip-themed (food, places, travel, weather…).","<b>Points:</b> solve it and you score 1. You take turns solving puzzles; tap <i>Switch who solves</i> if needed."],
+    draw: ["<b>Goal:</b> draw the secret word well enough that your partner guesses it.","The artist taps <b>Give me a word</b> and peeks at it privately, then taps <b>Start drawing</b>.","Draw with your finger. Pick colors, use 🧽 to erase, ↶ to undo, 🗑 to clear, 👁 to peek at the word again. No letters or numbers!","The guesser shouts guesses out loud. Tap <b>guessed it</b> when they get it, or <b>Give up</b>.","<b>Points:</b> the artist scores 1 when it's guessed. Roles swap every round. The timer is optional."],
+    cats: ["<b>Goal:</b> think of an answer for each category that starts with the letter shown.","Both of you write answers at the same time: on paper or in the Notes app on your own phones.","Tap <b>Start the clock</b>. When the buzzer goes (or you tap Stop early), read your answers out loud.","Tap a player's name for every answer that counts: it must start with the letter, fit the category, and be different from the other player's answer.","<b>Points:</b> 1 per valid answer. Change the timer or number of categories with the buttons at the top."],
+    q20: ["<b>Goal:</b> guess what your partner is thinking of in 20 yes/no questions or fewer.","The thinker either gets a secret from the phone (trip places, food, landmarks, travel things) or thinks of their own.","The guesser asks yes/no questions out loud; tap Yes / No / Sort of after each answer to count it.","<b>Points:</b> guessed it = guesser scores 1. Out of questions or give up = thinker scores 1. The thinker alternates."],
+    battle: ["<b>Goal:</b> sink all 5 of your partner's ships before they sink yours.","Each player takes the phone in turn to see their fleet (Cruise ship 4, Ferry 3, Yacht 3, Vaporetto 2, Gondola 2). Tap <b>Shuffle</b> until you like it, then <b>Ready</b>. The other player looks away!","Every turn starts with a <b>Pass the phone</b> screen so you never see each other's ships.","Tap a square in your partner's waters to fire: 🌊 miss, 🔥 hit, dark red = ship sunk. One shot per turn, then pass the phone.","Your own fleet (and where you've been hit) is shown underneath.","<b>Points:</b> first to sink the whole fleet scores 1."],
+    c4: ["<b>Goal:</b> get four of your discs in a row: across, up/down or diagonally.","Tap any column to drop a disc; it falls to the lowest empty spot.","Players alternate turns. The player who starts alternates each game.","<b>Points:</b> 1 for the win. A full board with no four-in-a-row is a draw."],
+    reversi: ["<b>Goal:</b> have more discs of your color when the board is full (or nobody can move).","Black moves first. Place a disc so that one or more of the other color's discs are sandwiched in a straight line (across, up/down or diagonal) between your new disc and one of yours. All the sandwiched discs flip to your color.","Small dots show where you're allowed to play. If you have no legal move, your turn is skipped.","Play each other or <b>vs phone</b> (you're black).","<b>Points:</b> 1 for the win in 2-player mode."],
+    mancala: ["<b>Goal:</b> collect the most seeds in your store (the big pit on your right).","On your turn, tap one of your six pits. All its seeds are dropped one at a time into the following pits, counter-clockwise, including your own store but skipping your partner's.","<b>Free turn:</b> if your last seed lands in your own store, you go again.","<b>Capture:</b> if your last seed lands in an empty pit on your side, you take it plus all the seeds directly opposite.","When either side is completely empty, the game ends and each player keeps the seeds left on their own side.","<b>Points:</b> 1 for the win."],
+    dots: ["<b>Goal:</b> own the most boxes.","Take turns tapping the gap between two neighboring dots to draw a line.","If your line completes the fourth side of a box, you claim it (your initial appears) and you <b>go again</b>.","Careful: drawing the third side of a box hands your partner a free box!","<b>Points:</b> most boxes wins 1. Try 3×3 for a quick game, 5×5 for a long one."],
+    ttt: ["<b>Goal:</b> get three in a row: across, down or diagonally.","X always moves first; the starting player alternates each game.","Play each other, or the phone on easy or hard (on hard, the phone never loses).","<b>Points:</b> 1 for a 2-player win. Games against the phone have their own record and don't count toward the trip score."],
+    memory: ["<b>Goal:</b> find the most matching pairs.","On your turn, flip two cards. If they match, you keep them and <b>go again</b>.","If they don't match, they flip back over after a moment and it's your partner's turn. Remember where things were!","<b>Points:</b> most pairs wins 1. Choose 16, 20 or 24 cards."],
+    pig: ["<b>Goal:</b> be the first to reach the target score (30, 50 or 100).","On your turn, roll as many times as you like. Each roll adds to your turn total.","Tap <b>Hold</b> to bank your turn total and pass the phone.","Roll a ⚀ (one) and you lose everything you rolled that turn: your turn is over.","<b>Points:</b> first to the target scores 1. The tension is deciding when to stop!"],
+    trivia: ["<b>Goal:</b> answer more questions right than your partner.","Each round is 10 questions; you take turns, one question each.","Tap your answer. The right one turns green and there's sometimes a fun fact.","<b>Points:</b> 1 per correct answer. Questions don't repeat until you've seen all of them."],
+    wyr: ["Not a competition: just conversation starters for trains, cafés and dinners.","<b>This or that</b> cards: both answer and explain why. <b>Talk cards</b>: take turns answering.","Tap ☆ to save favorites; see them in the ★ Favorites tab.","Cards don't repeat until you've been through all of them."],
+    headsup: ["<b>Goal:</b> guess as many words as you can before time runs out.","The <b>guesser</b> holds the phone up on their forehead, screen facing the partner, without looking at it.","The partner gives clues, acts it out (for the 🎭 deck) or hums, but can't say the word itself.","The guesser taps the <b>right half</b> of the screen for ✅ got it, or the <b>left half</b> to ⏭ pass.","When time's up you'll see every word with ✅/⏭. Then swap roles.","<b>Points:</b> 1 per correct word for the guesser. Pick a deck and a time at the start."],
+    truths: ["<b>Goal:</b> fool your partner, or catch their lie.","The phone gives the teller a topic. They say three statements about it: two true, one false, in any order.","The guesser asks follow-up questions if they want, then names the lie.","<b>Points:</b> caught the lie = guesser scores 1. Fooled them = teller scores 1. The teller alternates."],
+    wordgrid: ["<b>Goal:</b> find more words than your partner in the letter grid.","Tap <b>Start</b>. Both of you write words on paper or your own phone until the timer ends.","Words must be 3+ letters, made from letters that touch (sideways, up/down or diagonally), without using the same square twice in one word. \"Qu\" counts as two letters.","When time's up, read your lists. Cross out any word you both found.","Scoring per word: 3–4 letters = 1, 5 = 2, 6 = 3, 7 = 5, 8+ = 11. Enter each player's total.","<b>Points:</b> higher total wins 1."],
+    citychain: ["<b>Goal:</b> don't get stuck!","The first player names something in the chosen category starting with the letter shown (e.g. M → <i>Milan</i>).","Type it and tap <b>Go</b>. The next player must start with the <b>last letter</b> of that word (Milan → N → <i>Nice</i> → E…). Hard last letters Q, X and Z are skipped; the letter before is used instead.","No repeats, and you have to answer before your timer runs out.","<b>Points:</b> if your time runs out, your partner scores 1. Honor system for spelling!"],
+    checkers: ["<b>Goal:</b> capture all of your partner's pieces or leave them with no move.","Tap one of your pieces, then a highlighted square. Regular pieces move diagonally forward one square.","<b>Jump</b> over a neighboring enemy piece to an empty square behind it to capture it. If you can jump, you <b>must</b>. If you land where you can jump again, you must keep jumping.","Reach the far row and your piece becomes a <b>king</b> ♛, which can move and jump backwards too. Being crowned ends your turn.","<b>Points:</b> 1 for the win. Red starts at the bottom; the first player alternates each game."],
+    gomoku: ["<b>Goal:</b> be the first to get five (or more) stones in a row: across, down or diagonally.","Take turns tapping an empty point to place a stone.","Think defensively too: an open row of three or four needs blocking!","<b>Points:</b> 1 for the win. The player who starts alternates each game."],
+    yahtzee: ["<b>Goal:</b> score the most points over 13 turns each.","On your turn you get up to 3 rolls. After each roll, tap dice to <b>hold</b> them (they stay put) and re-roll the rest.","Then tap an empty box in your column to score it. Grey numbers show what each box would score. You must fill one box every turn, even with 0.","<b>Upper section:</b> add up just that number (e.g. Fours = total of the 4s). Reach 63+ for a 35-point bonus.","<b>Lower:</b> 3/4 of a kind = sum of all dice · Full house (3+2) = 25 · Small straight (4 in a row) = 30 · Large straight (5 in a row) = 40 · Yahtzee (5 the same) = 50 · Chance = sum of all dice.","Extra Yahtzees score a 100-point bonus and can be used as a full house or straight.","<b>Points:</b> higher grand total wins 1."],
+    mastermind: ["<b>Goal:</b> crack the secret code of 4 colors in 10 guesses or fewer.","Use a random code from the phone, or let your partner set one in secret. Colors can repeat.","Tap colors to fill your guess, then <b>Check</b>.","Feedback: ⚫ = right color in the right spot · ⚪ = right color, wrong spot. The feedback doesn't say which peg it refers to!","<b>Points:</b> crack it and the solver scores 1. If a code you set isn't cracked, you score 1. The solver alternates."],
+    sudoku: ["<b>Goal:</b> fill the grid so that every row, every column and every 3×3 box contains the digits 1–9 exactly once.","Tap a cell, then tap a number. ⌫ clears it. Grey numbers are part of the puzzle and can't be changed.","Turn on <b>Show mistakes</b> if you want wrong numbers highlighted in red.","Every puzzle has exactly one solution. Your puzzle is saved, so you can come back to it. Solve it together or take turns."]
+  };
+  function howHtml(id){ var h = HOW[id]; if(!h) return ""; return '<details class="gm-how"><summary>❓ How to play</summary><ol>' + h.map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ol></details>'; }
 
   var root = null, cur = null, ticks = [], H = {};
   function stopTicks(){ ticks.forEach(function(t){ clearInterval(t); clearTimeout(t); }); ticks = []; }
@@ -3537,13 +3672,14 @@ loadAndBoot();
   function frame(id, body){
     var g = gById(id);
     root.innerHTML = '<div class="gm-top"><button type="button" class="btn-mini" data-gact="home">← All games</button><h3 class="gm-h">' + g.ic + ' ' + esc(g.t) + '</h3></div>' +
-      (g.sc ? '<div id="gmScore">' + scoreBar(id) + '</div>' : '') + '<div class="gm-body" id="gmBody">' + body + '</div>';
+      (g.sc ? '<div id="gmScore">' + scoreBar(id) + '</div>' : '') + howHtml(id) + '<div class="gm-body" id="gmBody">' + body + '</div>';
   }
   function body(html){ var b = document.getElementById("gmBody"); if(b) b.innerHTML = html; }
   function refreshScore(){ var el = document.getElementById("gmScore"); if(el && cur) el.innerHTML = scoreBar(cur); }
 
+  function leaveCur(){ try{ if(cur && H[cur] && H[cur].leave) H[cur].leave(); }catch(e){} }
   function home(){
-    cur = null; stopTicks();
+    leaveCur(); cur = null; stopTicks();
     var n = names(), s = getScores(), tot = {a:0, b:0};
     Object.keys(s).forEach(function(k){ tot.a += s[k].a || 0; tot.b += s[k].b || 0; });
     root.innerHTML = '<p class="gm-intro">Pass-and-play on one phone. Everything works offline on trains and planes. Scores are saved on this phone.</p>' +
@@ -3551,7 +3687,7 @@ loadAndBoot();
       '<div class="gm-tot">Trip total: <b class="gm-a">' + esc(n.a) + ' ' + tot.a + '</b> · <b class="gm-b">' + esc(n.b) + ' ' + tot.b + '</b></div>' +
       GROUPS.map(function(gr){ return '<h4 class="gm-gh">' + gr[1] + '</h4><div class="gm-grid">' + GAMES.filter(function(g){ return g.g === gr[0]; }).map(function(g){ return '<button type="button" class="gm-card" data-gact="open" data-g="' + g.id + '"><span class="gm-ic">' + g.ic + '</span><span class="gm-ct">' + esc(g.t) + '</span><span class="gm-cd">' + esc(g.d) + '</span></button>'; }).join("") + '</div>'; }).join("");
   }
-  function open(id){ stopTicks(); cur = id; if(H[id] && H[id].start) H[id].start(); try{ window.scrollTo({top: 0}); }catch(e){} }
+  function open(id){ leaveCur(); stopTicks(); cur = id; if(H[id] && H[id].start) H[id].start(); try{ window.scrollTo({top: 0}); }catch(e){} }
 
   /* ------------------------------------------------------------------ HANGMAN */
   var WORDS = {
@@ -4295,6 +4431,383 @@ loadAndBoot();
   }
   H.wordle = { start: function(){ frame("wordle", ""); wdNew(); }, act: function(a, b){ if(a === "wd-k") wdKey(b.getAttribute("data-k")); else if(a === "wd-next") wdNew(); else if(a === "wd-swap"){ sv("wd_turn", other(wdTurn())); WD.solver = wdTurn(); wdDraw(); } } };
 
+  /* -------------------------------------------------------------- HEADS UP */
+  var HU_ACT = ["Rowing a gondola","Eating spaghetti","Skiing","Taking a selfie","Running for a train","Ordering an espresso","Dancing the tango","Sleeping on a plane","Playing the violin","Driving a race car","Yodeling","Riding a bike","Packing a suitcase","Swimming","Painting a portrait","Climbing a mountain","Singing opera","Tasting wine","Flipping a crêpe","Tossing pizza dough","Hailing a taxi","Reading a map upside down","Airport security","Building a snowman","Ice skating","Fishing","Proposing","Juggling","Lost luggage","Jet lag","Haggling at a market","Feeding pigeons","Taking a cable car","Sunbathing","Surfing","Drinking from a fountain","Kneading bread","Melting cheese","Eating fondue","Chasing a bus","Riding a Vespa","Window shopping","Ringing church bells","Playing the accordion","Rock climbing","Walking a tightrope","Getting a haircut","Brushing your teeth","Changing a tire","Sneezing","Being a statue","Doing yoga","Playing tennis","Playing golf","Bowling","Conducting an orchestra","Making a snow angel","Paddleboarding","Carrying a heavy backpack","Flying a kite"];
+  var HU = null;
+  function huDecks(){ return { places: {t:"🗺 Trip places", w: WORDS["City or place"].concat(WORDS["Landmark"])}, food: {t:"🍝 Food & drink", w: WORDS["Food & drink"]}, act: {t:"🎭 Act it out", w: HU_ACT}, things: {t:"🎒 Travel things", w: WORDS["Travel"].concat(DRAW_WORDS)}, mix: {t:"🎲 Mix", w: [].concat(WORDS["City or place"], WORDS["Landmark"], WORDS["Food & drink"], HU_ACT, DRAW_WORDS, WORDS["Art & culture"])} }; }
+  function huGuesser(){ return ld("hu_g", "a"); }
+  function huSetup(){
+    var D = huDecks(), dk = ld("hu_deck", "mix"), secs = ld("hu_secs", 60), g = huGuesser();
+    HU = { phase: "setup" };
+    body('<div class="gm-turn">' + nm(g) + ' guesses next</div>' +
+      '<div class="gm-seg">' + Object.keys(D).map(function(k){ return '<button type="button" data-gact="hu-deck" data-k="' + k + '" class="' + (dk === k ? "on" : "") + '">' + D[k].t + '</button>'; }).join("") + '</div>' +
+      '<div class="gm-seg">' + [45, 60, 90].map(function(s){ return '<button type="button" data-gact="hu-secs" data-s="' + s + '" class="' + (secs === s ? "on" : "") + '">' + s + 's</button>'; }).join("") + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="hu-go">▶ Start: phone on ' + esc(names()[g]) + '\'s forehead</button></div>' +
+      '<p class="gm-note">Hold the phone sideways on your forehead, screen facing out. Tap the <b>right side</b> for ✅ got it, the <b>left side</b> to ⏭ pass.</p><div class="gm-row"><button type="button" class="gm-link" data-gact="hu-swap">Switch who guesses</button></div>');
+  }
+  function huOverlay(html){ var o = document.getElementById("huOv"); if(!o){ o = document.createElement("div"); o.id = "huOv"; o.className = "hu-ov"; root.appendChild(o); } o.innerHTML = html; return o; }
+  function huClose(){ var o = document.getElementById("huOv"); if(o) o.parentNode.removeChild(o); try{ if(HU && HU.lock) HU.lock.release(); }catch(e){} document.documentElement.style.overflow = ""; }
+  function huStart(){
+    var D = huDecks(), dk = ld("hu_deck", "mix");
+    HU = { phase: "count", deck: shuffle(D[dk].w), i: 0, secs: ld("hu_secs", 60), res: [], end: 0, lock: null, g: huGuesser(), flash: "" };
+    try{ if(navigator.wakeLock) navigator.wakeLock.request("screen").then(function(l){ HU.lock = l; }).catch(function(){}); }catch(e){}
+    document.documentElement.style.overflow = "hidden";
+    var n = 3; huOverlay('<div class="hu-count">' + n + '</div><div class="hu-hint">Phone on your forehead!</div>');
+    stopTicks();
+    ticks.push(setInterval(function(){ n--; if(n > 0){ huOverlay('<div class="hu-count">' + n + '</div><div class="hu-hint">Phone on your forehead!</div>'); } else { stopTicks(); HU.phase = "play"; HU.end = Date.now() + HU.secs * 1000; huShow(); ticks.push(setInterval(huTick, 250)); } }, 900));
+  }
+  function huShow(){
+    var w = HU.deck[HU.i % HU.deck.length];
+    huOverlay('<div class="hu-clock" id="huClock">' + caFmt(HU.end - Date.now()) + '</div><button type="button" class="hu-x" data-gact="hu-stop" aria-label="End round">✕</button>' +
+      '<div class="hu-word' + (HU.flash ? " " + HU.flash : "") + '">' + esc(w) + '</div>' +
+      '<button type="button" class="hu-zone pass" data-gact="hu-pass"><span>⏭ PASS</span></button><button type="button" class="hu-zone ok" data-gact="hu-ok"><span>✅ GOT IT</span></button>');
+  }
+  function huTick(){ var el = document.getElementById("huClock"), left = HU.end - Date.now(); if(el){ el.textContent = caFmt(left); el.classList.toggle("low", left <= 10000); } if(left <= 0) huDone(); }
+  function huMark(ok){
+    if(!HU || HU.phase !== "play") return;
+    HU.res.push({w: HU.deck[HU.i % HU.deck.length], ok: ok}); HU.i++; HU.flash = ok ? "ok" : "pass";
+    try{ if(navigator.vibrate) navigator.vibrate(ok ? 60 : [30, 40, 30]); }catch(e){}
+    huShow(); HU.flash = "";
+  }
+  function huDone(){
+    stopTicks(); if(!HU || HU.phase !== "play") return; HU.phase = "done"; buzz(); huClose();
+    var got = HU.res.filter(function(r){ return r.ok; }).length;
+    if(got){ addPt("headsup", HU.g, got); refreshScore(); }
+    sv("hu_g", other(HU.g));
+    body('<div class="gm-msg win">' + esc(names()[HU.g]) + ' got ' + got + ' of ' + HU.res.length + '!</div><ul class="wy-favs">' + HU.res.map(function(r){ return '<li>' + (r.ok ? "✅ " : "⏭ ") + esc(r.w) + '</li>'; }).join("") + '</ul><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="hu-next">Next round: ' + esc(names()[other(HU.g)]) + ' guesses →</button></div>');
+  }
+  H.headsup = {
+    start: function(){ frame("headsup", ""); huSetup(); },
+    act: function(a, b){
+      if(a === "hu-deck"){ sv("hu_deck", b.getAttribute("data-k")); huSetup(); }
+      else if(a === "hu-secs"){ sv("hu_secs", +b.getAttribute("data-s")); huSetup(); }
+      else if(a === "hu-swap"){ sv("hu_g", other(huGuesser())); huSetup(); }
+      else if(a === "hu-go") huStart();
+      else if(a === "hu-ok") huMark(true);
+      else if(a === "hu-pass") huMark(false);
+      else if(a === "hu-stop"){ if(HU && HU.phase === "play") huDone(); else { stopTicks(); huClose(); huSetup(); } }
+      else if(a === "hu-next") huSetup();
+    },
+    leave: function(){ huClose(); }
+  };
+
+  /* ---------------------------------------------------- TWO TRUTHS & A LIE */
+  var TRUTH_TOPICS = ["Your childhood","Food you've tried","Travel mishaps","Your first job","Famous people you've met (or almost met)","Something you're secretly good at","Your school days","Pets you've had","Your worst haircut","Things in your suitcase right now","Weird things you've eaten","Places you've slept","Sports you've played","Your guilty pleasures","Embarrassing moments","Things you've broken","Concerts you've been to","Your phobias","Your hidden talents","Your first car","Times you got lost","Things you collected as a kid","Your best Halloween costume","Movies that made you cry","Skills you'd put on a résumé as a joke","Your family traditions","Things you've won","Accidents you've had","Your celebrity crushes","Things you did in college","Your wildest dream","Countries you've visited","Words you can say in other languages","Jobs you almost had","Things you believed as a child","Your worst date (before us!)","Your most expensive purchase","Injuries you've had","Your secret recipes","Things that happened on this trip"];
+  var TR2 = null;
+  function tr2Deck(){ var d = ld("tr2_deck", null); if(!d || !d.order || d.order.length !== TRUTH_TOPICS.length){ d = { order: shuffle(range(TRUTH_TOPICS.length)), pos: 0 }; sv("tr2_deck", d); } return d; }
+  function tr2Draw(){
+    var t = ld("tr2_t", "a"), d = tr2Deck(), topic = TRUTH_TOPICS[d.order[d.pos]];
+    body('<div class="gm-turn">' + nm(t) + ' tells, ' + nm(other(t)) + ' guesses</div><div class="wy-card"><div class="wy-tag">Topic</div><div>' + esc(topic) + '</div></div>' +
+      '<p class="gm-note">' + esc(names()[t]) + ': say two true things and one lie about this topic, in any order.</p>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="tr2-caught">🕵️ ' + esc(names()[other(t)]) + ' found the lie</button><button type="button" class="gm-btn" data-gact="tr2-fooled">😏 ' + esc(names()[t]) + ' fooled them</button></div>' +
+      '<div class="gm-row"><button type="button" class="gm-link" data-gact="tr2-skip">Different topic</button></div>');
+  }
+  function tr2Advance(){ var d = tr2Deck(); d.pos++; if(d.pos >= d.order.length) d = { order: shuffle(range(TRUTH_TOPICS.length)), pos: 0 }; sv("tr2_deck", d); }
+  H.truths = {
+    start: function(){ frame("truths", ""); tr2Draw(); },
+    act: function(a){
+      var t = ld("tr2_t", "a");
+      if(a === "tr2-caught" || a === "tr2-fooled"){ addPt("truths", a === "tr2-caught" ? other(t) : t); refreshScore(); sv("tr2_t", other(t)); tr2Advance(); tr2Draw(); }
+      else if(a === "tr2-skip"){ tr2Advance(); tr2Draw(); }
+    }
+  };
+
+  /* -------------------------------------------------------------- WORD GRID */
+  var BOGGLE = ["AAEEGN","ABBJOO","ACHOPS","AFFKPS","AOOTTW","CIMOTU","DEILRX","DELRVY","DISTTY","EEGHNW","EEINSU","EHRTVW","EIOSST","ELRTTY","HIMNUQ","HLNNRZ"];
+  var WG = null;
+  function wgNew(){ WG = { phase: "ready", grid: shuffle(BOGGLE).map(function(d){ var f = d.charAt(Math.floor(Math.random() * 6)); return f === "Q" ? "Qu" : f; }), secs: ld("wg_secs", 120), end: 0, pts: {a:0, b:0} }; wgDraw(); }
+  function wgGrid(){ return '<div class="wg-g">' + WG.grid.map(function(l){ return '<span class="wg-t">' + l + '</span>'; }).join("") + '</div>'; }
+  function wgDraw(){
+    if(WG.phase === "ready"){
+      body('<div class="gm-seg">' + [90,120,180].map(function(s){ return '<button type="button" data-gact="wg-secs" data-s="' + s + '" class="' + (WG.secs === s ? "on" : "") + '">' + (s / 60) + ' min</button>'; }).join("") + '</div>' + wgGrid() +
+        '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wg-go">▶ Start</button><button type="button" class="gm-btn" data-gact="wg-new">🔀 Shake</button></div><p class="gm-note">Both of you write words on paper or your own phone. Letters must touch (including diagonally). 3+ letters, no reusing a square.</p>');
+    } else if(WG.phase === "run"){
+      body('<div class="ca-clock" id="wgClock">' + caFmt(WG.end - Date.now()) + '</div>' + wgGrid() + '<div class="gm-row"><button type="button" class="gm-btn" data-gact="wg-stop">⏹ Stop early</button></div>');
+    } else if(WG.phase === "score"){
+      var step = function(w){ return '<div class="wg-step"><span class="gm-' + w + '">' + esc(names()[w]) + '</span><button type="button" class="gm-btn" data-gact="wg-pt" data-w="' + w + '" data-d="-1">−</button><b>' + WG.pts[w] + '</b><button type="button" class="gm-btn" data-gact="wg-pt" data-w="' + w + '" data-d="1">+</button><button type="button" class="gm-btn" data-gact="wg-pt" data-w="' + w + '" data-d="5">+5</button></div>'; };
+      body('<div class="gm-msg">⏰ Time!</div>' + wgGrid() + '<p class="gm-note">Read your lists and cross out words you both found. Points per word: 3–4 letters 1 · 5 → 2 · 6 → 3 · 7 → 5 · 8+ → 11.</p>' + step("a") + step("b") +
+        '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wg-save">Save result</button></div>');
+    } else {
+      var A = WG.pts.a, B = WG.pts.b;
+      body('<div class="gm-msg win">' + (A === B ? "It's a tie, " + A + "–" + B + " 🤝" : esc(names()[A > B ? "a" : "b"]) + ' wins ' + Math.max(A, B) + '–' + Math.min(A, B) + '!') + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wg-new">New grid →</button></div>');
+    }
+  }
+  function wgTick(){ var el = document.getElementById("wgClock"), left = WG.end - Date.now(); if(el){ el.textContent = caFmt(left); el.classList.toggle("low", left <= 15000); } if(left <= 0){ stopTicks(); WG.phase = "score"; buzz(); wgDraw(); } }
+  H.wordgrid = {
+    start: function(){ frame("wordgrid", ""); wgNew(); },
+    act: function(a, b){
+      if(a === "wg-new"){ stopTicks(); wgNew(); }
+      else if(a === "wg-secs"){ WG.secs = +b.getAttribute("data-s"); sv("wg_secs", WG.secs); wgDraw(); }
+      else if(a === "wg-go"){ WG.phase = "run"; WG.end = Date.now() + WG.secs * 1000; wgDraw(); stopTicks(); ticks.push(setInterval(wgTick, 250)); }
+      else if(a === "wg-stop"){ stopTicks(); WG.phase = "score"; wgDraw(); }
+      else if(a === "wg-pt"){ var w = b.getAttribute("data-w"); WG.pts[w] = Math.max(0, WG.pts[w] + (+b.getAttribute("data-d"))); wgDraw(); }
+      else if(a === "wg-save"){ if(WG.pts.a !== WG.pts.b){ addPt("wordgrid", WG.pts.a > WG.pts.b ? "a" : "b"); refreshScore(); } WG.phase = "done"; wgDraw(); }
+    }
+  };
+
+  /* ------------------------------------------------------------- CITY CHAIN */
+  var CC_CATS = { places: "a city, country or place", food: "a food or drink", any: "any noun (person, place or thing)" };
+  var CC = null;
+  function ccLast(word){ var n = word.split("").map(normCh).join("").replace(/[^A-Z]/g, ""); for(var i = n.length - 1; i >= 0; i--){ if("QXZ".indexOf(n[i]) < 0) return n[i]; } return rnd(LETTERS); }
+  function ccSetup(){
+    var cat = ld("cc_cat", "places"), secs = ld("cc_secs", 20);
+    CC = { phase: "setup" };
+    body('<div class="gm-seg">' + Object.keys(CC_CATS).map(function(k){ return '<button type="button" data-gact="cc-cat" data-k="' + k + '" class="' + (cat === k ? "on" : "") + '">' + {places:"🌍 Places", food:"🍝 Food & drink", any:"✨ Anything"}[k] + '</button>'; }).join("") + '</div>' +
+      '<div class="gm-seg">' + [10,20,30].map(function(s){ return '<button type="button" data-gact="cc-secs" data-s="' + s + '" class="' + (secs === s ? "on" : "") + '">' + s + 's per turn</button>'; }).join("") + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="cc-go">▶ Start the chain</button></div><p class="gm-note">Name ' + CC_CATS[cat] + ' that starts with the letter shown. The next one starts with its last letter. No repeats!</p>');
+  }
+  function ccStart(){ var st = ld("cc_start", "a"); sv("cc_start", other(st)); CC = { phase: "play", cat: ld("cc_cat", "places"), secs: ld("cc_secs", 20), turn: st, letter: rnd(LETTERS), used: [], end: 0, err: "" }; ccTurn(); }
+  function ccTurn(){
+    CC.end = Date.now() + CC.secs * 1000;
+    body('<div class="gm-turn">' + nm(CC.turn) + ': ' + esc(CC_CATS[CC.cat]) + ' starting with</div><div class="ca-letter">' + CC.letter + '</div><div class="ca-clock" id="ccClock">' + caFmt(CC.end - Date.now()) + '</div>' +
+      '<div class="cc-in"><input id="ccIn" class="gm-in" type="text" maxlength="40" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Type it…"><button type="button" class="gm-btn pri" data-gact="cc-sub">Go</button></div>' +
+      (CC.err ? '<div class="gm-msg lose" style="font-size:.95rem">' + CC.err + '</div>' : '') +
+      (CC.used.length ? '<div class="cc-chain">' + CC.used.map(esc).join(" → ") + '</div>' : ''));
+    var i = document.getElementById("ccIn"); if(i){ i.focus(); i.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); ccSubmit(); } }); }
+    stopTicks(); ticks.push(setInterval(ccTick, 250));
+  }
+  function ccTick(){ var el = document.getElementById("ccClock"), left = CC.end - Date.now(); if(el){ el.textContent = caFmt(left); el.classList.toggle("low", left <= 5000); } if(left <= 0){ stopTicks(); ccOut(); } }
+  function ccSubmit(){
+    var el = document.getElementById("ccIn"); if(!el) return; var w = el.value.replace(/\s+/g, " ").trim(); if(!w) return;
+    var first = normCh(w.charAt(0));
+    if(first !== CC.letter){ CC.err = "That doesn't start with " + CC.letter + "."; el.value = ""; var keep = CC.end; ccTurn(); CC.end = keep; return; }
+    if(CC.used.some(function(u){ return u.toLowerCase() === w.toLowerCase(); })){ CC.err = "Already used!"; el.value = ""; var keep2 = CC.end; ccTurn(); CC.end = keep2; return; }
+    CC.err = ""; CC.used.push(w); CC.letter = ccLast(w); CC.turn = other(CC.turn); ccTurn();
+  }
+  function ccOut(){
+    var loser = CC.turn, win = other(loser); addPt("citychain", win); refreshScore(); CC.phase = "done";
+    body('<div class="gm-msg lose">⏰ ' + esc(names()[loser]) + ' ran out of time on ' + CC.letter + '!</div><div class="gm-msg win">' + esc(names()[win]) + ' scores 1</div>' + (CC.used.length ? '<div class="cc-chain">' + CC.used.map(esc).join(" → ") + '</div><p class="gm-note">Chain length: ' + CC.used.length + '</p>' : '') +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="cc-go">Play again</button><button type="button" class="gm-btn" data-gact="cc-setup">Change settings</button></div>');
+  }
+  H.citychain = {
+    start: function(){ frame("citychain", ""); ccSetup(); },
+    act: function(a, b){
+      if(a === "cc-cat"){ sv("cc_cat", b.getAttribute("data-k")); ccSetup(); }
+      else if(a === "cc-secs"){ sv("cc_secs", +b.getAttribute("data-s")); ccSetup(); }
+      else if(a === "cc-go") ccStart();
+      else if(a === "cc-setup"){ stopTicks(); ccSetup(); }
+      else if(a === "cc-sub") ccSubmit();
+    }
+  };
+
+  /* --------------------------------------------------------------- CHECKERS */
+  var CK = null;
+  function ckNew(){
+    var st = ld("ck_start", "a"); sv("ck_start", other(st));
+    var b = range(8).map(function(r){ return range(8).map(function(c){ if((r + c) % 2 !== 1) return null; if(r < 3) return {p: "b", k: false}; if(r > 4) return {p: "a", k: false}; return null; }); });
+    CK = { b: b, turn: st, sel: null, forced: null, over: false, last: null, note: "" }; ckDraw();
+  }
+  function ckDirs(pc){ if(pc.k) return [[-1,-1],[-1,1],[1,-1],[1,1]]; return pc.p === "a" ? [[-1,-1],[-1,1]] : [[1,-1],[1,1]]; }
+  function ckIn(r, c){ return r >= 0 && r < 8 && c >= 0 && c < 8; }
+  function ckMoves(r, c){
+    var pc = CK.b[r][c], caps = [], steps = []; if(!pc) return {caps: caps, steps: steps};
+    ckDirs(pc).forEach(function(d){
+      var r1 = r + d[0], c1 = c + d[1], r2 = r + 2 * d[0], c2 = c + 2 * d[1];
+      if(ckIn(r1, c1) && !CK.b[r1][c1]) steps.push([r1, c1]);
+      if(ckIn(r2, c2) && CK.b[r1][c1] && CK.b[r1][c1].p !== pc.p && !CK.b[r2][c2]) caps.push([r2, c2, r1, c1]);
+    });
+    return {caps: caps, steps: steps};
+  }
+  function ckAnyCap(p){ for(var r = 0; r < 8; r++) for(var c = 0; c < 8; c++){ var pc = CK.b[r][c]; if(pc && pc.p === p && ckMoves(r, c).caps.length) return true; } return false; }
+  function ckAnyMove(p){ for(var r = 0; r < 8; r++) for(var c = 0; c < 8; c++){ var pc = CK.b[r][c]; if(pc && pc.p === p){ var m = ckMoves(r, c); if(m.caps.length || m.steps.length) return true; } } return false; }
+  function ckTargets(r, c){ var m = ckMoves(r, c); if(CK.forced) return (CK.forced[0] === r && CK.forced[1] === c) ? m.caps : []; return ckAnyCap(CK.turn) ? m.caps : m.steps.map(function(s){ return [s[0], s[1]]; }); }
+  function ckCount(p){ var n = 0; CK.b.forEach(function(row){ row.forEach(function(pc){ if(pc && pc.p === p) n++; }); }); return n; }
+  function ckDraw(){
+    var tg = CK.sel ? ckTargets(CK.sel[0], CK.sel[1]) : [], must = !CK.over && !CK.forced && ckAnyCap(CK.turn), cells = "";
+    for(var r = 0; r < 8; r++) for(var c = 0; c < 8; c++){
+      var dark = (r + c) % 2 === 1, pc = CK.b[r][c], isSel = CK.sel && CK.sel[0] === r && CK.sel[1] === c, isT = tg.some(function(t){ return t[0] === r && t[1] === c; }), isL = CK.last && CK.last.some(function(t){ return t[0] === r && t[1] === c; });
+      cells += '<button type="button" class="ck-c' + (dark ? " dk" : "") + (isSel ? " sel" : "") + (isT ? " tg" : "") + (isL ? " last" : "") + '" data-gact="ck" data-r="' + r + '" data-c="' + c + '"' + (dark && !CK.over ? "" : " disabled") + '>' + (pc ? '<i class="' + pc.p + (pc.k ? " k" : "") + '">' + (pc.k ? "♛" : "") + '</i>' : "") + '</button>';
+    }
+    var status = CK.over ? '<div class="gm-msg win">' + esc(names()[CK.over]) + ' wins!</div>' : '<div class="gm-turn"><span class="ck-dot ' + CK.turn + '"></span>' + nm(CK.turn) + '\'s move' + (CK.forced ? ': keep jumping!' : must ? ': you must jump' : '') + '</div>';
+    body(status + (CK.note ? '<div class="gm-note">' + CK.note + '</div>' : '') + '<div class="gm-score" style="margin:0 0 6px"><span class="gm-pl a">🔴 ' + esc(names().a) + ' <b>' + ckCount("a") + '</b></span><span class="gm-vs">pieces</span><span class="gm-pl b">⚫ ' + esc(names().b) + ' <b>' + ckCount("b") + '</b></span></div>' +
+      '<div class="ck-b">' + cells + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ck-new">New game</button></div><p class="gm-note">' + esc(names().a) + ' is red (bottom, moving up), ' + esc(names().b) + ' is black (top, moving down).</p>');
+  }
+  function ckClick(r, c){
+    if(CK.over) return;
+    var pc = CK.b[r][c];
+    if(CK.sel){
+      var tg = ckTargets(CK.sel[0], CK.sel[1]), hit = null;
+      tg.forEach(function(t){ if(t[0] === r && t[1] === c) hit = t; });
+      if(hit){ ckDo(CK.sel[0], CK.sel[1], hit); return; }
+    }
+    if(CK.forced) return;
+    if(pc && pc.p === CK.turn){ CK.sel = ckTargets(r, c).length ? [r, c] : null; CK.note = CK.sel ? "" : (ckAnyCap(CK.turn) ? "A jump is available with another piece; you must take it." : "That piece can't move."); ckDraw(); }
+  }
+  function ckDo(r0, c0, t){
+    var pc = CK.b[r0][c0], cap = t.length === 4; CK.b[t[0]][t[1]] = pc; CK.b[r0][c0] = null; CK.last = [[r0, c0], [t[0], t[1]]]; CK.note = "";
+    if(cap) CK.b[t[2]][t[3]] = null;
+    var crowned = false;
+    if(!pc.k && ((pc.p === "a" && t[0] === 0) || (pc.p === "b" && t[0] === 7))){ pc.k = true; crowned = true; CK.note = "👑 Crowned!"; }
+    if(cap && !crowned && ckMoves(t[0], t[1]).caps.length){ CK.forced = [t[0], t[1]]; CK.sel = [t[0], t[1]]; ckDraw(); return; }
+    CK.forced = null; CK.sel = null;
+    var opp = other(CK.turn);
+    if(!ckAnyMove(opp)){ CK.over = CK.turn; addPt("checkers", CK.turn); refreshScore(); }
+    else CK.turn = opp;
+    ckDraw();
+  }
+  H.checkers = { start: function(){ frame("checkers", ""); ckNew(); }, act: function(a, b){ if(a === "ck") ckClick(+b.getAttribute("data-r"), +b.getAttribute("data-c")); else if(a === "ck-new") ckNew(); } };
+
+  /* ----------------------------------------------------------------- GOMOKU */
+  var GK = null, GKN = 13;
+  function gkNew(){ var st = ld("gk_start", "a"); sv("gk_start", other(st)); GK = { b: range(GKN).map(function(){ return range(GKN).map(function(){ return ""; }); }), turn: st, over: false, win: [], last: null, moves: 0 }; gkDraw(); }
+  function gkDraw(){
+    var cells = "";
+    for(var r = 0; r < GKN; r++) for(var c = 0; c < GKN; c++){
+      var v = GK.b[r][c], w = GK.win.some(function(p){ return p[0] === r && p[1] === c; }), l = GK.last && GK.last[0] === r && GK.last[1] === c;
+      cells += '<button type="button" class="gk-c' + (r === 0 ? " t" : "") + (r === GKN - 1 ? " bt" : "") + (c === 0 ? " l" : "") + (c === GKN - 1 ? " rt" : "") + '" data-gact="gk" data-r="' + r + '" data-c="' + c + '"' + (v || GK.over ? " disabled" : "") + '>' + (v ? '<i class="' + v + (w ? " w" : "") + (l ? " last" : "") + '"></i>' : "") + '</button>';
+    }
+    var status = GK.over ? (GK.win.length ? '<div class="gm-msg win">' + esc(names()[GK.over]) + ' gets five in a row!</div>' : '<div class="gm-msg">Board full: a draw 🤝</div>') : '<div class="gm-turn"><span class="ck-dot ' + (GK.turn === "a" ? "gka" : "gkb") + '"></span>' + nm(GK.turn) + '\'s turn</div>';
+    body(status + '<div class="gk-b" style="grid-template-columns:repeat(' + GKN + ',1fr)">' + cells + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="gk-new">New game</button></div><p class="gm-note">' + esc(names().a) + ' is black, ' + esc(names().b) + ' is white. Five in a row wins.</p>');
+  }
+  function gkPlay(r, c){
+    if(GK.over || GK.b[r][c]) return;
+    var p = GK.turn; GK.b[r][c] = p; GK.last = [r, c]; GK.moves++;
+    [[0,1],[1,0],[1,1],[1,-1]].forEach(function(d){
+      if(GK.over) return;
+      var line = [[r, c]];
+      [1, -1].forEach(function(s){ var rr = r + d[0] * s, cc = c + d[1] * s; while(rr >= 0 && rr < GKN && cc >= 0 && cc < GKN && GK.b[rr][cc] === p){ line.push([rr, cc]); rr += d[0] * s; cc += d[1] * s; } });
+      if(line.length >= 5){ GK.over = p; GK.win = line; addPt("gomoku", p); refreshScore(); }
+    });
+    if(!GK.over && GK.moves >= GKN * GKN) GK.over = "draw";
+    if(!GK.over) GK.turn = other(p);
+    gkDraw();
+  }
+  H.gomoku = { start: function(){ frame("gomoku", ""); gkNew(); }, act: function(a, b){ if(a === "gk") gkPlay(+b.getAttribute("data-r"), +b.getAttribute("data-c")); else if(a === "gk-new") gkNew(); } };
+
+  /* ---------------------------------------------------------------- YAHTZEE */
+  var YZ_CATS = [["ones","Ones",1],["twos","Twos",2],["threes","Threes",3],["fours","Fours",4],["fives","Fives",5],["sixes","Sixes",6],["k3","3 of a kind"],["k4","4 of a kind"],["fh","Full house"],["ss","Sm. straight"],["ls","Lg. straight"],["yz","Yahtzee"],["ch","Chance"]];
+  var YZ = null;
+  function yzCounts(d){ var c = [0,0,0,0,0,0,0]; d.forEach(function(v){ c[v]++; }); return c; }
+  function yzRun(d, n){ var s = {}; d.forEach(function(v){ s[v] = 1; }); var runs = n === 4 ? [[1,2,3,4],[2,3,4,5],[3,4,5,6]] : [[1,2,3,4,5],[2,3,4,5,6]]; return runs.some(function(r){ return r.every(function(v){ return s[v]; }); }); }
+  function yzScore(cat, d, joker){
+    var c = yzCounts(d), sum = d.reduce(function(a, b){ return a + b; }, 0), mx = Math.max.apply(null, c);
+    for(var i = 0; i < 6; i++) if(YZ_CATS[i][0] === cat) return c[YZ_CATS[i][2]] * YZ_CATS[i][2];
+    if(cat === "k3") return mx >= 3 ? sum : 0;
+    if(cat === "k4") return mx >= 4 ? sum : 0;
+    if(cat === "fh") return (joker || (c.indexOf(3) > 0 && c.indexOf(2) > 0)) ? 25 : 0;
+    if(cat === "ss") return (joker || yzRun(d, 4)) ? 30 : 0;
+    if(cat === "ls") return (joker || yzRun(d, 5)) ? 40 : 0;
+    if(cat === "yz") return mx === 5 ? 50 : 0;
+    return sum;
+  }
+  function yzTot(w){ var s = YZ.sc[w], up = 0, lo = 0; YZ_CATS.forEach(function(k, i){ var v = s[k[0]]; if(v != null){ if(i < 6) up += v; else lo += v; } }); var bonus = up >= 63 ? 35 : 0; return {up: up, bonus: bonus, lo: lo, ybonus: YZ.yb[w], total: up + bonus + lo + YZ.yb[w]}; }
+  function yzNew(){ var st = ld("yz_start", "a"); sv("yz_start", other(st)); YZ = { turn: st, dice: [1,2,3,4,5], held: [false,false,false,false,false], rolls: 0, sc: {a: {}, b: {}}, yb: {a: 0, b: 0}, over: false, rolling: false }; yzDraw(); }
+  function yzDraw(){
+    var t = YZ.turn, isY = YZ.rolls > 0 && yzCounts(YZ.dice).indexOf(5) > 0, joker = isY && YZ.sc[t].yz != null;
+    var dice = YZ.dice.map(function(v, i){ return '<button type="button" class="yz-d' + (YZ.held[i] ? " held" : "") + '" data-gact="yz-hold" data-i="' + i + '"' + (YZ.rolls === 0 || YZ.rolls >= 3 || YZ.over || YZ.rolling ? " disabled" : "") + '>' + (YZ.rolls ? DIE[v - 1] : "🎲") + '</button>'; }).join("");
+    var ta = yzTot("a"), tb = yzTot("b");
+    var rows = YZ_CATS.map(function(k, i){
+      var cell = function(w){ var v = YZ.sc[w][k[0]]; if(v != null) return '<td class="yz-v">' + v + '</td>'; if(w === t && YZ.rolls > 0 && !YZ.over && !YZ.rolling) return '<td><button type="button" class="yz-p" data-gact="yz-sc" data-k="' + k[0] + '">' + yzScore(k[0], YZ.dice, joker) + '</button></td>'; return '<td></td>'; };
+      return (i === 6 ? '<tr class="yz-sub"><td>Upper bonus (63+)</td><td>' + ta.bonus + ' <small>(' + ta.up + ')</small></td><td>' + tb.bonus + ' <small>(' + tb.up + ')</small></td></tr>' : '') + '<tr><td>' + k[1] + '</td>' + cell("a") + cell("b") + '</tr>';
+    }).join("") + '<tr class="yz-sub"><td>Yahtzee bonus</td><td>' + ta.ybonus + '</td><td>' + tb.ybonus + '</td></tr><tr class="yz-tot"><td>Total</td><td>' + ta.total + '</td><td>' + tb.total + '</td></tr>';
+    var status = YZ.over ? (ta.total === tb.total ? '<div class="gm-msg">Tie at ' + ta.total + '! 🤝</div>' : '<div class="gm-msg win">' + esc(names()[ta.total > tb.total ? "a" : "b"]) + ' wins ' + Math.max(ta.total, tb.total) + '–' + Math.min(ta.total, tb.total) + '!</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="yz-new">Play again</button></div>') :
+      '<div class="gm-turn">' + nm(t) + '\'s turn · roll ' + YZ.rolls + ' of 3</div><div class="yz-dice">' + dice + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="yz-roll"' + (YZ.rolls >= 3 || YZ.rolling ? " disabled" : "") + '>🎲 ' + (YZ.rolls === 0 ? "Roll" : "Roll again") + '</button></div>' +
+      '<p class="gm-note">' + (YZ.rolls === 0 ? "Roll to start your turn." : YZ.rolls < 3 ? "Tap dice to hold them, roll again, or tap a grey number to score." : "Pick a box to score.") + (isY && YZ.sc[t].yz === 50 ? " 🎉 Bonus Yahtzee: +100!" : "") + '</p>';
+    body(status + '<table class="yz-t"><thead><tr><th></th><th class="gm-a">' + esc(names().a) + '</th><th class="gm-b">' + esc(names().b) + '</th></tr></thead><tbody>' + rows + '</tbody></table>' + (YZ.over ? '' : '<div class="gm-row"><button type="button" class="gm-link" data-gact="yz-new">Restart game</button></div>'));
+  }
+  function yzRoll(){
+    if(YZ.rolls >= 3 || YZ.over || YZ.rolling) return;
+    YZ.rolling = true; YZ.rolls++; var n = 0;
+    var iv = setInterval(function(){ n++; for(var i = 0; i < 5; i++) if(!YZ.held[i]) YZ.dice[i] = 1 + Math.floor(Math.random() * 6); if(n >= 6){ clearInterval(iv); YZ.rolling = false; } yzDraw(); }, 70);
+    ticks.push(iv);
+  }
+  function yzPick(k){
+    var t = YZ.turn; if(!YZ.rolls || YZ.sc[t][k] != null || YZ.rolling) return;
+    var isY = yzCounts(YZ.dice).indexOf(5) > 0, joker = isY && YZ.sc[t].yz != null;
+    if(isY && YZ.sc[t].yz === 50) YZ.yb[t] += 100;
+    YZ.sc[t][k] = yzScore(k, YZ.dice, joker);
+    var full = function(w){ return Object.keys(YZ.sc[w]).length === 13; };
+    if(full("a") && full("b")){ YZ.over = true; var A = yzTot("a").total, B = yzTot("b").total; if(A !== B){ addPt("yahtzee", A > B ? "a" : "b"); refreshScore(); } }
+    else { YZ.turn = other(t); YZ.rolls = 0; YZ.held = [false,false,false,false,false]; }
+    yzDraw();
+  }
+  H.yahtzee = { start: function(){ frame("yahtzee", ""); yzNew(); }, act: function(a, b){ if(a === "yz-roll") yzRoll(); else if(a === "yz-hold"){ var i = +b.getAttribute("data-i"); YZ.held[i] = !YZ.held[i]; yzDraw(); } else if(a === "yz-sc") yzPick(b.getAttribute("data-k")); else if(a === "yz-new"){ if(YZ.over || confirm("Restart this Yahtzee game?")){ stopTicks(); yzNew(); } } } };
+
+  /* ------------------------------------------------------------- MASTERMIND */
+  var MMC = ["🔴","🟠","🟡","🟢","🔵","🟣"], MS = null;
+  function msSolver(){ return ld("ms_s", "a"); }
+  function msSetup(){
+    var s = msSolver(); MS = { phase: "setup" };
+    body('<div class="gm-turn">' + nm(s) + ' cracks the code</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ms-rand">🎲 Random code</button><button type="button" class="gm-btn" data-gact="ms-set">🔒 ' + esc(names()[other(s)]) + ' sets a code</button></div><p class="gm-note">4 pegs, 6 colors, repeats allowed, 10 guesses.</p><div class="gm-row"><button type="button" class="gm-link" data-gact="ms-swap">Switch who solves</button></div>');
+  }
+  function msPal(act){ return '<div class="ms-pal">' + MMC.map(function(c, i){ return '<button type="button" class="ms-pc" data-gact="' + act + '" data-i="' + i + '">' + c + '</button>'; }).join("") + '<button type="button" class="ms-pc del" data-gact="' + act + '-del">⌫</button></div>'; }
+  function msSlots(arr){ var o = ""; for(var i = 0; i < 4; i++) o += '<span class="ms-slot">' + (arr[i] != null ? MMC[arr[i]] : "") + '</span>'; return o; }
+  function msSetView(){ body('<div class="gm-turn">' + nm(other(msSolver())) + ', set a secret code</div><p class="gm-note">' + esc(names()[msSolver()]) + ', look away!</p><div class="ms-row cur">' + msSlots(MS.code) + '</div>' + msPal("ms-cp") + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ms-lock"' + (MS.code.length === 4 ? "" : " disabled") + '>🔒 Lock it, then hand over</button><button type="button" class="gm-btn" data-gact="ms-back">Cancel</button></div>'); }
+  function msFeedback(g, code){ var ex = 0, cg = [0,0,0,0,0,0], cc = [0,0,0,0,0,0]; for(var i = 0; i < 4; i++){ if(g[i] === code[i]) ex++; cg[g[i]]++; cc[code[i]]++; } var tot = 0; for(var k = 0; k < 6; k++) tot += Math.min(cg[k], cc[k]); return {b: ex, w: tot - ex}; }
+  function msPlayView(){
+    var rows = MS.guesses.map(function(g){ return '<div class="ms-row">' + msSlots(g.g) + '<span class="ms-fb">' + "⚫".repeat(g.f.b) + "⚪".repeat(g.f.w) + (g.f.b + g.f.w === 0 ? "—" : "") + '</span></div>'; }).join("");
+    var status;
+    if(MS.over){ status = MS.won ? '<div class="gm-msg win">🎉 Cracked in ' + MS.guesses.length + '!</div>' : '<div class="gm-msg lose">Out of guesses!</div>'; }
+    else status = '<div class="gm-turn">' + nm(MS.solver) + ' · guess ' + (MS.guesses.length + 1) + ' of 10</div>';
+    body(status + '<div class="ms-board">' + rows + (MS.over ? '<div class="ms-row code">' + msSlots(MS.code) + '<span class="ms-fb">the code</span></div>' : '<div class="ms-row cur">' + msSlots(MS.cur) + '</div>') + '</div>' +
+      (MS.over ? '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ms-next">Next round →</button></div>' : msPal("ms-gp") + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ms-check"' + (MS.cur.length === 4 ? "" : " disabled") + '>Check</button></div><p class="gm-note">⚫ right color, right spot · ⚪ right color, wrong spot</p>'));
+  }
+  function msBegin(code, mode){ MS = { phase: "play", code: code, guesses: [], cur: [], solver: msSolver(), mode: mode, over: false, won: false }; msPlayView(); }
+  H.mastermind = {
+    start: function(){ frame("mastermind", ""); msSetup(); },
+    act: function(a, b){
+      if(a === "ms-rand") msBegin([0,0,0,0].map(function(){ return Math.floor(Math.random() * 6); }), "rand");
+      else if(a === "ms-set"){ MS = { phase: "set", code: [] }; msSetView(); }
+      else if(a === "ms-back") msSetup();
+      else if(a === "ms-swap"){ sv("ms_s", other(msSolver())); msSetup(); }
+      else if(a === "ms-cp"){ if(MS.code.length < 4) MS.code.push(+b.getAttribute("data-i")); msSetView(); }
+      else if(a === "ms-cp-del"){ MS.code.pop(); msSetView(); }
+      else if(a === "ms-lock"){ if(MS.code.length === 4) msBegin(MS.code.slice(), "set"); }
+      else if(a === "ms-gp"){ if(MS.cur.length < 4) MS.cur.push(+b.getAttribute("data-i")); msPlayView(); }
+      else if(a === "ms-gp-del"){ MS.cur.pop(); msPlayView(); }
+      else if(a === "ms-check"){
+        if(MS.cur.length !== 4) return; var f = msFeedback(MS.cur, MS.code); MS.guesses.push({g: MS.cur, f: f}); MS.cur = [];
+        if(f.b === 4){ MS.over = true; MS.won = true; addPt("mastermind", MS.solver); refreshScore(); }
+        else if(MS.guesses.length >= 10){ MS.over = true; if(MS.mode === "set"){ addPt("mastermind", other(MS.solver)); refreshScore(); } }
+        if(MS.over) sv("ms_s", other(MS.solver));
+        msPlayView();
+      }
+      else if(a === "ms-next") msSetup();
+    }
+  };
+
+  /* ----------------------------------------------------------------- SUDOKU */
+  var SU = null;
+  function suOk(g, i, v){ var r = Math.floor(i / 9), c = i % 9, br = r - r % 3, bc = c - c % 3; for(var k = 0; k < 9; k++){ if(g[r * 9 + k] === v || g[k * 9 + c] === v) return false; var rr = br + Math.floor(k / 3), cc = bc + k % 3; if(g[rr * 9 + cc] === v) return false; } return true; }
+  function suFill(g){ var i = g.indexOf(0); if(i < 0) return true; var vs = shuffle([1,2,3,4,5,6,7,8,9]); for(var k = 0; k < 9; k++){ if(suOk(g, i, vs[k])){ g[i] = vs[k]; if(suFill(g)) return true; g[i] = 0; } } return false; }
+  function suCount(g, lim){ var i = g.indexOf(0); if(i < 0) return 1; var n = 0; for(var v = 1; v <= 9 && n < lim; v++){ if(suOk(g, i, v)){ g[i] = v; n += suCount(g, lim - n); g[i] = 0; } } return n; }
+  function suGen(level){
+    var sol = range(81).map(function(){ return 0; }); suFill(sol);
+    var puz = sol.slice(), target = {easy: 38, medium: 31, hard: 26}[level] || 31, clues = 81;
+    shuffle(range(81)).forEach(function(i){ if(clues <= target) return; var keep = puz[i]; puz[i] = 0; if(suCount(puz.slice(), 2) !== 1) puz[i] = keep; else clues--; });
+    return {puz: puz, sol: sol};
+  }
+  function suNew(level){ var g = suGen(level); SU = { level: level, puz: g.puz, sol: g.sol, cur: g.puz.slice(), sel: -1, show: ld("su_show", false), done: false }; suSave(); suDraw(); }
+  function suSave(){ sv("su_state", {level: SU.level, puz: SU.puz, sol: SU.sol, cur: SU.cur, done: SU.done}); }
+  function suDraw(){
+    var selV = SU.sel >= 0 ? SU.cur[SU.sel] : 0, cells = "";
+    for(var i = 0; i < 81; i++){
+      var r = Math.floor(i / 9), c = i % 9, v = SU.cur[i], given = SU.puz[i] !== 0, wrong = SU.show && v && !given && v !== SU.sol[i];
+      var rel = SU.sel >= 0 && (Math.floor(SU.sel / 9) === r || SU.sel % 9 === c || (Math.floor(Math.floor(SU.sel / 9) / 3) === Math.floor(r / 3) && Math.floor((SU.sel % 9) / 3) === Math.floor(c / 3)));
+      cells += '<button type="button" class="su-c' + (given ? " gv" : "") + (i === SU.sel ? " sel" : rel ? " rel" : "") + (selV && v === selV ? " same" : "") + (wrong ? " bad" : "") + (c % 3 === 2 && c < 8 ? " br" : "") + (r % 3 === 2 && r < 8 ? " bb" : "") + '" data-gact="su-cell" data-i="' + i + '">' + (v || "") + '</button>';
+    }
+    var left = SU.cur.filter(function(v){ return !v; }).length, cnt = {}; SU.cur.forEach(function(v){ if(v) cnt[v] = (cnt[v] || 0) + 1; });
+    var pad = '<div class="su-pad">' + [1,2,3,4,5,6,7,8,9].map(function(n){ return '<button type="button" class="su-n' + (cnt[n] >= 9 ? " full" : "") + '" data-gact="su-n" data-n="' + n + '">' + n + '</button>'; }).join("") + '<button type="button" class="su-n del" data-gact="su-n" data-n="0">⌫</button></div>';
+    var seg = '<div class="gm-seg">' + [["easy","Easy"],["medium","Medium"],["hard","Hard"]].map(function(o){ return '<button type="button" data-gact="su-new" data-l="' + o[0] + '" class="' + (SU.level === o[0] ? "on" : "") + '">New ' + o[1] + '</button>'; }).join("") + '</div>';
+    body(seg + (SU.done ? '<div class="gm-msg win">🎉 Solved! Puzzles solved on this phone: ' + ld("su_solved", 0) + '</div>' : '<div class="gm-note">' + left + ' squares to go · ' + SU.level + '</div>') + '<div class="su-g">' + cells + '</div>' + (SU.done ? '' : pad) +
+      '<div class="gm-row"><label class="su-tog"><input type="checkbox" id="suShow"' + (SU.show ? " checked" : "") + '> Show mistakes</label></div>');
+    var t = document.getElementById("suShow"); if(t) t.addEventListener("change", function(){ SU.show = t.checked; sv("su_show", SU.show); suDraw(); });
+  }
+  function suPut(n){
+    if(SU.done || SU.sel < 0 || SU.puz[SU.sel] !== 0) return;
+    SU.cur[SU.sel] = n;
+    if(SU.cur.every(function(v, i){ return v === SU.sol[i]; })){ SU.done = true; sv("su_solved", ld("su_solved", 0) + 1); }
+    suSave(); suDraw();
+  }
+  H.sudoku = {
+    start: function(){ frame("sudoku", '<div class="gm-note">Making a puzzle…</div>'); var s = ld("su_state", null); if(s && s.puz && s.sol && s.cur){ SU = { level: s.level, puz: s.puz, sol: s.sol, cur: s.cur, sel: -1, show: ld("su_show", false), done: !!s.done }; suDraw(); } else setTimeout(function(){ suNew("medium"); }, 30); },
+    act: function(a, b){
+      if(a === "su-cell"){ SU.sel = +b.getAttribute("data-i"); suDraw(); }
+      else if(a === "su-n") suPut(+b.getAttribute("data-n"));
+      else if(a === "su-new"){ var l = b.getAttribute("data-l"); if(SU.done || SU.cur.join() === SU.puz.join() || confirm("Start a new " + l + " puzzle? This one will be lost.")){ body('<div class="gm-note">Making a puzzle…</div>'); setTimeout(function(){ suNew(l); }, 30); } }
+    }
+  };
+
   /* --------------------------------------------------------------- wiring */
   function onClick(e){
     var b = e.target.closest("[data-gact]"); if(!b || !root || !root.contains(b)) return;
@@ -4323,6 +4836,7 @@ loadAndBoot();
     root.addEventListener("click", onClick);
     root.addEventListener("input", onInput);
     document.addEventListener("keydown", onKey);
+    document.addEventListener("tab:shown", function(e){ if(e && e.detail !== "games" && cur === "headsup"){ stopTicks(); leaveCur(); if(HU && HU.phase !== "done"){ HU.phase = "setup"; } } });
     home();
   }
   window.__gamesRender = function(){ init(); if(root && !root.firstChild) home(); };
