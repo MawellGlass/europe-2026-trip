@@ -307,13 +307,13 @@
       "date": "11/12",
       "route": "Nice → Monaco → Èze Village → Nice",
       "service": "TER + ZOU! bus 602 (pay on the day)",
-      "time": "TER ~9:45 · 602 15:15→15:40 · 602 17:55→18:30",
+      "time": "TER 09:34→09:58 or 09:54→10:17 · 602 15:15→15:40 · 602 17:55→18:30",
       "book": "Pay on the day. Moved from 11/11 (SNCF works closed Nice–Monaco trains until ~17:30 that day). 602 runs Mon–Sat only (official ZOU! timetable valid from 28 Sep 2026).",
       "scheduleOptions": [
         {
           "label": "Out",
-          "time": "TER Nice Ville → Monaco-Monte-Carlo, ~every 15–30 min, ~20 min",
-          "note": "Aim for ~9:45."
+          "time": "TER Nice Ville → Monaco-Monte-Carlo 09:34→09:58 · 09:54→10:17 · 10:02→10:26 · 10:24→10:49",
+          "note": "No 9:45 train exists; checked 11/3 (ÖBB/SNCF data)."
         },
         {
           "label": "Monaco → Èze",
@@ -435,7 +435,7 @@
         {
           "label": "Return",
           "time": "Como→Milano C. 20:36 · 21:36 (RE) · 21:10 · 22:10 (EC, last direct)",
-          "note": "After 22:10 only slow connections (arr 23:07+)."
+          "note": "After 22:10 the next is 22:20→23:37 (1 change). Como–Chiasso works do not apply on 11/17."
         }
       ],
       "status": "payday"
@@ -534,8 +534,8 @@
         },
         {
           "label": "Rigi",
-          "time": "Luzern 13:18→Rigi Kulm 14:34 · Rigi Kulm 15:48→Basel 18:26",
-          "note": "Via Arth-Goldau."
+          "time": "Luzern 13:18→Rigi Kulm 14:34 · Rigi Kulm 15:48→Basel 18:26 (2 changes) or →18:55 (1 change via IC21 Arth-Goldau 17:15)",
+          "note": "Cogwheels running in Nov; checked 11/3."
         },
         {
           "label": "Back (no peak)",
@@ -847,7 +847,7 @@
         },
         {
           "time": "1:04p",
-          "text": "🚆 ZOU! TER Marseille BLANCARDE 13:04 → Nice Ville 15:38 (direct, 2h34) — ⚠️ departs La Blancarde, NOT St-Charles, the week of 11/9 (Av. des Chartreux rail-bridge works). Get there by tram T1 from Noailles (~9 min; Noailles is ~8 min walk from the hotel) or a short taxi. Pay on the day, €41.90 pp. Other direct trains: 10:02→12:38 · 14:04→16:40 · 17:04→19:37 (12:11 and 15:15 are slower, ~2h55). (timetables checked 10/23 — re-check the day before) ✅ Works reconfirmed 11/3 (La Provence): St-Charles↔Blancarde closed Mon 11/9 → Sun 11/15 noon; Nice/Toulon TERs start at Blancarde.",
+          "text": "🚆 ZOU! TER Marseille BLANCARDE 13:04 → Nice Ville 15:38 (direct, 2h34) — ⚠️ departs La Blancarde, NOT St-Charles, the week of 11/9 (Av. des Chartreux rail-bridge works). Get there by tram T1 from Noailles (~9 min; Noailles is ~8 min walk from the hotel) or a short taxi. Pay on the day, €41.90 pp. Other direct trains: 10:02→12:38 · 14:04→16:40 · 17:04→19:37 · 18:04→20:39 (12:11 and 15:15 are slower, ~2h55). (timetables checked 10/23 — re-check the day before) ✅ Works reconfirmed 11/3 (La Provence): St-Charles↔Blancarde closed Mon 11/9 → Sun 11/15 noon; Nice/Toulon TERs start at Blancarde.",
           "status": "payday"
         },
         {
@@ -1108,7 +1108,7 @@
         },
         {
           "time": "3:45p",
-          "text": "Èze cliff-top medieval village in the late-afternoon light — Fragonard perfume factory shop, lanes up to the Jardin Exotique (check closing time); sunset ~5:05.",
+          "text": "Èze cliff-top village: walk STRAIGHT UP to the Jardin Exotique first (Nov hours 9:00–16:30, so ~40 min there after the 15:40 bus), then the lanes, Fragonard shop and sunset (~5:05) on the way down. Checked 11/3 at jardinexotique-eze.fr.",
           "status": "confirmed",
           "lat": 43.7302391,
           "lng": 7.3613607,
@@ -1153,7 +1153,7 @@
         {
           "time": "12:28p",
           "status": "booked",
-          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder. ⚠️ Trenitalia has planned works on the Genova–Milano lines on some days 11/7–22 (regional changes/partial cancellations) — check the Trenitalia app with ticket code 2987179016 the day before.",
+          "text": "🚆 BOOKED — Regionale 12267 Ventimiglia 12:28 → Savona 14:25, then Regionale Veloce 3021 Savona 14:34 → Milano Centrale 17:39 (tight 9-min change, same station — move quickly). Trenitalia ticket code 2987179016, 2 pax, €25.70. Confirmation in the private Confirmations/Rail folder. ✅ Rechecked 11/3: both trains still run as booked. Trenitalia's Genova–Milano works notice for 13 Nov only names RV 3045, not your RV 3021. Still glance at the Trenitalia app the day before. If the Savona connection is missed: IC 15:10→19:00 or 16:59→21:05.",
           "missCost": {
             "risk": "prepaid",
             "label": "Paid €25.70",
@@ -1209,7 +1209,7 @@
         },
         {
           "time": "12:00p",
-          "text": "OPTIONAL: The Last Supper — only book if a convenient timed ticket appears; otherwise skip and make this a Milan walking/shopping/local-food day",
+          "text": "OPTIONAL: The Last Supper — booking is mandatory and you must arrive 30 min before your slot. Extra tickets are released every WEDNESDAY at 12:00 (Italy) for the following week, so Wed 11/11 at noon (6am ET) is the drop for Sat 11/14 (lastsupper.shop / cenacolovinciano.org). Open Tue–Sun 8:15–19:00. Otherwise skip and make this a Milan walking/shopping/food day.",
           "status": "optional",
           "lat": 45.4667149,
           "lng": 9.1696197,
@@ -1316,7 +1316,7 @@
         },
         {
           "time": "8:00p",
-          "text": "Dinner: Al Covo (Castello, ~5 min from hotel) — SWAP from Antiche Carampane (CLOSED Sundays; 11/15 is a Sunday). Al Covo normally open Sun (closed Wed/Thu). Book by PHONE — old website is defunct. Backup: Trattoria alla Madonna ☎ +39 041 522 3824 (open Sun, near Rialto). ⚠️ reconfirm the Sunday date ✅ BACKUP BOOKED: Al Giardinetto da Severino (Ruga Giuffa, ~3 min from the hotel) 8:30p — keep unless Al Covo confirms by phone, then cancel one.",
+          "text": "Dinner: Al Covo (Castello, ~5 min from hotel) — SWAP from Antiche Carampane (CLOSED Sundays; 11/15 is a Sunday). Al Covo normally open Sun (closed Tue/Wed). Book by PHONE — old website is defunct. Backup: Trattoria alla Madonna ☎ +39 041 522 3824 (open Sun, near Rialto). ⚠️ reconfirm the Sunday date ✅ BACKUP BOOKED: Al Giardinetto da Severino (Ruga Giuffa, ~3 min from the hotel) 8:30p — keep unless Al Covo confirms by phone, then cancel one.",
           "status": "to_book",
           "lat": 45.4341254,
           "lng": 12.3475727,
@@ -1491,7 +1491,7 @@
         },
         {
           "time": "7:30p",
-          "text": "Dinner in Como: Ristorante Sociale (~€35–50, central near the Duomo, reliably open off-season) — DEFAULT. Alts: Feel Como (6-table tasting room, €100+ pp — splurge only) or Pesa Vegia in Bellagio (seafood for Nicole). NOTE: prior pick Osteria dell'Angolo del Silenzio is CLOSED. Reserve a few days out (Nov off-season hours).",
+          "text": "Dinner in Como — ⚠️ CHANGE NEEDED: Ristorante Sociale (the old default) is CLOSED ON TUESDAYS (checked 11/3, ristorantesociale.it). Options: Feel Como (open Tue, closed Mon only; 6-table tasting room, €100+ pp; book via feelcomo.com/en/prenota or ☎ +39 334 726 4545) · La Colombetta (Via Diaz 40, seafood; online booking needs a card with a €50 pp no-show charge, ☎ +39 031 262703) · or eat back in Milan near the hotel. ('Pesa Vegia in Bellagio' was a mistake: it's a January festival in Bellano, not a restaurant.) Prior pick Osteria dell'Angolo del Silenzio is also closed.",
           "status": "book",
           "lat": 45.8118,
           "lng": 9.082,
@@ -1499,7 +1499,7 @@
         },
         {
           "time": "9:36p",
-          "text": "🚆 Como S. Giovanni → Milano Centrale: 20:36 → 21:17 · 21:36 → 22:17 (direct RE, €5.40) · EC 21:10 → 21:50 / 22:10 → 22:50 (€16, faster). 22:10 EC is the LAST direct train — after that only slow connections arriving 23:07+. Monza is fully skippable day-of.",
+          "text": "🚆 Como S. Giovanni → Milano Centrale: 20:36 → 21:17 · 21:36 → 22:17 (direct RE, €5.40) · EC 21:10 → 21:50 / 22:10 → 22:50 (€16, faster). 22:10 EC is the LAST direct train — next is 22:20 → 23:37 (1 change). Monza is fully skippable day-of. Como–Chiasso works do not apply on Tue 11/17 (checked 11/3).",
           "status": "tentative"
         }
       ],
@@ -1517,7 +1517,7 @@
       "items": [
         {
           "time": "11:10a",
-          "text": "🚆 EuroCity 150 Milano Centrale 11:10 → Basel SBB 15:26 — BOOKED (Trenitalia Smart2, 2nd class), coach 4, seats 16 (Max) & 15 (Nicole). Be at Centrale by ~10:45; tell the conductor your PNR (in the private confirmations folder).",
+          "text": "🚆 EuroCity 150 Milano Centrale 11:10 → Basel SBB 15:26 — BOOKED (Trenitalia Smart2, 2nd class), coach 4, seats 16 (Max) & 15 (Nicole). Be at Centrale by ~10:45; tell the conductor your PNR (in the private confirmations folder). ✅ Rechecked 11/3: not affected by the Como–Chiasso works (those are 14/15/21/22 Nov). Arrives Basel SBB platform 9.",
           "status": "booked",
           "missCost": {
             "risk": "prepaid",
@@ -1556,12 +1556,12 @@
       "items": [
         {
           "time": "9:21a",
-          "text": "🚆 TER Basel SBB → Strasbourg 9:21 → 10:39 (direct, 1h18) — or 8:51 → 10:09. Leaves from the French platforms (30–35) at Basel SBB. Pay on the day (SNCF).",
+          "text": "🚆 TER Basel SBB → Strasbourg 9:21 → 10:39 (direct, 1h18) — or 8:51 → 10:09. Leaves from the French platforms (30–35; it was platform 31 when checked) at Basel SBB. Pay on the day (SNCF).",
           "status": "payday"
         },
         {
           "time": "11:00a",
-          "text": "Strasbourg overplan: Grande Île loop, Notre-Dame Cathedral exterior/interior, astronomical-clock window if timing works, Petite France canals, Barrage Vauban view, and shopping on Rue des Grandes Arcades / Place Kléber / Galeries Lafayette. Christmas market likely opens after this date — verify closer, but don't depend on it.",
+          "text": "Strasbourg overplan: Grande Île loop, Notre-Dame Cathedral exterior/interior, astronomical-clock window if timing works, Petite France canals, Barrage Vauban view, and shopping on Rue des Grandes Arcades / Place Kléber / Galeries Lafayette. Christmas market: NOT open yet (2026 dates are Nov 27–Dec 24, noel.strasbourg.eu), so enjoy the city without it.",
           "status": "confirmed",
           "lat": 48.5818885,
           "lng": 7.7510521,
@@ -1577,7 +1577,7 @@
         },
         {
           "time": "3:30p",
-          "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — Little Venice canals, half-timbered lanes, quick Alsatian-photo hit. Treat as bonus postcard stop, not required.",
+          "text": "Optional add IF energy allows: stop in Colmar on the way back (~30min, on the Basel line) — Little Venice canals, half-timbered lanes, quick Alsatian-photo hit. Treat as bonus postcard stop, not required. Christmas markets won't be open yet (late November), so treat it as canals + old town only.",
           "status": "tentative",
           "lat": 48.0777517,
           "lng": 7.3579641,
@@ -1586,7 +1586,7 @@
         {
           "time": "4:51p",
           "status": "payday",
-          "text": "🚆 Back to Basel: Strasbourg → Basel SBB direct 16:21→17:38 · 16:51→18:08 · 17:21→18:38 · 18:51→20:08. If stopping in Colmar: Colmar → Basel 17:23→18:08 · 17:53→18:38 · 19:23→20:08. (timetables checked 10/23 — re-check the day before)"
+          "text": "🚆 Back to Basel: Strasbourg → Basel SBB direct 16:21→17:38 · 16:51→18:08 · 17:21→18:38 · 18:51→20:08. If stopping in Colmar: Colmar → Basel 17:23→18:08 · 17:53→18:38 · 19:23→20:08. (timetables checked 10/23 — re-check the day before) ✅ Rechecked 11/3, all direct. Note: 17:51 from Strasbourg is NOT direct (arr 19:20), and neither is 18:23 from Colmar."
         },
         {
           "time": "8:00p",
@@ -1615,7 +1615,7 @@
         },
         {
           "time": "11:00a",
-          "text": "Freiburg overplan: Münster cathedral + Münstermarkt (open Fri), Lange Rote / market grazing, Bächle canals, Historisches Kaufhaus, Schwabentor/Martinstor gates, Kaiser-Joseph-Strasse shopping, Markthalle grazing, and maybe the Weihnachtsmarkt if it has opened.",
+          "text": "Freiburg overplan: Münster cathedral + Münstermarkt (open Fri), Lange Rote / market grazing, Bächle canals, Historisches Kaufhaus, Schwabentor/Martinstor gates, Kaiser-Joseph-Strasse shopping, Markthalle grazing. (The Christmas market opens Mon 11/23, so not this visit.)",
           "status": "confirmed",
           "lat": 47.9955486,
           "lng": 7.8529213,
@@ -1637,7 +1637,7 @@
         {
           "time": "5:18p",
           "status": "payday",
-          "text": "🚆 Back to Basel: Freiburg → Basel SBB 17:18 → 18:21 (RE7 direct) · or 16:42 → 17:59 / 17:42 → 18:56 (via Basel Bad. Bf + tram). (timetables checked 10/23 — re-check the day before)"
+          "text": "🚆 Back to Basel: Freiburg → Basel SBB 17:18 → 18:21 (RE7 direct) · or 16:42 → 17:59 / 17:42 → 18:56 (via Basel Bad. Bf + tram). (timetables checked 10/23 — re-check the day before) ✨ Optional: Basel switches on its Christmas lights ('Ystimme') TONIGHT at 5:30pm on Marktplatz. To catch it, take the 16:18 RE7 from Freiburg to Basel Badischer Bahnhof (arr 17:07), then tram ~10 min to Marktplatz (~17:20). Checked 11/3 against SBB timetable data. Tip: on the usual 17:18, getting off at Basel Bad. Bf and taking tram 2 reaches Basel SBB at 18:14 (7 min sooner)."
         },
         {
           "time": "8:00p",
@@ -1685,7 +1685,7 @@
         },
         {
           "time": "2:30p",
-          "text": "⛰️ Weather call — RIGI (default if clear): Luzern 13:18 → Rigi Kulm 14:34 (train to Arth-Goldau + cogwheel); down Rigi Kulm 15:48 → Basel SBB 18:26 (via Arth-Goldau, no need to return to Lucerne). PILATUS: the Kriens gondola/cable car is CLOSED 19 Oct–27 Nov 2026 (overhaul) — only the Alpnachstad cogwheel (S5 12:42 → Pilatus Kulm 13:52); check pilatus.ch the day before. If clouds/rain, skip the peak.",
+          "text": "⛰️ Weather call — RIGI (default if clear): Luzern 13:18 → Rigi Kulm 14:34 (train to Arth-Goldau + cogwheel); down Rigi Kulm 15:48 → Basel SBB 18:26 (2 changes: Arth-Goldau 16:45 EC → Zürich HB 17:34 IC3; tight 6- and 7-min connections). Safer fallback: same 15:48 down, then IC21 Arth-Goldau 17:15 → Basel 18:55 (1 change), still fine for the 8pm dinner. Rigi cogwheel railways are running; only some cable cars are in November maintenance (checked 11/3, rigi.ch). PILATUS: the Kriens gondola/cable car is CLOSED 19 Oct–27 Nov 2026 (overhaul) — only the Alpnachstad cogwheel (S5 12:42 → Pilatus Kulm 13:52); check pilatus.ch the day before. If clouds/rain, skip the peak.",
           "status": "tentative",
           "lat": 46.9789,
           "lng": 8.2525,
@@ -1815,7 +1815,7 @@
       "items": [
         {
           "time": "10:00a",
-          "text": "Bahnhofstrasse WATCH SHOPPING (Beyer + museum, Bucherer, Gübelin, Les Ambassadeurs) — plus Globus & Grieder department stores and Sprüngli / Luxemburgerli macarons at Paradeplatz (Jelmoli, the historic dept store, is winding down — verify it's still open)",
+          "text": "Bahnhofstrasse WATCH SHOPPING (Beyer shop, but its watch MUSEUM is closed while it moves, reopening autumn 2027; Bucherer, Gübelin, Les Ambassadeurs) — plus Globus & Grieder department stores and Sprüngli / Luxemburgerli macarons at Paradeplatz (Jelmoli, the historic dept store, is winding down — verify it's still open)",
           "status": "tentative",
           "lat": 47.3757655,
           "lng": 8.5391706,
@@ -1908,8 +1908,8 @@
               "lng": 8.6156,
               "mapLabel": "Rhine Falls (Schaffhausen)",
               "booked": false,
-              "booking": "Train Zurich HB → Schaffhausen ~40 min (pay-on-day, SBB). IWC museum is walk-in; a full manufacture tour needs advance arrangement.",
-              "detail": "~9:00 train to <b>Schaffhausen</b> for the <b>Rhine Falls</b> — Europe's largest waterfall, with a boat out to the central rock in season (half-day). ~11:30 <b>IWC Schaffhausen</b> watch museum at the manufacture HQ (Baumgartenstrasse 15). Afternoon: linger in Schaffhausen's Altstadt or head back for more Zurich. A big-nature finale — easy walking, fine at this stage."
+              "booking": "Train Zurich HB → Schaffhausen ~40 min (pay on the day, SBB). ⚠️ IWC Museum: open Wed 9:00–17:30 but REGISTRATION IS REQUIRED. Register online at iwc.com before going (checked 11/3).",
+              "detail": "~9:00 train to <b>Schaffhausen</b> for the <b>Rhine Falls</b> — Europe's largest waterfall. The boats to the central rock only run April–October, so in November it's viewpoints from the banks (still spectacular). ~11:30 <b>IWC Schaffhausen</b> watch museum (register online first) at the manufacture HQ (Baumgartenstrasse 15). Afternoon: linger in Schaffhausen's Altstadt or head back for more Zurich. A big-nature finale — easy walking, fine at this stage."
             },
             {
               "id": "relaxedzurich",
@@ -2340,7 +2340,7 @@
       "city": "Venice",
       "name": "Al Covo (Sunday-open swap)",
       "tier": "LOCAL",
-      "why": "Authentic Castello seafood ~5 min from Ca' dei Conti — the Sunday-open replacement for Antiche Carampane, which is CLOSED Sundays (11/15 is a Sunday). Al Covo closed Wed/Thu, normally open Sun. Book by PHONE — the old alcovo.com is defunct. Backup: Trattoria alla Madonna, San Polo, ☎ +39 041 522 3824, open Sun; or CoVino (Castello, tiny). Reconfirm the exact Sunday.",
+      "why": "Authentic Castello seafood ~5 min from Ca' dei Conti — the Sunday-open replacement for Antiche Carampane, which is CLOSED Sundays (11/15 is a Sunday). Al Covo closed Tue/Wed, normally open Sun. Book by PHONE — the old alcovo.com is defunct. Backup: Trattoria alla Madonna, San Polo, ☎ +39 041 522 3824, open Sun; or CoVino (Castello, tiny). Reconfirm the exact Sunday.",
       "price": "€80–110/2",
       "when": "11/15 8pm",
       "booking": "Backup booked: Al Giardinetto da Severino, 8:30 PM. Still worth a call (phone only) — if Al Covo has a table, book it and cancel the backup.",
@@ -2948,7 +2948,7 @@
       "date": "11/14",
       "provider": "vivaticket",
       "status": "optional",
-      "notes": "Reframed 10/15: only book if a convenient slot appears without warping the day. Otherwise skip and use 11/14 for Milan walking, historic sights, shopping, and snacks. Official channel remains cenacolovinciano.vivaticket.it if you decide to go."
+      "notes": "Booking mandatory; arrive 30 min early. New tickets drop every Wednesday at 12:00 Italy time for the following week, so try Wed 11/11 at noon (6am ET, you'll be in Nice) for Sat 11/14. Official: cenacolovinciano.org/en/info/ → lastsupper.shop. Optional; skip if no good slot."
     },
     {
       "item": "Musée Marc Chagall — Nice",
