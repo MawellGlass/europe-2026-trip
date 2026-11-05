@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-11-03",
+    "lastUpdated": "2026-11-05 (Bag split applied: wear / sling / YETI / checked on every packing item + bag plan; 11/13 TER = pick 08:54 or 09:23 on the day + Radical Storage to book) · 2026-11-03",
     "lastAppEdit": "2026-10-28 15:35 (edited in app)"
   },
   "segments": [
@@ -334,7 +334,7 @@
       "route": "Ventimiglia → Savona → Milano Centrale",
       "service": "Regionale 12267 + Regionale Veloce 3021",
       "time": "12:28 → 17:39 (Savona change 14:25→14:34)",
-      "book": "BOOKED 2026-10-19 via Trenitalia — ticket code 2987179016; confirmation saved in Confirmations/Rail/2026-11-13 Ventimiglia to Milan. Nice→Ventimiglia TER is pay-on-day (€10.60 pp) — see TER options; latest comfortable is 10:24→11:18.",
+      "book": "BOOKED 2026-10-19 via Trenitalia — ticket code 2987179016; confirmation saved in Confirmations/Rail/2026-11-13 Ventimiglia to Milan. Nice→Ventimiglia TER is pay-on-day (€10.60 pp) — PICK ON THE DAY: 08:54→09:48 (more market) or 09:23→10:17 (calmer morning); the storage booking works for both. Latest comfortable if you skip the market: 10:24→11:18.",
       "scheduleOptions": [
         {
           "label": "Booked",
@@ -342,19 +342,19 @@
           "note": "Ventimiglia→Savona→Milano Centrale; tight 9-minute Savona change."
         },
         {
-          "label": "TER — plan",
+          "label": "TER — option A (pick on the day)",
+          "time": "08:54→09:48 Nice→Ventimiglia",
+          "note": "More market (~1h50). Leave the hotel ~20 min before."
+        },
+        {
+          "label": "TER — option B (pick on the day)",
           "time": "09:23→10:17 Nice→Ventimiglia",
-          "note": "~2h for the Friday market before the 12:28."
+          "note": "Calmer morning; ~1h15 at the market."
         },
         {
-          "label": "TER — more market",
-          "time": "08:54→09:48",
-          "note": "Earliest relaxed option."
-        },
-        {
-          "label": "TER — later, still easy",
+          "label": "TER — later, no market",
           "time": "09:54→10:48 or 10:24→11:18",
-          "note": "10:24 is the latest comfortable option (~1h buffer)."
+          "note": "Skip storage + market and just make the 12:28. 10:24 is the latest comfortable (~1h buffer)."
         },
         {
           "label": "TER — backup only",
@@ -1138,17 +1138,33 @@
       ],
       "items": [
         {
-          "time": "9:23a",
-          "text": "🚆 TER Nice Ville → Ventimiglia 9:23 → 10:17 — PAY ON THE DAY (local regional, €10.60 pp). TER options (SNCF timetable for Fri 11/13, €10.60 pp, buy at the station or SNCF Connect / ZOU! app): 08:54→09:48 · 09:23→10:17 (plan, ~2h market) · 09:54→10:48 · 10:24→11:18 (latest comfortable, ~1h buffer) · 10:53→11:52 (backup only, 36 min) · ❌ 11:23→12:21 is too tight. Re-check times the week before.",
+          "time": "8:54a",
+          "text": "🚆 TER Nice → Ventimiglia: Ⓐ 08:54→09:48 or Ⓑ 09:23→10:17 (pick on the day) — Ⓐ = more market (~1h50); Ⓑ = calmer morning (~1h15 at the market). PAY ON THE DAY (€10.60 pp, station machine or SNCF Connect / ZOU! app). Bring everything — you check out of Nice for good. Later fallbacks (skip storage + market): 09:54→10:48 · 10:24→11:18 (latest comfortable) · 10:53→11:52 (backup only, 36 min) · ❌ 11:23→12:21 is too tight. Re-check times the night before.",
           "status": "payday"
         },
         {
-          "time": "10:15a",
-          "text": "🛍 Optional bridge — Ventimiglia FRIDAY market: one of the Riviera's biggest street markets sprawls by the station on Fridays (11/13 IS a Friday) — Italian leather, linens, food. — ~2-hour window between the TER arrival and the booked 12:28 train; be back at the station by ~12:10.",
+          "time": "9:50a",
+          "status": "to_book",
+          "text": "🧳 Drop 2 suitcases at Radical Storage, Via Roma 1/a (book online first) — about 09:55 if you took Ⓐ 08:54, about 10:25 if Ⓑ 09:23. ~5 min walk from the station; open 8:00–19:00. BOOK ONLINE before the day: drop-off 09:45, pick-up 12:15 covers either train. ~€5 + €1.99 protection per bag ≈ €14 for 2. Use the 'near Ventimiglia Railway Station' OFFICE listing, NOT the 'Café' one (kebab shop, opens 11:00). The exact address comes in the booking email. Photograph the bags at drop-off. YETIs + slings stay on you.",
+          "lat": 43.79205,
+          "lng": 7.60604,
+          "place": "Radical Storage — Via Roma 1/a, Ventimiglia"
+        },
+        {
+          "time": "10:00a",
+          "text": "🛍 Ventimiglia FRIDAY market — one of the Riviera's biggest street markets, sprawling by the station on Fridays (11/13 IS a Friday): Italian leather, linens, food. Hands free with the suitcases stored. Ⓐ ≈10:00–11:45 · Ⓑ ≈10:30–11:45. Slings in front: busy crowds.",
           "status": "optional",
           "lat": 43.7907,
           "lng": 7.6087,
           "place": "Ventimiglia Friday market"
+        },
+        {
+          "time": "11:50a",
+          "status": "",
+          "text": "🧳 Pick up suitcases at Radical Storage → platform by ~12:10 — 5-min walk back to the station for the booked 12:28.",
+          "lat": 43.79205,
+          "lng": 7.60604,
+          "place": "Radical Storage — Via Roma 1/a, Ventimiglia"
         },
         {
           "time": "12:28p",
@@ -2837,10 +2853,10 @@
       "city": "Ventimiglia",
       "target": "Friday market finds",
       "place": "Ventimiglia Friday market",
-      "when": "11/13 train bridge",
+      "when": "11/13 train bridge (Ⓐ 08:54 or Ⓑ 09:23 TER)",
       "type": "optional browse",
       "priority": "low",
-      "notes": "Italian leather, linens, food-market browse. Only if train timing supports a longer layover."
+      "notes": "Italian leather, linens, food-market browse. ~1h15–1h50 depending on the TER you pick; suitcases in Radical Storage (Via Roma 1/a) so you're hands free."
     },
     {
       "city": "Venice",
@@ -3155,6 +3171,17 @@
         "status": "payday",
         "due": "2026-11-13",
         "note": "Pay on the day — €10.60 pp at the station or SNCF Connect"
+      },
+      {
+        "cat": "Misc",
+        "label": "Ventimiglia luggage storage — Radical Storage (2 suitcases)",
+        "date": "Nov 13",
+        "cur": "EUR",
+        "est": 14,
+        "actual": null,
+        "status": "todo",
+        "due": "2026-11-13",
+        "note": "Book online before 11/13: ~€5 + €1.99 protection per bag. Drop-off 09:45 / pick-up 12:15 works for either TER."
       },
       {
         "cat": "Trains",
@@ -4300,52 +4327,58 @@
     }
   ],
   "packing": {
-    "note": "Clothes: pack ~14 days → wear ~8 days to Milan → drop-off laundry Sat 11/14 (Stella d'Oro) → 14 clean days for the last 13.",
+    "note": "Each of you: 1 checked suitcase + YETI 27L backpack + crossbody sling — no roller carry-ons. Clothes: pack ~14 days → wear ~8 days to Milan → drop-off laundry Sat 11/14 (Stella d'Oro) → 14 clean days for the last 13.",
     "sections": [
       {
         "id": "docs",
         "icon": "🛂",
         "title": "Documents & money",
-        "hint": "Carry-on, never checked",
+        "hint": "In the SLING (worn in front), never checked",
         "items": [
           {
             "id": "docs-passport",
             "t": "Passport — valid to at least late Feb 2027",
             "who": "both",
             "qty": 1,
-            "why": "Schengen: 3+ months past 11/26"
+            "why": "Schengen: 3+ months past 11/26",
+            "bag": "sling"
           },
           {
             "id": "docs-ge",
             "t": "Global Entry card / Mobile Passport Control app",
             "who": "both",
             "qty": 1,
-            "why": "US preclearance in Dublin 11/27"
+            "why": "US preclearance in Dublin 11/27",
+            "bag": "sling"
           },
           {
             "id": "docs-license",
             "t": "Driver's license (2nd photo ID)",
             "who": "both",
             "qty": 1,
-            "why": "Nice synagogue 11/10"
+            "why": "Nice synagogue 11/10",
+            "bag": "sling"
           },
           {
             "id": "docs-cards",
             "t": "Credit cards with no foreign-transaction fee (carry them separately)",
             "who": "shared",
-            "qty": 2
+            "qty": 2,
+            "bag": "sling"
           },
           {
             "id": "docs-debit",
             "t": "Debit card for ATM cash",
             "who": "shared",
-            "qty": 1
+            "qty": 1,
+            "bag": "sling"
           },
           {
             "id": "docs-cash",
             "t": "Cash: ~€100 + CHF 50 + £20",
             "who": "shared",
-            "why": "Markets, buses, cafés, toilets"
+            "why": "Markets, buses, cafés, toilets",
+            "bag": "sling"
           },
           {
             "id": "docs-ins",
@@ -4364,97 +4397,112 @@
         "id": "clothes",
         "icon": "🧥",
         "title": "Clothes — 14 days + Milan laundry",
-        "hint": "0–17 °C: Riviera mild, Milan/Venice damp, Basel/Zurich/Lucerne cold. Wear the coat + walking shoes on the plane.",
+        "hint": "Riviera highs 58–70 °F · Milan/Venice 49–59 °F · Basel/Zurich 38–46 °F · Rigi below freezing. Wear the coat + walking shoes on travel days; bulk clothes go in the checked bags.",
         "items": [
           {
             "id": "clothes-under",
             "t": "Underwear",
             "who": "both",
-            "qty": 14
+            "qty": 14,
+            "bag": "checked"
           },
           {
             "id": "clothes-socks",
             "t": "Socks (incl. 4 warm/wool pairs)",
             "who": "both",
-            "qty": 14
+            "qty": 14,
+            "bag": "checked"
           },
           {
             "id": "clothes-tees",
             "t": "T-shirts / base tops",
             "who": "both",
-            "qty": 8
+            "qty": 8,
+            "bag": "checked"
           },
           {
             "id": "clothes-shirts",
             "t": "Long-sleeve shirts / blouses",
             "who": "both",
-            "qty": 6
+            "qty": 6,
+            "bag": "checked"
           },
           {
             "id": "clothes-sweater",
             "t": "Sweaters / fleeces",
             "who": "both",
-            "qty": 3
+            "qty": 3,
+            "bag": "checked",
+            "why": "Including the 1 mid-layer that rides in the YETI"
           },
           {
             "id": "clothes-pants",
             "t": "Pants / jeans",
             "who": "both",
-            "qty": 4
+            "qty": 4,
+            "bag": "checked"
           },
           {
             "id": "clothes-sleep",
             "t": "Sleepwear",
             "who": "both",
-            "qty": 2
+            "qty": 2,
+            "bag": "checked"
           },
           {
             "id": "clothes-thermal",
             "t": "Thermal base layer set (top + bottom)",
             "who": "both",
             "qty": 1,
-            "why": "Rigi mountain day 11/21"
+            "why": "Rigi mountain day 11/21",
+            "bag": "checked"
           },
           {
             "id": "clothes-coat",
-            "t": "Warm, water-resistant coat",
+            "t": "Warm coat — WEAR it on travel days (Max: Patagonia bomber, shirts underneath)",
             "who": "both",
             "qty": 1,
-            "why": "Swiss evenings + Christmas markets"
+            "why": "Add the mid-layer for Basel, Zurich and Rigi",
+            "bag": "wear"
           },
           {
             "id": "clothes-rain",
             "t": "Packable rain shell or compact umbrella",
             "who": "both",
             "qty": 1,
-            "why": "Venice + Dublin rain"
+            "why": "Riviera rain likely 11/9–12, plus Venice and Dublin",
+            "bag": "yeti"
           },
           {
             "id": "clothes-hat",
             "t": "Warm hat + gloves + scarf",
             "who": "both",
-            "qty": "1 set"
+            "qty": "1 set",
+            "bag": "checked"
           },
           {
             "id": "clothes-walk",
-            "t": "Waterproof, broken-in walking shoes",
+            "t": "Walking shoes — WEAR on the plane (Max: AF1s)",
             "who": "both",
             "qty": 1,
-            "why": "Cobbles + stairs: Èze, Venice, Monaco-Ville"
+            "why": "No waterproof pair: water-repellent spray + wool socks; the Hokas are the wet-day backup",
+            "bag": "wear"
           },
           {
             "id": "clothes-shoe2",
-            "t": "Second pair of everyday shoes",
+            "t": "Second pair of everyday shoes (Max: old Hokas, crush-packed)",
             "who": "both",
             "qty": 1,
-            "why": "In case one pair gets soaked"
+            "why": "Swap in when the AF1s get soaked; best on long dry walking days",
+            "bag": "checked"
           },
           {
             "id": "clothes-lbag",
             "t": "Laundry bag for dirty clothes",
             "who": "both",
             "qty": 1,
-            "why": "Carry it to the Milan drop-off"
+            "why": "Carry it to the Milan drop-off",
+            "bag": "checked"
           }
         ]
       },
@@ -4462,69 +4510,78 @@
         "id": "dressy",
         "icon": "✨",
         "title": "Dressy nights",
-        "hint": "Le Sens 11/10 · anniversary 11/9 · casino 11/12 · Joia 11/14 · synagogue 11/10",
+        "hint": "All in the CHECKED bags, including the anniversary outfit (La Rossettisserie 11/9). Le Sens 11/10 · casino 11/12 · Joia 11/14 · synagogue 11/10",
         "items": [
           {
             "id": "dressy-nic-dress",
             "t": "Long dress + white sweater",
             "who": "nicole",
             "qty": 1,
-            "why": "Casino de Monte-Carlo dress code"
+            "why": "Casino de Monte-Carlo dress code",
+            "bag": "checked"
           },
           {
             "id": "dressy-nic-flats",
             "t": "Closed-toe ballet flats",
             "who": "nicole",
             "qty": 1,
-            "why": "Casino: no sneakers or open sandals"
+            "why": "Casino: no sneakers or open sandals",
+            "bag": "checked"
           },
           {
             "id": "dressy-nic-outfits",
             "t": "Dressy dinner outfits",
             "who": "nicole",
             "qty": 2,
-            "why": "Joia ★ (\"dress up\") + Le Sens / anniversary"
+            "why": "Joia ★ (\"dress up\") + Le Sens / anniversary",
+            "bag": "checked"
           },
           {
             "id": "dressy-max-shirts",
             "t": "Collared dress shirts",
             "who": "max",
             "qty": 2,
-            "why": "Casino + fancy dinners"
+            "why": "Casino + fancy dinners",
+            "bag": "checked"
           },
           {
             "id": "dressy-max-pants",
             "t": "Smart trousers",
             "who": "max",
-            "qty": 1
+            "qty": 1,
+            "bag": "checked"
           },
           {
             "id": "dressy-max-shoes",
-            "t": "Closed leather shoes",
+            "t": "Closed leather shoes (Max: brown dress shoes)",
             "who": "max",
             "qty": 1,
-            "why": "Casino: no sneakers"
+            "why": "Casino: no sneakers",
+            "bag": "checked"
           },
           {
             "id": "dressy-max-blazer",
             "t": "Blazer / smart jacket (optional)",
             "who": "max",
             "qty": 1,
-            "why": "Joia + Le Sens"
+            "why": "Joia + Le Sens",
+            "bag": "checked"
           },
           {
             "id": "dressy-modest",
             "t": "Modest outfit (covered shoulders/knees)",
             "who": "both",
             "qty": 1,
-            "why": "Synagogue + Duomo"
+            "why": "Synagogue + Duomo",
+            "bag": "checked"
           },
           {
             "id": "dressy-kippah",
             "t": "Kippah",
             "who": "max",
             "qty": 1,
-            "why": "Synagogue visit"
+            "why": "Synagogue visit",
+            "bag": "checked"
           }
         ]
       },
@@ -4542,39 +4599,45 @@
             "why": "Thick German Schuko plugs don't fit Swiss sockets",
             "qtyBy": {
               "s": 4
-            }
+            },
+            "bag": "yeti"
           },
           {
             "id": "tech-adG",
             "t": "Type G adapter (UK / Ireland)",
             "who": "shared",
             "qty": 1,
-            "why": "London + Dublin"
+            "why": "London + Dublin",
+            "bag": "yeti"
           },
           {
             "id": "tech-chg",
             "t": "Phone charger + cable",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           },
           {
             "id": "tech-watch",
             "t": "Watch charger",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           },
           {
             "id": "tech-pb",
-            "t": "Power bank (carry-on only)",
+            "t": "Power bank (never in checked bags)",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           },
           {
             "id": "tech-ear",
             "t": "Earbuds / noise-cancelling headphones",
             "who": "both",
             "qty": 1,
-            "why": "Overnight flight"
+            "why": "Overnight flight",
+            "bag": "sling"
           },
           {
             "id": "tech-esim",
@@ -4592,111 +4655,165 @@
         "id": "toil",
         "icon": "🧴",
         "title": "Toiletries & health",
-        "hint": "Carry-on liquids ≤100 ml each, all in one clear bag",
+        "hint": "Liquids ≤100 ml each in ONE clear bag in the YETI. Take it out at PHL and LHR security. Full-size bottles go in checked.",
         "items": [
           {
             "id": "toil-meds",
             "t": "Prescription meds in original bottles (+ a few spare days)",
-            "who": "both"
+            "who": "both",
+            "bag": "sling+yeti",
+            "why": "Today's dose in the sling, the rest in the YETI — never checked"
           },
           {
             "id": "toil-kit",
             "t": "Toiletry kit (travel-size)",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti+checked",
+            "why": "Travel-size in the YETI; refills in checked"
           },
           {
             "id": "toil-otc",
             "t": "First aid: pain reliever, stomach meds, allergy, blister plasters",
             "who": "shared",
             "qty": "1 kit",
-            "why": "Lots of walking"
+            "why": "Lots of walking",
+            "bag": "yeti"
           },
           {
             "id": "toil-jet",
             "t": "Sleep / jet-lag aid you already trust",
             "who": "both",
-            "why": "Overnight flight 11/6"
+            "why": "Overnight flight 11/6",
+            "bag": "yeti"
           },
           {
             "id": "toil-lip",
             "t": "Lip balm + hand cream",
             "who": "both",
             "qty": 1,
-            "why": "Cold, dry Alpine air"
+            "why": "Cold, dry Alpine air",
+            "bag": "sling"
           },
           {
             "id": "toil-sun",
             "t": "Sunglasses + sunscreen",
             "who": "both",
             "qty": 1,
-            "why": "Riviera + snow glare on Rigi"
+            "why": "Riviera + snow glare on Rigi",
+            "bag": "sling"
           }
         ]
       },
       {
         "id": "day",
-        "icon": "🎒",
-        "title": "Day bag",
+        "icon": "👝",
+        "title": "Day bag (the sling)",
         "hint": "",
         "items": [
           {
             "id": "day-xbody",
-            "t": "Crossbody / anti-theft day bag",
+            "t": "Crossbody sling (Max: North Face Borealis) — wear it in FRONT on trains, trams and in Venice",
             "who": "both",
             "qty": 1,
-            "why": "Pickpockets: Milano Centrale, Venice, Nice tram"
+            "why": "Pickpockets: Milano Centrale, Venice, Nice tram",
+            "bag": "wear"
           },
           {
             "id": "day-bottle",
             "t": "Reusable water bottle",
             "who": "both",
             "qty": 1,
-            "why": "Basel & Zurich fountains are drinkable"
+            "why": "Empty it before security · Basel and Zurich fountains are drinkable",
+            "bag": "yeti"
           },
           {
             "id": "day-tote",
             "t": "Foldable shopping tote",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           },
           {
             "id": "day-coins",
             "t": "Coins for public toilets (€0.50–1.50)",
-            "who": "shared"
+            "who": "shared",
+            "bag": "sling"
+          }
+        ]
+      },
+      {
+        "id": "yeti",
+        "icon": "🎒",
+        "title": "YETI 27L — carry kit (each)",
+        "hint": "What you'd need if a checked bag shows up a day late, plus the liquids bag and anything valuable",
+        "items": [
+          {
+            "id": "yeti-clothes",
+            "t": "Days of clothes (lost-bag insurance)",
+            "who": "both",
+            "qty": 2,
+            "bag": "yeti"
+          },
+          {
+            "id": "yeti-mid",
+            "t": "Mid-layer (fleece / quarter-zip) for cold trains, planes and Switzerland",
+            "who": "both",
+            "qty": 1,
+            "bag": "yeti"
+          },
+          {
+            "id": "yeti-socks",
+            "t": "Spare wool socks in a zip bag",
+            "who": "both",
+            "qty": 2,
+            "bag": "yeti",
+            "why": "Wet-shoe insurance"
+          },
+          {
+            "id": "yeti-dublin",
+            "t": "Dublin overnight kit 11/26: sleepwear, next-day outfit, toiletries",
+            "who": "both",
+            "qty": "1 set",
+            "bag": "yeti",
+            "why": "Needed unless the suitcases are short-checked to DUB"
           }
         ]
       },
       {
         "id": "venice",
         "icon": "🛶",
-        "title": "Venice overnight bag (11/15–16)",
-        "hint": "Italo limit: under 75 × 53 × 30 cm per bag. Big bags stay in the Milan room.",
+        "title": "Venice overnight (11/15–16) — YETIs only",
+        "hint": "Italo allows bags up to 75 × 53 × 30 cm. The suitcases stay in the 43 Station Hotel room in Milan.",
         "items": [
           {
             "id": "venice-vbag",
-            "t": "Soft duffel / daypack within 75 × 53 × 30 cm",
+            "t": "YETI backpack(s) — 1 or 2",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           },
           {
             "id": "venice-v1",
             "t": "1 night: clothes, sleepwear, toiletries",
             "who": "both",
-            "qty": "1 set"
+            "qty": "1 set",
+            "bag": "yeti"
           },
           {
             "id": "venice-v2",
-            "t": "Anniversary / gondola outfit + warm layer",
+            "t": "Gondola outfit (anniversary ride 11/15) + warm layer",
             "who": "both",
             "qty": 1,
-            "why": "Gondola 4:15pm"
+            "why": "Gondola 4:15pm",
+            "bag": "yeti"
           },
           {
             "id": "venice-v3",
-            "t": "Waterproof shoes (acqua alta possible)",
+            "t": "Wet-feet plan: sprayed AF1s + spare socks (buy plastic boot covers in Venice if acqua alta)",
             "who": "both",
-            "qty": 1
+            "qty": 1,
+            "bag": "yeti"
           }
         ]
       },
@@ -4711,28 +4828,39 @@
             "t": "Empty foldable duffel to check home",
             "who": "shared",
             "qty": 1,
-            "why": "Sweater, Läckerli, chocolate, soap, silk…"
+            "why": "Sweater, Läckerli, chocolate, soap, silk…",
+            "bag": "checked"
           },
           {
             "id": "shop-wrap",
             "t": "Bottle protectors + zip bags",
             "who": "shared",
             "qty": 3,
-            "why": "Pastis · olive oil"
+            "why": "Pastis · olive oil",
+            "bag": "checked"
           },
           {
             "id": "shop-scale",
             "t": "Luggage scale",
             "who": "shared",
             "qty": 1,
-            "why": "Bag weight limits on the way home"
+            "why": "Bag weight limits on the way home",
+            "bag": "checked"
           },
           {
             "id": "shop-tax",
             "t": "Envelope for tax-free forms & receipts",
             "who": "shared",
             "qty": 1,
-            "why": "Zurich airport 11/26 · Dublin airport 11/27"
+            "why": "Zurich 11/26 · Dublin 11/27 — forms + goods stay with you until customs stamps them",
+            "bag": "sling"
+          },
+          {
+            "id": "shop-watch",
+            "t": "Going home: watch + receipt + Swiss VAT form in the SLING, never checked",
+            "who": "max",
+            "qty": 1,
+            "bag": "sling"
           }
         ]
       },
@@ -4745,6 +4873,16 @@
           {
             "id": "home-checkin",
             "t": "BA online check-in (opens 6:35 pm 11/5)",
+            "who": "shared"
+          },
+          {
+            "id": "home-spray",
+            "t": "Spray the AF1s with water repellent (let it dry overnight)",
+            "who": "max"
+          },
+          {
+            "id": "home-tags",
+            "t": "At PHL check-in: confirm both bag tags say MRS (through-checked via LHR)",
             "who": "shared"
           },
           {
@@ -4779,7 +4917,128 @@
           }
         ]
       }
-    ]
+    ],
+    "bags": [
+      {
+        "id": "wear",
+        "icon": "👟",
+        "label": "Wear"
+      },
+      {
+        "id": "sling",
+        "icon": "👝",
+        "label": "Sling"
+      },
+      {
+        "id": "yeti",
+        "icon": "🎒",
+        "label": "YETI"
+      },
+      {
+        "id": "checked",
+        "icon": "🧳",
+        "label": "Checked"
+      }
+    ],
+    "plan": {
+      "title": "Bag plan — no roller carry-ons",
+      "setup": "Each of you: 1 checked suitcase (aim ≤20 kg so you can lift it up train steps) + a YETI 27L backpack + a crossbody sling. Wear the coat and walking shoes on travel days.",
+      "rules": [
+        {
+          "icon": "✈",
+          "h": "London Heathrow 11/7 (land 6:35a → 2:40p to MRS)",
+          "t": "Bags are checked through to Marseille: stay airside and follow the purple 'Flight Connections' signs. No passport control, and current UK rules don't require an ETA for airside transit (re-check gov.uk the day before). You re-clear security, so take the liquids bag out. At PHL check-in, make sure both bag tags say MRS."
+        },
+        {
+          "icon": "🚆",
+          "h": "Trains",
+          "t": "No weigh-ins. YETIs go overhead; suitcases go in the end-of-car racks or between seat backs; slings stay on you, in front. Italo (Venice) allows bags up to 75 × 53 × 30 cm."
+        },
+        {
+          "icon": "🧳",
+          "h": "Ventimiglia 11/13",
+          "t": "Store the 2 suitcases at Radical Storage (Via Roma 1/a, ≈€14) for the Friday market. Book online before the day."
+        },
+        {
+          "icon": "🛶",
+          "h": "Venice 11/15–16",
+          "t": "YETIs only. The suitcases stay in the 43 Station Hotel room in Milan (booked straight through 11/13–18)."
+        },
+        {
+          "icon": "☘",
+          "h": "Aer Lingus ZRH → DUB 11/26",
+          "t": "A YETI likely counts as a full-size cabin bag, so check that your fare includes one. Then either short-check the suitcases to DUB, or live out of the YETI's Dublin overnight kit."
+        },
+        {
+          "icon": "⌚",
+          "h": "Going home",
+          "t": "Watch + receipt + Swiss VAT form ride in the sling, never in a checked bag. Validate EU VAT forms in Dublin before you check those goods."
+        }
+      ],
+      "trains": [
+        [
+          "11/9",
+          "TER Marseille → Nice",
+          "All bags",
+          "Direct, 2h34. Grab end-of-car rack space early."
+        ],
+        [
+          "11/12",
+          "Monaco + Èze day trip",
+          "Sling + YETI",
+          "Suitcases stay at Hôtel Du Midi."
+        ],
+        [
+          "11/13",
+          "TER → Ventimiglia → Savona → Milan",
+          "All bags",
+          "Suitcases in storage during the market. 9-min Savona change: have the bags by the door before Savona."
+        ],
+        [
+          "11/15–16",
+          "Italo Milan ⇄ Venice",
+          "YETIs only",
+          "Suitcases stay in the Milan room."
+        ],
+        [
+          "11/17",
+          "Lake Como day trip",
+          "Sling (+ YETI)",
+          ""
+        ],
+        [
+          "11/18",
+          "EuroCity 150 Milan → Basel",
+          "All bags",
+          "4h16 with reserved seats. Grab rack space early."
+        ],
+        [
+          "11/19–21",
+          "Strasbourg · Freiburg · Lucerne + Rigi",
+          "Sling + YETI",
+          "Rigi: thermal + mid-layer + hat/gloves."
+        ],
+        [
+          "11/23",
+          "IC Basel → Zürich",
+          "All bags",
+          "53 min."
+        ],
+        [
+          "11/26",
+          "Zürich HB → airport → DUB",
+          "All bags",
+          "Then Aircoach in Dublin. Suitcases only if short-checked to DUB."
+        ]
+      ],
+      "open": [
+        "Suitcase sizes and weights (aim ≤20 kg each)",
+        "BA fare: is 1 checked bag each included?",
+        "Aer Lingus fare type: is a full-size cabin bag included?",
+        "Borealis model: the sling or the backpack version?",
+        "Does Nicole want her own split-out list?"
+      ]
+    }
   },
   "help": {
     "checked": "2026-10-28",
