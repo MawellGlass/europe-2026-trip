@@ -9,7 +9,7 @@
     "flyOut": "Zurich (ZRH) → Dublin (DUB) → Philadelphia (PHL)",
     "travelers": "Max & wife",
     "diningProfile": "Wife pescatarian (flexible); husband regional steak/meat. Mostly hole-in-the-wall local gems + a few special nights.",
-    "lastUpdated": "2026-11-05 (Bag split applied: wear / sling / YETI / checked on every packing item + bag plan; 11/13 TER = pick 08:54 or 09:23 on the day + Radical Storage to book) · 2026-11-03",
+    "lastUpdated": "2026-11-05 (Bag split applied: wear / sling / backpack / checked on every packing item + bag plan; 11/13 TER = pick 08:54 or 09:23 on the day + Radical Storage to book) · 2026-11-03",
     "lastAppEdit": "2026-10-28 15:35 (edited in app)"
   },
   "segments": [
@@ -1145,7 +1145,7 @@
         {
           "time": "9:50a",
           "status": "to_book",
-          "text": "🧳 Drop 2 suitcases at Radical Storage, Via Roma 1/a (book online first) — about 09:55 if you took Ⓐ 08:54, about 10:25 if Ⓑ 09:23. ~5 min walk from the station; open 8:00–19:00. BOOK ONLINE before the day: drop-off 09:45, pick-up 12:15 covers either train. ~€5 + €1.99 protection per bag ≈ €14 for 2. Use the 'near Ventimiglia Railway Station' OFFICE listing, NOT the 'Café' one (kebab shop, opens 11:00). The exact address comes in the booking email. Photograph the bags at drop-off. YETIs + slings stay on you.",
+          "text": "🧳 Drop 2 suitcases at Radical Storage, Via Roma 1/a (book online first) — about 09:55 if you took Ⓐ 08:54, about 10:25 if Ⓑ 09:23. ~5 min walk from the station; open 8:00–19:00. BOOK ONLINE before the day: drop-off 09:45, pick-up 12:15 covers either train. ~€5 + €1.99 protection per bag ≈ €14 for 2. Use the 'near Ventimiglia Railway Station' OFFICE listing, NOT the 'Café' one (kebab shop, opens 11:00). The exact address comes in the booking email. Photograph the bags at drop-off. Backpacks + slings stay on you.",
           "lat": 43.79205,
           "lng": 7.60604,
           "place": "Radical Storage — Via Roma 1/a, Ventimiglia"
@@ -1316,7 +1316,7 @@
         },
         {
           "time": "4:15p",
-          "text": "🚤 ★ Anniversary gondola ride — through the quiet back canals off San Marco (~30 min; sunset ~4:50p). Calm and seated — comfortable for Nicole. Agree price & route before you step in",
+          "text": "🚤 ★ Gondola ride — through the quiet back canals off San Marco (~30 min; sunset ~4:50p). Calm and seated — comfortable for Nicole. Agree price & route before you step in",
           "status": "optional",
           "lat": 45.434,
           "lng": 12.339,
@@ -4327,7 +4327,7 @@
     }
   ],
   "packing": {
-    "note": "Each of you: 1 checked suitcase + YETI 27L backpack + crossbody sling — no roller carry-ons. Clothes: pack ~14 days → wear ~8 days to Milan → drop-off laundry Sat 11/14 (Stella d'Oro) → 14 clean days for the last 13.",
+    "note": "Each of you: 1 checked suitcase + backpack + crossbody sling — no roller carry-ons. Clothes: pack ~14 days → wear ~8 days to Milan → drop-off laundry Sat 11/14 (Stella d'Oro) → 14 clean days for the last 13.",
     "sections": [
       {
         "id": "docs",
@@ -4433,7 +4433,7 @@
             "who": "both",
             "qty": 3,
             "bag": "checked",
-            "why": "Including the 1 mid-layer that rides in the YETI"
+            "why": "Including the 1 mid-layer that rides in the backpack"
           },
           {
             "id": "clothes-pants",
@@ -4655,14 +4655,14 @@
         "id": "toil",
         "icon": "🧴",
         "title": "Toiletries & health",
-        "hint": "Liquids ≤100 ml each in ONE clear bag in the YETI. Take it out at PHL and LHR security. Full-size bottles go in checked.",
+        "hint": "Liquids ≤100 ml each in ONE clear bag in a backpack. Take it out at PHL and LHR security. Full-size bottles go in checked.",
         "items": [
           {
             "id": "toil-meds",
             "t": "Prescription meds in original bottles (+ a few spare days)",
             "who": "both",
             "bag": "sling+yeti",
-            "why": "Today's dose in the sling, the rest in the YETI — never checked"
+            "why": "Today's dose in the sling, the rest in the backpack — never checked"
           },
           {
             "id": "toil-kit",
@@ -4670,7 +4670,7 @@
             "who": "both",
             "qty": 1,
             "bag": "yeti+checked",
-            "why": "Travel-size in the YETI; refills in checked"
+            "why": "Travel-size in the backpack; refills in checked"
           },
           {
             "id": "toil-otc",
@@ -4713,7 +4713,7 @@
         "items": [
           {
             "id": "day-xbody",
-            "t": "Crossbody sling (Max: North Face Borealis) — wear it in FRONT on trains, trams and in Venice",
+            "t": "Crossbody sling (Max: North Face Borealis · Nicole: her own) — wear it in FRONT on trains, trams and in Venice",
             "who": "both",
             "qty": 1,
             "why": "Pickpockets: Milano Centrale, Venice, Nice tram",
@@ -4745,7 +4745,7 @@
       {
         "id": "yeti",
         "icon": "🎒",
-        "title": "YETI 27L — carry kit (each)",
+        "title": "Backpack — carry kit (each)",
         "hint": "What you'd need if a checked bag shows up a day late, plus the liquids bag and anything valuable",
         "items": [
           {
@@ -4783,12 +4783,12 @@
       {
         "id": "venice",
         "icon": "🛶",
-        "title": "Venice overnight (11/15–16) — YETIs only",
+        "title": "Venice overnight (11/15–16) — backpacks only",
         "hint": "Italo allows bags up to 75 × 53 × 30 cm. The suitcases stay in the 43 Station Hotel room in Milan.",
         "items": [
           {
             "id": "venice-vbag",
-            "t": "YETI backpack(s) — 1 or 2",
+            "t": "Backpack(s) — 1 or 2",
             "who": "both",
             "qty": 1,
             "bag": "yeti"
@@ -4802,7 +4802,7 @@
           },
           {
             "id": "venice-v2",
-            "t": "Gondola outfit (anniversary ride 11/15) + warm layer",
+            "t": "Gondola outfit + warm layer (on the water at sunset 11/15)",
             "who": "both",
             "qty": 1,
             "why": "Gondola 4:15pm",
@@ -4932,7 +4932,7 @@
       {
         "id": "yeti",
         "icon": "🎒",
-        "label": "YETI"
+        "label": "Backpack"
       },
       {
         "id": "checked",
@@ -4942,7 +4942,7 @@
     ],
     "plan": {
       "title": "Bag plan — no roller carry-ons",
-      "setup": "Each of you: 1 checked suitcase (aim ≤20 kg so you can lift it up train steps) + a YETI 27L backpack + a crossbody sling. Wear the coat and walking shoes on travel days.",
+      "setup": "Each of you: 1 checked suitcase (aim ≤20 kg so you can lift it up train steps) + a backpack + a crossbody sling (Max: YETI Crossroads 27L + North Face Borealis · Nicole: her own). Wear the coat and walking shoes on travel days.",
       "rules": [
         {
           "icon": "✈",
@@ -4952,7 +4952,7 @@
         {
           "icon": "🚆",
           "h": "Trains",
-          "t": "No weigh-ins. YETIs go overhead; suitcases go in the end-of-car racks or between seat backs; slings stay on you, in front. Italo (Venice) allows bags up to 75 × 53 × 30 cm."
+          "t": "No weigh-ins. Backpacks go overhead; suitcases go in the end-of-car racks or between seat backs; slings stay on you, in front. Italo (Venice) allows bags up to 75 × 53 × 30 cm."
         },
         {
           "icon": "🧳",
@@ -4962,12 +4962,12 @@
         {
           "icon": "🛶",
           "h": "Venice 11/15–16",
-          "t": "YETIs only. The suitcases stay in the 43 Station Hotel room in Milan (booked straight through 11/13–18)."
+          "t": "Backpacks only. The suitcases stay in the 43 Station Hotel room in Milan (booked straight through 11/13–18)."
         },
         {
           "icon": "☘",
           "h": "Aer Lingus ZRH → DUB 11/26",
-          "t": "A YETI likely counts as a full-size cabin bag, so check that your fare includes one. Then either short-check the suitcases to DUB, or live out of the YETI's Dublin overnight kit."
+          "t": "A ~27L backpack (like Max's YETI) likely counts as a full-size cabin bag, so check that your fare includes one for each of you. Then either short-check the suitcases to DUB, or live out of the backpacks' Dublin overnight kit."
         },
         {
           "icon": "⌚",
@@ -4985,7 +4985,7 @@
         [
           "11/12",
           "Monaco + Èze day trip",
-          "Sling + YETI",
+          "Sling + backpack",
           "Suitcases stay at Hôtel Du Midi."
         ],
         [
@@ -4997,13 +4997,13 @@
         [
           "11/15–16",
           "Italo Milan ⇄ Venice",
-          "YETIs only",
+          "Backpacks only",
           "Suitcases stay in the Milan room."
         ],
         [
           "11/17",
           "Lake Como day trip",
-          "Sling (+ YETI)",
+          "Sling (+ backpack)",
           ""
         ],
         [
@@ -5015,7 +5015,7 @@
         [
           "11/19–21",
           "Strasbourg · Freiburg · Lucerne + Rigi",
-          "Sling + YETI",
+          "Sling + backpack",
           "Rigi: thermal + mid-layer + hat/gloves."
         ],
         [
@@ -5035,7 +5035,7 @@
         "Suitcase sizes and weights (aim ≤20 kg each)",
         "BA fare: is 1 checked bag each included?",
         "Aer Lingus fare type: is a full-size cabin bag included?",
-        "Borealis model: the sling or the backpack version?",
+        "Nicole's backpack + crossbody: check her backpack fits overhead (~27L or smaller) and counts as 1 cabin bag on Aer Lingus",
         "Does Nicole want her own split-out list?"
       ]
     }
