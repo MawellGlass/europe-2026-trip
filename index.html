@@ -1033,6 +1033,69 @@ html[data-theme="dark"] .bs-c.ship{background:#94a3b8;color:#0f172a;}
 .su-n.full{opacity:.35;}
 .su-tog{font-size:.88rem;color:var(--cp-text-muted);display:flex;gap:6px;align-items:center;}
 
+/* ---------- 🫶 Calm: 5-4-3-2-1 grounding overlay ---------- */
+#calmOv{position:fixed;inset:0;z-index:100500;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-y:auto;
+  background:radial-gradient(120% 90% at 50% 0%,#24435a 0%,#16293b 55%,#0f1d2b 100%);color:#eaf2f7;
+  font-family:inherit;padding:calc(14px + env(safe-area-inset-top)) 18px calc(18px + env(safe-area-inset-bottom));-webkit-tap-highlight-color:transparent;}
+#calmOv[hidden]{display:none;}
+body.calm-open{overflow:hidden;}
+.cm-top{width:100%;max-width:560px;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:40px;}
+.cm-brand{font-size:.85rem;letter-spacing:.04em;color:#a9c3d3;}
+.cm-x{font:inherit;font-size:.9rem;background:rgba(255,255,255,.08);color:#eaf2f7;border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:8px 14px;cursor:pointer;}
+.cm-body{width:100%;max-width:560px;flex:1 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 0 6px;}
+.cm-h{font-size:1.65rem;line-height:1.25;margin:6px 0 10px;font-weight:650;color:#fff;}
+.cm-p{font-size:1.05rem;line-height:1.55;color:#cfe0ea;margin:0 0 10px;max-width:30em;}
+.cm-small{font-size:.86rem;color:#9fb8c8;line-height:1.45;}
+.cm-partner{font-size:.88rem;color:#9fb8c8;font-style:italic;margin:4px 0 0;}
+.cm-btns{display:flex;flex-direction:column;gap:10px;width:100%;max-width:360px;margin:16px auto 0;}
+.cm-btn{font:inherit;font-size:1.05rem;font-weight:600;border-radius:16px;padding:16px 18px;min-height:56px;cursor:pointer;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;}
+.cm-btn.pri{background:#7fd1c7;border-color:#7fd1c7;color:#0f2433;}
+.cm-btn:active{transform:scale(.98);}
+.cm-row{display:flex;gap:10px;width:100%;max-width:360px;margin:14px auto 0;}
+.cm-row .cm-btn{flex:1;font-size:.95rem;padding:12px;min-height:48px;}
+/* breathing */
+.cm-orbWrap{position:relative;width:min(64vw,250px);height:min(64vw,250px);margin:14px auto 8px;display:flex;align-items:center;justify-content:center;}
+.cm-orb{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 40%,#9ee6dc 0%,#5fb8b0 55%,#3f8f93 100%);box-shadow:0 0 60px rgba(127,209,199,.35);transform:scale(.55);transition-property:transform;transition-timing-function:ease-in-out;}
+.cm-orbTxt{position:relative;z-index:1;color:#0f2433;font-weight:700;}
+.cm-orbTxt .w{display:block;font-size:1.25rem;}
+.cm-orbTxt .n{display:block;font-size:2.4rem;line-height:1.1;}
+.cm-cyc{font-size:.85rem;color:#9fb8c8;margin-top:2px;}
+/* senses */
+.cm-prog{display:flex;gap:6px;width:100%;max-width:360px;margin:4px auto 14px;}
+.cm-prog i{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.15);}
+.cm-prog i.on{background:#7fd1c7;}
+.cm-big{font-size:3.6rem;line-height:1;margin:2px 0 4px;}
+.cm-num{font-size:1rem;color:#7fd1c7;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+.cm-dots{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:16px auto 6px;}
+.cm-dot{width:58px;height:58px;border-radius:50%;border:2px dashed rgba(255,255,255,.4);background:transparent;color:#0f2433;font:inherit;font-size:1.3rem;font-weight:700;cursor:pointer;transition:background .2s,border-color .2s,transform .15s;}
+.cm-dot.on{background:#7fd1c7;border:2px solid #7fd1c7;transform:scale(1.04);}
+.cm-hint{margin-top:8px;font-size:.92rem;color:#b8cfdc;}
+.cm-hint b{color:#fff;font-weight:600;}
+.cm-tips{text-align:left;margin:8px auto 0;max-width:30em;padding-left:1.2em;color:#cfe0ea;line-height:1.55;}
+.cm-tips li{margin:4px 0;}
+.cm-foot{width:100%;max-width:560px;border-top:1px solid rgba(255,255,255,.12);margin-top:12px;padding-top:10px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;font-size:.85rem;color:#9fb8c8;}
+.cm-foot a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:7px 12px;background:rgba(255,255,255,.06);}
+.cm-foot a.sos{border-color:#f19c9c;color:#ffd7d7;}
+/* entry points */
+.hdr-tools .ht-calm{border-color:#7fd1c7;}
+.hp-calm{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#16293b;color:#eaf2f7;border-radius:14px;padding:14px 18px;margin-bottom:14px;}
+.hp-calm .t{flex:1 1 220px;} .hp-calm b{color:#fff;} .hp-calm small{display:block;color:#a9c3d3;margin-top:2px;}
+.hp-calm button{font:inherit;font-weight:600;background:#7fd1c7;color:#0f2433;border:0;border-radius:12px;padding:10px 16px;cursor:pointer;}
+@media(max-width:700px){ .hdr-tools .ht-calm{display:none;} .cm-h{font-size:1.45rem;} }
+@media(prefers-reduced-motion:reduce){ .cm-orb{transition:none !important;} .cm-dot{transition:none;} }
+/* help phrases + read-aloud */
+.cm-voice{font:inherit;font-size:.9rem;margin:14px auto 0;background:transparent;color:#cfe0ea;border:1px dashed rgba(255,255,255,.3);border-radius:99px;padding:9px 16px;cursor:pointer;}
+.cm-voice.on{border-style:solid;border-color:#7fd1c7;color:#fff;background:rgba(127,209,199,.12);}
+.cm-langs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:6px 0 4px;}
+.cm-lang{font:inherit;font-size:.95rem;padding:9px 14px;min-height:44px;border-radius:99px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#eaf2f7;cursor:pointer;}
+.cm-lang.on{background:#7fd1c7;border-color:#7fd1c7;color:#0f2433;font-weight:700;}
+.cm-where{font-size:.8rem;color:#9fb8c8;margin-bottom:8px;}
+.cm-phr{display:grid;gap:10px;width:100%;max-width:440px;margin:4px auto 0;}
+.cm-ph{font:inherit;text-align:left;border-radius:16px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;padding:14px 16px;cursor:pointer;display:flex;flex-direction:column;gap:4px;}
+.cm-ph .o{font-size:1.25rem;font-weight:700;line-height:1.3;}
+.cm-ph .e{font-size:.85rem;color:#a9c3d3;}
+.cm-ph:active{transform:scale(.99);background:rgba(127,209,199,.18);}
+
 
 #scoutGate{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--cp-bg);}
 #scoutGateForm{background:var(--cp-bg-elevated);border:1px solid var(--cp-border);border-radius:16px;box-shadow:var(--cp-shadow);padding:32px 28px;max-width:360px;width:100%;text-align:center;}
@@ -1281,7 +1344,7 @@ function boot(){
 })();
 
 /* tabs — primary row + "More" menu (compact single row on phones) */
-const PRIMARY_TABS = [["today","Today"],["itinerary","Itinerary"],["trains","Trains"],["hotels","Hotels"],["dining","Dining"],["lang","Language"],["games","Games"],["help","Help"]];
+const PRIMARY_TABS = [["today","Today"],["itinerary","Itinerary"],["trains","Trains"],["hotels","Hotels"],["dining","Dining"],["lang","Language"],["games","Games"],["help","Help"],["calm","🫶 Calm"]];
 const MORE_TABS = [["wallet","Ticket wallet"],["overview","Overview"],["shopping","Shopping"],["pack","Packing"],["budget","Budget & currency"],["decisions","Decisions"],["edit","Edit"],["suggest","Suggestions (archived)"]];
 const TABS = PRIMARY_TABS.concat(MORE_TABS);
 const nav = document.getElementById("tabs");
@@ -1291,6 +1354,7 @@ moreMenu.className="more-menu"; moreMenu.id="moreMenu"; moreMenu.hidden=true;
 moreMenu.innerHTML = MORE_TABS.map(([id,l])=>'<button data-t="'+id+'"'+(id==="suggest"?' class="arch"':'')+'>'+l+'</button>').join("");
 document.body.appendChild(moreMenu);
 function activateTab(id){
+  if(id==="calm"){ if(window.__calmOpen) window.__calmOpen(); return; }
   document.querySelectorAll("nav.tabs button[data-t], #moreMenu button[data-t]").forEach(x=>x.classList.toggle("active",x.dataset.t===id));
   const mo=MORE_TABS.find(m=>m[0]===id), mb=document.getElementById("navMore");
   if(mb){ mb.classList.toggle("active",!!mo); mb.textContent=mo?mo[1]+" ▾":"More ▾"; }
@@ -1306,7 +1370,7 @@ function activateTab(id){
   if(id==="games"&&window.__gamesRender){ window.__gamesRender(); }
   try{ document.dispatchEvent(new CustomEvent("tab:shown",{detail:id})); }catch(e){}
 }
-window.__activateTab=function(id){ if(id==="fx"){ activateTab("budget"); setTimeout(function(){ var f=document.getElementById("fxFold"); if(f){ f.open=true; f.scrollIntoView({behavior:"smooth",block:"start"}); } },80); return; } activateTab(id); };
+window.__activateTab=function(id){ if(id==="calm"){ if(window.__calmOpen) window.__calmOpen(); return; } if(id==="fx"){ activateTab("budget"); setTimeout(function(){ var f=document.getElementById("fxFold"); if(f){ f.open=true; f.scrollIntoView({behavior:"smooth",block:"start"}); } },80); return; } activateTab(id); };
 nav.addEventListener("click", e=>{
   const b = e.target.closest("button"); if(!b) return;
   if(b.id==="navMore"){
@@ -3485,7 +3549,7 @@ loadAndBoot();
 
   /* ---------- header tools, phone bottom bar + More sheet ---------- */
   var BB=[["today","☀️","Today"],["itinerary","🗓","Itinerary"],["dining","🍽","Dining"],["trains","🚆","Trains"]];
-  var SHEET=[["wallet","🎟","Wallet"],["games","🎲","Games"],["hotels","🏨","Hotels"],["lang","🗣","Language"],["help","🆘","Help"],["overview","🗺","Overview"],["shopping","🛍","Shopping"],["pack","🧳","Packing"],["budget","💰","Budget"],["fx","💱","Currency"],["decisions","✅","Decisions"],["edit","✏️","Edit"]];
+  var SHEET=[["calm","🫶","Calm"],["wallet","🎟","Wallet"],["games","🎲","Games"],["hotels","🏨","Hotels"],["lang","🗣","Language"],["help","🆘","Help"],["overview","🗺","Overview"],["shopping","🛍","Shopping"],["pack","🧳","Packing"],["budget","💰","Budget"],["fx","💱","Currency"],["decisions","✅","Decisions"],["edit","✏️","Edit"]];
   var sheet=null;
   function buildChrome(){
     var hero=document.querySelector("header.hero");
@@ -4841,6 +4905,222 @@ loadAndBoot();
   }
   window.__gamesRender = function(){ init(); if(root && !root.firstChild) home(); };
   if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+
+</script>
+<script>
+/* 🫶 Calm — 5-4-3-2-1 grounding for panic moments. Self-contained, offline; stores only the read-aloud on/off preference.
+   NOTE: inlined into a JS template literal by build-trip.js — no backticks, dollar-brace or backslashes in this file. */
+(function(){
+  "use strict";
+  var PHR={
+    fr:{flag:"🇫🇷",name:"French",where:"France · Monaco",lang:"fr-FR",l:[
+      ["Je fais une crise de panique. J’ai besoin d’un moment.","I’m having a panic attack. I need a moment."],
+      ["Pouvez-vous m’aider, s’il vous plaît ?","Can you help me, please?"],
+      ["Un peu d’eau, s’il vous plaît ?","Some water, please?"],
+      ["Appelez le 112, s’il vous plaît.","Please call 112."]]},
+    it:{flag:"🇮🇹",name:"Italian",where:"Milan · Venice · Como",lang:"it-IT",l:[
+      ["Sto avendo un attacco di panico. Ho bisogno di un momento.","I’m having a panic attack. I need a moment."],
+      ["Può aiutarmi, per favore?","Can you help me, please?"],
+      ["Un po’ d’acqua, per favore?","Some water, please?"],
+      ["Chiami il 112, per favore.","Please call 112."]]},
+    de:{flag:"🇨🇭",name:"German",where:"Basel · Zurich · Lucerne · Freiburg",lang:"de-DE",l:[
+      ["Ich habe eine Panikattacke. Ich brauche einen Moment.","I’m having a panic attack. I need a moment."],
+      ["Können Sie mir bitte helfen?","Can you help me, please?"],
+      ["Etwas Wasser, bitte?","Some water, please?"],
+      ["Bitte rufen Sie die 112 an.","Please call 112."]]}
+  };
+  var SENSES=[
+    {n:5,e:"👀",verb:"SEE",ask:"Name 5 things you can see.",partner:"Ask gently: “What’s one thing you can see? …and another?”",
+      ideas:["the colour of the sky","a sign in another language","someone’s shoes","a window or a door","a light","the pattern on the floor","a tram, train or car","something red","your own hands"]},
+    {n:4,e:"✋",verb:"TOUCH",ask:"Notice 4 things you can feel.",partner:"Ask: “What can you feel right now? Your feet? The seat?”",
+      ideas:["your feet pressing into the floor","the seat under you","the strap of your bag","fabric of your sleeve","a cool railing or table","your phone in your hand","air on your face","Nicole’s hand"]},
+    {n:3,e:"👂",verb:"HEAR",ask:"Listen for 3 sounds.",partner:"Ask: “What can you hear, near or far?”",
+      ideas:["voices nearby","footsteps","a train announcement","traffic or a scooter","wind","your own breathing","music from a café","a door closing"]},
+    {n:2,e:"👃",verb:"SMELL",ask:"Find 2 things you can smell.",partner:"Ask: “Can you smell anything? Coffee? Bread? Fresh air?”",
+      ideas:["coffee","bread or pastry","rain or fresh air","your sleeve or soap","the street","perfume","food from a restaurant"]},
+    {n:1,e:"👅",verb:"TASTE",ask:"Notice 1 thing you can taste.",partner:"Ask: “What can you taste? Want a sip of water or a mint?”",
+      ideas:["a sip of water","gum or a mint","the last thing you ate","just the inside of your mouth"]}
+  ];
+  var BREATH=[["Breathe in",4,1],["Hold",4,1],["Breathe out slowly",6,0.55]];
+  var ov=null, st={screen:"start",step:0,taps:0}, timers=[], wake=null, lastFocus=null;
+
+  function q(id){ return document.getElementById(id); }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]||c; }); }
+  function clearT(){ timers.forEach(function(t){ clearTimeout(t); }); timers=[]; }
+  function later(fn,ms){ timers.push(setTimeout(fn,ms)); }
+  function buzz(ms){ try{ if(navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
+  function reduced(){ try{ return window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){ return false; } }
+  function pick(arr,k){ var a=arr.slice(), out=[]; while(a.length&&out.length<k){ out.push(a.splice(Math.floor(Math.random()*a.length),1)[0]); } return out; }
+  function voiceOn(){ try{ return localStorage.getItem("eu26_calm_voice")==="1"; }catch(e){ return false; } }
+  function say(text,lang){ try{ if(!window.speechSynthesis) return; window.speechSynthesis.cancel(); var u=new SpeechSynthesisUtterance(text); u.lang=lang||"en-US"; u.rate=lang?0.9:0.85; window.speechSynthesis.speak(u); }catch(e){} }
+  function guide(text){ if(voiceOn()) say(text); }
+  function hush(){ try{ if(window.speechSynthesis) window.speechSynthesis.cancel(); }catch(e){} }
+  function autoLang(){
+    try{
+      var d=new Date(), iso=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+      var days=(typeof DATA!=="undefined"&&DATA&&DATA.days)||[], day=null;
+      for(var i=0;i<days.length;i++){ if(days[i].date===iso){ day=days[i]; break; } }
+      var c=day?String((day.cities&&day.cities[day.cities.length-1])||day.city||""):"";
+      if(/Milan|Venice|Como|Monza|Ventimiglia|Savona/i.test(c)) return "it";
+      if(/Basel|Zurich|Zürich|Lucerne|Luzern|Freiburg/i.test(c)) return "de";
+    }catch(e){}
+    return "fr";
+  }
+  function helpBtn(){ return '<button type="button" class="cm-btn" data-cm="phrases">🗣 Tell someone nearby (FR · IT · DE)</button>'; }
+
+  function contact(){
+    var pv={}; try{ pv=JSON.parse(localStorage.getItem("eu26_private")||"{}"); }catch(e){}
+    var v=String(pv.ec||"").trim(); if(!v) return null;
+    var m=v.match(/[+0-9][0-9 ().-]{6,}/); if(!m) return null;
+    var tel=m[0].replace(/[^+0-9]/g,""); var name=v.replace(m[0],"").replace(/[,;:()-]+/g," ").replace(/ +/g," ").trim();
+    return {tel:tel,name:name||"Emergency contact"};
+  }
+  function foot(){
+    var c=contact();
+    return '<div class="cm-foot"><span>Chest pain, fainting or feel unsafe?</span><a class="sos" href="tel:112">📞 112 Emergency (Europe)</a>'+
+      (c?'<a href="tel:'+esc(c.tel)+'">📞 '+esc(c.name)+'</a>':'')+'</div>';
+  }
+  function shell(inner){
+    return '<div class="cm-top"><span class="cm-brand">🫶 Calm · grounding</span><button type="button" class="cm-x" data-cm="close">I’m okay ✕</button></div>'+
+      '<div class="cm-body">'+inner+'</div>'+foot();
+  }
+
+  function render(){
+    if(!ov) return; clearT();
+    var s=st.screen, h="";
+    if(s==="start"){
+      h='<div class="cm-big">🫶</div><h2 class="cm-h">You’re safe. This will pass.</h2>'+
+        '<p class="cm-p">Panic feels awful, but it can’t hurt you. It peaks and fades, usually within a few minutes. Let’s slow things down, one sense at a time.</p>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="breathe">💨 Breathe with me first</button><button type="button" class="cm-btn" data-cm="senses">👀 Go straight to 5-4-3-2-1</button>'+helpBtn()+'</div>'+
+        '<button type="button" class="cm-voice'+(voiceOn()?' on':'')+'" data-cm="voice" aria-pressed="'+(voiceOn()?'true':'false')+'">🔊 Read the steps aloud: <b>'+(voiceOn()?'On':'Off')+'</b></button>'+
+        '<p class="cm-partner">Nicole guiding? Read the grey italic lines out loud.</p>';
+    } else if(s==="breathe"){
+      h='<h2 class="cm-h">Breathe with the circle</h2><p class="cm-p">In through your nose… a long, slow breath out through your mouth. The long exhale is what calms your body.</p>'+
+        '<div class="cm-orbWrap"><div class="cm-orb" id="cmOrb"></div><div class="cm-orbTxt"><span class="w" id="cmW">Ready</span><span class="n" id="cmN"></span></div></div>'+
+        '<div class="cm-cyc" id="cmCyc"></div>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="senses">Next: 5 senses →</button></div>'+
+        '<p class="cm-partner">Breathe along out loud with them: “in… 2… 3… 4… hold… and out… slowly…”</p>';
+    } else if(s==="sense"){
+      var S=SENSES[st.step], dots="";
+      for(var i=0;i<S.n;i++){ dots+='<button type="button" class="cm-dot'+(i<st.taps?' on':'')+'" data-dot="'+i+'" aria-label="'+(i+1)+'">'+(i<st.taps?'✓':'')+'</button>'; }
+      var prog=SENSES.map(function(x,j){ return '<i class="'+(j<=st.step?'on':'')+'"></i>'; }).join("");
+      h='<div class="cm-prog">'+prog+'</div><div class="cm-num">'+S.n+' · '+S.verb+'</div><div class="cm-big">'+S.e+'</div>'+
+        '<h2 class="cm-h">'+esc(S.ask)+'</h2><p class="cm-p">Say each one out loud or in your head, then tap a circle.</p>'+
+        '<div class="cm-dots">'+dots+'</div>'+
+        '<div class="cm-hint">Ideas: <b>'+pick(S.ideas,3).map(esc).join("</b> · <b>")+'</b></div>'+
+        '<p class="cm-partner">'+esc(S.partner)+'</p>'+
+        '<div class="cm-row"><button type="button" class="cm-btn" data-cm="back">← Back</button><button type="button" class="cm-btn" data-cm="next">'+(st.step<SENSES.length-1?'Next →':'Finish →')+'</button></div>';
+    } else if(s==="done"){
+      h='<div class="cm-big">🌿</div><h2 class="cm-h">You did it.</h2><p class="cm-p">Take one more slow breath and notice your body now. Shoulders down, jaw soft, feet on the ground.</p>'+
+        '<p class="cm-p"><b>How are you feeling?</b></p>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="better">😌 Better</button><button type="button" class="cm-btn" data-cm="still">😟 Still anxious</button></div>';
+    } else if(s==="better"){
+      h='<div class="cm-big">💛</div><h2 class="cm-h">Proud of you.</h2><p class="cm-p">Sip some water, sit for a minute, and carry on when you’re ready. There’s no rush. The trip will wait.</p>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="close">Back to the trip</button></div>';
+    } else if(s==="still"){
+      h='<div class="cm-big">🤍</div><h2 class="cm-h">That’s okay. It takes a few rounds sometimes.</h2>'+
+        '<p class="cm-p">A few more things that help quickly:</p>'+
+        '<ul class="cm-tips"><li><b>Cold:</b> splash cold water on your face or hold something cold (a drink, a railing) against your wrists.</li>'+
+        '<li><b>Press:</b> push your feet hard into the floor for 5 seconds, then let go. Repeat 3 times.</li>'+
+        '<li><b>Sit or lean:</b> find a bench or a wall, and step out of the crowd if you can.</li>'+
+        '<li><b>Long exhale:</b> breathe out like you’re cooling soup, longer than you breathe in.</li>'+
+        '<li><b>Remind yourself:</b> “This is panic. It’s uncomfortable, not dangerous. It will pass.”</li></ul>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="breathe">💨 Breathe again</button><button type="button" class="cm-btn" data-cm="senses">🔁 Do 5-4-3-2-1 again</button>'+helpBtn()+'</div>';
+    } else if(s==="phrases"){
+      var P=PHR[st.lang]||PHR.fr;
+      h='<h2 class="cm-h">Tell someone nearby</h2><p class="cm-p">Show them this screen, or tap a line to play it out loud.</p>'+
+        '<div class="cm-langs">'+["fr","it","de"].map(function(k){ return '<button type="button" class="cm-lang'+(k===st.lang?' on':'')+'" data-lang="'+k+'">'+PHR[k].flag+' '+PHR[k].name+'</button>'; }).join("")+'</div>'+
+        '<div class="cm-where">'+esc(P.where)+'</div>'+
+        '<div class="cm-phr">'+P.l.map(function(p,i){ return '<button type="button" class="cm-ph" data-say="'+i+'"><span class="o">'+esc(p[0])+'</span><span class="e">'+esc(p[1])+' · 🔊</span></button>'; }).join("")+'</div>'+
+        '<div class="cm-btns"><button type="button" class="cm-btn pri" data-cm="breathe">💨 Breathe with me</button><button type="button" class="cm-btn" data-cm="backphr">← Back</button></div>';
+    }
+    ov.innerHTML=shell(h);
+    ov.scrollTop=0;
+    if(s==="breathe") runBreath();
+    else if(s==="sense") guide(SENSES[st.step].ask+" Take your time.");
+    else if(s==="start") guide("You’re safe. This will pass.");
+    else if(s==="done") guide("You did it. Take one more slow breath. How are you feeling?");
+    else if(s==="better") guide("Proud of you. Sip some water and rest for a minute.");
+    else if(s==="still") guide("That’s okay. Let’s keep going together.");
+    else hush();
+    var f=ov.querySelector(".cm-btn.pri,.cm-dot,.cm-btn"); if(f){ try{ f.focus({preventScroll:true}); }catch(e){} }
+  }
+
+  function runBreath(){
+    var orb=q("cmOrb"), w=q("cmW"), n=q("cmN"), cyc=q("cmCyc"); if(!orb) return;
+    var rm=reduced(), round=0, phase=0;
+    function doPhase(){
+      if(st.screen!=="breathe"||!q("cmOrb")) return;
+      var P=BREATH[phase], secs=P[1];
+      if(phase===0){ round++; if(cyc) cyc.textContent="Breath "+round+(round>=4?" · keep going, or tap Next when ready":""); }
+      w.textContent=P[0]; buzz(phase===1?0:25); if(phase!==1||round<=2) guide(P[0]);
+      if(!rm){ orb.style.transitionDuration=(phase===1?0.2:secs)+"s"; orb.style.transform="scale("+P[2]+")"; }
+      var left=secs; n.textContent=left;
+      (function tick(){ later(function(){ left--; if(left>0){ n.textContent=left; tick(); } else { phase=(phase+1)%BREATH.length; doPhase(); } },1000); })();
+    }
+    later(doPhase,400);
+  }
+
+  function tapDot(i){
+    var S=SENSES[st.step]; if(!S) return;
+    st.taps=(i<st.taps)?i:i+1; buzz(15);
+    var dots=ov.querySelectorAll(".cm-dot");
+    for(var k=0;k<dots.length;k++){ var on=k<st.taps; dots[k].classList.toggle("on",on); dots[k].textContent=on?"✓":""; }
+    if(st.taps>=S.n){ later(next,750); }
+  }
+  function next(){ if(st.screen!=="sense") return; if(st.step<SENSES.length-1){ st.step++; st.taps=0; render(); } else { st.screen="done"; render(); } }
+  function back(){ if(st.step>0){ st.step--; st.taps=0; render(); } else { st.screen="start"; render(); } }
+
+  function lockWake(){ try{ if(navigator.wakeLock&&navigator.wakeLock.request){ navigator.wakeLock.request("screen").then(function(l){ wake=l; }).catch(function(){}); } }catch(e){} }
+  function open(){
+    if(!ov){
+      ov=document.createElement("div"); ov.id="calmOv"; ov.setAttribute("role","dialog"); ov.setAttribute("aria-modal","true"); ov.setAttribute("aria-label","Calm: grounding exercise"); ov.hidden=true;
+      document.body.appendChild(ov);
+      ov.addEventListener("click",function(e){
+        var d=e.target.closest("[data-dot]"); if(d){ tapDot(parseInt(d.getAttribute("data-dot"),10)); return; }
+        var lg=e.target.closest("[data-lang]"); if(lg){ st.lang=lg.getAttribute("data-lang"); render(); return; }
+        var sy=e.target.closest("[data-say]"); if(sy){ var PP=PHR[st.lang]||PHR.fr, ln=PP.l[parseInt(sy.getAttribute("data-say"),10)]; if(ln) say(ln[0],PP.lang); return; }
+        var b=e.target.closest("[data-cm]"); if(!b) return; var a=b.getAttribute("data-cm");
+        if(a==="close") close();
+        else if(a==="voice"){ try{ localStorage.setItem("eu26_calm_voice",voiceOn()?"0":"1"); }catch(x){} if(!voiceOn()) hush(); render(); }
+        else if(a==="phrases"){ st.prev=st.screen; st.lang=st.lang||autoLang(); st.screen="phrases"; render(); }
+        else if(a==="backphr"){ st.screen=st.prev&&st.prev!=="phrases"?st.prev:"start"; render(); }
+        else if(a==="breathe"){ st.screen="breathe"; render(); }
+        else if(a==="senses"){ st.screen="sense"; st.step=0; st.taps=0; render(); }
+        else if(a==="next") next();
+        else if(a==="back") back();
+        else if(a==="better"||a==="still"){ st.screen=a; render(); }
+      });
+    }
+    lastFocus=document.activeElement;
+    st={screen:"start",step:0,taps:0}; ov.hidden=false; document.body.classList.add("calm-open"); render(); lockWake();
+  }
+  function close(){
+    clearT(); hush(); if(ov) ov.hidden=true; document.body.classList.remove("calm-open");
+    try{ if(wake){ wake.release(); wake=null; } }catch(e){}
+    if(location.hash==="#calm"&&history.replaceState) history.replaceState(null,"",location.pathname+location.search);
+    try{ if(lastFocus&&lastFocus.focus) lastFocus.focus(); }catch(e){}
+  }
+  window.__calmOpen=open; window.__calmClose=close;
+
+  document.addEventListener("keydown",function(e){ if(ov&&!ov.hidden&&e.key==="Escape"){ e.stopPropagation(); close(); } },true);
+  document.addEventListener("click",function(e){ var t=e.target.closest&&e.target.closest("[data-calm]"); if(t){ e.preventDefault(); open(); } });
+  document.addEventListener("visibilitychange",function(){ if(!document.hidden&&ov&&!ov.hidden) lockWake(); });
+
+  function addEntryPoints(){
+    var ht=q("hdrTools");
+    if(ht&&!q("htCalm")){ var b=document.createElement("button"); b.type="button"; b.className="ht-btn ht-calm"; b.id="htCalm"; b.setAttribute("data-calm",""); b.title="Feeling panicky? 5-4-3-2-1 grounding"; b.innerHTML='🫶 <span class="t">Calm</span>'; ht.insertBefore(b,ht.firstChild); }
+    var hr=q("helpRoot");
+    if(hr&&!hr.querySelector(".hp-calm")){ var c=document.createElement("div"); c.className="hp-calm"; c.innerHTML='<div class="t"><b>🫶 Panic or anxiety?</b><small>A 2-minute guided 5-4-3-2-1 grounding exercise with breathing. Works offline.</small></div><button type="button" data-calm>Start now</button>'; hr.insertBefore(c,hr.firstChild); }
+  }
+  function boot(){
+    addEntryPoints();
+    var hr=q("helpRoot"); if(hr&&window.MutationObserver){ new MutationObserver(function(){ if(!hr.querySelector(".hp-calm")) addEntryPoints(); }).observe(hr,{childList:true}); }
+    if(!q("htCalm")) setTimeout(addEntryPoints,600);
+    if(location.hash==="#calm") open();
+  }
+  if(window.__booted) setTimeout(boot,0); else document.addEventListener("app:booted",function(){ setTimeout(boot,0); });
 })();
 
 </script>
