@@ -1,5 +1,5 @@
 /* Offline support for the Europe 2026 trip site. Generated from sw-template.js by build-trip.js. */
-const VERSION = "20261106164657";
+const VERSION = "20261106170212";
 const SHELL = "eu26-shell-" + VERSION;
 const DATA_CACHE = "eu26-data";
 const SHELL_URLS = [

@@ -125,7 +125,7 @@
       "dir": "Home",
       "dates": "Nov 26–27",
       "carrier": "Aer Lingus / AA",
-      "detail": "ZRH 11:00am → DUB 12:25pm; DUB 11:30am → PHL 2:05pm (US pre-clearance in Dublin)",
+      "detail": "EI 343 ZRH 11:00am → DUB 12:25pm (Thu 11/26); AA 723 DUB 11:30am → PHL 2:05pm (Fri 11/27, Business, seats 2D & 2H; US pre-clearance in Dublin)",
       "status": "booked",
       "conf": "",
       "missCost": {
@@ -1958,7 +1958,7 @@
         },
         {
           "time": "11:00a",
-          "text": "Fly ZRH → DUB (arr 12:25p)",
+          "text": "✈ Fly ZRH → DUB on Aer Lingus EI 343 (arr 12:25p)",
           "status": "booked",
           "missCost": {
             "risk": "prepaid",
@@ -2055,7 +2055,7 @@
         },
         {
           "time": "11:30a",
-          "text": "Fly DUB → PHL (arr 2:05p)",
+          "text": "✈ Fly DUB → PHL on American AA 723 (arr 2:05p), Business, seats 2D & 2H",
           "status": "booked",
           "missCost": {
             "risk": "prepaid",
@@ -4966,7 +4966,7 @@
         },
         {
           "icon": "☘",
-          "h": "Aer Lingus ZRH → DUB 11/26",
+          "h": "Aer Lingus EI 343 ZRH → DUB 11/26",
           "t": "A ~27L backpack (like Max's YETI) likely counts as a full-size cabin bag, so check that your fare includes one for each of you. Then either short-check the suitcases to DUB, or live out of the backpacks' Dublin overnight kit."
         },
         {
