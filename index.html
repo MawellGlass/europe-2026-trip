@@ -1043,6 +1043,69 @@ html[data-theme="dark"] .bs-c.ship{background:#94a3b8;color:#0f172a;}
 .su-n.full{opacity:.35;}
 .su-tog{font-size:.88rem;color:var(--cp-text-muted);display:flex;gap:6px;align-items:center;}
 
+/* ===== Scoreboard (match-log scoring) ===== */
+.gm-sub{font-size:.74rem;color:var(--cp-text-muted);}
+.gm-hero{border-radius:16px;padding:14px 14px 10px;margin:6px 0 12px;background:linear-gradient(135deg,rgba(225,29,72,.10),rgba(217,119,6,.10));border:1px solid var(--cp-border);text-align:center;}
+.gm-where{font-size:.8rem;color:var(--cp-text-muted);font-weight:600;letter-spacing:.02em;}
+.gm-big{display:flex;align-items:center;justify-content:center;gap:18px;margin:4px 0 2px;}
+.gm-big span.a,.gm-big span.b{display:flex;flex-direction:column;align-items:center;min-width:84px;}
+.gm-big small{font-size:.82rem;font-weight:700;}
+.gm-big b{font-size:2.6rem;line-height:1.05;font-weight:800;}
+.gm-big .a small,.gm-big .a b{color:#e11d48;} .gm-big .b small,.gm-big .b b{color:#d97706;}
+.gm-hl{font-size:.86rem;margin:3px 0;}
+.gm-card2{margin:8px 0 2px;padding:9px 10px;border-radius:12px;border:1px dashed var(--cp-accent);background:var(--cp-surface);font-size:.85rem;line-height:1.4;}
+.gm-card2.armed{border-style:solid;background:var(--cp-accent-soft);}
+.gm-card2.used{border-style:solid;border-color:var(--cp-border);color:var(--cp-text-muted);}
+.gm-btn.sm{font-size:.82rem;padding:6px 12px;min-height:34px;margin-left:4px;}
+.gm-tabs{margin:2px 0 10px;}
+.gm-cm{font-size:.74rem;font-weight:700;color:var(--cp-text-muted);margin-top:auto;}
+.gm-medsum{display:flex;gap:8px 16px;flex-wrap:wrap;justify-content:center;font-size:.88rem;margin:4px 0 10px;}
+.gm-tbl{width:100%;border-collapse:collapse;font-size:.88rem;}
+.gm-tbl th{font-size:.76rem;text-align:left;color:var(--cp-text-muted);font-weight:700;padding:6px 6px;border-bottom:1px solid var(--cp-border);}
+.gm-tbl td{padding:7px 6px;border-bottom:1px solid var(--cp-border);}
+.gm-tbl td.num{text-align:center;font-variant-numeric:tabular-nums;width:56px;} .gm-tbl th.gm-a,.gm-tbl th.gm-b{text-align:center;}
+.gm-tbl td.lead{font-weight:800;}
+.gm-city{border:1px solid var(--cp-border);border-radius:14px;padding:10px 12px;margin:8px 0;background:var(--cp-surface);}
+.gm-city.now{border-color:var(--cp-accent);box-shadow:0 0 0 1px var(--cp-accent) inset;}
+.gm-city-h{display:flex;align-items:center;gap:8px;}
+.gm-city-s{margin-left:auto;font-size:1.05rem;font-variant-numeric:tabular-nums;}
+.gm-city-r{font-size:.85rem;margin-top:3px;}
+.gm-owe{font-size:.85rem;margin-top:5px;padding-top:5px;border-top:1px dashed var(--cp-border);}
+.gm-stk{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--cp-text-muted);margin-top:6px;}
+.gm-in.sm{font-size:.88rem;padding:7px 9px;margin:0;flex:1;min-width:0;}
+.gm-pill{display:inline-block;font-size:.7rem;font-weight:700;padding:1px 7px;border-radius:99px;background:var(--cp-accent-soft);color:var(--cp-accent);}
+.gm-mut{color:var(--cp-text-muted);}
+.gm-hist{list-style:none;padding:0;margin:0;}
+.gm-hist li{display:flex;align-items:center;gap:10px;padding:8px 2px;border-bottom:1px solid var(--cp-border);}
+.gm-hw{font-size:1.3rem;flex:0 0 auto;}
+.gm-hm{flex:1;min-width:0;font-size:.88rem;line-height:1.35;}
+.gm-hm small{display:block;color:var(--cp-text-muted);font-size:.74rem;}
+.gm-x{border:1px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-text-muted);border-radius:99px;width:30px;height:30px;flex:0 0 auto;cursor:pointer;font-size:.8rem;}
+.gm-link.danger{color:var(--cp-danger);}
+.gm-toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:9999;background:var(--cp-surface);color:var(--cp-text);border:1px solid var(--cp-border);box-shadow:0 8px 28px rgba(0,0,0,.22);padding:10px 16px;border-radius:14px;font-size:.92rem;text-align:center;transition:opacity .25s,transform .25s;max-width:90vw;}
+.gm-toast.show{opacity:1;transform:translate(-50%,0);}
+.gm-toast small{color:var(--cp-text-muted);}
+.gm-pass{text-align:center;padding:24px 8px;}
+.gm-pass-ic{font-size:2.6rem;}
+
+/* ---- Trip specials ---- */
+.dc-p{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--cp-border);border-radius:12px;margin:6px 0;background:var(--cp-surface);font-weight:700;}
+.dc-p .dc-st{flex:1;color:var(--cp-text-muted);font-size:.86rem;font-weight:400;}
+.dc-p .gm-btn.sm{margin:0;}
+.dc-res{display:flex;gap:22px;justify-content:center;margin:10px 0;text-align:center;line-height:1.15;font-size:1.05rem;}
+.wa-clues{list-style:none;padding:0;margin:8px 0 12px;display:grid;gap:6px;}
+.wa-clues li{padding:10px 12px;border-radius:12px;background:var(--cp-surface-soft);border:1px solid var(--cp-border);font-size:.98rem;line-height:1.38;}
+.wa-clues li b{display:inline-block;min-width:1.4em;color:var(--cp-accent);}
+.pr-tbl td.num{width:auto;white-space:nowrap;}
+.ph-bar{height:6px;border-radius:99px;background:var(--cp-surface-soft);overflow:hidden;margin:6px 0 2px;}
+.ph-bar i{display:block;height:100%;background:var(--cp-accent);transition:width .2s linear;}
+.ph-num{text-align:center;font-size:.8rem;font-weight:800;color:var(--cp-text-muted);font-variant-numeric:tabular-nums;}
+.bg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:440px;margin:8px auto;}
+.bg-c{font:inherit;font-size:.74rem;line-height:1.2;aspect-ratio:1;padding:4px;border-radius:10px;border:1px solid var(--cp-border);background:var(--cp-surface);color:var(--cp-text);cursor:pointer;display:flex;align-items:center;justify-content:center;text-align:center;touch-action:manipulation;overflow:hidden;overflow-wrap:anywhere;hyphens:auto;}
+.bg-c.on{background:var(--cp-accent-soft);border-color:var(--cp-accent);color:var(--cp-accent);font-weight:700;}
+.bg-c.line{background:rgba(22,163,74,.18);border-color:var(--cp-success);color:var(--cp-success);}
+.bg-c:disabled{cursor:default;opacity:1;}
+
 /* ---------- 🫶 Calm: 5-4-3-2-1 grounding overlay ---------- */
 #calmOv{position:fixed;inset:0;z-index:100500;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-y:auto;
   background:radial-gradient(120% 90% at 50% 0%,#24435a 0%,#16293b 55%,#0f1d2b 100%);color:#eaf2f7;
@@ -3209,8 +3272,8 @@ loadAndBoot();
   function setTheme(p){ try{ localStorage.setItem(TH,p); }catch(e){} applyTheme(); }
   try{ var mq=window.matchMedia("(prefers-color-scheme: dark)"); if(mq.addEventListener) mq.addEventListener("change",applyTheme); else if(mq.addListener) mq.addListener(applyTheme); }catch(e){}
 
-  /* ---------- shared sync (packing ticks, taste journal, shopping ticks, saved phrases) ---------- */
-  var SYNC_KEYS=["eu26_pack3","eu26_taste","eu26_taste_j","eu26_shopping","eu26_myphr"];
+  /* ---------- shared sync (packing ticks, taste journal, shopping ticks, saved phrases, game scores) ---------- */
+  var SYNC_KEYS=["eu26_pack3","eu26_taste","eu26_taste_j","eu26_shopping","eu26_myphr","eu26_games_log","eu26_games_stakes","eu26_games_cards","eu26_games_names","eu26_games_daily","eu26_games_bingo"];
   var SFILE="shared-state.json", BASEK="eu26_sync_base", METAK="eu26_sync_meta";
   var applying=false, pushT=null, pulling=false, pushing=false, dirty=false, lastErr="", lastSync=0, ready=false;
   try{ var mm=JSON.parse(localStorage.getItem(METAK)||"{}"); lastSync=mm.at||0; }catch(e){}
@@ -3250,7 +3313,7 @@ loadAndBoot();
     return changed;
   }
   function rerender(){
-    ["__packRender","__dineRender","__shopRender","__todayRender"].forEach(function(f){ try{ if(window[f]) window[f](); }catch(e){} });
+    ["__packRender","__dineRender","__shopRender","__todayRender","__gamesSync"].forEach(function(f){ try{ if(window[f]) window[f](); }catch(e){} });
     var a=document.querySelector("section.panel.active");
     try{ if(a&&a.dataset.tab==="lang"&&window.__langRender) window.__langRender(); }catch(e){}
     try{ if(!(a&&a.dataset.tab==="itinerary")&&window.__itinRefresh) window.__itinRefresh(); }catch(e){}
@@ -3678,8 +3741,79 @@ loadAndBoot();
   function names(){ var n = ld("names", {}); return { a: (n.a || "Max"), b: (n.b || "Nicole") }; }
   function other(w){ return w === "a" ? "b" : "a"; }
   function nm(w){ return '<span class="gm-' + w + '">' + esc(names()[w]) + '</span>'; }
-  function getScores(){ return ld("scores", {}); }
-  function addPt(g, w, n){ var s = getScores(); s[g] = s[g] || {a:0, b:0}; s[g][w] = (s[g][w] || 0) + (n == null ? 1 : n); sv("scores", s); }
+  /* ---------------------------------------------------------------- SCORING
+     Every finished game/match = 1 trip point to the winner (2 if a Double card was played).
+     Results live in a match log keyed by unique id (eu26_games_log) so the two phones can merge safely. */
+  var PRACTICE = "Practice";
+  var CITY_FLAG = {"London":"🇬🇧","Marseille":"🇫🇷","Nice":"🇫🇷","Monaco":"🇲🇨","Milan":"🇮🇹","Venice":"🇮🇹","Basel":"🇨🇭","Zurich":"🇨🇭","Dublin":"🇮🇪"};
+  var STAKE_DEF = {"London":"Loser buys the M&S snacks","Marseille":"Loser buys the apéro (pastis!)","Nice":"Loser buys the socca","Milan":"Loser pays for aperitivo","Venice":"Loser buys cicchetti + a spritz","Basel":"Loser buys the Läckerli","Zurich":"Loser buys Sprüngli Luxemburgerli","Dublin":"Loser buys the first pint (or a 99)"};
+  function tripData(){ try{ return (typeof DATA !== "undefined" && DATA && DATA.days) ? DATA : null; }catch(e){ return null; } }
+  function todayIso(){ try{ if(typeof tripNow === "function") return tripNow().iso; }catch(e){} var d = new Date(), p = function(n){ return (n < 10 ? "0" : "") + n; }; return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()); }
+  function dayCity(day, prevDay, hour){
+    if(!day) return "";
+    var c = day.sleepCity || (day.cities && day.cities[day.cities.length - 1]) || String(day.city || "").split(/[—→-]/)[0].trim();
+    if(day.travel && hour != null && hour < 12 && prevDay && prevDay.sleepCity) c = prevDay.sleepCity;
+    return c;
+  }
+  function tripCity(){
+    var iso = todayIso(), D = tripData();
+    if(!D || !D.meta) return {name: "Trip", date: iso, day: 0};
+    if(iso < D.meta.startDate) return {name: PRACTICE, date: iso, day: 0};
+    if(iso > D.meta.endDate) return {name: "Back home", date: iso, day: D.days.length + 1};
+    var hr = new Date().getHours(); try{ if(typeof tripNow === "function") hr = Math.floor(tripNow().min / 60); }catch(e){}
+    for(var i = 0; i < D.days.length; i++) if(D.days[i].date === iso) return {name: dayCity(D.days[i], D.days[i - 1], hr) || "Trip", date: iso, day: i + 1};
+    return {name: "Trip", date: iso, day: 0};
+  }
+  function cityOrder(){
+    var D = tripData(), out = [];
+    if(D) D.days.forEach(function(d){ var c = dayCity(d); if(c && out.indexOf(c) < 0) out.push(c); });
+    return out;
+  }
+  function getLog(){ var L = ld("log", {}); return (L && typeof L === "object") ? L : {}; }
+  function logArr(){ var L = getLog(); return Object.keys(L).map(function(k){ var r = L[k] || {}; r.id = k; return r; }).filter(function(r){ return r.w === "a" || r.w === "b"; }).sort(function(x, y){ return (x.t || 0) - (y.t || 0); }); }
+  function counted(r){ return r.c !== PRACTICE; }
+  function newId(){ return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  function addWin(g, w, opt){
+    opt = opt || {}; if(w !== "a" && w !== "b") return null;
+    var L = getLog(), id = opt.id || newId(); if(L[id]) return null;
+    var c = tripCity(), pts = 1, cards = ld("cards", {}), cd = cards[c.name];
+    if(cd && cd.armed && !cd.used){ if(cd.p === w) pts = 2; cd.armed = false; cd.used = id; cd.res = cd.p === w ? "won" : "lost"; sv("cards", cards); }
+    L[id] = {g: g, w: w, t: Date.now(), c: c.name, d: c.date, x: String(opt.x || "").slice(0, 40), p: pts};
+    sv("log", L);
+    winToast(g, w, pts);
+    return id;
+  }
+  function addPt(g, w){ return addWin(g, w); }
+  function delWin(id){ var L = getLog(); if(L[id]){ delete L[id]; sv("log", L); var cards = ld("cards", {}), ch = false; Object.keys(cards).forEach(function(k){ if(cards[k] && cards[k].used === id){ cards[k].used = null; cards[k].res = null; cards[k].armed = true; ch = true; } }); if(ch) sv("cards", cards); } }
+  function gameWins(g){ var s = {a:0, b:0}; logArr().forEach(function(r){ if(r.g === g && counted(r)) s[r.w]++; }); return s; }
+  function totals(arr){ var s = {a:0, b:0}; (arr || logArr()).forEach(function(r){ if(counted(r)) s[r.w] += (r.p || 1); }); return s; }
+  function streakInfo(){
+    var arr = logArr().filter(counted), cur = {w: null, n: 0}, best = {w: null, n: 0}, run = {w: null, n: 0};
+    arr.forEach(function(r){ if(run.w === r.w) run.n++; else run = {w: r.w, n: 1}; if(run.n > best.n) best = {w: run.w, n: run.n}; });
+    cur = run; return {cur: cur, best: best};
+  }
+  function migrateOld(){
+    if(ld("migrated", false)) return;
+    var old = ld("scores", null), L = getLog(), t = Date.now() - 100000, PER = {cats:1, trivia:1, headsup:1};
+    if(old && typeof old === "object"){
+      Object.keys(old).forEach(function(g){
+        var s = old[g] || {}, a = +s.a || 0, b = +s.b || 0;
+        if(PER[g]){ if(a !== b) L["mig-" + g] = {g: g, w: a > b ? "a" : "b", t: t++, c: PRACTICE, d: "", x: "old points " + a + "–" + b, p: 1}; return; }
+        ["a","b"].forEach(function(w){ for(var i = 0; i < Math.min(60, w === "a" ? a : b); i++) L["mig-" + g + "-" + w + i] = {g: g, w: w, t: t++, c: PRACTICE, d: "", x: "before the trip", p: 1}; });
+      });
+      sv("log", L);
+    }
+    sv("migrated", true);
+  }
+  var toastT = null;
+  function winToast(g, w, pts){
+    try{
+      var gm = gById(g), tot = totals(), n = names(), el = document.getElementById("gmToast");
+      if(!el){ el = document.createElement("div"); el.id = "gmToast"; el.className = "gm-toast"; document.body.appendChild(el); }
+      el.innerHTML = '🏆 <b class="gm-' + w + '">' + esc(n[w]) + '</b> +' + pts + (pts > 1 ? ' (Double!)' : '') + (gm ? ' · ' + gm.ic + ' ' + esc(gm.t) : '') + '<br><small>Trip score ' + esc(n.a) + ' ' + tot.a + ' – ' + tot.b + ' ' + esc(n.b) + '</small>';
+      el.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(function(){ el.classList.remove("show"); }, 2600);
+    }catch(e){}
+  }
   function buzz(){
     try{ if(navigator.vibrate) navigator.vibrate([250, 120, 250]); }catch(e){}
     try{
@@ -3723,7 +3857,15 @@ loadAndBoot();
     {id:"mastermind", ic:"🔐", t:"Mastermind", d:"Crack the secret color code in 10 tries.", sc:1, g:"l"},
     {id:"sudoku", ic:"🧩", t:"Sudoku", d:"Solo or together; three difficulty levels.", sc:0, g:"l"}
   ];
-  var GROUPS = [["w","✏️ Word & guessing"],["b","♟️ Board games"],["l","🎲 Dice, luck & puzzles"],["t","🎉 Party, trivia & talk"]];
+  GAMES.unshift(
+    {id:"daily", ic:"📅", t:"Daily Challenge", d:"Same puzzle for both of you today. Fewest guesses wins.", sc:1, g:"x"},
+    {id:"whereami", ic:"📍", t:"Where Am I?", d:"Guess the trip place from clues. Fewer clues, more points.", sc:1, g:"x"},
+    {id:"price", ic:"💶", t:"Price Is Right", d:"Guess what things cost on this trip. Closest wins.", sc:1, g:"x"},
+    {id:"phrase", ic:"🗣️", t:"Phrase Duel", d:"French, Italian & German phrases. Quick-fire quiz.", sc:1, g:"x"},
+    {id:"bingo", ic:"🔍", t:"Spot It Bingo", d:"Spot things around the city. First line wins.", sc:1, g:"x"},
+    {id:"couples", ic:"💑", t:"Couples Quiz", d:"How well do you know each other? Answer, guess, reveal.", sc:1, g:"x"}
+  );
+  var GROUPS = [["x","⭐ Trip specials"],["w","✏️ Word & guessing"],["b","♟️ Board games"],["c","🃏 Card games"],["l","🎲 Dice, luck & puzzles"],["t","🎉 Party, trivia & talk"]];
   function gById(id){ for(var i = 0; i < GAMES.length; i++) if(GAMES[i].id === id) return GAMES[i]; return null; }
 
   /* ----------------------------------------------------------- HOW TO PLAY */
@@ -3731,7 +3873,7 @@ loadAndBoot();
     hangman: ["<b>Goal:</b> guess the hidden word before the drawing is complete (7 wrong guesses and you're out).","Tap <b>Pick a word for me</b> for a random trip word with a category hint, or let the other player <b>set a word</b> in secret and then hand you the phone.","Tap letters to guess (or type on a keyboard). Accents don't matter: E matches É, È and Ê.","<b>Points:</b> the guesser scores 1 for solving it. If a word you set isn't solved, you score 1. The guesser alternates every round."],
     wordle: ["<b>Goal:</b> find the secret 5-letter word in 6 guesses.","Type any 5 letters and tap <b>Enter</b>.","🟩 = right letter, right spot · 🟨 = in the word but in a different spot · ⬜ = not in the word. The keyboard colors keep track for you.","Words are trip-themed (food, places, travel, weather…).","<b>Points:</b> solve it and you score 1. You take turns solving puzzles; tap <i>Switch who solves</i> if needed."],
     draw: ["<b>Goal:</b> draw the secret word well enough that your partner guesses it.","The artist taps <b>Give me a word</b> and peeks at it privately, then taps <b>Start drawing</b>.","Draw with your finger. Pick colors, use 🧽 to erase, ↶ to undo, 🗑 to clear, 👁 to peek at the word again. No letters or numbers!","The guesser shouts guesses out loud. Tap <b>guessed it</b> when they get it, or <b>Give up</b>.","<b>Points:</b> the artist scores 1 when it's guessed. Roles swap every round. The timer is optional."],
-    cats: ["<b>Goal:</b> think of an answer for each category that starts with the letter shown.","Both of you write answers at the same time: on paper or in the Notes app on your own phones.","Tap <b>Start the clock</b>. When the buzzer goes (or you tap Stop early), read your answers out loud.","Tap a player's name for every answer that counts: it must start with the letter, fit the category, and be different from the other player's answer.","<b>Points:</b> 1 per valid answer. Change the timer or number of categories with the buttons at the top."],
+    cats: ["<b>Goal:</b> think of an answer for each category that starts with the letter shown.","Both of you write answers at the same time: on paper or in the Notes app on your own phones.","Tap <b>Start the clock</b>. When the buzzer goes (or you tap Stop early), read your answers out loud.","Tap a player's name for every answer that counts: it must start with the letter, fit the category, and be different from the other player's answer.","Count your valid answers: whoever has more wins the round and gets the trip point (a tie scores nothing). Change the timer or number of categories with the buttons at the top."],
     q20: ["<b>Goal:</b> guess what your partner is thinking of in 20 yes/no questions or fewer.","The thinker either gets a secret from the phone (trip places, food, landmarks, travel things) or thinks of their own.","The guesser asks yes/no questions out loud; tap Yes / No / Sort of after each answer to count it.","<b>Points:</b> guessed it = guesser scores 1. Out of questions or give up = thinker scores 1. The thinker alternates."],
     battle: ["<b>Goal:</b> sink all 5 of your partner's ships before they sink yours.","Each player takes the phone in turn to see their fleet (Cruise ship 4, Ferry 3, Yacht 3, Vaporetto 2, Gondola 2). Tap <b>Shuffle</b> until you like it, then <b>Ready</b>. The other player looks away!","Every turn starts with a <b>Pass the phone</b> screen so you never see each other's ships.","Tap a square in your partner's waters to fire: 🌊 miss, 🔥 hit, dark red = ship sunk. One shot per turn, then pass the phone.","Your own fleet (and where you've been hit) is shown underneath.","<b>Points:</b> first to sink the whole fleet scores 1."],
     c4: ["<b>Goal:</b> get four of your discs in a row: across, up/down or diagonally.","Tap any column to drop a disc; it falls to the lowest empty spot.","Players alternate turns. The player who starts alternates each game.","<b>Points:</b> 1 for the win. A full board with no four-in-a-row is a draw."],
@@ -3741,9 +3883,9 @@ loadAndBoot();
     ttt: ["<b>Goal:</b> get three in a row: across, down or diagonally.","X always moves first; the starting player alternates each game.","Play each other, or the phone on easy or hard (on hard, the phone never loses).","<b>Points:</b> 1 for a 2-player win. Games against the phone have their own record and don't count toward the trip score."],
     memory: ["<b>Goal:</b> find the most matching pairs.","On your turn, flip two cards. If they match, you keep them and <b>go again</b>.","If they don't match, they flip back over after a moment and it's your partner's turn. Remember where things were!","<b>Points:</b> most pairs wins 1. Choose 16, 20 or 24 cards."],
     pig: ["<b>Goal:</b> be the first to reach the target score (30, 50 or 100).","On your turn, roll as many times as you like. Each roll adds to your turn total.","Tap <b>Hold</b> to bank your turn total and pass the phone.","Roll a ⚀ (one) and you lose everything you rolled that turn: your turn is over.","<b>Points:</b> first to the target scores 1. The tension is deciding when to stop!"],
-    trivia: ["<b>Goal:</b> answer more questions right than your partner.","Each round is 10 questions; you take turns, one question each.","Tap your answer. The right one turns green and there's sometimes a fun fact.","<b>Points:</b> 1 per correct answer. Questions don't repeat until you've seen all of them."],
+    trivia: ["<b>Goal:</b> answer more questions right than your partner.","Each round is 10 questions; you take turns, one question each.","Tap your answer. The right one turns green and there's sometimes a fun fact.","Whoever gets more right out of the 10 wins the round and the trip point. Questions don't repeat until you've seen all of them."],
     wyr: ["Not a competition: just conversation starters for trains, cafés and dinners.","<b>This or that</b> cards: both answer and explain why. <b>Talk cards</b>: take turns answering.","Tap ☆ to save favorites; see them in the ★ Favorites tab.","Cards don't repeat until you've been through all of them."],
-    headsup: ["<b>Goal:</b> guess as many words as you can before time runs out.","The <b>guesser</b> holds the phone up on their forehead, screen facing the partner, without looking at it.","The partner gives clues, acts it out (for the 🎭 deck) or hums, but can't say the word itself.","The guesser taps the <b>right half</b> of the screen for ✅ got it, or the <b>left half</b> to ⏭ pass.","When time's up you'll see every word with ✅/⏭. Then swap roles.","<b>Points:</b> 1 per correct word for the guesser. Pick a deck and a time at the start."],
+    headsup: ["<b>Goal:</b> guess as many words as you can before time runs out.","The <b>guesser</b> holds the phone up on their forehead, screen facing the partner, without looking at it.","The partner gives clues, acts it out (for the 🎭 deck) or hums, but can't say the word itself.","The guesser taps the <b>right half</b> of the screen for ✅ got it, or the <b>left half</b> to ⏭ pass.","When time's up you'll see every word with ✅/⏭. Then swap roles.","A match is one turn each. Whoever guesses more words wins the match and the trip point. Pick a deck and a time at the start."],
     truths: ["<b>Goal:</b> fool your partner, or catch their lie.","The phone gives the teller a topic. They say three statements about it: two true, one false, in any order.","The guesser asks follow-up questions if they want, then names the lie.","<b>Points:</b> caught the lie = guesser scores 1. Fooled them = teller scores 1. The teller alternates."],
     wordgrid: ["<b>Goal:</b> find more words than your partner in the letter grid.","Tap <b>Start</b>. Both of you write words on paper or your own phone until the timer ends.","Words must be 3+ letters, made from letters that touch (sideways, up/down or diagonally), without using the same square twice in one word. \"Qu\" counts as two letters.","When time's up, read your lists. Cross out any word you both found.","Scoring per word: 3–4 letters = 1, 5 = 2, 6 = 3, 7 = 5, 8+ = 11. Enter each player's total.","<b>Points:</b> higher total wins 1."],
     citychain: ["<b>Goal:</b> don't get stuck!","The first player names something in the chosen category starting with the letter shown (e.g. M → <i>Milan</i>).","Type it and tap <b>Go</b>. The next player must start with the <b>last letter</b> of that word (Milan → N → <i>Nice</i> → E…). Hard last letters Q, X and Z are skipped; the letter before is used instead.","No repeats, and you have to answer before your timer runs out.","<b>Points:</b> if your time runs out, your partner scores 1. Honor system for spelling!"],
@@ -3758,8 +3900,12 @@ loadAndBoot();
   var root = null, cur = null, ticks = [], H = {};
   function stopTicks(){ ticks.forEach(function(t){ clearInterval(t); clearTimeout(t); }); ticks = []; }
   function scoreBar(id){
-    var s = getScores()[id] || {a:0, b:0}, n = names();
-    return '<div class="gm-score"><span class="gm-pl a">' + esc(n.a) + ' <b>' + (s.a || 0) + '</b></span><span class="gm-vs">vs</span><span class="gm-pl b">' + esc(n.b) + ' <b>' + (s.b || 0) + '</b></span><button type="button" class="gm-link" data-gact="resetscore">reset</button></div>';
+    var s = gameWins(id), n = names();
+    var last = null; logArr().forEach(function(r){ if(r.g === id) last = r; });
+    var tot = totals();
+    return '<div class="gm-score"><span class="gm-pl a">' + esc(n.a) + ' <b>' + (s.a || 0) + '</b></span><span class="gm-vs">wins</span><span class="gm-pl b">' + esc(n.b) + ' <b>' + (s.b || 0) + '</b></span>' +
+      (last ? '<button type="button" class="gm-link" data-gact="undolast" title="Remove the last result in this game">↩ undo</button>' : '') +
+      '<span class="gm-sub">Trip ' + tot.a + '–' + tot.b + '</span></div>';
   }
   function frame(id, body){
     var g = gById(id);
@@ -3770,14 +3916,84 @@ loadAndBoot();
   function refreshScore(){ var el = document.getElementById("gmScore"); if(el && cur) el.innerHTML = scoreBar(cur); }
 
   function leaveCur(){ try{ if(cur && H[cur] && H[cur].leave) H[cur].leave(); }catch(e){} }
+  var pane = "games";
+  function fmtWhen(t){ try{ var d = new Date(t); return d.toLocaleDateString("en-US", {month: "short", day: "numeric"}) + " · " + d.toLocaleTimeString("en-US", {hour: "numeric", minute: "2-digit"}).replace(" ", "").toLowerCase(); }catch(e){ return ""; } }
+  function flag(c){ return CITY_FLAG[c] || (c === PRACTICE ? "🏋️" : "📍"); }
+  function stakeOf(c){ var st = ld("stakes", {})[c] || {}; return {s: st.s != null ? st.s : (STAKE_DEF[c] || "Loser buys the next coffee"), paid: !!st.paid}; }
+  function cardState(){
+    var c = tripCity(), tot = totals(), cards = ld("cards", {}), cd = cards[c.name] || null, behind = tot.a === tot.b ? null : (tot.a < tot.b ? "a" : "b");
+    return {city: c.name, cd: cd, behind: behind, gap: Math.abs(tot.a - tot.b), ok: c.name !== PRACTICE && c.name !== "Trip" && c.name !== "Back home"};
+  }
+  function heroHtml(){
+    var n = names(), tot = totals(), c = tripCity(), st = streakInfo(), cs = cardState();
+    var lead = tot.a === tot.b ? (tot.a ? "All square! 🤝" : "First win of the trip takes the lead") : esc(n[tot.a > tot.b ? "a" : "b"]) + " leads by " + Math.abs(tot.a - tot.b);
+    var where = c.name === PRACTICE ? "Warm-up · the trip score starts on day 1" : (c.day ? "Day " + c.day + " · " : "") + flag(c.name) + " " + esc(c.name);
+    var streak = st.cur.n >= 2 ? '<div class="gm-hl">🔥 ' + nm(st.cur.w) + ' has won ' + st.cur.n + ' in a row</div>' : "";
+    var stake = cs.ok ? '<div class="gm-hl">🍷 ' + esc(c.name) + ' stakes: ' + esc(stakeOf(c.name).s) + '</div>' : "";
+    var card = "";
+    if(cs.ok && cs.cd && cs.cd.armed) card = '<div class="gm-card2 armed">🃏 <b>Double armed</b> for ' + nm(cs.cd.p) + ': their next win counts 2. If they lose the next game, it\'s gone. <button type="button" class="gm-link" data-gact="card-off">put it back</button></div>';
+    else if(cs.ok && cs.cd && cs.cd.used) card = '<div class="gm-card2 used">🃏 ' + esc(n[cs.cd.p]) + '\'s ' + esc(cs.city) + ' Double card: ' + (cs.cd.res === "won" ? "cashed in for 2 points 💰" : "burned 🔥") + '</div>';
+    else if(cs.ok && cs.behind) card = '<div class="gm-card2">🃏 ' + nm(cs.behind) + ' is behind, so gets one <b>Double Points</b> card in ' + esc(cs.city) + '. Play it before a game: win and it counts 2. <button type="button" class="gm-btn sm pri" data-gact="card-arm">Play it</button></div>';
+    return '<div class="gm-hero"><div class="gm-where">' + where + '</div>' +
+      '<div class="gm-big"><span class="a"><small>' + esc(n.a) + '</small><b>' + tot.a + '</b></span><span class="gm-vs">vs</span><span class="b"><small>' + esc(n.b) + '</small><b>' + tot.b + '</b></span></div>' +
+      '<div class="gm-hl">' + lead + '</div>' + streak + stake + card + '</div>';
+  }
+  function medalsHtml(){
+    var n = names(), rows = [], titles = {a:0, b:0, t:0}, unplayed = 0;
+    GAMES.filter(function(g){ return g.sc; }).forEach(function(g){
+      var s = gameWins(g.id); if(!s.a && !s.b){ unplayed++; return; }
+      var m = s.a === s.b ? "t" : (s.a > s.b ? "a" : "b"); titles[m]++;
+      rows.push({g: g, s: s, m: m, n: s.a + s.b});
+    });
+    rows.sort(function(x, y){ return y.n - x.n; });
+    if(!rows.length) return '<p class="gm-note">No games finished yet on the trip. Win one to claim your first 🥇 title.</p>';
+    return '<div class="gm-medsum"><span>🥇 <b class="gm-a">' + esc(n.a) + '</b> ' + titles.a + ' titles</span><span>🥇 <b class="gm-b">' + esc(n.b) + '</b> ' + titles.b + ' titles</span>' + (titles.t ? '<span>🤝 ' + titles.t + ' tied</span>' : '') + '</div>' +
+      '<table class="gm-tbl"><thead><tr><th>Game</th><th class="gm-a">' + esc(n.a) + '</th><th class="gm-b">' + esc(n.b) + '</th><th>Title</th></tr></thead><tbody>' +
+      rows.map(function(r){ return '<tr><td>' + r.g.ic + ' ' + esc(r.g.t) + '</td><td class="num' + (r.m === "a" ? " lead" : "") + '">' + r.s.a + '</td><td class="num' + (r.m === "b" ? " lead" : "") + '">' + r.s.b + '</td><td>' + (r.m === "t" ? "🤝" : '🥇 <span class="gm-' + r.m + '">' + esc(n[r.m]) + '</span>') + '</td></tr>'; }).join("") +
+      '</tbody></table>' + (unplayed ? '<p class="gm-note">' + unplayed + ' games not played yet. Plenty of titles up for grabs.</p>' : '');
+  }
+  function citiesHtml(){
+    var n = names(), arr = logArr().filter(counted), now = tripCity(), order = cityOrder(), seen = {};
+    arr.forEach(function(r){ if(order.indexOf(r.c) < 0 && !seen[r.c]){ seen[r.c] = 1; order.push(r.c); } });
+    var cards = ld("cards", {}), passed = true;
+    var rows = order.map(function(c){
+      var s = totals(arr.filter(function(r){ return r.c === c; })), isNow = c === now.name, st = stakeOf(c), played = s.a + s.b > 0;
+      if(isNow) passed = false;
+      var done = passed && !isNow, win = s.a === s.b ? null : (s.a > s.b ? "a" : "b");
+      var res = !played ? (done ? '<span class="gm-mut">no games</span>' : (isNow ? '<span class="gm-mut">no games yet</span>' : '<span class="gm-mut">coming up</span>')) : (win ? (done ? '👑 ' + nm(win) + ' won ' + esc(c) : nm(win) + ' leads') : (done ? "🤝 tied" : "🤝 level"));
+      var owe = played && win && done ? '<div class="gm-owe">' + (st.paid ? '✅ Settled: ' : '💸 ' + nm(other(win)) + ' owes: ') + esc(st.s) + ' <button type="button" class="gm-link" data-gact="stake-paid" data-c="' + esc(c) + '">' + (st.paid ? "undo" : "mark settled") + '</button></div>' : '';
+      var cd = cards[c] && cards[c].used ? ' · 🃏 ' + esc(n[cards[c].p]) + ' ' + (cards[c].res === "won" ? "doubled" : "burned a card") : '';
+      return '<div class="gm-city' + (isNow ? " now" : "") + (done ? " done" : "") + '"><div class="gm-city-h"><b>' + flag(c) + ' ' + esc(c) + '</b>' + (isNow ? ' <span class="gm-pill">📍 now</span>' : '') +
+        '<span class="gm-city-s"><b class="gm-a">' + s.a + '</b>–<b class="gm-b">' + s.b + '</b></span></div><div class="gm-city-r">' + res + cd + '</div>' + owe +
+        (!done || !played ? '<label class="gm-stk">🍷 Stakes <input class="gm-in sm gm-stake" data-c="' + esc(c) + '" maxlength="60" value="' + esc(st.s) + '"></label>' : '') + '</div>';
+    }).join("");
+    var won = {a:0, b:0}; passed = true;
+    order.forEach(function(c){ if(c === now.name) passed = false; if(!passed) return; var s = totals(arr.filter(function(r){ return r.c === c; })); if(s.a !== s.b) won[s.a > s.b ? "a" : "b"]++; });
+    return '<div class="gm-medsum"><span>👑 Cities won: <b class="gm-a">' + esc(n.a) + '</b> ' + won.a + '</span><span><b class="gm-b">' + esc(n.b) + '</b> ' + won.b + '</span></div>' + rows +
+      '<p class="gm-note">Results are tagged with the city you sleep in that day (before noon on a travel day, it\'s the city you\'re leaving). The loser of each city pays the stake.</p>';
+  }
+  function historyHtml(){
+    var n = names(), all = logArr(), arr = all.filter(counted).reverse(), st = streakInfo(), pr = all.filter(function(r){ return !counted(r); }), prT = {a:0, b:0};
+    pr.forEach(function(r){ prT[r.w]++; });
+    var list = arr.slice(0, 60).map(function(r){ var g = gById(r.g) || {ic: "🎲", t: r.g}; return '<li><span class="gm-hw">' + g.ic + '</span><span class="gm-hm"><b class="gm-' + r.w + '">' + esc(n[r.w]) + '</b> won ' + esc(g.t) + (r.p > 1 ? ' <span class="gm-pill">×2</span>' : '') + (r.x ? ' <span class="gm-mut">' + esc(r.x) + '</span>' : '') + '<small>' + flag(r.c) + ' ' + esc(r.c) + ' · ' + fmtWhen(r.t) + '</small></span><button type="button" class="gm-x" data-gact="undo" data-id="' + esc(r.id) + '" title="Remove this result">✕</button></li>'; }).join("");
+    return (st.best.n >= 2 ? '<div class="gm-medsum"><span>🔥 Now: ' + (st.cur.n >= 2 ? nm(st.cur.w) + ' ×' + st.cur.n : 'no streak') + '</span><span>🏅 Longest: ' + nm(st.best.w) + ' ×' + st.best.n + '</span></div>' : '') +
+      (list ? '<ul class="gm-hist">' + list + '</ul>' + (arr.length > 60 ? '<p class="gm-note">Showing the latest 60 of ' + arr.length + '.</p>' : '') : '<p class="gm-note">No results yet. Finished games show up here; tap ✕ to undo a mis-tap.</p>') +
+      (pr.length ? '<p class="gm-note">🏋️ Warm-up games before the trip (not counted): ' + esc(n.a) + ' ' + prT.a + ' · ' + esc(n.b) + ' ' + prT.b + '</p>' : '') +
+      '<details class="gm-how"><summary>💾 Backup &amp; sharing</summary><p class="gm-note" style="text-align:left">Scores, stakes and Double cards sync between your phones automatically when sync is on (☁ in the header). No sync? Copy a backup code here and paste it on the other phone: results are merged, never duplicated.</p>' +
+      '<div class="gm-row"><button type="button" class="gm-btn" data-gact="bk-copy">📋 Copy backup code</button><button type="button" class="gm-btn" data-gact="bk-paste">📥 Paste a backup</button></div>' +
+      '<textarea id="gmBk" class="gm-in" rows="3" placeholder="Backup code appears here / paste one here" spellcheck="false"></textarea>' +
+      '<div class="gm-row"><button type="button" class="gm-link danger" data-gact="bk-clear">🧹 Clear every result</button></div></details>';
+  }
   function home(){
     leaveCur(); cur = null; stopTicks();
-    var n = names(), s = getScores(), tot = {a:0, b:0};
-    Object.keys(s).forEach(function(k){ tot.a += s[k].a || 0; tot.b += s[k].b || 0; });
-    root.innerHTML = '<p class="gm-intro">Pass-and-play on one phone. Everything works offline on trains and planes. Scores are saved on this phone.</p>' +
+    var n = names(), P = {games: "🎮 Games", medals: "🏅 Medals", cities: "🌍 Cities", history: "📜 History"};
+    var paneHtml = pane === "medals" ? medalsHtml() : pane === "cities" ? citiesHtml() : pane === "history" ? historyHtml() :
+      GROUPS.map(function(gr){ var gs = GAMES.filter(function(g){ return g.g === gr[0]; }); if(!gs.length) return ""; return '<h4 class="gm-gh">' + gr[1] + '</h4><div class="gm-grid">' + gs.map(function(g){ var s = g.sc ? gameWins(g.id) : null, m = s && (s.a || s.b) ? (s.a === s.b ? "🤝" : "🥇" + '<span class="gm-' + (s.a > s.b ? "a" : "b") + '">' + esc(n[s.a > s.b ? "a" : "b"]) + '</span>') : ""; return '<button type="button" class="gm-card" data-gact="open" data-g="' + g.id + '"><span class="gm-ic">' + g.ic + '</span><span class="gm-ct">' + esc(g.t) + '</span><span class="gm-cd">' + esc(g.d) + '</span>' + (m ? '<span class="gm-cm">' + m + ' ' + s.a + '–' + s.b + '</span>' : '') + '</button>'; }).join("") + '</div>'; }).join("");
+    root.innerHTML = '<p class="gm-intro">Pass-and-play on one phone, offline on trains and planes. Every finished game is worth 1 trip point.</p>' +
       '<div class="gm-names"><label>Player 1 <input id="gmNa" maxlength="14" autocomplete="off" value="' + esc(n.a) + '"></label><label>Player 2 <input id="gmNb" maxlength="14" autocomplete="off" value="' + esc(n.b) + '"></label></div>' +
-      '<div class="gm-tot">Trip total: <b class="gm-a">' + esc(n.a) + ' ' + tot.a + '</b> · <b class="gm-b">' + esc(n.b) + ' ' + tot.b + '</b></div>' +
-      GROUPS.map(function(gr){ return '<h4 class="gm-gh">' + gr[1] + '</h4><div class="gm-grid">' + GAMES.filter(function(g){ return g.g === gr[0]; }).map(function(g){ return '<button type="button" class="gm-card" data-gact="open" data-g="' + g.id + '"><span class="gm-ic">' + g.ic + '</span><span class="gm-ct">' + esc(g.t) + '</span><span class="gm-cd">' + esc(g.d) + '</span></button>'; }).join("") + '</div>'; }).join("");
+      heroHtml() +
+      '<div class="gm-seg gm-tabs">' + Object.keys(P).map(function(k){ return '<button type="button" data-gact="pane" data-p="' + k + '" class="' + (pane === k ? "on" : "") + '">' + P[k] + '</button>'; }).join("") + '</div>' +
+      '<div id="gmPane">' + paneHtml + '</div>';
   }
   function open(id){ leaveCur(); stopTicks(); cur = id; if(H[id] && H[id].start) H[id].start(); try{ window.scrollTo({top: 0}); }catch(e){} }
 
@@ -4035,10 +4251,10 @@ loadAndBoot();
         '<div class="gm-row"><button type="button" class="gm-btn" data-gact="ca-stop">⏹ Stop early</button></div>');
     } else if(CA.phase === "score"){
       body('<div class="gm-msg">⏰ Time! Letter ' + CA.letter + '</div><p class="gm-note">Tap a name for each answer that counts (it starts with ' + CA.letter + ' and the other player didn\'t write the same thing).</p>' + caList(true) +
-        '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ca-save">Save points</button><button type="button" class="gm-btn" data-gact="ca-new">Skip and play again</button></div>');
+        '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ca-save">Save round</button><button type="button" class="gm-btn" data-gact="ca-new">Skip and play again</button></div>');
     } else if(CA.phase === "done"){
       var tA = 0, tB = 0; Object.keys(CA.marks).forEach(function(k){ if(CA.marks[k].a) tA++; if(CA.marks[k].b) tB++; });
-      body('<div class="gm-msg win">This round: ' + esc(names().a) + ' ' + tA + ' · ' + esc(names().b) + ' ' + tB + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ca-new">Next round →</button></div>');
+      body('<div class="gm-msg win">This round: ' + esc(names().a) + ' ' + tA + ' · ' + esc(names().b) + ' ' + tB + '</div><div class="gm-msg">' + (tA === tB ? "🤝 Tied round: no trip point" : "🏆 " + esc(names()[tA > tB ? "a" : "b"]) + " wins the round") + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="ca-new">Next round →</button></div>');
     }
   }
   function caTick(){
@@ -4055,7 +4271,7 @@ loadAndBoot();
       else if(a === "ca-go"){ CA.phase = "run"; CA.end = Date.now() + CA.secs * 1000; caDraw(); stopTicks(); ticks.push(setInterval(caTick, 250)); }
       else if(a === "ca-stop"){ stopTicks(); CA.phase = "score"; caDraw(); }
       else if(a === "ca-mark"){ var i = b.getAttribute("data-i"), w = b.getAttribute("data-w"); CA.marks[i] = CA.marks[i] || {}; CA.marks[i][w] = !CA.marks[i][w]; b.classList.toggle("on", !!CA.marks[i][w]); }
-      else if(a === "ca-save"){ var tA = 0, tB = 0; Object.keys(CA.marks).forEach(function(k){ if(CA.marks[k].a) tA++; if(CA.marks[k].b) tB++; }); if(tA) addPt("cats", "a", tA); if(tB) addPt("cats", "b", tB); refreshScore(); CA.phase = "done"; caDraw(); }
+      else if(a === "ca-save"){ var tA = 0, tB = 0; Object.keys(CA.marks).forEach(function(k){ if(CA.marks[k].a) tA++; if(CA.marks[k].b) tB++; }); CA.res = {a: tA, b: tB}; if(tA !== tB){ var cw = tA > tB ? "a" : "b"; addWin("cats", cw, {x: CA.res[cw] + "–" + CA.res[other(cw)]}); } refreshScore(); CA.phase = "done"; caDraw(); }
     }
   };
 
@@ -4202,8 +4418,8 @@ loadAndBoot();
   H.trivia = {
     start: function(){ frame("trivia", ""); trNew(); },
     act: function(a, b){
-      if(a === "tr-pick" && TR.picked == null){ TR.picked = +b.getAttribute("data-k"); if(TR.picked === 0){ TR.round[TR.turn]++; addPt("trivia", TR.turn); refreshScore(); } trDraw(); }
-      else if(a === "tr-next"){ TR.asked++; TR.turn = other(TR.turn); if(TR.asked >= TR.n) trDraw(); else trAsk(); }
+      if(a === "tr-pick" && TR.picked == null){ TR.picked = +b.getAttribute("data-k"); if(TR.picked === 0) TR.round[TR.turn]++; trDraw(); }
+      else if(a === "tr-next"){ TR.asked++; TR.turn = other(TR.turn); if(TR.asked >= TR.n){ if(TR.round.a !== TR.round.b){ var tw = TR.round.a > TR.round.b ? "a" : "b"; addWin("trivia", tw, {x: TR.round[tw] + "–" + TR.round[other(tw)]}); refreshScore(); } trDraw(); } else trAsk(); }
       else if(a === "tr-new") trNew();
     }
   };
@@ -4531,7 +4747,8 @@ loadAndBoot();
   function huSetup(){
     var D = huDecks(), dk = ld("hu_deck", "mix"), secs = ld("hu_secs", 60), g = huGuesser();
     HU = { phase: "setup" };
-    body('<div class="gm-turn">' + nm(g) + ' guesses next</div>' +
+    var M0 = ld("hu_match", {}) || {}, half = (M0.a != null) !== (M0.b != null) ? (M0.a != null ? "a" : "b") : null;
+    body((half ? '<div class="gm-note">Match in progress: ' + esc(names()[half]) + ' got ' + M0[half] + '. ' + esc(names()[other(half)]) + ' to beat it.</div>' : '') + '<div class="gm-turn">' + nm(g) + ' guesses next</div>' +
       '<div class="gm-seg">' + Object.keys(D).map(function(k){ return '<button type="button" data-gact="hu-deck" data-k="' + k + '" class="' + (dk === k ? "on" : "") + '">' + D[k].t + '</button>'; }).join("") + '</div>' +
       '<div class="gm-seg">' + [45, 60, 90].map(function(s){ return '<button type="button" data-gact="hu-secs" data-s="' + s + '" class="' + (secs === s ? "on" : "") + '">' + s + 's</button>'; }).join("") + '</div>' +
       '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="hu-go">▶ Start: phone on ' + esc(names()[g]) + '\'s forehead</button></div>' +
@@ -4564,9 +4781,15 @@ loadAndBoot();
   function huDone(){
     stopTicks(); if(!HU || HU.phase !== "play") return; HU.phase = "done"; buzz(); huClose();
     var got = HU.res.filter(function(r){ return r.ok; }).length;
-    if(got){ addPt("headsup", HU.g, got); refreshScore(); }
+    var M = ld("hu_match", {}) || {}; M[HU.g] = got; var verdict = "";
+    if(M.a != null && M.b != null){
+      if(M.a !== M.b){ var hw = M.a > M.b ? "a" : "b"; addWin("headsup", hw, {x: M[hw] + "–" + M[other(hw)]}); verdict = '<div class="gm-msg">🏆 ' + esc(names()[hw]) + ' wins the match ' + M[hw] + '–' + M[other(hw)] + '!</div>'; }
+      else verdict = '<div class="gm-msg">🤝 Tied ' + M.a + '–' + M.b + ': no trip point. Go again!</div>';
+      refreshScore(); M = {};
+    } else verdict = '<div class="gm-note">' + esc(names()[other(HU.g)]) + ' needs ' + (got + 1) + ' to win this match.</div>';
+    sv("hu_match", M);
     sv("hu_g", other(HU.g));
-    body('<div class="gm-msg win">' + esc(names()[HU.g]) + ' got ' + got + ' of ' + HU.res.length + '!</div><ul class="wy-favs">' + HU.res.map(function(r){ return '<li>' + (r.ok ? "✅ " : "⏭ ") + esc(r.w) + '</li>'; }).join("") + '</ul><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="hu-next">Next round: ' + esc(names()[other(HU.g)]) + ' guesses →</button></div>');
+    body('<div class="gm-msg win">' + esc(names()[HU.g]) + ' got ' + got + ' of ' + HU.res.length + '!</div>' + verdict + '<ul class="wy-favs">' + HU.res.map(function(r){ return '<li>' + (r.ok ? "✅ " : "⏭ ") + esc(r.w) + '</li>'; }).join("") + '</ul><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="hu-next">Next round: ' + esc(names()[other(HU.g)]) + ' guesses →</button></div>');
   }
   H.headsup = {
     start: function(){ frame("headsup", ""); huSetup(); },
@@ -4900,6 +5123,400 @@ loadAndBoot();
     }
   };
 
+  /* ========================================================= TRIP SPECIALS */
+  function hashStr(s){ var h = 2166136261; s = String(s); for(var i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+  function seeded(s){ var a = hashStr(s); return function(){ a = (a + 0x6D2B79F5) | 0; var t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+  function sShuffle(a, r){ a = a.slice(); for(var i = a.length - 1; i > 0; i--){ var j = Math.floor(r() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function passHtml(to, msg, act){ return '<div class="gm-pass"><div class="gm-pass-ic">📱➡️</div><div class="gm-turn">Pass the phone to ' + nm(to) + '</div>' + (msg ? '<p class="gm-note">' + msg + '</p>' : '') + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="' + act + '">I\'m ' + esc(names()[to]) + ', show me</button></div></div>'; }
+  function deck(key, len){ var o = ld(key, null); if(!o || !o.order || o.order.length !== len){ o = {order: shuffle(range(len)), pos: 0}; } var i = o.order[o.pos]; o.pos++; if(o.pos >= o.order.length) o = {order: shuffle(range(len)), pos: 0}; sv(key, o); return i; }
+  function roundEnd(g, pts, unit, again){
+    var n = names(), ra = pts.a, rb = pts.b, msg;
+    if(ra === rb) msg = 'Tied ' + ra + '–' + rb + '! 🤝 No trip point this time.';
+    else { var w = ra > rb ? "a" : "b"; msg = esc(n[w]) + ' wins ' + Math.max(ra, rb) + '–' + Math.min(ra, rb) + (unit ? ' ' + unit : '') + '!'; }
+    return '<div class="gm-msg win">' + msg + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="' + again + '">Play another round</button></div>';
+  }
+  function settleRound(g, pts){ if(pts.a !== pts.b){ var w = pts.a > pts.b ? "a" : "b"; addWin(g, w, {x: pts[w] + "–" + pts[other(w)]}); refreshScore(); } }
+
+  /* ---------------------------------------------------------- DAILY CHALLENGE */
+  var DC = null;
+  function dcWord(d){ var r = seeded("daily|" + d); return WD_WORDS[Math.floor(r() * WD_WORDS.length)]; }
+  function dcAll(){ var o = ld("daily", {}); return (o && typeof o === "object") ? o : {}; }
+  function dcState(d){ return dcAll()[d] || {}; }
+  function dcSave(d, w, rec){ var o = dcAll(); o[d] = o[d] || {}; o[d][w] = rec; var ks = Object.keys(o).sort(); while(ks.length > 14) delete o[ks.shift()]; sv("daily", o); }
+  function dcNum(r){ return r && r.done ? (r.ok ? r.g.length : 7) : null; }
+  function dcSettle(d){
+    var s = dcState(d), A = dcNum(s.a), B = dcNum(s.b);
+    if(A == null || B == null || A === B || getLog()["daily-" + d]) return;
+    addWin("daily", A < B ? "a" : "b", {id: "daily-" + d, x: (A > 6 ? "✗" : A) + " vs " + (B > 6 ? "✗" : B) + " guesses"}); refreshScore();
+  }
+  function dcEmoji(r, ans){ return (r.g || []).map(function(w){ return wdScore(w, ans).map(function(c){ return c === "g" ? "🟩" : c === "y" ? "🟨" : "⬛"; }).join(""); }).join("<br>"); }
+  function dcDate(d){ try{ var p = d.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString("en-US", {weekday: "long", month: "short", day: "numeric"}); }catch(e){ return d; } }
+  function dcDraw(){
+    var d = DC.date, s = dcState(d), n = names(), ans = dcWord(d);
+    if(DC.who){
+      var rec = s[DC.who] || {g: []}, rows = rec.g || [], keyState = {}, rank = {x:1, y:2, g:3}, grid = "";
+      rows.forEach(function(w){ wdScore(w, ans).forEach(function(st, i){ var ch = w[i]; if(!keyState[ch] || rank[st] > rank[keyState[ch]]) keyState[ch] = st; }); });
+      for(var r = 0; r < 6; r++){
+        var row = rows[r], txt = row || (r === rows.length && !rec.done ? DC.cur : ""), sc = row ? wdScore(row, ans) : null;
+        grid += '<div class="wd-row">';
+        for(var c = 0; c < 5; c++) grid += '<span class="wd-t' + (sc ? " " + sc[c] : (txt[c] ? " typed" : "")) + '">' + (txt[c] || "") + '</span>';
+        grid += '</div>';
+      }
+      var kb = KB_ROWS.map(function(rw){ return '<div class="wd-kr">' + rw.split("").map(function(k){ var wide = k === "⏎" || k === "⌫"; return '<button type="button" class="wd-k' + (wide ? " wide" : "") + (keyState[k] ? " " + keyState[k] : "") + '" data-gact="dc-k" data-k="' + k + '">' + (k === "⏎" ? "Enter" : k) + '</button>'; }).join("") + '</div>'; }).join("");
+      var top = rec.done ? '<div class="gm-msg ' + (rec.ok ? 'win">🎉 Solved in ' + rows.length + '!' : 'lose">Out of guesses') + '</div><p class="gm-note">The result stays hidden until you\'ve both played.</p><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="dc-lobby">🙈 Hide my board</button></div>'
+        : '<div class="gm-turn">' + nm(DC.who) + '\'s daily puzzle · ' + rows.length + '/6</div>';
+      body(top + (DC.msg ? '<div class="gm-note">' + DC.msg + '</div>' : '') + '<div class="wd-g">' + grid + '</div>' + (rec.done ? '' : '<div class="wd-kb">' + kb + '</div><div class="gm-row"><button type="button" class="gm-link" data-gact="dc-lobby">Pause &amp; hide</button></div>'));
+      return;
+    }
+    dcSettle(d);
+    var both = dcNum(s.a) != null && dcNum(s.b) != null;
+    var ppl = ["a","b"].map(function(w){
+      var r = s[w], g = (r && r.g) || [], st = !g.length ? "Not played yet" : !r.done ? "In progress (" + g.length + "/6)" : both ? (r.ok ? "Solved in " + g.length : "Didn't get it") : "✅ Finished · hidden until you both play";
+      return '<div class="dc-p">' + nm(w) + '<span class="dc-st">' + st + '</span>' + (!r || !r.done ? '<button type="button" class="gm-btn sm pri" data-gact="dc-play" data-w="' + w + '">' + (g.length ? "Continue" : "Play") + '</button>' : '') + '</div>';
+    }).join("");
+    var res = "";
+    if(both){
+      var A = dcNum(s.a), B = dcNum(s.b);
+      res = '<div class="gm-msg ' + (A === B ? '">🤝 Tied today. No point.' : 'win">🏆 ' + esc(n[A < B ? "a" : "b"]) + ' wins today!') + '</div>' +
+        '<div class="dc-res"><div><b class="gm-a">' + esc(n.a) + '</b><br>' + dcEmoji(s.a, ans) + '</div><div><b class="gm-b">' + esc(n.b) + '</b><br>' + dcEmoji(s.b, ans) + '</div></div><p class="gm-note">Today\'s word: <b>' + ans + '</b> · a new one appears at midnight.</p>';
+    }
+    body('<div class="gm-turn">📅 ' + esc(dcDate(d)) + '</div>' + ppl + res +
+      '<p class="gm-note">You both get the same secret 5-letter word today. Play it privately: on your own phone (with sync on) or by passing this one. Fewest guesses wins; a tie scores nothing.</p>');
+  }
+  function dcKey(k){
+    var d = DC.date, rec = dcState(d)[DC.who] || {g: [], done: false, ok: false};
+    if(rec.done) return;
+    rec.g = rec.g || [];
+    if(k === "⌫" || k === "BACKSPACE") DC.cur = DC.cur.slice(0, -1);
+    else if(k === "⏎" || k === "ENTER"){
+      if(DC.cur.length < 5) DC.msg = "Type 5 letters first.";
+      else { var ans = dcWord(d); rec.g = rec.g.concat([DC.cur]); if(DC.cur === ans){ rec.done = true; rec.ok = true; } else if(rec.g.length >= 6){ rec.done = true; rec.ok = false; } DC.cur = ""; DC.msg = ""; dcSave(d, DC.who, rec); if(rec.done) dcSettle(d); }
+    } else if(/^[A-Z]$/.test(k) && DC.cur.length < 5){ DC.cur += k; DC.msg = ""; }
+    dcDraw();
+  }
+  H.daily = {
+    start: function(){ frame("daily", ""); DC = {date: todayIso(), who: null, cur: "", msg: ""}; dcDraw(); },
+    act: function(a, b){
+      if(a === "dc-play"){ DC.who = b.getAttribute("data-w"); DC.cur = ""; DC.msg = ""; dcDraw(); }
+      else if(a === "dc-lobby"){ DC.who = null; DC.cur = ""; dcDraw(); }
+      else if(a === "dc-k") dcKey(b.getAttribute("data-k"));
+    },
+    key: function(k, e){ if(!DC || !DC.who) return; if(k === "ENTER" || k === "BACKSPACE" || (k.length === 1 && k >= "A" && k <= "Z")){ e.preventDefault(); dcKey(k); } },
+    sync: function(){ if(DC && !DC.who) dcDraw(); }
+  };
+
+  /* -------------------------------------------------------------- WHERE AM I? */
+  var WA_PLACES = [
+    {a:"Notre-Dame de la Garde", c:"Marseille", k:["I sit on the highest point of my city, about 150 m up.","Sailors leave thank-you paintings and model boats inside me.","Locals call me 'La Bonne Mère'.","A golden Virgin and Child statue tops my bell tower above Marseille's Old Port."]},
+    {a:"The Vieux-Port", c:"Marseille", k:["Boats have moored here for about 2,600 years.","Fishermen sell their catch on my quay most mornings.","A giant mirrored canopy by Norman Foster reflects the people under it.","I'm the harbor at the heart of Marseille."]},
+    {a:"The Calanques", c:"Marseille", k:["I became a French national park in 2012.","My white limestone cliffs drop into turquoise water.","Sormiou, Morgiou and En-Vau are some of my inlets.","I'm the rocky coves between Marseille and Cassis."]},
+    {a:"MuCEM", c:"Marseille", k:["My building is wrapped in a lace-like concrete lattice.","A footbridge links me to Fort Saint-Jean.","I opened in 2013, when my city was European Capital of Culture.","I'm Marseille's museum of Mediterranean civilizations."]},
+    {a:"Promenade des Anglais", c:"Nice", k:["English winter visitors paid for my first version in the 1820s.","I'm famous for my blue chairs.","I run about 7 km along the Baie des Anges.","I'm Nice's seafront walkway."]},
+    {a:"Cours Saleya", c:"Nice", k:["Flower sellers have filled me for over a century.","I'm lined with restaurant terraces and ochre-yellow houses.","On Mondays I turn into an antiques market.","I'm the market street in Vieux Nice."]},
+    {a:"Castle Hill (Colline du Château)", c:"Nice", k:["There's no castle on me anymore: it was torn down in 1706.","An artificial waterfall tumbles down my side.","A cannon shot rings out from near me every day at noon.","I'm the hill between Nice's old town and the port."]},
+    {a:"Èze", c:"Nice", k:["I'm a medieval village perched about 400 m above the sea.","A steep path up to me is named after Nietzsche.","A cactus garden sits on my summit.","I'm the 'eagle's nest' village between Nice and Monaco."]},
+    {a:"The Monte-Carlo Casino", c:"Monaco", k:["Charles Garnier, architect of the Paris Opera, designed me.","James Bond has gambled inside me on screen.","Citizens of my own country aren't allowed to gamble here.","I'm the Belle Époque casino on Monaco's Place du Casino."]},
+    {a:"The Prince's Palace of Monaco", c:"Monaco", k:["I started as a Genoese fortress in 1191.","The guard changes in front of me just before noon.","The Grimaldi family has lived in me since 1297.","I'm the royal residence on top of Monaco's Rock."]},
+    {a:"The Duomo di Milano", c:"Milan", k:["Work on me began in 1386 and took almost six centuries.","About 3,400 statues decorate me.","You can walk on my marble rooftop between the spires.","A golden 'Madonnina' tops my highest spire."]},
+    {a:"Galleria Vittorio Emanuele II", c:"Milan", k:["I'm one of the world's oldest shopping malls.","My glass-and-iron dome is about 47 m high.","For luck, spin on your heel on the bull mosaic in my floor.","I'm the arcade between Milan's Duomo and La Scala."]},
+    {a:"The Last Supper", c:"Milan", k:["I was painted between 1495 and 1498.","I'm not a true fresco: I was painted on dry plaster, so I flake.","Visitors get about 15 minutes with me.","I'm Leonardo da Vinci's mural in Santa Maria delle Grazie."]},
+    {a:"The Navigli", c:"Milan", k:["Leonardo da Vinci worked on my locks.","Barges once carried marble for the cathedral along me.","My banks fill up at aperitivo time.","I'm Milan's canal district."]},
+    {a:"La Scala", c:"Milan", k:["I opened in 1778.","Puccini's Madama Butterfly and Turandot premiered on my stage.","My season traditionally opens on December 7, my city's patron saint's day.","I'm Milan's famous opera house."]},
+    {a:"The Rialto Bridge", c:"Venice", k:["My stone version was finished in 1591.","Shops line both sides of my steps.","A fish and produce market sits at my foot.","I'm the oldest bridge across Venice's Grand Canal."]},
+    {a:"St Mark's Basilica", c:"Venice", k:["Merchants smuggled a saint's body to me from Alexandria in 828, hidden under pork.","Four bronze horses (copies) stand on my balcony.","My ceilings glitter with gold mosaics.","I'm the great church on Piazza San Marco."]},
+    {a:"Burano", c:"Venice", k:["I'm famous for lace-making.","My fishermen's houses are painted every color.","My church bell tower leans noticeably.","I'm the rainbow island in the Venetian Lagoon."]},
+    {a:"The Bridge of Sighs", c:"Venice", k:["I'm white limestone with stone-barred windows.","I was built around 1600.","Lord Byron made my name famous.","I connect the Doge's Palace to the prisons."]},
+    {a:"Basel Minster", c:"Basel", k:["I'm built of red sandstone with two tall towers.","Erasmus of Rotterdam is buried inside me.","My terrace, the Pfalz, looks out over the Rhine.","I'm Basel's cathedral."]},
+    {a:"Basel Town Hall (Rathaus)", c:"Basel", k:["I'm bright red, with painted walls.","My city's parliament has met inside me for about 500 years.","I stand on the Marktplatz.","I'm Basel's town hall."]},
+    {a:"The Grossmünster", c:"Zurich", k:["Legend says Charlemagne founded me.","Zwingli launched the Swiss Reformation from my pulpit.","My twin towers are a symbol of my city.","I'm the Romanesque church on the right bank of Zurich's Limmat."]},
+    {a:"Bahnhofstrasse", c:"Zurich", k:["I'm about 1.4 km long.","Bank vaults full of gold are said to lie beneath me.","Trams run along me but cars mostly don't.","I'm Zurich's luxury shopping street."]},
+    {a:"The Fraumünster", c:"Zurich", k:["I was founded in 853 as an abbey for noblewomen.","Marc Chagall designed five of my stained-glass windows.","My slim spire has a green top.","I'm the church on Zurich's left bank, opposite the Grossmünster."]},
+    {a:"Trinity College", c:"Dublin", k:["Queen Elizabeth I founded me in 1592.","My Long Room library has a huge barrel-vaulted ceiling.","The Book of Kells is kept here.","I'm Ireland's oldest university."]},
+    {a:"The Ha'penny Bridge", c:"Dublin", k:["I'm a cast-iron footbridge from 1816.","Crossing me once cost half a penny.","I'm painted white and lit up at night.","I cross the Liffey in Dublin."]},
+    {a:"The Guinness Storehouse", c:"Dublin", k:["My atrium is shaped like a giant pint glass.","The lease on my site was signed for 9,000 years.","My rooftop bar has a 360° view of the city.","I'm the stout visitor attraction at St. James's Gate."]},
+    {a:"Big Ben", c:"London", k:["My official name is the Elizabeth Tower.","My great bell weighs over 13 tonnes.","Each of my clock faces is about 7 m across.","I'm the clock tower at the Houses of Parliament."]}
+  ];
+  var WA = null;
+  function waNew(){ var st = ld("wa_start", "a"); sv("wa_start", other(st)); WA = {turn: st, n: 6, asked: 0, pts: {a:0, b:0}}; waAsk(); }
+  function waAsk(){ WA.cur = deck("wa_order", WA_PLACES.length); WA.shown = 1; WA.guess = false; WA.picked = null; var others = shuffle(range(WA_PLACES.length).filter(function(i){ return i !== WA.cur; })).slice(0, 3); WA.opts = shuffle([WA.cur].concat(others)); waDraw(); }
+  function waDraw(){
+    if(WA.asked >= WA.n){ body(roundEnd("whereami", WA.pts, "points", "wa-new")); return; }
+    var p = WA_PLACES[WA.cur], done = WA.picked != null, worth = 5 - WA.shown, n = names();
+    var clues = '<ol class="wa-clues">' + p.k.slice(0, done ? 4 : WA.shown).map(function(k, i){ return '<li><b>' + (i + 1) + '</b>' + esc(k) + '</li>'; }).join("") + '</ol>';
+    var ctrl;
+    if(done){
+      var ok = WA.picked === WA.cur;
+      ctrl = '<div class="gm-msg ' + (ok ? 'win">✅ ' + esc(p.a) + '! +' + worth : 'lose">❌ It was ' + esc(p.a)) + '</div><div class="tr-f">' + flag(p.c) + ' ' + esc(p.c) + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wa-next">' + (WA.asked + 1 >= WA.n ? "See results" : "Next place →") + '</button></div>';
+    } else if(WA.guess){
+      ctrl = '<div class="tr-opts">' + WA.opts.map(function(i){ return '<button type="button" class="tr-o" data-gact="wa-pick" data-i="' + i + '">' + esc(WA_PLACES[i].a) + '</button>'; }).join("") + '</div>';
+    } else {
+      ctrl = '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="wa-know">💡 I know it! (worth ' + worth + ')</button>' + (WA.shown < 4 ? '<button type="button" class="gm-btn" data-gact="wa-more">Another clue</button>' : '') + '</div>';
+    }
+    body('<div class="tr-prog">Place ' + (WA.asked + 1) + ' of ' + WA.n + ' · this round ' + esc(n.a) + ' ' + WA.pts.a + ' – ' + WA.pts.b + ' ' + esc(n.b) + '</div><div class="gm-turn">' + nm(WA.turn) + ', where am I?</div>' + clues + ctrl);
+  }
+  H.whereami = {
+    start: function(){ frame("whereami", ""); waNew(); },
+    act: function(a, b){
+      if(a === "wa-more" && WA.shown < 4){ WA.shown++; waDraw(); }
+      else if(a === "wa-know"){ WA.guess = true; waDraw(); }
+      else if(a === "wa-pick" && WA.picked == null){ WA.picked = +b.getAttribute("data-i"); if(WA.picked === WA.cur) WA.pts[WA.turn] += 5 - WA.shown; waDraw(); }
+      else if(a === "wa-next"){ WA.asked++; WA.turn = other(WA.turn); if(WA.asked >= WA.n){ settleRound("whereami", WA.pts); waDraw(); } else waAsk(); }
+      else if(a === "wa-new") waNew();
+    }
+  };
+
+  /* ------------------------------------------------------------ PRICE IS RIGHT */
+  var PR_ITEMS = [
+    {q:"An espresso standing at the bar in Milan", p:1.3, u:"€", f:"Sit at a table and it can cost two or three times as much."},
+    {q:"A cappuccino at a café counter in Milan", p:1.8, u:"€", f:"Italians only drink it in the morning."},
+    {q:"A single Milan metro ticket (valid 90 minutes)", p:2.2, u:"€"},
+    {q:"A pizza margherita in a Milan pizzeria", p:8, u:"€"},
+    {q:"The coperto (cover charge) per person at a Milan trattoria", p:2.5, u:"€", f:"It covers bread and the table setting. It's normal, not a scam."},
+    {q:"A 75-minute vaporetto ticket in Venice", p:9.5, u:"€", f:"That's why the multi-day passes are worth it."},
+    {q:"A 30-minute daytime gondola ride in Venice (the whole boat)", p:90, u:"€", f:"The official rate goes up after 7 pm."},
+    {q:"An Aperol Spritz at a Venetian bacaro", p:4, u:"€", f:"In Piazza San Marco it can be four times that."},
+    {q:"One cicchetto (small bar snack) in a Venice bacaro", p:2, u:"€"},
+    {q:"A two-scoop gelato cone in Venice", p:3.5, u:"€"},
+    {q:"A portion of socca in Vieux Nice", p:4, u:"€"},
+    {q:"A pastis at a café on Marseille's Old Port", p:3, u:"€"},
+    {q:"A butter croissant at a French bakery", p:1.3, u:"€"},
+    {q:"Bouillabaisse for one at a classic Marseille restaurant", p:70, u:"€", f:"The real thing is a ritual: the broth first, then the fish."},
+    {q:"A Big Mac in Switzerland", p:7.1, u:"CHF", f:"Switzerland usually has one of the priciest Big Macs in the world."},
+    {q:"A small bottle of water at a Swiss station kiosk", p:3, u:"CHF", f:"Swiss tap water and the public fountains are free and excellent."},
+    {q:"Cheese fondue for one at a Zurich restaurant", p:35, u:"CHF"},
+    {q:"A pint of Guinness in a Temple Bar pub", p:9, u:"€", f:"Walk a few streets away and it's more like €6–7."},
+    {q:"A Dublin bus or Luas ride with a Leap card (90 minutes)", p:2, u:"€"}
+  ];
+  var PR = null;
+  function prFmt(v, u){ var s = (Math.round(v * 100) / 100).toFixed(v % 1 ? 2 : 0); return u === "CHF" ? "CHF " + s : u + s; }
+  function prNew(){ var st = ld("pr_start", "a"); sv("pr_start", other(st)); PR = {first: st, n: 5, asked: 0, pts: {a:0, b:0}}; prAsk(); }
+  function prAsk(){ PR.cur = deck("pr_order", PR_ITEMS.length); PR.g = {}; PR.step = 0; PR.first = other(PR.first); prDraw(); }
+  function prWho(){ return PR.step === 0 ? PR.first : other(PR.first); }
+  function prDraw(){
+    if(PR.asked >= PR.n){ body(roundEnd("price", PR.pts, "items", "pr-new")); return; }
+    var it = PR_ITEMS[PR.cur], n = names(), head = '<div class="tr-prog">Item ' + (PR.asked + 1) + ' of ' + PR.n + ' · this round ' + esc(n.a) + ' ' + PR.pts.a + ' – ' + PR.pts.b + ' ' + esc(n.b) + '</div><div class="tr-q">💶 ' + esc(it.q) + '?</div>';
+    if(PR.step === 2){
+      var da = Math.abs(PR.g.a - it.p), db = Math.abs(PR.g.b - it.p), w = da === db ? null : (da < db ? "a" : "b");
+      body(head + '<div class="gm-msg">Typical price: ' + prFmt(it.p, it.u) + '</div>' +
+        '<table class="gm-tbl pr-tbl"><tbody><tr><td>' + nm("a") + '</td><td class="num' + (w === "a" ? " lead" : "") + '">' + prFmt(PR.g.a, it.u) + '</td><td class="num">off by ' + prFmt(da, it.u) + '</td></tr><tr><td>' + nm("b") + '</td><td class="num' + (w === "b" ? " lead" : "") + '">' + prFmt(PR.g.b, it.u) + '</td><td class="num">off by ' + prFmt(db, it.u) + '</td></tr></tbody></table>' +
+        '<div class="gm-msg win">' + (w ? '🎯 ' + esc(n[w]) + ' was closest!' : '🤝 Exactly as close: nobody scores.') + '</div>' + (it.f ? '<div class="tr-f">' + esc(it.f) + '</div>' : '') +
+        '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pr-next">' + (PR.asked + 1 >= PR.n ? "See results" : "Next item →") + '</button></div>');
+      return;
+    }
+    var who = prWho();
+    if(PR.step === 1 && !PR.passed){ body(head + passHtml(who, esc(n[PR.first]) + "'s guess is locked in and hidden.", "pr-ok")); return; }
+    body(head + '<div class="gm-turn">' + nm(who) + ', your guess in ' + esc(it.u) + '</div><input id="prIn" class="gm-in gm-secret" type="text" inputmode="decimal" autocomplete="off" placeholder="e.g. 4.50">' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pr-lock">🔒 Lock it in</button></div><p class="gm-note">Your guess is hidden as you type. Closest wins the item, over or under.</p>');
+    var inp = document.getElementById("prIn");
+    if(inp) inp.addEventListener("keydown", function(ev){ if(ev.key === "Enter"){ ev.preventDefault(); H.price.act("pr-lock"); } });
+    setTimeout(function(){ var el = document.getElementById("prIn"); if(el) try{ el.focus(); }catch(e){} }, 50);
+  }
+  H.price = {
+    start: function(){ frame("price", ""); prNew(); },
+    act: function(a){
+      if(a === "pr-lock"){ var el = document.getElementById("prIn"), v = parseFloat(String(el && el.value || "").replace(",", ".").replace(/[^0-9.]/g, "")); if(!(v >= 0) || !isFinite(v)){ alert("Type a price first (numbers only)."); return; } PR.g[prWho()] = v; PR.step++; PR.passed = false; if(PR.step === 2){ var it = PR_ITEMS[PR.cur], da = Math.abs(PR.g.a - it.p), db = Math.abs(PR.g.b - it.p); if(da !== db) PR.pts[da < db ? "a" : "b"]++; } prDraw(); }
+      else if(a === "pr-ok"){ PR.passed = true; prDraw(); }
+      else if(a === "pr-next"){ PR.asked++; if(PR.asked >= PR.n){ settleRound("price", PR.pts); prDraw(); } else prAsk(); }
+      else if(a === "pr-new") prNew();
+    }
+  };
+
+  /* --------------------------------------------------------------- PHRASE DUEL */
+  var PH_LANG = {fr: "🇫🇷 French", it: "🇮🇹 Italian", de: "🇩🇪 German"};
+  var PH = [
+    {en:"Hello / good day", fr:"Bonjour", it:"Buongiorno", de:"Guten Tag"},
+    {en:"Good evening", fr:"Bonsoir", it:"Buonasera", de:"Guten Abend"},
+    {en:"Good night", fr:"Bonne nuit", it:"Buonanotte", de:"Gute Nacht"},
+    {en:"Goodbye", fr:"Au revoir", it:"Arrivederci", de:"Auf Wiedersehen"},
+    {en:"See you later", fr:"À plus tard", it:"A dopo", de:"Bis später"},
+    {en:"Thank you very much", fr:"Merci beaucoup", it:"Grazie mille", de:"Vielen Dank"},
+    {en:"Please", fr:"S'il vous plaît", it:"Per favore", de:"Bitte"},
+    {en:"Excuse me", fr:"Excusez-moi", it:"Mi scusi", de:"Entschuldigung"},
+    {en:"Nice to meet you", fr:"Enchanté", it:"Piacere", de:"Freut mich"},
+    {en:"I don't understand", fr:"Je ne comprends pas", it:"Non capisco", de:"Ich verstehe nicht"},
+    {en:"Do you speak English?", fr:"Vous parlez anglais ?", it:"Parla inglese?", de:"Sprechen Sie Englisch?"},
+    {en:"The bill, please", fr:"L'addition, s'il vous plaît", it:"Il conto, per favore", de:"Die Rechnung, bitte"},
+    {en:"The menu, please", fr:"La carte, s'il vous plaît", it:"Il menù, per favore", de:"Die Speisekarte, bitte"},
+    {en:"A table for two", fr:"Une table pour deux", it:"Un tavolo per due", de:"Einen Tisch für zwei"},
+    {en:"Two coffees, please", fr:"Deux cafés, s'il vous plaît", it:"Due caffè, per favore", de:"Zwei Kaffee, bitte"},
+    {en:"A glass of red wine", fr:"Un verre de vin rouge", it:"Un bicchiere di vino rosso", de:"Ein Glas Rotwein"},
+    {en:"Still water", fr:"De l'eau plate", it:"Acqua naturale", de:"Stilles Wasser"},
+    {en:"Sparkling water", fr:"De l'eau gazeuse", it:"Acqua frizzante", de:"Wasser mit Kohlensäure"},
+    {en:"I don't eat meat", fr:"Je ne mange pas de viande", it:"Non mangio carne", de:"Ich esse kein Fleisch"},
+    {en:"It's delicious!", fr:"C'est délicieux !", it:"È buonissimo!", de:"Sehr lecker!"},
+    {en:"Cheers!", fr:"Santé !", it:"Salute!", de:"Prost!"},
+    {en:"I would like…", fr:"Je voudrais…", it:"Vorrei…", de:"Ich hätte gern…"},
+    {en:"How much is it?", fr:"C'est combien ?", it:"Quanto costa?", de:"Wie viel kostet das?"},
+    {en:"Where is the station?", fr:"Où est la gare ?", it:"Dov'è la stazione?", de:"Wo ist der Bahnhof?"},
+    {en:"Where is the toilet?", fr:"Où sont les toilettes ?", it:"Dov'è il bagno?", de:"Wo ist die Toilette?"},
+    {en:"A ticket to…", fr:"Un billet pour…", it:"Un biglietto per…", de:"Eine Fahrkarte nach…"},
+    {en:"Which platform?", fr:"Quel quai ?", it:"Quale binario?", de:"Welches Gleis?"},
+    {en:"Is it far?", fr:"C'est loin ?", it:"È lontano?", de:"Ist es weit?"},
+    {en:"On the left", fr:"À gauche", it:"A sinistra", de:"Links"},
+    {en:"On the right", fr:"À droite", it:"A destra", de:"Rechts"},
+    {en:"Straight ahead", fr:"Tout droit", it:"Sempre dritto", de:"Geradeaus"},
+    {en:"Closed", fr:"Fermé", it:"Chiuso", de:"Geschlossen"},
+    {en:"Help!", fr:"Au secours !", it:"Aiuto!", de:"Hilfe!"},
+    {en:"My wife", fr:"Ma femme", it:"Mia moglie", de:"Meine Frau"},
+    {en:"My husband", fr:"Mon mari", it:"Mio marito", de:"Mein Mann"},
+    {en:"How beautiful!", fr:"C'est magnifique !", it:"Che bello!", de:"Wunderschön!"},
+    {en:"I love you", fr:"Je t'aime", it:"Ti amo", de:"Ich liebe dich"}
+  ];
+  var PD = null, PH_SECS = 15;
+  function pdNew(){ var st = ld("pd_start", "a"); sv("pd_start", other(st)); PD = {turn: st, n: 10, asked: 0, pts: {a:0, b:0}}; pdAsk(); }
+  function pdAsk(){
+    stopTicks();
+    var i = deck("pd_order", PH.length), lg = rnd(["fr","it","de"]), dir = Math.random() < 0.6 ? "to" : "from";
+    var others = shuffle(range(PH.length).filter(function(j){ return j !== i && PH[j][lg] !== PH[i][lg] && PH[j].en !== PH[i].en; })).slice(0, 3);
+    PD.cur = i; PD.lg = lg; PD.dir = dir; PD.opts = shuffle([i].concat(others)); PD.picked = null;
+    pdTimer();
+  }
+  function pdTimer(){
+    stopTicks();
+    PD.timer = ld("pd_timer", true); PD.end = Date.now() + PH_SECS * 1000;
+    pdDraw();
+    if(PD.timer) ticks.push(setInterval(function(){
+      if(cur !== "phrase" || !PD || PD.picked != null){ stopTicks(); return; }
+      var left = Math.max(0, PD.end - Date.now()), bar = document.getElementById("pdBar"), num = document.getElementById("pdNum");
+      if(bar) bar.style.width = (left / (PH_SECS * 10)) + "%"; if(num) num.textContent = Math.ceil(left / 1000);
+      if(left <= 0){ stopTicks(); PD.picked = -1; buzz(); pdDraw(); }
+    }, 200));
+  }
+  function pdDraw(){
+    if(PD.asked >= PD.n){ body(roundEnd("phrase", PD.pts, "", "pd-new")); return; }
+    var p = PH[PD.cur], n = names(), done = PD.picked != null, ask = PD.dir === "to" ? p.en : p[PD.lg];
+    var prompt = PD.dir === "to" ? 'How do you say <b>“' + esc(ask) + '”</b> in ' + esc({fr: "French", it: "Italian", de: "German"}[PD.lg]) + '?' : 'What does <b>“' + esc(ask) + '”</b> mean?';
+    var opts = PD.opts.map(function(j){ var cls = ""; if(done){ if(j === PD.cur) cls = " ok"; else if(j === PD.picked) cls = " bad"; } return '<button type="button" class="tr-o' + cls + '" data-gact="pd-pick" data-i="' + j + '"' + (done ? " disabled" : "") + '>' + esc(PD.dir === "to" ? PH[j][PD.lg] : PH[j].en) + '</button>'; }).join("");
+    var res = "";
+    if(done) res = '<div class="gm-msg ' + (PD.picked === PD.cur ? 'win">✅ Correct!' : 'lose">' + (PD.picked === -1 ? "⏰ Time's up!" : "❌ Not quite")) + '</div><div class="tr-f">' + esc(p.en) + ' = ' + esc(p.fr) + ' · ' + esc(p.it) + ' · ' + esc(p.de) + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="pd-next">' + (PD.asked + 1 >= PD.n ? "See results" : "Next phrase →") + '</button></div>';
+    body('<div class="gm-seg"><button type="button" data-gact="pd-tm" class="' + (PD.timer ? "on" : "") + '">⏱ ' + PH_SECS + 's timer ' + (PD.timer ? "on" : "off") + '</button></div>' +
+      '<div class="tr-prog">Phrase ' + (PD.asked + 1) + ' of ' + PD.n + ' · this round ' + esc(n.a) + ' ' + PD.pts.a + ' – ' + PD.pts.b + ' ' + esc(n.b) + '</div><div class="gm-turn">' + nm(PD.turn) + '\'s turn · ' + PH_LANG[PD.lg] + '</div>' +
+      (PD.timer && !done ? '<div class="ph-bar"><i id="pdBar" style="width:' + Math.max(0, (PD.end - Date.now()) / (PH_SECS * 10)) + '%"></i></div><div class="ph-num" id="pdNum">' + Math.ceil(Math.max(0, PD.end - Date.now()) / 1000) + '</div>' : '') +
+      '<div class="tr-q">' + prompt + '</div><div class="tr-opts">' + opts + '</div>' + res);
+  }
+  H.phrase = {
+    start: function(){ frame("phrase", ""); pdNew(); },
+    act: function(a, b){
+      if(a === "pd-pick" && PD.picked == null){ stopTicks(); PD.picked = +b.getAttribute("data-i"); if(PD.picked === PD.cur) PD.pts[PD.turn]++; pdDraw(); }
+      else if(a === "pd-next"){ PD.asked++; PD.turn = other(PD.turn); if(PD.asked >= PD.n){ settleRound("phrase", PD.pts); pdDraw(); } else pdAsk(); }
+      else if(a === "pd-new") pdNew();
+      else if(a === "pd-tm"){ var on = !ld("pd_timer", true); sv("pd_timer", on); if(PD.picked == null) pdTimer(); else { PD.timer = on; pdDraw(); } }
+    },
+    leave: function(){ stopTicks(); }
+  };
+
+  /* ------------------------------------------------------------ SPOT IT BINGO */
+  var BG_ANY = ["A Vespa or scooter","A tiny dog on a walk","A street musician","Church bells ringing","Someone eating ice cream","A pigeon on a statue","A bike with a basket","A bright red door","A cat in a window","Laundry hanging from a window","A fountain","A selfie stick","A clock tower","A cobblestone street","Someone carrying a baguette","Christmas lights or decorations","A café terrace with heaters","A fruit or flower stall","The country's flag","A tram","A queue outside a bakery","A dog inside a café or shop","A couple in matching outfits","A big mural or street art","Someone in a suit on a bike","A green pharmacy cross","Love locks on a railing","A sign in three languages","Someone sketching or painting","A tiny car squeezed into a parking spot","A shop with only one kind of thing","A wedding or bride"];
+  var BG_CITY = {
+    "London": ["A red phone box","A black cab","A red double-decker bus","A 'Mind the gap' sign","A Union Jack","Someone with a Pret coffee"],
+    "Marseille": ["A glass of pastis","An OM football shirt","The golden statue on Notre-Dame de la Garde","Fish for sale on the Old Port","A savon de Marseille shop","A game of pétanque","Navette biscuits","A ferry to the Frioul islands"],
+    "Nice": ["A blue chair on the Promenade","Someone eating socca","An ochre-yellow house","A pebble beach","Salade niçoise on a menu","A superyacht","The 'I ♥ Nice' sign","A flower market stall"],
+    "Monaco": ["A Ferrari or Lamborghini","A palace guard","Part of the F1 circuit","Monaco's red-and-white flag","Someone dressed head-to-toe in designer"],
+    "Milan": ["A vintage orange tram","Someone spinning on the bull mosaic","Sunglasses worn indoors","A luxury shopping bag","An aperitivo snack spread","A Duomo spire","Espresso drunk standing up","A 'Tabacchi' T sign"],
+    "Venice": ["A gondolier in a striped shirt","A boat ambulance or police boat","A Venetian mask shop","A spritz on a canal-side table","A winged lion of St Mark","A delivery boat","A Murano glass shop","A bridge with no railing"],
+    "Basel": ["A Rhine ferry (no motor!)","A Wickelfisch (fish-shaped swim bag)","A green Basel tram","Fasnacht masks or lanterns","A Läckerli shop","A drinking fountain","A red sandstone building","A modern art gallery"],
+    "Zurich": ["A blue-and-white tram","A drinking fountain","A Sprüngli shop","A swan on the lake","A luxury watch window","A Swiss army knife","A giant church clock","A lakeside jogger"],
+    "Dublin": ["A Guinness sign","A colorful Georgian door","An Irish harp symbol","Live music in a pub","A shamrock","A GAA jersey","A double-decker bus","Someone with red hair"]
+  };
+  var BG_LINES = [[0,1,2,3],[4,5,6,7],[8,9,10,11],[12,13,14,15],[0,4,8,12],[1,5,9,13],[2,6,10,14],[3,7,11,15],[0,5,10,15],[3,6,9,12]];
+  var BGV = "a";
+  function bgCity(){ var c = tripCity().name; return c || "Trip"; }
+  function bgState(c){ var o = ld("bingo", {}), s = (o && o[c]) || {}; return {r: s.r || 1, h: s.h || {a:{}, b:{}}, won: s.won || null}; }
+  function bgSave(c, s){ var o = ld("bingo", {}); if(!o || typeof o !== "object") o = {}; o[c] = s; sv("bingo", o); }
+  function bgCard(c, r, w){ var rr = seeded("bingo|" + c + "|" + r + "|" + w), loc = sShuffle(BG_CITY[c] || [], rr).slice(0, 7); return sShuffle(loc.concat(sShuffle(BG_ANY, rr).slice(0, 16 - loc.length)), rr); }
+  function bgLine(h){ for(var i = 0; i < BG_LINES.length; i++){ if(BG_LINES[i].every(function(k){ return h[k]; })) return BG_LINES[i]; } return null; }
+  function bgDraw(){
+    var c = bgCity(), s = bgState(c), n = names(), card = bgCard(c, s.r, BGV), h = s.h[BGV] || {}, line = bgLine(h), cnt = Object.keys(h).filter(function(k){ return h[k]; }).length;
+    var cells = card.map(function(t, i){ var on = !!h[i], ln = line && line.indexOf(i) >= 0; return '<button type="button" class="bg-c' + (on ? " on" : "") + (ln ? " line" : "") + '" data-gact="bg" data-i="' + i + '"' + (s.won ? " disabled" : "") + '>' + (on ? "✓ " : "") + esc(t) + '</button>'; }).join("");
+    body('<div class="gm-turn">' + flag(c) + ' ' + esc(c) + ' bingo · round ' + s.r + '</div>' +
+      '<div class="gm-seg">' + ["a","b"].map(function(w){ return '<button type="button" data-gact="bg-view" data-w="' + w + '" class="' + (BGV === w ? "on" : "") + '">' + esc(n[w]) + '\'s card</button>'; }).join("") + '</div>' +
+      (s.won ? '<div class="gm-msg win">🎉 BINGO! ' + esc(n[s.won]) + ' wins ' + esc(c) + ' round ' + s.r + '</div>' : '<p class="gm-note">' + nm(BGV) + ' has spotted ' + cnt + ' of 16 · first full line (row, column or diagonal) wins.</p>') +
+      '<div class="bg-grid">' + cells + '</div>' +
+      '<div class="gm-row"><button type="button" class="gm-btn' + (s.won ? " pri" : "") + '" data-gact="bg-new">🔄 New cards</button></div>' +
+      '<p class="gm-note">Each of you has your own card for the city you\'re in today. Tap a square when YOU spot it. Disputes are settled with a photo 📸. With sync on, you can each tick your card on your own phone.</p>');
+  }
+  H.bingo = {
+    start: function(){ frame("bingo", ""); bgDraw(); },
+    act: function(a, b){
+      var c = bgCity(), s = bgState(c);
+      if(a === "bg-view"){ BGV = b.getAttribute("data-w"); bgDraw(); }
+      else if(a === "bg" && !s.won){
+        var i = +b.getAttribute("data-i"), h = s.h[BGV] = s.h[BGV] || {};
+        if(h[i]) delete h[i]; else h[i] = 1;
+        if(bgLine(h)){ s.won = BGV; bgSave(c, s); addWin("bingo", BGV, {id: "bingo-" + c + "-" + s.r, x: c}); refreshScore(); buzz(); }
+        else bgSave(c, s);
+        bgDraw();
+      }
+      else if(a === "bg-new"){ if(s.won || confirm("Deal new cards for both of you? Today's ticks will be cleared.")){ bgSave(c, {r: s.r + 1, h: {a:{}, b:{}}, won: null}); bgDraw(); } }
+    },
+    sync: function(){ bgDraw(); }
+  };
+
+  /* ------------------------------------------------------------- COUPLES QUIZ */
+  var CQ = [
+    {q:"Best meal of this trip is going to be…", o:["Bouillabaisse in Marseille","Risotto alla milanese","A cicchetti crawl in Venice","Swiss fondue or raclette"]},
+    {q:"Perfect afternoon in Venice?", o:["A gondola ride","Getting lost in the alleys","Spritzes by a canal","Churches and museums"]},
+    {q:"On a long train ride, I'd rather…", o:["Nap","Read or scroll","Play games together","Stare out of the window"]},
+    {q:"The part of the trip I'm most excited about:", o:["The Riviera","Italian food","Swiss mountains & chocolate","Dublin pubs"]},
+    {q:"A souvenir I'd actually buy:", o:["Food or wine","Fashion or leather","Art or a print","A fridge magnet"]},
+    {q:"If we missed a train, I'd…", o:["Calmly find the next one","Panic a little","Blame the other one","Call it an adventure"]},
+    {q:"Pick a dessert:", o:["Gelato","Crème brûlée","Tiramisu","Swiss chocolate"]},
+    {q:"First morning in a new city, I want to…", o:["Go for an early walk","Have a long breakfast","Sleep in","Grab coffee, then sightsee"]},
+    {q:"My travel superpower:", o:["Navigating","Finding great food","Packing","Chatting with locals"]},
+    {q:"My ideal hotel is…", o:["Boutique & quirky","Five-star luxury","Cheap but central","Anywhere with a view"]},
+    {q:"My aperitivo drink:", o:["Aperol Spritz","Negroni","A glass of wine","A cold beer"]},
+    {q:"Rainy day plan:", o:["A museum","Café-hopping","Shopping","Nap and a movie"]},
+    {q:"On a plane I want…", o:["The window","The aisle","Whatever's next to you","I don't care, I'm asleep"]},
+    {q:"If we had to live in one trip city:", o:["Nice","Milan","Venice","Zurich"]},
+    {q:"Least favorite part of traveling:", o:["Packing","Airports","Jet lag","All the planning"]},
+    {q:"Best way to see a city:", o:["Walking tour","Bike","Boat","Just wander"]},
+    {q:"Pick a pizza:", o:["Margherita","Diavola (spicy salami)","Quattro formaggi","Marinara"]},
+    {q:"Dinner guest from history:", o:["Leonardo da Vinci","Grace Kelly","Picasso","James Joyce"]},
+    {q:"My most-used app on this trip:", o:["Maps","Camera","Translate","This trip app 😄"]},
+    {q:"At a fancy dinner, I'll order…", o:["The tasting menu","The local specialty","The fish","Whatever you're having"]},
+    {q:"My vacation photos are mostly…", o:["Selfies of us","Landscapes","Food","Candid shots of you"]},
+    {q:"Where I'd splurge:", o:["Food","Experiences","Shopping","Nowhere: save it!"]},
+    {q:"Bedtime on vacation:", o:["Before 10","10 to midnight","After midnight","Whenever I fall asleep"]},
+    {q:"Pick a cheese:", o:["Brie","Parmigiano","Gruyère","Irish cheddar"]},
+    {q:"Best sightseeing weather:", o:["Crisp and sunny","Cozy drizzle","A bit of snow","Warm"]},
+    {q:"What I'll miss most from home:", o:["Our bed","Family & friends","A big American breakfast","Our own shower"]},
+    {q:"Free day in Nice? I'd…", o:["Walk the seafront","Day-trip to Èze or Monaco","Wander the old-town market","Book a spa"]},
+    {q:"The thing I'm most likely to lose on this trip:", o:["My phone","Sunglasses","Train tickets","My patience"]}
+  ];
+  var CP = null;
+  function cpNew(){ var st = ld("cq_start", "a"); sv("cq_start", other(st)); CP = {n: 6, asked: 0, subj: st, pts: {a:0, b:0}}; cpAsk(); }
+  function cpAsk(){ CP.cur = deck("cq_order", CQ.length); CP.ans = null; CP.guess = null; CP.phase = "pass1"; cpDraw(); }
+  function cpDraw(){
+    if(CP.asked >= CP.n){ body(roundEnd("couples", CP.pts, "right guesses", "cp-new")); return; }
+    var q = CQ[CP.cur], n = names(), s = CP.subj, g = other(s);
+    var head = '<div class="tr-prog">Question ' + (CP.asked + 1) + ' of ' + CP.n + ' · right guesses ' + esc(n.a) + ' ' + CP.pts.a + ' – ' + CP.pts.b + ' ' + esc(n.b) + '</div>';
+    var opts = function(act, mark){ return '<div class="tr-opts">' + q.o.map(function(t, i){ var cls = ""; if(mark){ if(i === CP.ans) cls = " ok"; else if(i === CP.guess) cls = " bad"; } return '<button type="button" class="tr-o' + cls + '" data-gact="' + act + '" data-i="' + i + '"' + (mark ? " disabled" : "") + '>' + esc(t) + '</button>'; }).join("") + '</div>'; };
+    if(CP.phase === "pass1"){ body(head + passHtml(s, "Answer this one about yourself, in secret.", "cp-go")); return; }
+    if(CP.phase === "subj"){ body(head + '<div class="gm-turn">' + nm(s) + ', about you:</div><div class="tr-q">' + esc(q.q) + '</div>' + opts("cp-ans")); return; }
+    if(CP.phase === "pass2"){ body(head + passHtml(g, esc(n[s]) + " has answered. Now guess what they picked!", "cp-go")); return; }
+    if(CP.phase === "guess"){ body(head + '<div class="gm-turn">' + nm(g) + ', what did ' + esc(n[s]) + ' pick?</div><div class="tr-q">' + esc(q.q) + '</div>' + opts("cp-guess")); return; }
+    var ok = CP.ans === CP.guess;
+    body(head + '<div class="tr-q">' + esc(q.q) + '</div>' + opts("", true) + '<div class="gm-msg ' + (ok ? 'win">💘 ' + esc(n[g]) + ' knows ' + esc(n[s]) + ' so well! +1' : 'lose">😅 ' + esc(n[s]) + ' picked something else') + '</div><p class="gm-note">Green = ' + esc(n[s]) + '\'s answer. Now explain yourselves!</p>' +
+      '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="cp-next">' + (CP.asked + 1 >= CP.n ? "See results" : "Next question →") + '</button></div>');
+  }
+  H.couples = {
+    start: function(){ frame("couples", ""); cpNew(); },
+    act: function(a, b){
+      if(a === "cp-go"){ CP.phase = CP.phase === "pass1" ? "subj" : "guess"; cpDraw(); }
+      else if(a === "cp-ans" && CP.phase === "subj"){ CP.ans = +b.getAttribute("data-i"); CP.phase = "pass2"; cpDraw(); }
+      else if(a === "cp-guess" && CP.phase === "guess"){ CP.guess = +b.getAttribute("data-i"); if(CP.guess === CP.ans) CP.pts[other(CP.subj)]++; CP.phase = "reveal"; cpDraw(); }
+      else if(a === "cp-next"){ CP.asked++; CP.subj = other(CP.subj); if(CP.asked >= CP.n){ settleRound("couples", CP.pts); cpDraw(); } else cpAsk(); }
+      else if(a === "cp-new") cpNew();
+    }
+  };
+
+  HOW.daily = ["<b>Goal:</b> solve today's secret 5-letter trip word in fewer guesses than your partner.","You both get the <b>same word</b>, and a new one appears every midnight.","Each of you taps <b>Play</b> on your own row and plays privately (hand the phone over, or play on your own phone with sync on). 🟩 = right letter, right spot · 🟨 = in the word, wrong spot · ⬛ = not in the word.","Results stay hidden until you've both finished, then both grids are revealed.","<b>Points:</b> fewer guesses wins 1 (not solving counts as 7). A tie scores nothing."];
+  HOW.whereami = ["<b>Goal:</b> name the trip place from as few clues as possible.","Clues start hard and get easier. Tap <b>Another clue</b> to reveal the next one, or <b>I know it!</b> to see 4 answers and pick one.","Guess right after 1 clue = 4 points, 2 clues = 3, 3 clues = 2, all 4 clues = 1. A wrong guess = 0.","You take turns, 6 places per round.","<b>Points:</b> more points in the round wins 1 trip point."];
+  HOW.price = ["<b>Goal:</b> guess what things cost on this trip.","Each item, both of you type a price in secret (it's hidden as you type) and lock it in, then pass the phone.","The typical price is revealed: whoever is closest wins the item, over or under.","5 items per round. Prices are typical and approximate; real ones vary, so argue about it over dinner!","<b>Points:</b> more items won in the round wins 1 trip point."];
+  HOW.phrase = ["<b>Goal:</b> know more French, Italian and German than your partner.","Each turn you get a phrase: pick the right translation from 4 options (sometimes English → foreign, sometimes the other way round).","With the timer on, you have " + PH_SECS + " seconds per phrase. Tap the timer button to turn it off.","You take turns, 10 phrases per round. All three translations are shown after each answer, so you learn as you go.","<b>Points:</b> more right answers in the round wins 1 trip point."];
+  HOW.bingo = ["<b>Goal:</b> be the first to complete a line on your bingo card.","Each of you has your own 4×4 card of things to spot, based on the city you're in today (plus classic European street sights).","When you spot something, tap it on <b>your</b> card. Switch between cards with the buttons at the top.","The first full row, column or diagonal wins. Honor system: disputes are settled with a photo.","<b>Points:</b> each bingo wins 1. Tap <b>New cards</b> for another round."];
+  HOW.couples = ["<b>Goal:</b> prove you know each other best.","One of you answers a question about yourself in secret (pass the phone first).","Then the other one guesses what they picked.","Reveal: a correct guess scores 1 for the guesser. Then talk about it!","You swap roles every question, 6 questions per round.","<b>Points:</b> more right guesses in the round wins 1 trip point."];
+
   /* --------------------------------------------------------------- wiring */
   function onClick(e){
     var b = e.target.closest("[data-gact]"); if(!b || !root || !root.contains(b)) return;
@@ -4907,17 +5524,29 @@ loadAndBoot();
     var a = b.getAttribute("data-gact");
     if(a === "home"){ home(); try{ window.scrollTo({top: 0}); }catch(x){} return; }
     if(a === "open"){ open(b.getAttribute("data-g")); return; }
-    if(a === "resetscore"){ var g = gById(cur); if(g && confirm("Reset the " + g.t + " score to 0–0?")){ var s = getScores(); delete s[cur]; sv("scores", s); refreshScore(); } return; }
+    if(a === "pane"){ pane = b.getAttribute("data-p"); home(); return; }
+    if(a === "undolast"){ var lr = null; logArr().forEach(function(r){ if(r.g === cur) lr = r; }); if(lr && confirm("Undo the last result here (" + names()[lr.w] + " won, " + fmtWhen(lr.t) + ")?")){ delWin(lr.id); refreshScore(); } return; }
+    if(a === "undo"){ var id = b.getAttribute("data-id"), L = getLog(), r0 = L[id]; if(r0 && confirm("Remove this result (" + names()[r0.w] + " won " + ((gById(r0.g) || {}).t || r0.g) + ")?")){ delWin(id); home(); } return; }
+    if(a === "card-arm"){ var cs = cardState(); if(cs.ok && cs.behind && !(cs.cd && (cs.cd.armed || cs.cd.used))){ var cards = ld("cards", {}); cards[cs.city] = {p: cs.behind, armed: true, used: null, res: null, t: Date.now()}; sv("cards", cards); home(); } return; }
+    if(a === "card-off"){ var cs2 = cardState(), cards2 = ld("cards", {}); if(cards2[cs2.city] && cards2[cs2.city].armed){ delete cards2[cs2.city]; sv("cards", cards2); } home(); return; }
+    if(a === "stake-paid"){ var c = b.getAttribute("data-c"), stk = ld("stakes", {}); stk[c] = stk[c] || {}; if(stk[c].s == null) stk[c].s = stakeOf(c).s; stk[c].paid = !stk[c].paid; sv("stakes", stk); home(); return; }
+    if(a === "bk-copy"){ var code = "EU26G1:" + btoa(unescape(encodeURIComponent(JSON.stringify({log: getLog(), stakes: ld("stakes", {}), cards: ld("cards", {}), names: ld("names", {})})))); var ta = document.getElementById("gmBk"); if(ta){ ta.value = code; ta.select(); } try{ navigator.clipboard.writeText(code); b.textContent = "✅ Copied"; }catch(x){ b.textContent = "Copy the code below"; } return; }
+    if(a === "bk-paste"){ var ta2 = document.getElementById("gmBk"), raw = ta2 && ta2.value.trim(); if(!raw){ alert("Paste a backup code into the box first."); return; } try{ var o = JSON.parse(decodeURIComponent(escape(atob(raw.replace(/^EU26G1:/, "").replace(/\s+/g, ""))))), L2 = getLog(), added = 0; Object.keys(o.log || {}).forEach(function(k){ if(!L2[k]){ L2[k] = o.log[k]; added++; } }); sv("log", L2); var s2 = ld("stakes", {}); Object.keys(o.stakes || {}).forEach(function(k){ if(!s2[k]) s2[k] = o.stakes[k]; }); sv("stakes", s2); var c2 = ld("cards", {}); Object.keys(o.cards || {}).forEach(function(k){ if(!c2[k]) c2[k] = o.cards[k]; }); sv("cards", c2); alert("Merged: " + added + " new result" + (added === 1 ? "" : "s") + " added."); home(); }catch(x){ alert("That doesn't look like a valid backup code."); } return; }
+    if(a === "bk-clear"){ if(confirm("Clear EVERY game result, stake and Double card on this phone? This can't be undone.") && confirm("Really clear everything? (If sync is on, it clears on the other phone too.)")){ sv("log", {}); sv("cards", {}); sv("stakes", {}); home(); } return; }
     if(cur && H[cur] && H[cur].act) H[cur].act(a, b, e);
   }
   function onInput(e){
-    var t = e.target; if(!t || (t.id !== "gmNa" && t.id !== "gmNb")) return;
+    var t = e.target; if(!t) return;
+    if(t.classList && t.classList.contains("gm-stake")){ var c = t.getAttribute("data-c"), stk = ld("stakes", {}); stk[c] = stk[c] || {}; stk[c].s = t.value; sv("stakes", stk); return; }
+    if(cur && H[cur] && H[cur].input && H[cur].input(e) === true) return;
+    if(t.id !== "gmNa" && t.id !== "gmNb") return;
     var n = ld("names", {}); n[t.id === "gmNa" ? "a" : "b"] = t.value.trim(); sv("names", n);
   }
   function onKey(e){
     var tg = (e.target && e.target.tagName) || ""; if(/INPUT|TEXTAREA|SELECT/.test(tg)) return;
     if(!document.querySelector('section.panel.active[data-tab="games"]')) return;
     var k = (e.key || "").toUpperCase();
+    if(cur && H[cur] && H[cur].key){ H[cur].key(k, e); return; }
     if(cur === "wordle" && WD && !WD.over){ if(k === "ENTER" || k === "BACKSPACE" || (k.length === 1 && k >= "A" && k <= "Z")){ e.preventDefault(); wdKey(k); } return; }
     if(cur !== "hangman" || !HM.st || HM.st.done) return;
     if(k.length === 1 && k >= "A" && k <= "Z"){ e.preventDefault(); hmGuess(k); }
@@ -4925,6 +5554,7 @@ loadAndBoot();
   function init(){
     root = document.getElementById("gamesRoot"); if(!root || root.__gm) return;
     root.__gm = true;
+    try{ migrateOld(); }catch(e){}
     root.addEventListener("click", onClick);
     root.addEventListener("input", onInput);
     document.addEventListener("keydown", onKey);
@@ -4932,6 +5562,30 @@ loadAndBoot();
     home();
   }
   window.__gamesRender = function(){ init(); if(root && !root.firstChild) home(); };
+  /* Called by the phone-sync layer after it merges changes from the other phone. */
+  window.__gamesSync = function(){
+    if(!root || !root.firstChild) return;
+    var ae = document.activeElement; if(ae && root.contains(ae) && /INPUT|TEXTAREA|SELECT/.test(ae.tagName)) return;
+    if(!cur) home(); else { refreshScore(); try{ if(H[cur] && H[cur].sync) H[cur].sync(); }catch(e){} }
+  };
+
+  /* --------------------------------------------------------- plug-in API
+     Extra game files (games-*.js) register here. See register() for the contract. */
+  window.__GM = {
+    register: function(meta, handler){
+      if(!meta || !meta.id || gById(meta.id)) return;
+      GAMES.push({id: meta.id, ic: meta.ic || "🎲", t: meta.t || meta.id, d: meta.d || "", sc: meta.sc == null ? 1 : meta.sc, g: meta.g || "l"});
+      if(meta.how) HOW[meta.id] = meta.how;
+      H[meta.id] = handler || {};
+      if(root && !cur && root.firstChild) home();
+    },
+    frame: function(id, html){ frame(id, html || ""); }, body: body, refreshScore: refreshScore, home: function(){ home(); },
+    win: function(g, w, opt){ var id = addWin(g, w, opt); refreshScore(); return id; },
+    names: names, nm: nm, esc: esc, ld: ld, sv: sv, rnd: rnd, shuffle: shuffle, range: range, other: other, buzz: buzz,
+    addTick: function(t){ ticks.push(t); }, stopTicks: stopTicks,
+    current: function(){ return cur; }, city: tripCity, today: todayIso,
+    passScreen: function(to, msg, act){ return '<div class="gm-pass"><div class="gm-pass-ic">📱➡️</div><div class="gm-turn">Pass the phone to ' + nm(to) + '</div>' + (msg ? '<p class="gm-note">' + msg + '</p>' : '') + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="' + act + '">I\'m ' + esc(names()[to]) + ', show me</button></div></div>'; }
+  };
   if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();
 
