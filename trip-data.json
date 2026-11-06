@@ -110,7 +110,7 @@
       "dir": "Outbound",
       "dates": "Nov 6–7",
       "carrier": "BA",
-      "detail": "BA 066 PHL 6:35pm → LHR 6:35am (Sat 11/7); LHR 2:40pm → MRS 5:45pm (BA, flight # TBC)",
+      "detail": "BA 066 PHL 6:35pm → LHR 6:35am (Sat 11/7); BA 366 LHR 2:40pm → MRS 5:45pm",
       "status": "booked",
       "conf": "",
       "missCost": {
@@ -722,7 +722,7 @@
         },
         {
           "time": "2:40p",
-          "text": "LHR → MRS (land 5:45p) · ⚠️ Marseille protest heads-up",
+          "text": "BA 366 LHR → MRS (land 5:45p) · ⚠️ Marseille protest heads-up",
           "status": "booked",
           "detail": "Updated 11/3: France's national strike day is Thu 11/5 (you're still home). 'Gilets jaunes Acte IV' calls for blockades Fri 11/6 and marches across France Sat 11/7 — no Marseille route published yet. Last Saturday's (10/31) Marseille march started ~2pm at Les Réformés (top of La Canebière) with clashes and transit disruption. Check BA status + Marseille news that morning; if marches are near La Canebière/Vieux-Port in the evening, taxi straight to the hotel and keep Bar de la Marine flexible. Auto-rechecked Wed 11/4."
         },
