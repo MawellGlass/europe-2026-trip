@@ -110,7 +110,7 @@
       "dir": "Outbound",
       "dates": "Nov 6–7",
       "carrier": "BA",
-      "detail": "Depart PHL 6:35pm; land LHR 6:35am; LHR 2:40pm → MRS 5:45pm",
+      "detail": "BA 066 PHL 6:35pm → LHR 6:35am (Sat 11/7); LHR 2:40pm → MRS 5:45pm (BA, flight # TBC)",
       "status": "booked",
       "conf": "",
       "missCost": {
@@ -678,7 +678,7 @@
         },
         {
           "time": "6:35p",
-          "text": "Depart PHL (BA)",
+          "text": "✈ Depart PHL on British Airways BA 066 → LHR",
           "status": "booked",
           "missCost": {
             "risk": "prepaid",
@@ -701,7 +701,7 @@
       "items": [
         {
           "time": "6:35a",
-          "text": "Land LHR — clear UK border",
+          "text": "Land LHR (BA 066) — clear UK border",
           "status": "booked"
         },
         {
