@@ -1106,6 +1106,12 @@ html[data-theme="dark"] .bs-c.ship{background:#94a3b8;color:#0f172a;}
 .bg-c.line{background:rgba(22,163,74,.18);border-color:var(--cp-success);color:var(--cp-success);}
 .bg-c:disabled{cursor:default;opacity:1;}
 
+/* Farkle */
+.fk-dice{flex-wrap:wrap;gap:6px;}
+.fk-d{width:50px;height:50px;font-size:2.3rem;}
+.fk-bad{color:var(--cp-danger);font-size:.85rem;font-weight:700;}
+.fk-final{text-align:center;margin:6px 0;}
+.fk-key{font-size:.78rem;}
 /* ---------- 🫶 Calm: 5-4-3-2-1 grounding overlay ---------- */
 #calmOv{position:fixed;inset:0;z-index:100500;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;overflow-y:auto;
   background:radial-gradient(120% 90% at 50% 0%,#24435a 0%,#16293b 55%,#0f1d2b 100%);color:#eaf2f7;
@@ -3854,6 +3860,7 @@ loadAndBoot();
     {id:"checkers", ic:"🏁", t:"Checkers", d:"Classic draughts with forced jumps and kings.", sc:1, g:"b"},
     {id:"gomoku", ic:"⚪", t:"Gomoku", d:"Five in a row on a big board.", sc:1, g:"b"},
     {id:"yahtzee", ic:"🎯", t:"Yahtzee", d:"Five dice, three rolls, 13 boxes to fill.", sc:1, g:"l"},
+    {id:"farkle", ic:"🔥", t:"Farkle", d:"Six dice. Keep scorers, push your luck, bank before you Farkle.", sc:1, g:"l"},
     {id:"mastermind", ic:"🔐", t:"Mastermind", d:"Crack the secret color code in 10 tries.", sc:1, g:"l"},
     {id:"sudoku", ic:"🧩", t:"Sudoku", d:"Solo or together; three difficulty levels.", sc:0, g:"l"}
   ];
@@ -3892,6 +3899,7 @@ loadAndBoot();
     checkers: ["<b>Goal:</b> capture all of your partner's pieces or leave them with no move.","Tap one of your pieces, then a highlighted square. Regular pieces move diagonally forward one square.","<b>Jump</b> over a neighboring enemy piece to an empty square behind it to capture it. If you can jump, you <b>must</b>. If you land where you can jump again, you must keep jumping.","Reach the far row and your piece becomes a <b>king</b> ♛, which can move and jump backwards too. Being crowned ends your turn.","<b>Points:</b> 1 for the win. Red starts at the bottom; the first player alternates each game."],
     gomoku: ["<b>Goal:</b> be the first to get five (or more) stones in a row: across, down or diagonally.","Take turns tapping an empty point to place a stone.","Think defensively too: an open row of three or four needs blocking!","<b>Points:</b> 1 for the win. The player who starts alternates each game."],
     yahtzee: ["<b>Goal:</b> score the most points over 13 turns each.","On your turn you get up to 3 rolls. After each roll, tap dice to <b>hold</b> them (they stay put) and re-roll the rest.","Then tap an empty box in your column to score it. Grey numbers show what each box would score. You must fill one box every turn, even with 0.","<b>Upper section:</b> add up just that number (e.g. Fours = total of the 4s). Reach 63+ for a 35-point bonus.","<b>Lower:</b> 3/4 of a kind = sum of all dice · Full house (3+2) = 25 · Small straight (4 in a row) = 30 · Large straight (5 in a row) = 40 · Yahtzee (5 the same) = 50 · Chance = sum of all dice.","Extra Yahtzees score a 100-point bonus and can be used as a full house or straight.","<b>Points:</b> higher grand total wins 1."],
+    farkle: ["<b>Goal:</b> be first to the target (2,500, 5,000 or 10,000). When someone gets there, the other player gets <b>one last turn</b> to beat them.","Roll all six dice. Tap the scoring dice you want to keep (at least one), then either <b>roll the rest</b> to push your luck or <b>bank</b> your turn total.","<b>Farkle:</b> if a roll has no scoring dice at all, you lose everything from that turn and the phone passes over.","<b>Hot dice:</b> if all six dice end up kept, you get to roll all six again and keep adding.","<b>Scoring:</b> each 1 = 100 · each 5 = 50 · three of a kind = 100 × the number (three 1s = 1,000) · four of a kind = 1,000 · five = 2,000 · six = 3,000.","<b>Six-dice combos:</b> straight 1–6 = 1,500 · three pairs = 1,500 · four of a kind + a pair = 1,500 · two triplets = 2,500. Combos only count within a single roll.","Tap <b>✨ Best keep</b> to auto-pick the highest-scoring dice. <b>Points:</b> the winner scores 1."],
     mastermind: ["<b>Goal:</b> crack the secret code of 4 colors in 10 guesses or fewer.","Use a random code from the phone, or let your partner set one in secret. Colors can repeat.","Tap colors to fill your guess, then <b>Check</b>.","Feedback: ⚫ = right color in the right spot · ⚪ = right color, wrong spot. The feedback doesn't say which peg it refers to!","<b>Points:</b> crack it and the solver scores 1. If a code you set isn't cracked, you score 1. The solver alternates."],
     sudoku: ["<b>Goal:</b> fill the grid so that every row, every column and every 3×3 box contains the digits 1–9 exactly once.","Tap a cell, then tap a number. ⌫ clears it. Grey numbers are part of the puzzle and can't be changed.","Turn on <b>Show mistakes</b> if you want wrong numbers highlighted in red.","Every puzzle has exactly one solution. Your puzzle is saved, so you can come back to it. Solve it together or take turns."]
   };
@@ -5037,6 +5045,116 @@ loadAndBoot();
     yzDraw();
   }
   H.yahtzee = { start: function(){ frame("yahtzee", ""); yzNew(); }, act: function(a, b){ if(a === "yz-roll") yzRoll(); else if(a === "yz-hold"){ var i = +b.getAttribute("data-i"); YZ.held[i] = !YZ.held[i]; yzDraw(); } else if(a === "yz-sc") yzPick(b.getAttribute("data-k")); else if(a === "yz-new"){ if(YZ.over || confirm("Restart this Yahtzee game?")){ stopTicks(); yzNew(); } } } };
+
+  /* ----------------------------------------------------------------- FARKLE */
+  var FK = null;
+  function fkCounts(vals){ var c = [0,0,0,0,0,0,0]; vals.forEach(function(v){ c[v]++; }); return c; }
+  /* Best score that uses EVERY die in vals; -1 if some die doesn't score. */
+  function fkScore(vals){
+    if(!vals.length) return 0;
+    var c = fkCounts(vals), best = -1;
+    if(vals.length === 6){
+      var k = c.slice(1).filter(function(x){ return x; }).sort();
+      if(k.join() === "1,1,1,1,1,1") best = Math.max(best, 1500);
+      if(k.join() === "2,2,2") best = Math.max(best, 1500);
+      if(k.join() === "2,4") best = Math.max(best, 1500);
+      if(k.join() === "3,3") best = Math.max(best, 2500);
+    }
+    function rec(cc){
+      var n = 0, f; for(f = 1; f <= 6; f++) n += cc[f]; if(!n) return 0;
+      var b = -1, r;
+      for(f = 1; f <= 6; f++){
+        if(!cc[f]) continue;
+        if(f === 1 || f === 5){ cc[f]--; r = rec(cc); cc[f]++; if(r >= 0) b = Math.max(b, r + (f === 1 ? 100 : 50)); }
+        for(var m = 3; m <= cc[f]; m++){ var p = m === 3 ? (f === 1 ? 1000 : f * 100) : m === 4 ? 1000 : m === 5 ? 2000 : 3000; cc[f] -= m; r = rec(cc); cc[f] += m; if(r >= 0) b = Math.max(b, r + p); }
+      }
+      return b;
+    }
+    return Math.max(best, rec(c));
+  }
+  /* Highest-scoring subset of the current roll: {score, mask}. */
+  function fkBest(vals){
+    var best = {score: 0, mask: vals.map(function(){ return false; })};
+    for(var m = 1; m < (1 << vals.length); m++){
+      var pick = [], mask = vals.map(function(v, i){ var on = !!(m & (1 << i)); if(on) pick.push(v); return on; }), s = fkScore(pick);
+      if(s > best.score || (s === best.score && s > 0 && pick.length > best.mask.filter(Boolean).length)) best = {score: s, mask: mask};
+    }
+    return best;
+  }
+  function fkSave(){ sv("fk_state", FK && !FK.over ? FK : null); }
+  function fkNew(){ var st = ld("fk_start", "a"); sv("fk_start", other(st)); FK = { target: ld("fk_target", 5000), tot: {a:0, b:0}, turn: st, run: 0, left: 6, dice: [], sel: [], phase: "pre", final: null, over: false, rolling: false, hot: false }; fkSave(); fkDraw(); }
+  function fkSel(){ var v = []; FK.dice.forEach(function(d, i){ if(FK.sel[i]) v.push(d); }); return v; }
+  function fkDraw(){
+    var t = FK.turn, n = names(), fmt = function(x){ return x.toLocaleString("en-US"); };
+    var seg = '<div class="gm-seg">' + [2500,5000,10000].map(function(k){ return '<button type="button" data-gact="fk-target" data-n="' + k + '" class="' + (FK.target === k ? "on" : "") + '">To ' + fmt(k) + '</button>'; }).join("") + '</div>';
+    var bar = function(w){ var pct = Math.min(100, Math.round(FK.tot[w] / FK.target * 100)); return '<div class="pg-bar"><span class="gm-' + w + '">' + esc(n[w]) + '</span><div class="pg-track"><i class="' + w + '" style="width:' + pct + '%"></i></div><b>' + fmt(FK.tot[w]) + '</b></div>'; };
+    var mid = "", sel = fkSel(), selPts = fkScore(sel), selOk = sel.length > 0 && selPts > 0;
+    var diceHtml = function(clickable){ return '<div class="yz-dice fk-dice">' + FK.dice.map(function(v, i){ return '<button type="button" class="yz-d fk-d' + (FK.sel[i] ? " held" : "") + '" data-gact="fk-sel" data-i="' + i + '"' + (clickable ? "" : " disabled") + '>' + DIE[v - 1] + '</button>'; }).join("") + '</div>'; };
+    var finalNote = FK.final && !FK.over ? '<div class="gm-hl fk-final">🏁 Last turn! ' + nm(t) + ' needs ' + fmt(FK.tot[FK.final] - FK.tot[t] + 1) + '+ to beat ' + nm(FK.final) + '.</div>' : '';
+    if(FK.over){
+      var A = FK.tot.a, B = FK.tot.b;
+      mid = (A === B ? '<div class="gm-msg">Tie at ' + fmt(A) + '! 🤝 No trip point.</div>' : '<div class="gm-msg win">🏆 ' + esc(n[A > B ? "a" : "b"]) + ' wins ' + fmt(Math.max(A, B)) + '–' + fmt(Math.min(A, B)) + '!</div>') + '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="fk-new">Play again</button></div>';
+    } else if(FK.phase === "farkle"){
+      mid = '<div class="gm-turn">' + nm(t) + '\'s turn</div>' + diceHtml(false) + '<div class="gm-msg lose">💥 FARKLE! No scoring dice' + (FK.lost ? ': ' + fmt(FK.lost) + ' points gone.' : '.') + '</div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="fk-pass">' + (FK.final ? "See who won →" : "Pass to " + esc(n[other(t)]) + " →") + '</button></div>';
+    } else if(FK.phase === "pre"){
+      mid = '<div class="gm-turn">' + nm(t) + '\'s turn</div>' + finalNote + (FK.hot ? '<div class="gm-msg win">🔥 Hot dice! All six are back.</div>' : '') +
+        '<div class="pg-run">This turn: <b>' + fmt(FK.run) + '</b></div><div class="gm-row"><button type="button" class="gm-btn pri" data-gact="fk-roll">🎲 Roll ' + FK.left + ' dice</button>' + (FK.run ? '<button type="button" class="gm-btn" data-gact="fk-bank">✋ Bank ' + fmt(FK.run) + '</button>' : '') + '</div>';
+    } else {
+      var after = FK.left - sel.length, nextN = after === 0 ? 6 : after, turnTot = FK.run + (selOk ? selPts : 0);
+      mid = '<div class="gm-turn">' + nm(t) + '\'s turn</div>' + finalNote + (FK.hot && !FK.rolling ? '<div class="gm-msg win">🔥 Hot dice! All six rolled again.</div>' : '') + diceHtml(!FK.rolling) +
+        '<div class="pg-run">This turn: <b>' + fmt(turnTot) + '</b>' + (sel.length ? (selOk ? ' <span class="gm-pill">+' + fmt(selPts) + ' kept</span>' : ' <span class="fk-bad">some kept dice don\'t score</span>') : '') + '</div>' +
+        (FK.rolling ? '' : '<div class="gm-row"><button type="button" class="gm-btn pri" data-gact="fk-keep"' + (selOk ? "" : " disabled") + '>' + (after === 0 ? "🔥 Hot dice: roll all 6" : "🎲 Keep & roll " + nextN) + '</button><button type="button" class="gm-btn" data-gact="fk-bank"' + (selOk ? "" : " disabled") + '>✋ Bank ' + fmt(turnTot) + '</button></div>' +
+        '<div class="gm-row"><button type="button" class="gm-link" data-gact="fk-best">✨ Best keep</button></div>') +
+        '<p class="gm-note">' + (FK.rolling ? "Rolling…" : "Tap the scoring dice to keep (they lift up). Every kept die must score.") + '</p>';
+    }
+    body(seg + bar("a") + bar("b") + mid + '<p class="gm-note fk-key">1 = 100 · 5 = 50 · three of a kind = 100× (1s = 1,000) · 4/5/6 of a kind = 1k/2k/3k · straight, three pairs or 4+pair = 1,500 · two triplets = 2,500</p>' +
+      (FK.over ? '' : '<div class="gm-row"><button type="button" class="gm-link" data-gact="fk-new">Restart game</button></div>'));
+  }
+  function fkRoll(){
+    if(FK.over || FK.rolling || FK.phase !== "pre") return;
+    FK.rolling = true; FK.phase = "roll"; FK.sel = []; var n = 0, k = FK.left;
+    FK.dice = range(k).map(function(){ return 1 + Math.floor(Math.random() * 6); });
+    var iv = setInterval(function(){ n++; FK.dice = range(k).map(function(){ return 1 + Math.floor(Math.random() * 6); });
+      if(n >= 6){ clearInterval(iv); FK.rolling = false; FK.sel = FK.dice.map(function(){ return false; });
+        if(fkBest(FK.dice).score === 0){ FK.lost = FK.run; FK.run = 0; FK.phase = "farkle"; try{ if(navigator.vibrate) navigator.vibrate(150); }catch(e){} }
+        fkSave(); }
+      fkDraw(); }, 70);
+    ticks.push(iv);
+  }
+  function fkKeep(){
+    var sel = fkSel(), pts = fkScore(sel); if(FK.rolling || FK.phase !== "roll" || !sel.length || pts <= 0) return;
+    FK.hot = false; FK.run += pts; FK.left -= sel.length; if(FK.left === 0){ FK.left = 6; FK.hot = true; }
+    FK.phase = "pre"; FK.dice = []; FK.sel = []; fkRoll();
+  }
+  function fkEndTurn(){
+    var t = FK.turn;
+    if(FK.final){ FK.over = true; var A = FK.tot.a, B = FK.tot.b; if(A !== B){ addPt("farkle", A > B ? "a" : "b"); refreshScore(); } }
+    else if(FK.tot[t] >= FK.target){ FK.final = t; FK.turn = other(t); }
+    else FK.turn = other(t);
+    FK.run = 0; FK.left = 6; FK.dice = []; FK.sel = []; FK.phase = "pre"; FK.hot = false; FK.lost = 0;
+    fkSave(); fkDraw();
+  }
+  function fkBank(){
+    if(FK.rolling || FK.over) return;
+    var add = FK.run;
+    if(FK.phase === "roll"){ var sel = fkSel(), pts = fkScore(sel); if(!sel.length || pts <= 0) return; add += pts; }
+    else if(FK.phase !== "pre" || !FK.run) return;
+    FK.tot[FK.turn] += add; fkEndTurn();
+  }
+  H.farkle = {
+    start: function(){ frame("farkle", ""); var s = ld("fk_state", null); if(s && !s.over && s.tot){ FK = s; FK.rolling = false; if(FK.phase === "roll" && !FK.dice.length) FK.phase = "pre"; fkDraw(); } else fkNew(); },
+    act: function(a, b){
+      if(a === "fk-roll") fkRoll();
+      else if(a === "fk-sel"){ if(FK.phase !== "roll" || FK.rolling) return; var i = +b.getAttribute("data-i"); FK.sel[i] = !FK.sel[i]; fkSave(); fkDraw(); }
+      else if(a === "fk-best"){ if(FK.phase !== "roll" || FK.rolling) return; FK.sel = fkBest(FK.dice).mask; fkSave(); fkDraw(); }
+      else if(a === "fk-keep") fkKeep();
+      else if(a === "fk-bank") fkBank();
+      else if(a === "fk-pass") fkEndTurn();
+      else if(a === "fk-new"){ if(FK.over || (!FK.tot.a && !FK.tot.b && !FK.run) || confirm("Restart this Farkle game?")){ stopTicks(); fkNew(); } }
+      else if(a === "fk-target"){ var nt = +b.getAttribute("data-n"); if(nt === FK.target) return; if(FK.over || (!FK.tot.a && !FK.tot.b && !FK.run) || confirm("Change the target and start a new game?")){ stopTicks(); sv("fk_target", nt); fkNew(); } }
+    }
+  };
+  window.__fkScore = fkScore; window.__fkBest = fkBest;
 
   /* ------------------------------------------------------------- MASTERMIND */
   var MMC = ["🔴","🟠","🟡","🟢","🔵","🟣"], MS = null;
